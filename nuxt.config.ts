@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       apiBase: "https://my-wp-test.duckdns.org",
     },
   },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "~/assets/css/fonts.css"],
   vite: {
     plugins: [tailwindcss()],
   },
