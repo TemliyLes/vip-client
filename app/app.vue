@@ -1,27 +1,32 @@
 <template>
-  <main class="bg-red-100">
-    <div v-if="postsStore.loading">Загрузка...</div>
-
-    <div v-else-if="postsStore.error">
-      {{ postsStore.error }}
+  <template>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <Logo />
+          <NuxtPage />
+          <Blank />
+          <Blank />
+          <Blank />
+          <Blank />
+          <Blank />
+          <Blank />
+        </main>
+      </div>
     </div>
-
-    <article v-for="post in postsStore.posts" :key="post.id">
-      <h2>
-        {{ post.title.rendered }}
-      </h2>
-
-      <div v-html="post.excerpt.rendered"></div>
-    </article>
-
-    posts {{ posts }}
-  </main>
+  </template>
 </template>
 <script setup>
-import { usePostsStore } from "./store/posts";
-const postsStore = usePostsStore();
+import Logo from "./components/icons/logo.vue";
+import Blank from "./components/Blank.vue";
 
-const posts = storeToRefs(postsStore);
+const { init, destroy } = useGsap();
 
-await postsStore.fetchPosts();
+onMounted(() => {
+  init();
+});
+
+onUnmounted(() => {
+  destroy();
+});
 </script>
