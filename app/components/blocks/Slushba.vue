@@ -17,7 +17,11 @@
             respekt k vaší přirozené kráse.
           </Paragraph>
 
-          <img src="./../../assets/img/styletext.png" alt="" />
+          <img
+            class="h-24 object-contain object-left"
+            src="./../../assets/img/styletext.png"
+            alt=""
+          />
 
           <Button> Rezervovat Online </Button>
         </div>

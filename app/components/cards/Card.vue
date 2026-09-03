@@ -26,7 +26,6 @@
       </div>
       <Button class="mt-4" v-if="btn" fit arrow>program kurzu</Button>
     </NuxtLink>
-    {{ prefix }}
   </div>
 </template>
 
