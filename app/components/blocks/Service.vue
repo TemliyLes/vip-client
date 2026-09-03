@@ -33,7 +33,7 @@
             :key="item?.id"
             class="flex flex-col border-l border-white"
           >
-            <Card categoty :data="item" />
+            <Card category :data="item" />
           </div>
         </div>
       </div>

@@ -2,8 +2,6 @@
   <div class="py-20">
     <Container>
       <div class="flex gap-4 items-stretch">
-        <!-- LEFT -->
-
         <div class="basis-1/2 min-w-0 flex flex-col justify-between">
           <Title> Proč my </Title>
 
@@ -23,8 +21,6 @@
 
           <Button> Rezervovat Online </Button>
         </div>
-
-        <!-- RIGHT -->
 
         <div class="basis-1/2 min-w-0 flex flex-col gap-3 overflow-hidden">
           <div v-for="item in data" ref="cards" :key="item?.id">

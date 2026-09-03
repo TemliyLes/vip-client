@@ -1,9 +1,6 @@
 <template>
   <div>
-    <NuxtLink
-      :to="`article/${data?.id}`"
-      class="group flex h-full gap-3 min-w-0"
-    >
+    <NuxtLink :to="`news/${data?.id}`" class="group flex h-full gap-3 min-w-0">
       <img
         :src="data?.images?.card?.url"
         :alt="data?.name"

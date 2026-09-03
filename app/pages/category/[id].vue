@@ -5,7 +5,8 @@
 
 <script setup>
 import AlterHero from "~/components/blocks/AlterHero.vue";
-import { useCategoryStore } from "~/store/categoty";
+
+import { useCategoryStore } from "~/store/category";
 import Category from "~/components/blocks/Category.vue";
 
 const categoryStore = useCategoryStore();

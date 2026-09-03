@@ -26,6 +26,7 @@
       </div>
       <Button class="mt-4" v-if="btn" fit arrow>program kurzu</Button>
     </NuxtLink>
+    {{ prefix }}
   </div>
 </template>
 
@@ -41,7 +42,7 @@ const props = defineProps({
   data: {
     type: Object,
   },
-  categoty: {
+  category: {
     type: Boolean,
     default: false,
   },
@@ -50,8 +51,9 @@ const props = defineProps({
     default: false,
   },
 });
-
-const prefix = computed(() => (props.categoty ? "category" : "article"));
+const isService = computed(() => !!props.data["service-categories"]);
+const servPrefix = computed(() => (isService.value ? "services" : "news"));
+const prefix = computed(() => (props.category ? "category" : servPrefix.value));
 
 const flexClasses = computed(() => "flex gap-2");
 
