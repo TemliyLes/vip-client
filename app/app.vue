@@ -1,27 +1,28 @@
 <template>
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main>
-        <Logo />
-        <h1 style="font-family: Lato; font-size: 50px">Заголовок LATO</h1>
-        <h1 style="font-size: 50px">Заголовок LATO</h1>
-        <NuxtPage />
-        <ClientOnly>
-          <Blank />
-          <Blank />
-          <Blank />
-          <Blank />
-          <Blank />
-          <Blank />
-        </ClientOnly>
-      </main>
+  <div>
+    <MenuDesktop />
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <NuxtPage />
+          <ClientOnly>
+            <Blank />
+            <Blank />
+            <Blank />
+            <Blank />
+            <Blank />
+            <Blank />
+          </ClientOnly>
+        </main>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import Logo from "./components/icons/logo.vue";
 import Blank from "./components/Blank.vue";
+
+import MenuDesktop from "./components/menu/Desktop.vue";
 
 const { init, destroy } = useGsap();
 

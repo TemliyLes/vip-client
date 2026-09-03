@@ -2,4 +2,9 @@
 
 @theme {
   --font-sans: "Lato", sans-serif;
+
+  --color-beige: #cac0b8;
+  --color-darkbeige: #988e86;
+  --color-milk: #ece6e1;
+  --color-wine: #bf0017;
 }

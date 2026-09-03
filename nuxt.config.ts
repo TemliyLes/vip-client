@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ["@pinia/nuxt"],
   runtimeConfig: {
     public: {
-      apiBase: "https://my-wp-test.duckdns.org",
+      apiBase: "http://srv1943597.hstgr.cloud:8080",
     },
   },
   css: ["~/assets/css/main.css", "~/assets/css/fonts.css"],
