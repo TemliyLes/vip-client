@@ -18,8 +18,10 @@
       />
 
       <div class="mt-12">
-        <div v-html="content?.content?.rendered"></div>
+        <RichText :content="content?.content?.rendered" />
+        <!-- <div v-html="content?.content?.rendered"></div> -->
       </div>
+      <!-- {{ content?.content?.rendered }} -->
     </Container>
   </div>
 </template>
@@ -29,6 +31,7 @@ import AlterHero from "~/components/blocks/AlterHero.vue";
 import Container from "~/components/ui/Container.vue";
 import Header from "~/components/ui/Header.vue";
 import Paragraph from "~/components/ui/Paragraph.vue";
+import RichText from "../ui/RichText.vue";
 
 const props = defineProps({
   store: {
@@ -43,7 +46,6 @@ const props = defineProps({
 });
 
 const content = computed(() => {
-  console.log(props.store.data);
   return props.news ? props.store.data : props.store.article;
 });
 </script>
