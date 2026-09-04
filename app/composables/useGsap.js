@@ -14,14 +14,13 @@ export const useGsap = () => {
     if (!smoother) {
       smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
-
         content: "#smooth-content",
-
         smooth: 1.5,
-
         effects: true,
-
-        normalizeScroll: true,
+        smoothTouch: 0,
+      });
+      requestAnimationFrame(() => {
+        ScrollTrigger.refresh(true);
       });
     }
 
