@@ -1,7 +1,7 @@
 <template>
   <div
     ref="overlay"
-    class="fixed inset-0 z-[9999] pointer-events-none bg-milk origin-bottom scale-y-0"
+    class="fixed inset-0 z-[9999] pointer-events-none bg-white origin-bottom scale-y-0"
   ></div>
 </template>
 
@@ -20,7 +20,7 @@ const enter = () => {
 
         transformOrigin: "top",
 
-        duration: 1.4,
+        duration: 1.5,
 
         ease: "expo.out",
 
@@ -39,7 +39,7 @@ const leave = () => {
 
       transformOrigin: "bottom",
 
-      duration: 0.85,
+      duration: 0.9,
 
       ease: "power4.inOut",
 
@@ -50,6 +50,7 @@ const leave = () => {
 
 defineExpose({
   enter,
+
   leave,
 });
 </script>

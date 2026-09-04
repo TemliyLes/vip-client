@@ -135,17 +135,23 @@ export const useGsap = () => {
   function scrollTop() {
     if (smoother) {
       smoother.scrollTo(0, false);
-    }
-  }
 
+      smoother.paused(false);
+    }
+
+    ScrollTrigger.clearScrollMemory();
+  }
   function resetScroll() {
     ScrollTrigger.clearScrollMemory();
 
     if (smoother) {
+      smoother.scrollTop(0);
+
       smoother.scrollTo(0, false);
     }
-  }
 
+    window.scrollTo(0, 0);
+  }
   return {
     init,
 

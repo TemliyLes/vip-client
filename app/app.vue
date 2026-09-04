@@ -13,7 +13,6 @@
     </div>
   </div>
 </template>
-
 <script setup>
 import { nextTick } from "vue";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -27,27 +26,31 @@ const pageTransition = ref(null);
 
 const { init, destroy, refresh, resetScroll } = useGsap();
 
-router.beforeEach(async () => {
+if (process.client) {
+  history.scrollRestoration = "manual";
+}
+
+router.beforeResolve(async () => {
   if (pageTransition.value) {
     await pageTransition.value.leave();
   }
+
+  resetScroll();
 });
 
 router.afterEach(async () => {
   await nextTick();
 
-  // сброс состояния smoother
-  resetScroll?.();
+  // новая страница уже в DOM
+  resetScroll();
 
-  await nextTick();
+  requestAnimationFrame(() => {
+    ScrollTrigger.refresh(true);
+  });
 
   if (pageTransition.value) {
     await pageTransition.value.enter();
   }
-
-  setTimeout(() => {
-    ScrollTrigger.refresh(true);
-  }, 300);
 });
 
 onMounted(async () => {
@@ -56,7 +59,7 @@ onMounted(async () => {
   init();
 
   setTimeout(() => {
-    ScrollTrigger.refresh(true);
+    refresh();
   }, 300);
 });
 
