@@ -2,11 +2,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 
-let timeline = null;
-let smoother = null;
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 export const useGsap = () => {
+  let timeline = null;
+  let smoother = null;
+
   function init() {
+    ScrollTrigger.clearScrollMemory();
+
     if (!smoother) {
       smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
@@ -83,11 +87,13 @@ export const useGsap = () => {
 
     gsap.fromTo(
       element,
+
       {
         y: 0,
       },
+
       {
-        y: y,
+        y,
 
         ease: "none",
 
@@ -105,6 +111,7 @@ export const useGsap = () => {
       },
     );
   }
+
   function destroy() {
     if (timeline) {
       timeline.kill();
@@ -118,7 +125,25 @@ export const useGsap = () => {
       smoother = null;
     }
 
-    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    ScrollTrigger.clearScrollMemory();
+  }
+
+  function refresh() {
+    ScrollTrigger.refresh();
+  }
+
+  function scrollTop() {
+    if (smoother) {
+      smoother.scrollTo(0, false);
+    }
+  }
+
+  function resetScroll() {
+    ScrollTrigger.clearScrollMemory();
+
+    if (smoother) {
+      smoother.scrollTo(0, false);
+    }
   }
 
   return {
@@ -133,5 +158,11 @@ export const useGsap = () => {
     destroy,
 
     revealOnScroll,
+
+    refresh,
+
+    scrollTop,
+
+    resetScroll,
   };
 };

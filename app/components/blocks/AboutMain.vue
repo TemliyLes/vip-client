@@ -1,6 +1,6 @@
 <template>
-  <section ref="hero" class="relative h-[200vh] bg-white overflow-hidden">
-    <div ref="scene" class="relative h-screen overflow-hidden">
+  <section ref="hero" class="relative">
+    <div ref="scene" class="sticky top-0 h-screen overflow-hidden">
       <!-- красная подложка -->
       <div
         ref="red"
@@ -86,7 +86,7 @@ const content = ref(null);
 const word1 = ref(null);
 const word2 = ref(null);
 const word3 = ref(null);
-
+let trigger;
 onMounted(() => {
   const ctx = gsap.context(() => {
     gsap.set(person.value, {
@@ -176,17 +176,34 @@ onMounted(() => {
       },
       "-=2",
     );
-    ScrollTrigger.create({
+
+    trigger = ScrollTrigger.create({
       trigger: hero.value,
-      start: "top -80px",
+
+      start: "top top",
+
       end: "+=1800",
+
       pin: true,
+
+      pinSpacing: true,
+
+      anticipatePin: 1,
+
       animation: tl,
+
       scrub: 1.2,
     });
+    nextTick(() => {
+      requestAnimationFrame(() => {
+        ScrollTrigger.refresh();
+      });
+    });
   }, hero.value);
-
+  console.log("TRIGGERS", ScrollTrigger.getAll().length);
   onUnmounted(() => {
+    trigger.kill();
+
     ctx.revert();
   });
 });
