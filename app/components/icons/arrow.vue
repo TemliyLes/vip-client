@@ -8,10 +8,18 @@
   >
     <path
       d="M11.25 15.75L18.75 8.25L11.25 0.75M18.75 8.25H0.75"
-      stroke="white"
+      :stroke="red ? '#bf0017' : 'white'"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
   </svg>
 </template>
+
+<script setup>
+defineProps({
+  red: {
+    type: Boolean,
+  },
+});
+</script>

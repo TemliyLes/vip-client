@@ -1,11 +1,13 @@
 <template>
   <div>
     <Hero />
-    <Team />
+    <HomeNews />
+
     <Service />
     <Slushba />
     <Videos />
     <AboutMain />
+    <Team />
     <!-- <Blank /> -->
   </div>
 </template>
@@ -19,4 +21,5 @@ import AboutMain from "~/components/blocks/AboutMain.vue";
 import Videos from "~/components/blocks/Videos.vue";
 import Team from "~/components/blocks/Team.vue";
 import Blank from "~/components/Blank.vue";
+import HomeNews from "~/components/blocks/HomeNews.vue";
 </script>
