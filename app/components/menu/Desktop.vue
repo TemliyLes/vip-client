@@ -1,15 +1,15 @@
 <template>
   <div
     ref="header"
-    class="w-full fixed top-0 left-0 z-[999] h-[80px] grid place-items-center"
+    class="fixed top-0 left-0 z-[999] w-full h-[80px] grid place-items-center pointer-events-none"
   >
-    <!-- background fill -->
     <div ref="bg" class="absolute inset-0 bg-white origin-top scale-y-0"></div>
 
-    <Container class="relative z-10">
+    <Container class="relative z-10 pointer-events-auto">
       <div class="flex justify-between">
         <Logo />
-        <Button>Rezrvovat Online</Button>
+
+        <Button> Rezrvovat Online </Button>
       </div>
     </Container>
   </div>
@@ -17,15 +17,14 @@
 
 <script setup>
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Container from "../ui/Container.vue";
 import Logo from "../icons/logo.vue";
 import Button from "../ui/Button.vue";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const bg = ref(null);
+
+let onScroll = null;
 
 onMounted(() => {
   const setProgress = gsap.quickTo(bg.value, "scaleY", {
@@ -33,14 +32,26 @@ onMounted(() => {
     ease: "sine.out",
   });
 
-  ScrollTrigger.create({
-    trigger: document.body,
-    start: "50dvh",
-    end: "100vh",
+  onScroll = () => {
+    const scroll = window.scrollY;
 
-    onUpdate(self) {
-      setProgress(self.progress);
-    },
+    const progress = gsap.utils.clamp(
+      0,
+      1,
+      (scroll - window.innerHeight * 0.5) / (window.innerHeight * 0.5),
+    );
+
+    setProgress(progress);
+  };
+
+  window.addEventListener("scroll", onScroll, {
+    passive: true,
   });
+});
+
+onUnmounted(() => {
+  if (onScroll) {
+    window.removeEventListener("scroll", onScroll);
+  }
 });
 </script>

@@ -4,7 +4,7 @@
     <Service />
     <Slushba />
     <AboutMain />
-    <Blank />
+    <!-- <Blank /> -->
   </div>
 </template>
 

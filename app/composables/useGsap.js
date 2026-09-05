@@ -1,3 +1,5 @@
+// composables/useGsap.js
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -6,21 +8,19 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 export const useGsap = () => {
   let timeline = null;
+
   let smoother = null;
 
   function init() {
-    ScrollTrigger.clearScrollMemory();
-
     if (!smoother) {
       smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
+
         content: "#smooth-content",
+
         smooth: 1.5,
+
         effects: true,
-        smoothTouch: 0,
-      });
-      requestAnimationFrame(() => {
-        ScrollTrigger.refresh(true);
       });
     }
 
@@ -60,7 +60,7 @@ export const useGsap = () => {
   function revealOnScroll(elements, y = 50, duration = 1.2, stagger = 0.3) {
     if (!elements || !elements.length) return;
 
-    gsap.from(elements, {
+    return gsap.from(elements, {
       y,
 
       opacity: 0,
@@ -84,7 +84,7 @@ export const useGsap = () => {
   function parallax(element, y = 100) {
     if (!element) return;
 
-    gsap.fromTo(
+    return gsap.fromTo(
       element,
 
       {
@@ -104,11 +104,33 @@ export const useGsap = () => {
           end: "bottom top",
 
           scrub: 1,
-
+          ignoreMobileResize: true,
           invalidateOnRefresh: true,
         },
       },
     );
+  }
+
+  function scrollTop() {
+    if (smoother) {
+      smoother.scrollTo(0, false);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  function resetScroll() {
+    ScrollTrigger.clearScrollMemory();
+
+    if (smoother) {
+      smoother.scrollTo(0, false);
+    }
+
+    window.scrollTo(0, 0);
+  }
+
+  function refresh() {
+    ScrollTrigger.refresh(true);
   }
 
   function destroy() {
@@ -126,33 +148,6 @@ export const useGsap = () => {
 
     ScrollTrigger.clearScrollMemory();
   }
-
-  function refresh() {
-    ScrollTrigger.refresh();
-  }
-
-  function scrollTop() {
-    if (smoother) {
-      smoother.scrollTo(0, false);
-
-      smoother.paused(false);
-    }
-
-    ScrollTrigger.clearScrollMemory();
-  }
-  function resetScroll() {
-    ScrollTrigger.clearScrollMemory();
-
-    if (smoother) {
-      smoother.scrollTo(0, false);
-    }
-
-    window.scrollTo(0, 0);
-
-    document.documentElement.scrollTop = 0;
-
-    document.body.scrollTop = 0;
-  }
   return {
     init,
 
@@ -160,16 +155,16 @@ export const useGsap = () => {
 
     getTimeline,
 
-    parallax,
-
-    destroy,
-
     revealOnScroll,
 
-    refresh,
+    parallax,
 
     scrollTop,
 
     resetScroll,
+
+    refresh,
+
+    destroy,
   };
 };
