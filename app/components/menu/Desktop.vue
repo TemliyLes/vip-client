@@ -7,7 +7,7 @@
 
     <Container class="relative z-10 pointer-events-auto">
       <div class="flex justify-between">
-        <Logo />
+        <NuxtLink to="/"><Logo /></NuxtLink>
 
         <Button> Rezrvovat Online </Button>
       </div>
