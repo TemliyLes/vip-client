@@ -2,6 +2,7 @@
   <div>
     <div ref="wrapper" class="relative w-full h-[540px] overflow-hidden">
       <img
+        :class="dark ? 'brightness-50' : ''"
         ref="image"
         class="absolute -top-[10%] left-0 w-full h-[120%] object-cover"
         src="../../assets/img/clinic.png"
@@ -19,6 +20,13 @@
 <script setup>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+defineProps({
+  dark: {
+    type: Boolean,
+    default: false,
+  },
+});
 
 gsap.registerPlugin(ScrollTrigger);
 

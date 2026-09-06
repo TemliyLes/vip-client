@@ -15,7 +15,6 @@ export const useArticleStore = defineStore("article", () => {
       const response = await $fetch(url, {
         baseURL: config.public.apiBase,
       });
-      console.log(url);
       article.value = response;
 
       return response;

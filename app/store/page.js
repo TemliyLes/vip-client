@@ -15,7 +15,7 @@ export const usePageStore = defineStore("page", () => {
       const response = await $fetch(url, {
         baseURL: config.public.apiBase,
       });
-      console.log(response);
+
       page.value = response;
 
       return response;

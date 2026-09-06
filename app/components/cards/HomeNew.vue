@@ -1,5 +1,5 @@
 <template>
-  <div class="news-card opacity-0">
+  <div class="news-card">
     <div class="flex" :class="direction">
       <img
         ref="image"

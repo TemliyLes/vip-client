@@ -200,7 +200,7 @@ onMounted(() => {
       });
     });
   }, hero.value);
-  console.log("TRIGGERS", ScrollTrigger.getAll().length);
+
   onUnmounted(() => {
     trigger.kill();
 
