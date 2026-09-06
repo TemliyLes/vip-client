@@ -1,13 +1,16 @@
 <template>
   <div ref="grid" class="grid grid-cols-4 gap-6 mt-10">
     <article
-      v-for="person in team"
+      v-for="(person, index) in team"
       :key="person.name"
-      class="team-card flex flex-col gap-2 opacity-0 translate-y-10"
+      :ref="(el) => setCardRef(el, index)"
+      class="flex flex-col gap-2"
     >
       <img
         :src="person?.image?.original.url"
         class="w-full aspect-[357/388] object-cover"
+        loading="lazy"
+        decoding="async"
       />
 
       <Header mini>
@@ -38,36 +41,56 @@ const props = defineProps({
 });
 
 const grid = ref(null);
+const cards = ref([]);
+
+let animation = null;
+
+function setCardRef(el, index) {
+  if (el) {
+    cards.value[index] = el;
+  }
+}
 
 watch(
   () => props.team,
-  async () => {
+  async (team) => {
+    if (!team?.length) return;
+
     await nextTick();
 
-    if (!grid.value) return;
+    if (!grid.value || !cards.value.length) return;
 
-    const cards = grid.value.querySelectorAll(".team-card");
+    animation?.scrollTrigger?.kill();
+    animation?.kill();
 
-    gsap.fromTo(
-      cards,
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.9,
-        stagger: 0.15,
-        ease: "power3.out",
+    gsap.set(cards.value, {
+      autoAlpha: 0,
+      y: 30,
+      willChange: "transform, opacity",
+    });
 
-        scrollTrigger: {
-          trigger: grid.value,
-          start: "top 75%",
-          once: true,
+    animation = gsap.to(cards.value, {
+      autoAlpha: 1,
+      y: 0,
+
+      duration: 0.6,
+      stagger: 0.3,
+      ease: "power1.inOut",
+
+      scrollTrigger: {
+        trigger: grid.value,
+        start: "top 80%",
+        once: true,
+
+        onLeave: () => {
+          gsap.set(cards.value, {
+            clearProps: "willChange",
+          });
         },
       },
-    );
+    });
+
+    ScrollTrigger.refresh();
   },
   {
     immediate: true,
@@ -75,6 +98,7 @@ watch(
 );
 
 onBeforeUnmount(() => {
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  animation?.scrollTrigger?.kill();
+  animation?.kill();
 });
 </script>

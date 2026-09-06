@@ -10,6 +10,7 @@
     <Team />
     <HomeNews />
     <Programm />
+    <Feedback />
     <!-- <Blank /> -->
   </div>
 </template>
@@ -27,4 +28,5 @@ import HomeNews from "~/components/blocks/HomeNews.vue";
 import Clinic from "~/components/blocks/Clinic.vue";
 import Container from "~/components/ui/Container.vue";
 import Programm from "~/components/blocks/Programm.vue";
+import Feedback from "~/components/blocks/Feedback.vue";
 </script>

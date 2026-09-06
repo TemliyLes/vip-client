@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-dvh overflow-hidden bg-beige">
+  <section class="relative h-dvh overflow-hidden bg-beige">
     <Container>
       <div class="relative flex min-h-dvh items-center">
         <img
