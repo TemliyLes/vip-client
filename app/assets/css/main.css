@@ -55,10 +55,10 @@ body {
   position: absolute;
   width: 6px;
   height: 6px;
-  background: var(--color-wine);
+  background: var(--color-beige);
   border-radius: 50%;
   left: -18px;
-  top: 10px;
+  top: 8px;
 }
 
 .rich-text ol {
@@ -66,7 +66,8 @@ body {
 }
 
 .rich-text li {
-  font-size: 16px;
+  color: var(--color-beige);
+  font-size: 14px;
 }
 
 /* TABLE */
@@ -95,7 +96,7 @@ body {
 /* TEXT */
 
 .rich-text p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -116,9 +117,12 @@ body {
 
 .rich-text a {
   color: var(--color-wine);
+
+  font-weight: 500;
+}
+.rich-text a:hover {
   text-decoration: underline;
 }
-
 /* IMAGES */
 
 .rich-text img {

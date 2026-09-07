@@ -11,7 +11,11 @@
           <Logo />
         </NuxtLink>
 
-        <Bar class="flex-1 max-w-[400px]" :active="isScrolled" :items="menu" />
+        <Bar
+          class="flex-1 h-[80px] max-w-[400px]"
+          :active="isScrolled"
+          :items="menu"
+        />
 
         <Button class="shrink-0"> Rezrvovat Online </Button>
       </div>
