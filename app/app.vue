@@ -9,6 +9,7 @@
         <main>
           <NuxtPage />
         </main>
+        <Footer />
       </div>
     </div>
   </div>
@@ -19,6 +20,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import MenuDesktop from "./components/menu/Desktop.vue";
 import PageTransition from "./components/layout/PageTransition.vue";
+import Footer from "./components/blocks/Footer.vue";
 
 const router = useRouter();
 
