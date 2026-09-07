@@ -21,12 +21,7 @@
       />
     </div>
     <div class="grid grid-cols-3 gap-3 mt-6">
-      <Card
-        category
-        v-for="item in store?.service"
-        :key="item.id"
-        :data="item"
-      />
+      <Card category v-for="item in data" :key="item.id" :data="item" />
     </div>
   </Container>
 </template>
