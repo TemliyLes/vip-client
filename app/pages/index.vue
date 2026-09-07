@@ -11,6 +11,8 @@
     <HomeNews />
     <Programm />
     <Feedback />
+    <Sale />
+    <FAQ />
     <!-- <Blank /> -->
   </div>
 </template>
@@ -29,4 +31,6 @@ import Clinic from "~/components/blocks/Clinic.vue";
 import Container from "~/components/ui/Container.vue";
 import Programm from "~/components/blocks/Programm.vue";
 import Feedback from "~/components/blocks/Feedback.vue";
+import Sale from "~/components/blocks/Sale.vue";
+import FAQ from "~/components/blocks/FAQ.vue";
 </script>

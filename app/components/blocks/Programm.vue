@@ -34,8 +34,8 @@ import Title from "../ui/Title.vue";
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
 const store = useServicesStore();
-
-onMounted(() => {
-  store.getServiceByCategory(45);
+const data = ref(null);
+onMounted(async () => {
+  data.value = await store.getServiceByCategory(45);
 });
 </script>

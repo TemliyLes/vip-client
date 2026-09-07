@@ -35,8 +35,8 @@ export const useServicesStore = defineStore("services", () => {
     const config = useRuntimeConfig();
 
     loading.value = true;
-
     error.value = null;
+    service.value = null;
 
     try {
       const response = await $fetch(
@@ -45,12 +45,11 @@ export const useServicesStore = defineStore("services", () => {
           baseURL: config.public.apiBase,
         },
       );
-      console.log(response);
-      service.value = response;
+
+      return response;
     } catch (err) {
       error.value = err;
-
-      console.error("Ошибка загрузки категорий услуг:", err);
+      console.error(err);
     } finally {
       loading.value = false;
     }
