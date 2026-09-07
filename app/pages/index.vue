@@ -13,6 +13,7 @@
     <Feedback />
     <Sale />
     <FAQ />
+    <Contacts />
     <!-- <Blank /> -->
   </div>
 </template>
@@ -33,4 +34,5 @@ import Programm from "~/components/blocks/Programm.vue";
 import Feedback from "~/components/blocks/Feedback.vue";
 import Sale from "~/components/blocks/Sale.vue";
 import FAQ from "~/components/blocks/FAQ.vue";
+import Contacts from "~/components/blocks/Contacts.vue";
 </script>
