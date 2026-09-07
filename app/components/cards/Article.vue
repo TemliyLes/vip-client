@@ -21,7 +21,6 @@
         <RichText :content="content?.content?.rendered" />
         <!-- <div v-html="content?.content?.rendered"></div> -->
       </div>
-      <!-- {{ content?.content?.rendered }} -->
     </Container>
   </div>
 </template>

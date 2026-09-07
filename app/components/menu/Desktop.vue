@@ -3,13 +3,17 @@
     ref="header"
     class="fixed top-0 left-0 z-[999] w-full h-[80px] grid place-items-center pointer-events-none"
   >
-    <div ref="bg" class="absolute inset-0 bg-white origin-top scale-y-0"></div>
+    <div ref="bg" class="absolute inset-0 bg-white opacity-0" />
 
     <Container class="relative z-10 pointer-events-auto">
-      <div class="flex justify-between">
-        <NuxtLink to="/"><Logo /></NuxtLink>
+      <div class="flex items-center justify-between">
+        <NuxtLink to="/" class="shrink-0">
+          <Logo />
+        </NuxtLink>
 
-        <Button> Rezrvovat Online </Button>
+        <Bar class="flex-1 max-w-[400px]" :active="isScrolled" :items="menu" />
+
+        <Button class="shrink-0"> Rezrvovat Online </Button>
       </div>
     </Container>
   </div>
@@ -19,33 +23,36 @@
 import { gsap } from "gsap";
 
 import Container from "../ui/Container.vue";
-import Logo from "../icons/logo.vue";
 import Button from "../ui/Button.vue";
+import Logo from "../icons/logo.vue";
+import Bar from "./Bar.vue";
+
+import { menu } from "#imports";
 
 const bg = ref(null);
+
+const isScrolled = ref(false);
 
 let onScroll = null;
 
 onMounted(() => {
-  const setProgress = gsap.quickTo(bg.value, "scaleY", {
-    duration: 0.4,
-    ease: "sine.out",
-  });
-
   onScroll = () => {
-    const scroll = window.scrollY;
-
-    const progress = gsap.utils.clamp(
-      0,
-      1,
-      (scroll - window.innerHeight * 0.5) / (window.innerHeight * 0.5),
-    );
-
-    setProgress(progress);
+    isScrolled.value = window.scrollY > 70;
   };
 
   window.addEventListener("scroll", onScroll, {
     passive: true,
+  });
+});
+
+watch(isScrolled, (value) => {
+  gsap.to(bg.value, {
+    opacity: value ? 1 : 0,
+    boxShadow: value
+      ? "0 12px 25px -12px rgba(0,0,0,0.18)"
+      : "0 0 0 transparent",
+    duration: 0.5,
+    ease: "power3.out",
   });
 });
 

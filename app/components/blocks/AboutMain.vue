@@ -147,7 +147,7 @@ onMounted(() => {
     tl.to(
       word1.value,
       {
-        opacity: 1,
+        opacity: 0.7,
         x: 0,
         duration: 2.5,
         ease: "power2.out",
@@ -158,7 +158,7 @@ onMounted(() => {
     tl.to(
       word2.value,
       {
-        opacity: 1,
+        opacity: 0.7,
         x: 0,
         duration: 2.5,
         ease: "power2.out",
@@ -169,7 +169,7 @@ onMounted(() => {
     tl.to(
       word3.value,
       {
-        opacity: 1,
+        opacity: 0.7,
         x: 0,
         duration: 2.5,
         ease: "power2.out",
