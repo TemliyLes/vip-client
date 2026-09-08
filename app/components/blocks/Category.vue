@@ -1,7 +1,7 @@
 <template>
   <div class="py-12 sm:py-24">
     <Container>
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div v-for="item in data" :key="item.id" class="min-w-0">
           <!-- <Header center>{{ item.title.rendered }}</Header>
         <Paragraph>{{ item.service_fields.description }}</Paragraph> -->
