@@ -19,7 +19,7 @@ export const menu = [
   },
   {
     title: "Обучение",
-    to: "/services",
+    to: "/category/15",
     children: [
       {
         title: "Услуга 1",
