@@ -1,5 +1,5 @@
 <template>
-  <div ref="grid" class="grid grid-cols-4 gap-6 mt-10">
+  <div ref="grid" class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10">
     <article
       v-for="(person, index) in team"
       :key="person.name"

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20">
+  <div class="py-12 sm:py-24">
     <Container>
       <div class="grid grid-cols-4 gap-4">
         <div v-for="item in data" :key="item.id" class="min-w-0">

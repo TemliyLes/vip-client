@@ -1,5 +1,5 @@
 <template>
-  <Container class="py-20">
+  <Container class="py-12 sm:py-24">
     <div class="flex justify-between items-center">
       <div class="flex flex-col gap-4">
         <Title>AKADEMIE</Title>
@@ -15,12 +15,12 @@
         </Paragraph>
       </div>
       <img
-        class="h-36 mr-6 mt-4"
+        class="h-36 mr-6 mt-4 hidden sm:block"
         src="../../assets/img/styletext2.png"
         alt=""
       />
     </div>
-    <div class="grid grid-cols-3 gap-3 mt-6">
+    <div class="grid sm:grid-cols-3 grid-cols-1 gap-3 mt-6">
       <Card category v-for="item in data" :key="item.id" :data="item" />
     </div>
   </Container>

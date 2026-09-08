@@ -1,6 +1,6 @@
 <template>
-  <Container class="py-24">
-    <div ref="grid" class="grid grid-cols-3 gap-6">
+  <Container class="py-12 sm:py-24">
+    <div ref="grid" class="sm:grid sm:grid-cols-3 grid-cols-1 gap-6">
       <div v-for="(item, index) in store?.data" :key="item.id" ref="cards">
         <HomeNew :data="item" :odd="index % 2 === 0" />
       </div>

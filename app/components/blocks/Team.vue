@@ -1,8 +1,8 @@
 <template>
-  <section ref="section" class="py-24 overflow-hidden">
+  <section ref="section" class="py-12 sm:py-24 overflow-hidden">
     <Container>
       <!-- founder -->
-      <div ref="content" class="grid grid-cols-2 gap-12 items-center">
+      <div ref="content" class="sm:grid sm:grid-cols-2 sm:gap-12 items-center">
         <!-- image -->
         <div ref="imageWrapper" class="overflow-hidden">
           <img
@@ -13,7 +13,10 @@
           />
         </div>
         <!-- content -->
-        <div ref="text" class="flex flex-col justify-between h-full gap-4">
+        <div
+          ref="text"
+          class="flex flex-col justify-between h-full gap-4 mt-4 sm:mt-0"
+        >
           <Title> Náš tým </Title>
 
           <div class="flex gap-4 flex-col">

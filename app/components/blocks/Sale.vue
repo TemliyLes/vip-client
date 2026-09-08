@@ -13,7 +13,7 @@
         >
       </div>
 
-      <div class="grid grid-cols-4 gap-3 mt-6">
+      <div class="grid sm:grid-cols-4 grid-cols-1 gap-3 mt-6">
         <div v-for="item in data" :key="item.id">
           <Card desc :data="item" />
         </div>

@@ -1,7 +1,7 @@
 <template>
-  <section ref="section" class="py-20">
+  <section ref="section" class="py-12 sm:py-24">
     <Container>
-      <div class="flex justify-between mb-12">
+      <div class="sm:flex justify-between mb-12">
         <div class="flex flex-col gap-6 justify-between">
           <Title>Výsledky</Title>
 
@@ -11,7 +11,7 @@
           </Header>
         </div>
 
-        <div class="flex items-end">
+        <div class="flex items-end mt-6 sm:mt-0">
           <Paragraph class="block max-w-[500px]">
             Nejlepší způsob, jak znát naši práci, je vidět její skutečný
             výsledek. Prohlédněte si fotografie před a po vybraných procedurách
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         <div
           v-for="(video, index) in store.data"
           :key="video.id"

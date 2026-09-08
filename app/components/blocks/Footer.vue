@@ -1,21 +1,23 @@
 <template>
-  <footer class="bg-beige py-16">
+  <footer class="bg-beige py-12 sm:py-16">
     <Container>
       <div class="flex flex-col items-center">
         <!-- Logo -->
         <div class="flex flex-col items-center gap-2">
-          <!-- <img src="/images/logo-white.svg" alt="PALIY" class="w-[150px]" /> -->
           <Whiteicon />
+
           <Whitelogo />
 
-          <Paragraph class="uppercase tracking-[0.25em] text-white">
+          <Paragraph
+            class="uppercase tracking-[0.25em] text-white text-xs sm:text-sm"
+          >
             ESTHETIC CLINIC
           </Paragraph>
         </div>
 
         <!-- Categories -->
         <nav
-          class="flex items-center justify-center gap-20 mt-10 text-white uppercase text-sm"
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-20 mt-8 sm:mt-10 text-white uppercase text-xs sm:text-sm"
         >
           <NuxtLink> Kosmetologie </NuxtLink>
 
@@ -25,11 +27,11 @@
         </nav>
 
         <!-- Divider -->
-        <div class="w-full h-px bg-white/40 mt-10 mb-8" />
+        <div class="w-full h-px bg-white/40 mt-8 sm:mt-10 mb-6 sm:mb-8" />
 
         <!-- Main menu -->
         <nav
-          class="flex items-center justify-center gap-8 text-white/90 uppercase text-xs"
+          class="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:gap-8 text-white/90 uppercase text-[10px] sm:text-xs"
         >
           <NuxtLink> Služby </NuxtLink>
 
@@ -47,7 +49,7 @@
         </nav>
 
         <!-- Social -->
-        <div class="flex items-center gap-4 mt-8">
+        <div class="flex items-center gap-4 mt-6 sm:mt-8">
           <a
             href="#"
             class="w-8 h-8 border border-white rounded-full flex items-center justify-center"
@@ -64,7 +66,9 @@
         </div>
 
         <!-- Copyright -->
-        <Paragraph class="mt-8 text-white/70 uppercase text-[10px]">
+        <Paragraph
+          class="mt-6 sm:mt-8 text-white/70 uppercase text-[9px] sm:text-[10px] text-center"
+        >
           © 2026 PALIY ESTHETIC CLINIC. VŠECHNA PRÁVA VYHRAZENA
         </Paragraph>
       </div>
@@ -75,6 +79,7 @@
 <script setup>
 import Container from "../ui/Container.vue";
 import Paragraph from "../ui/Paragraph.vue";
+
 import Whitelogo from "../icons/whitelogo.vue";
 import Whiteicon from "../icons/whiteicon.vue";
 </script>

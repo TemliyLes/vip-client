@@ -6,7 +6,7 @@
           v-if="image"
           :src="image"
           :alt="title"
-          class="brightness-80 transition duration-400 group-hover:brightness-100 mb-1"
+          class="brightness-80 transition duration-400 group-hover:brightness-100 mb-1 w-full"
         />
 
         <div

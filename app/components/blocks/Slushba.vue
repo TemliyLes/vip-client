@@ -1,8 +1,10 @@
 <template>
-  <div class="py-20">
+  <div class="py-12 sm:py-24">
     <Container>
-      <div class="flex gap-4 items-stretch">
-        <div class="basis-1/2 min-w-0 flex flex-col justify-between">
+      <div class="flex flex-col sm:flex-row gap-6 sm:gap-4 items-stretch">
+        <div
+          class="basis-1/2 min-w-0 flex flex-col justify-between gap-4 sm:gap-0"
+        >
           <Title> Proč my </Title>
 
           <Header>

@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <div class="grid grid-cols-2 gap-8 my-24">
+    <div class="grid sm:grid-cols-2 grid-cols-1 gap-8 my-24">
       <div class="flex justify-between flex-col">
         <TitleBlock
           header="Najdete nás v centru Prahy"

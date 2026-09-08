@@ -2,7 +2,7 @@
   <div>
     <AlterHero />
 
-    <Container class="py-20">
+    <Container class="py-12 sm:py-24">
       <Header center class="mb-6">
         {{ content?.title?.rendered }}
       </Header>

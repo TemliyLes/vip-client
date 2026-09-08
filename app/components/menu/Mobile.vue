@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <Teleport to="body">
     <!-- Burger -->
     <button
       ref="button"
-      class="fixed top-5 right-5 z-[1001] flex flex-col gap-1.5 w-14 h-14 items-center justify-center bg-wine"
+      class="fixed top-5 right-5 z-[99999] flex flex-col gap-1.5 w-12 h-12 items-center justify-center bg-wine"
       @click="toggle"
     >
       <span
@@ -25,11 +25,11 @@
     <!-- Menu -->
     <div
       ref="menuWrapper"
-      class="fixed inset-0 z-[1000] bg-white opacity-0 invisible overflow-y-auto"
+      class="fixed inset-0 z-[99998] bg-white opacity-0 invisible overflow-y-auto"
     >
       <div ref="menuContent" class="flex flex-col pt-[110px] px-6 pb-10 gap-5">
         <div v-for="item in menu" :key="item.title" class="menu-item">
-          <!-- Обычный пункт -->
+          <!-- Simple link -->
           <NuxtLink
             v-if="!item.children?.length"
             :to="item.to"
@@ -41,7 +41,7 @@
             </Paragraph>
           </NuxtLink>
 
-          <!-- Пункт с children -->
+          <!-- Item with children -->
           <template v-else>
             <button
               class="flex justify-between items-center w-full py-2"
@@ -59,7 +59,7 @@
               </span>
             </button>
 
-            <!-- Плашка submenu -->
+            <!-- Children -->
             <div
               :ref="(el) => setSubmenuRef(item.title, el)"
               class="overflow-hidden max-h-0"
@@ -84,7 +84,7 @@
         <Button class="mt-4"> Rezervovat Online </Button>
       </div>
     </div>
-  </div>
+  </Teleport>
 </template>
 
 <script setup>
@@ -96,9 +96,11 @@ import Button from "../ui/Button.vue";
 import { menu } from "#imports";
 
 const open = ref(false);
+
 const openedSub = ref(null);
 
 const menuWrapper = ref(null);
+
 const menuContent = ref(null);
 
 const submenus = {};
@@ -116,6 +118,8 @@ const toggle = () => {
 const show = () => {
   open.value = true;
 
+  gsap.killTweensOf(menuWrapper.value);
+
   gsap.set(menuWrapper.value, {
     visibility: "visible",
     yPercent: -5,
@@ -123,17 +127,22 @@ const show = () => {
 
   gsap.to(menuWrapper.value, {
     opacity: 1,
+
     yPercent: 0,
+
     duration: 0.45,
+
     ease: "power3.out",
   });
 
   gsap.fromTo(
     menuContent.value.querySelectorAll(".menu-item"),
+
     {
       opacity: 0,
       y: 25,
     },
+
     {
       opacity: 1,
       y: 0,
@@ -148,6 +157,7 @@ const show = () => {
 
 const close = () => {
   open.value = false;
+
   openedSub.value = null;
 
   Object.values(submenus).forEach((submenu) => {
@@ -156,10 +166,15 @@ const close = () => {
     });
   });
 
+  gsap.killTweensOf(menuWrapper.value);
+
   gsap.to(menuWrapper.value, {
     opacity: 0,
+
     yPercent: -5,
+
     duration: 0.3,
+
     ease: "power2.in",
 
     onComplete() {
@@ -179,14 +194,15 @@ const toggleSub = (title) => {
 
   const isOpen = openedSub.value === title;
 
-  // Закрываем предыдущую открытую плашку
   if (openedSub.value && openedSub.value !== title) {
     const previousSubmenu = submenus[openedSub.value];
 
     if (previousSubmenu) {
       gsap.to(previousSubmenu, {
         maxHeight: 0,
+
         duration: 0.3,
+
         ease: "power3.out",
       });
     }
@@ -196,7 +212,9 @@ const toggleSub = (title) => {
 
   gsap.to(submenu, {
     maxHeight: isOpen ? 0 : submenu.scrollHeight,
+
     duration: 0.35,
+
     ease: "power3.out",
   });
 };

@@ -1,7 +1,9 @@
 <template>
-  <section class="py-24">
+  <section class="py-12 sm:py-24">
     <Container>
-      <div class="grid grid-cols-[330px_1fr] items-stretch">
+      <div
+        class="sm:grid sm:grid-cols-[330px_1fr] flex flex-col gap-3 items-stretch"
+      >
         <!-- LEFT CONTENT -->
 
         <div class="flex h-full flex-col justify-between bg-white">

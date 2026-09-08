@@ -2,7 +2,7 @@
   <div class="py-10">
     <Container class="relative">
       <div
-        class="flex flex-col w-1/2 justify-end gap-4 absolute right-0 h-full z-9 p-24 p-12"
+        class="flex flex-col sm:w-1/2 sm:justify-end gap-4 absolute right-0 h-full z-9 sm:p-24 p-12 justify-between"
       >
         <Tag>Prostor</Tag>
         <Header
