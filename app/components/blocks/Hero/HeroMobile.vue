@@ -6,7 +6,7 @@
         ref="title"
         src="../../../assets/img/minititle.png"
         alt="Paliy"
-        class="absolute z-20 left-1/2 -translate-x-1/2 top-8 w-full"
+        class="absolute z-20 left-1/2 -translate-x-1/2 top-24 w-full"
       />
 
       <!-- Photo -->

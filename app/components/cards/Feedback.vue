@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-milk p-8 aspect-square">
+  <div class="bg-milk p-8 sm:aspect-square">
     <div class="flex gap-3">
       <img
         v-if="image"

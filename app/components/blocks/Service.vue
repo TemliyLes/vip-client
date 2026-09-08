@@ -28,7 +28,9 @@
 
         <!-- CARDS -->
 
-        <div class="grid grid-cols-3 gap-3">
+        <div
+          class="grid sm:grid-cols-3 grid-cols-1 gap-5 sm:gap-3 mt-6 sm:mt-0"
+        >
           <div
             v-for="item in data"
             ref="cards"

@@ -1,6 +1,6 @@
 <template>
   <Container class="mt-24">
-    <div ref="section" class="relative flex gap-12 overflow-hidden">
+    <div ref="section" class="relative sm:flex gap-12 overflow-hidden">
       <!-- LEFT -->
       <div
         class="relative z-20 basis-1/3 shrink-0 self-stretch bg-white flex flex-col gap-6 pr-8"
@@ -24,12 +24,15 @@
       </div>
 
       <!-- RIGHT -->
-      <div ref="viewport" class="basis-2/3 min-w-0 overflow-visible self-start">
-        <div ref="track" class="flex items-start gap-4 w-max">
+      <div
+        ref="viewport"
+        class="basis-2/3 min-w-0 overflow-visible mt-6 sm:mt-0"
+      >
+        <div ref="track" class="flex flex-col gap-4 sm:flex-row sm:w-max">
           <div
             v-for="(item, index) in store.review"
             :key="item.id ?? index"
-            class="w-[360px] shrink-0"
+            class="w-full shrink-0 sm:w-[360px]"
           >
             <FeedbackCard :data="item" />
           </div>
@@ -51,6 +54,7 @@ import Paragraph from "../ui/Paragraph.vue";
 import Header from "../ui/Header.vue";
 import Button from "../ui/Button.vue";
 
+const { isMobile } = useDevice();
 gsap.registerPlugin(ScrollTrigger);
 
 const store = useReviewsStore();
@@ -67,6 +71,11 @@ onMounted(async () => {
 
   if (!section.value || !viewport.value || !track.value) return;
 
+  // На мобильных отключаем горизонтальный скролл
+  if (isMobile.value) {
+    return;
+  }
+
   const getDistance = () => {
     return Math.max(0, track.value.scrollWidth - viewport.value.clientWidth);
   };
@@ -74,30 +83,23 @@ onMounted(async () => {
   animation = gsap.timeline({
     scrollTrigger: {
       trigger: viewport.value,
-
       start: "center 55%",
-
       end: () => `+=${getDistance() * 2}`,
-
       pin: section.value,
-
-      // Было 2.5 — слишком сильное отставание
       scrub: 0.8,
-
       anticipatePin: 1,
       invalidateOnRefresh: true,
     },
   });
 
-  // горизонтальное движение занимает 75%
   animation.to(track.value, {
     x: () => -getDistance(),
+
     ease: "none",
+
     duration: 0.75,
   });
 
-  // последние 25% ничего не двигаем
-  // секция остаётся зафиксированной
   animation.to(
     {},
     {
@@ -107,7 +109,6 @@ onMounted(async () => {
 
   ScrollTrigger.refresh();
 });
-
 onBeforeUnmount(() => {
   animation?.scrollTrigger?.kill();
   animation?.kill();
