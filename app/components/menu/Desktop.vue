@@ -7,8 +7,9 @@
 
     <Container class="relative z-10 pointer-events-auto">
       <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="shrink-0">
+        <NuxtLink to="/" class="shrink-0 flex gap-1">
           <Logo />
+          <Logotitle />
         </NuxtLink>
 
         <Bar
@@ -32,6 +33,7 @@ import Logo from "../icons/logo.vue";
 import Bar from "./Bar.vue";
 
 import { menu } from "#imports";
+import Logotitle from "../icons/logotitle.vue";
 
 const bg = ref(null);
 

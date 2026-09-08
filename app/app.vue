@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MenuDesktop />
+    <Menu />
 
     <PageTransition ref="pageTransition" />
 
@@ -18,7 +18,7 @@
 import { nextTick } from "vue";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import MenuDesktop from "./components/menu/Desktop.vue";
+import Menu from "./components/menu/Controller.vue";
 import PageTransition from "./components/layout/PageTransition.vue";
 import Footer from "./components/blocks/Footer.vue";
 
