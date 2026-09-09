@@ -24,7 +24,7 @@
           class="mt-12 sm:mt-0"
           :data="content?.service_fields?.tariffs"
         />
-        <div class="mt-8 sm:mt-16" v-if="content?.videos">
+        <div class="mt-8 sm:mt-16" v-if="content?.videos?.length">
           <Header class="mb-8" center>Související video</Header>
           <ArticleVideos :data="content?.videos" />
           <!-- <div v-html="content?.content?.rendered"></div> -->
