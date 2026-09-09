@@ -1,11 +1,11 @@
 export const menu = [
   {
-    title: "Услуги",
-    to: "/services",
+    title: "Kosmetologie",
+    to: "/category/14",
     children: [
       {
-        title: "Услуга 1",
-        to: "/services/12",
+        title: "Permanentní make-up obočí",
+        to: "/services/58",
       },
       {
         title: "Услуга 1",
@@ -17,8 +17,9 @@ export const menu = [
       },
     ],
   },
+
   {
-    title: "Обучение",
+    title: "Školení",
     to: "/category/15",
     children: [
       {
@@ -35,6 +36,7 @@ export const menu = [
       },
     ],
   },
+
   {
     title: "O nás",
     to: "/about",
