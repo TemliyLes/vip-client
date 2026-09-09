@@ -1,5 +1,5 @@
 <template>
-  <Container class="mt-24">
+  <Container class="mt-12 sm:mt-24">
     <div ref="section" class="relative sm:flex gap-12 overflow-hidden">
       <!-- LEFT -->
       <div

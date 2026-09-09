@@ -36,11 +36,11 @@ export const menu = [
     ],
   },
   {
-    title: "О нас",
+    title: "O nás",
     to: "/about",
   },
   {
-    title: "Контакты",
+    title: "Kontakt",
     to: "/contacts",
   },
 ];

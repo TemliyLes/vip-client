@@ -12,7 +12,9 @@
           <Header mini>{{ data?.title?.rendered }}</Header>
           <Paragraph>{{ data?.news_fields?.description }}</Paragraph>
         </div>
-        <Link class="mt-6 sm:mt-0" to="/news">Prohlédnout technologie</Link>
+        <Link class="mt-6 sm:mt-0" :to="`/news/${data?.id}`"
+          >Prohlédnout technologie</Link
+        >
       </div>
     </div>
   </div>

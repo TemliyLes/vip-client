@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-24">
+  <div class="mt-12 sm:mt-24">
     <Container>
       <div class="flex flex-col gap-4 items-center">
         <Title>Propagace</Title>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-6">
+  <div class="flex flex-col gap-6 sm:mt-0 mt-6">
     <!-- Address -->
     <div class="flex items-start gap-4">
       <Marker class="shrink-0 mt-1" />

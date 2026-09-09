@@ -55,7 +55,7 @@
             {{ data.service_fields.people_count }}
           </Paragraph>
         </div>
-        <Header mini>
+        <Header mini v-if="discount">
           {{ addPriceAffix(discountPrice) }}
         </Header>
       </div>
