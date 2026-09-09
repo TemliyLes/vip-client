@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <Header mini>
+      <Header mini class="h-[56px] line-clamp-2 overflow-hidden">
         {{ title }}
       </Header>
 
