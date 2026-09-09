@@ -19,6 +19,12 @@
 
       <div class="mt-12">
         <RichText :content="content?.content?.rendered" />
+        <Tariff
+          v-if="content?.service_fields?.tariffs"
+          class="mt-12 sm:mt-0"
+          :data="content?.service_fields?.tariffs"
+        />
+
         <!-- <div v-html="content?.content?.rendered"></div> -->
       </div>
     </Container>
@@ -31,6 +37,7 @@ import Container from "~/components/ui/Container.vue";
 import Header from "~/components/ui/Header.vue";
 import Paragraph from "~/components/ui/Paragraph.vue";
 import RichText from "../ui/RichText.vue";
+import Tariff from "./Tariff.vue";
 
 const props = defineProps({
   store: {
