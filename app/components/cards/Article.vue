@@ -24,8 +24,11 @@
           class="mt-12 sm:mt-0"
           :data="content?.service_fields?.tariffs"
         />
-
-        <!-- <div v-html="content?.content?.rendered"></div> -->
+        <div class="mt-8 sm:mt-16" v-if="content?.videos">
+          <Header class="mb-8" center>Související video</Header>
+          <ArticleVideos :data="content?.videos" />
+          <!-- <div v-html="content?.content?.rendered"></div> -->
+        </div>
       </div>
     </Container>
   </div>
@@ -38,6 +41,7 @@ import Header from "~/components/ui/Header.vue";
 import Paragraph from "~/components/ui/Paragraph.vue";
 import RichText from "../ui/RichText.vue";
 import Tariff from "./Tariff.vue";
+import ArticleVideos from "../blocks/ArticleVideos.vue";
 
 const props = defineProps({
   store: {
