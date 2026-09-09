@@ -72,42 +72,51 @@ const content = ref(null);
 // const image = ref(null);
 const text = ref(null);
 
+let ctx = null;
+let disposed = false;
+
+onBeforeUnmount(() => {
+  disposed = true;
+  ctx?.revert();
+  ctx = null;
+});
+
 onMounted(async () => {
   await store.fetchPage(125);
 
   await nextTick();
 
+  if (disposed || !section.value) return;
+
   // появление всего блока
-  gsap.from(content.value, {
-    y: 80,
-    opacity: 0,
-    duration: 1.2,
-    ease: "power4.out",
+  ctx = gsap.context(() => {
+    gsap.from(content.value, {
+      y: 80,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out",
 
-    scrollTrigger: {
-      trigger: section.value,
-      start: "top 75%",
-      once: true,
-    },
-  });
+      scrollTrigger: {
+        trigger: section.value,
+        start: "top 75%",
+        once: true,
+      },
+    });
 
-  // появление текста
-  gsap.from(text.value, {
-    x: 50,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    ease: "power3.out",
+    // появление текста
+    gsap.from(text.value, {
+      x: 50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.2,
+      ease: "power3.out",
 
-    scrollTrigger: {
-      trigger: section.value,
-      start: "top 75%",
-      once: true,
-    },
-  });
-});
-
-onBeforeUnmount(() => {
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      scrollTrigger: {
+        trigger: section.value,
+        start: "top 75%",
+        once: true,
+      },
+    });
+  }, section.value);
 });
 </script>

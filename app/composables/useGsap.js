@@ -12,7 +12,11 @@ export const useGsap = () => {
   let smoother = null;
 
   function init() {
-    if (!smoother) {
+    const smootherTrigger = ScrollTrigger.getById("ScrollSmoother");
+
+    if (!smoother || !smootherTrigger) {
+      smoother?.kill();
+
       smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
 
@@ -24,7 +28,7 @@ export const useGsap = () => {
       });
     }
 
-    if (!timeline) {
+    if (!timeline?.scrollTrigger) {
       timeline = gsap.timeline({
         scrollTrigger: {
           trigger: "#smooth-content",
@@ -124,9 +128,9 @@ export const useGsap = () => {
 
     if (smoother) {
       smoother.scrollTo(0, false);
+    } else {
+      window.scrollTo(0, 0);
     }
-
-    window.scrollTo(0, 0);
   }
 
   function refresh() {
@@ -135,6 +139,7 @@ export const useGsap = () => {
 
   function destroy() {
     if (timeline) {
+      timeline.scrollTrigger?.kill();
       timeline.kill();
 
       timeline = null;

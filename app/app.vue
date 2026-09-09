@@ -16,7 +16,6 @@
 </template>
 <script setup>
 import { nextTick } from "vue";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Menu from "./components/menu/Controller.vue";
 import PageTransition from "./components/layout/PageTransition.vue";
@@ -36,18 +35,17 @@ router.beforeResolve(async () => {
   if (pageTransition.value) {
     await pageTransition.value.leave();
   }
-
-  resetScroll();
 });
 
 router.afterEach(async () => {
+  await nextTick();
   await nextTick();
 
   // новая страница уже в DOM
   resetScroll();
 
   requestAnimationFrame(() => {
-    ScrollTrigger.refresh(true);
+    refresh();
   });
 
   if (pageTransition.value) {
@@ -60,9 +58,9 @@ onMounted(async () => {
 
   init();
 
-  setTimeout(() => {
+  requestAnimationFrame(() => {
     refresh();
-  }, 300);
+  });
 });
 
 onBeforeUnmount(() => {
