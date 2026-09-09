@@ -33,6 +33,12 @@ const table = [
     description:
       "Nabízíme profesionální školení zaměřená na moderní kosmetologické metody a praktické dovednosti v oblasti péče o pleť. Naše kurzy jsou určeny pro začátečníky i zkušené specialisty, kteří chtějí rozšířit své znalosti, osvojit si nové techniky a získat jistotu při práci s klienty pod vedením zkušených odborníků.",
   },
+  {
+    id: 16,
+    title: "Permanentní make-up",
+    description:
+      "Permanentní make-up je moderní kosmetická procedura, která umožňuje zdůraznit přirozené rysy obličeje a vytvořit dlouhodobě upravený vzhled bez každodenního používání dekorativní kosmetiky. Pomocí speciálních pigmentů se upravuje tvar a barva obočí, rtů nebo očních linek s důrazem na přirozený výsledek a harmonii s rysy obličeje. Každé ošetření je individuálně přizpůsobeno typu pleti, přáním klienta a požadovanému efektu, aby výsledek působil jemně, elegantně a přirozeně.",
+  },
 ];
 
 const currentCategory = computed(() => {

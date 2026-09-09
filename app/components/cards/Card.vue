@@ -20,8 +20,8 @@
       <Header mini class="h-[56px] line-clamp-2 overflow-hidden">
         {{ title }}
       </Header>
-
-      <Paragraph v-if="desc" class="mt-2 h-12">{{
+      <!-- {{ data }} -->
+      <Paragraph v-if="data?.service_fields?.description" class="mt-2 h-12">{{
         data?.service_fields?.description
       }}</Paragraph>
 
@@ -138,10 +138,10 @@ const link = computed(() => {
 });
 
 const addClockAffix = (value) => {
-  return `${value} hodiny`;
+  return `${value}`;
 };
 
 const addPriceAffix = (value) => {
-  return `${value} Kč`;
+  return `${value}`;
 };
 </script>
