@@ -1,8 +1,16 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16">
-    <div v-for="(item, index) in data" :key="index" class="group flex flex-col">
-      <div class="border border-gray-200 p-6 transition duration-400">
-        <Header mini>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16 items-stretch"
+  >
+    <div
+      v-for="(item, index) in data"
+      :key="index"
+      class="group flex flex-col h-full"
+    >
+      <div
+        class="border border-gray-200 p-6 transition duration-400 flex flex-col h-full"
+      >
+        <Header mini class="min-h-[56px]">
           {{ item.name }}
         </Header>
 
@@ -28,7 +36,7 @@
           </div>
         </div>
 
-        <Paragraph class="mt-5" v-html="item.description?.rendered" />
+        <Paragraph class="mt-5 flex-1" v-html="item.description?.rendered" />
 
         <Button class="mt-6" fit arrow> Rezervovat kurz </Button>
       </div>
