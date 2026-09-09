@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLink :to="link" class="group">
+    <NuxtLink :to="link" class="group flex flex-col h-full">
       <div class="relative">
         <img
           v-if="image"
@@ -17,13 +17,16 @@
         </div>
       </div>
 
-      <Header mini class="h-[56px] line-clamp-2 overflow-hidden">
-        {{ title }}
+      <Header mini class="line-clamp-1 overflow-hidden">
+        <span v-html="title"></span>
       </Header>
       <!-- {{ data }} -->
-      <Paragraph v-if="data?.service_fields?.description" class="mt-2 h-12">{{
-        data?.service_fields?.description
-      }}</Paragraph>
+      <Paragraph
+        v-if="data?.service_fields?.description"
+        class="mt-2 line-clamp-2 overflow-hidden min-h-10"
+      >
+        {{ data?.service_fields?.description }}
+      </Paragraph>
 
       <div v-if="data?.service_fields" class="flex flex-col gap-3 mt-4">
         <div v-if="data.service_fields.time" :class="flexClasses">

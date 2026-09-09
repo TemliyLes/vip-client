@@ -1,44 +1,46 @@
 <template>
-  <div
-    class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16 items-stretch"
-  >
+  <div>
     <div
-      v-for="(item, index) in data"
-      :key="index"
-      class="group flex flex-col h-full"
+      class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16 items-stretch"
     >
       <div
-        class="border border-gray-200 p-6 transition duration-400 flex flex-col h-full"
+        v-for="(item, index) in data"
+        :key="index"
+        class="group flex flex-col h-full"
       >
-        <Header mini class="min-h-[56px]">
-          {{ item.name }}
-        </Header>
+        <div
+          class="border border-gray-200 p-6 transition duration-400 flex flex-col h-full"
+        >
+          <Header mini class="min-h-[56px]">
+            {{ item.name }}
+          </Header>
 
-        <div class="mt-5">
-          <Paragraph>
-            {{ item.price }}
-          </Paragraph>
-        </div>
-
-        <div class="flex flex-col gap-3 mt-5">
-          <div v-if="item.time" class="flex gap-2">
-            <Clock />
-
-            <Paragraph> {{ item.time }} hodiny </Paragraph>
-          </div>
-
-          <div v-if="item.people_count" class="flex gap-2">
-            <People />
-
+          <div class="mt-5">
             <Paragraph>
-              {{ item.people_count }}
+              {{ item.price }}
             </Paragraph>
           </div>
+
+          <div class="flex flex-col gap-3 mt-5">
+            <div v-if="item.time" class="flex gap-2">
+              <Clock />
+
+              <Paragraph> {{ item.time }} hodiny </Paragraph>
+            </div>
+
+            <div v-if="item.people_count" class="flex gap-2">
+              <People />
+
+              <Paragraph>
+                {{ item.people_count }}
+              </Paragraph>
+            </div>
+          </div>
+
+          <Paragraph class="mt-5 flex-1" v-html="item.description?.rendered" />
+
+          <Button class="mt-6" fit arrow> Rezervovat kurz </Button>
         </div>
-
-        <Paragraph class="mt-5 flex-1" v-html="item.description?.rendered" />
-
-        <Button class="mt-6" fit arrow> Rezervovat kurz </Button>
       </div>
     </div>
   </div>
