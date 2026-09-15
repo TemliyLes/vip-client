@@ -37,12 +37,13 @@
             </div>
           </div>
 
-          <Paragraph
+          <RichText
             class="mt-5 flex-1 rich-text"
-            v-html="item?.description?.rendered"
+            :content="item?.description?.rendered"
           />
 
-          <ReservioButton :item="item" class="mt-6"> </ReservioButton>
+          <ReservioButton :url="clearHtml(item?.reservio_url)" class="mt-6">
+          </ReservioButton>
         </div>
       </div>
     </div>
@@ -53,6 +54,7 @@
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
 import ReservioButton from "../ui/ReservioButton.vue";
+import RichText from "../ui/RichText.vue";
 
 import Clock from "../icons/mini/clock.vue";
 import People from "../icons/mini/people.vue";
@@ -63,4 +65,6 @@ defineProps({
     default: () => [],
   },
 });
+
+const clearHtml = (str) => str.replace("http://", "");
 </script>

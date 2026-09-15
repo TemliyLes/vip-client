@@ -1,6 +1,6 @@
 <template>
-  <Button fit arrow v-if="to" :to="reservioURL">Rezrvovat Online</Button>
-  <Button @click="openModal" fit arrow v-if="!to">Rezrvovat Online</Button>
+  <Button fit arrow v-if="url" :to="reservioURL">Rezrvovat Online</Button>
+  <Button @click="openModal" fit arrow v-if="!url">Rezrvovat Online</Button>
 
   <Modal v-model="modalOpened">
     <FeedbackForm @submit="sendInfo" :item="item" />
@@ -11,7 +11,7 @@
 import Button from "./Button.vue";
 import Modal from "./Modal.vue";
 import FeedbackForm from "../blocks/FeedbackForm.vue";
-defineProps({
+const props = defineProps({
   url: {
     type: String,
   },
@@ -20,7 +20,7 @@ defineProps({
   },
 });
 const prefix = "https://paliy-esthetic-clinic.reservio.com/services/";
-const reservioURL = computed(() => `${prefix}${url}`);
+const reservioURL = computed(() => `${prefix}${props?.url}`);
 const modalOpened = ref(false);
 const openModal = () => {
   modalOpened.value = true;
