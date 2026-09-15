@@ -58,9 +58,9 @@
             {{ data.service_fields.people_count }}
           </Paragraph>
         </div>
-        <Header mini v-if="discount">
+        <!-- <Header mini v-if="discount">
           {{ addPriceAffix(discountPrice) }}
-        </Header>
+        </Header> -->
       </div>
 
       <Button v-if="btn" class="mt-4" fit arrow> program kurzu </Button>

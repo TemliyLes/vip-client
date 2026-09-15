@@ -1,8 +1,8 @@
 <template>
   <a
-    href="#"
+    :href="to"
     :class="isFit"
-    class="inline-flex items-center justify-center gap-6 bg-wine px-8 py-4 text-sm uppercase tracking-[0.15em] text-white transition duration-300 hover:bg-[#9e0012]"
+    class="cursor-pointer inline-flex items-center justify-center gap-6 bg-wine px-8 py-4 text-sm uppercase tracking-[0.15em] text-white transition duration-300 hover:bg-[#9e0012]"
   >
     <span class="flex gap-3"> <slot /> <Arrow v-if="arrow" /></span>
   </a>
@@ -18,6 +18,9 @@ const props = defineProps({
   arrow: {
     type: Boolean,
     default: false,
+  },
+  to: {
+    type: String,
   },
 });
 const isFit = computed(() => (!props.fit ? "w-fit" : "w-full"));

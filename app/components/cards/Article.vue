@@ -27,7 +27,7 @@
 
         <!-- Sticky блок -->
         <aside
-          v-if="content?.service_fields"
+          v-if="!content?.service_fields?.tariffs"
           class="mt-8 lg:mt-0 lg:col-start-2 lg:row-start-1 lg:row-end-4 relative"
         >
           <div class="lg:sticky lg:top-24 flex flex-col gap-4">
@@ -76,7 +76,7 @@
         <!-- Тарифы на всю ширину -->
         <Tariff
           v-if="content?.service_fields?.tariffs"
-          class="mt-12 sm:mt-16 lg:col-start-1 lg:col-end-3 lg:row-start-2"
+          class="lg:col-start-1 lg:col-end-3 lg:row-start-2"
           :data="content.service_fields.tariffs"
         />
 

@@ -11,7 +11,7 @@
         <div
           class="border border-gray-200 p-6 transition duration-400 flex flex-col h-full"
         >
-          <Header mini class="min-h-[56px]">
+          <Header mini class="min-h-[36px]">
             {{ item.name }}
           </Header>
 
@@ -37,7 +37,10 @@
             </div>
           </div>
 
-          <Paragraph class="mt-5 flex-1" v-html="item.description?.rendered" />
+          <Paragraph
+            class="mt-5 flex-1 rich-text"
+            v-html="item.description?.rendered"
+          />
 
           <Button class="mt-6" fit arrow> Rezervovat kurz </Button>
         </div>
