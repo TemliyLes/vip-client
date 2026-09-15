@@ -9,6 +9,7 @@
     >
       <NuxtLink :to="item?.to" class="h-full flex items-center">
         <Paragraph
+          class="hover:!text-wine"
           :class="[
             '!transition-colors !duration-300',
             !active ? '!text-white' : '!text-darkbeige',
