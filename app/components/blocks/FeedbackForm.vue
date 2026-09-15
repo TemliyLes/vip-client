@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Header center class="mb-4">Odeslat požadavek</Header>
+    <Header mini center class="mb-4"
+      >Odeslat požadavek <span v-if="item">{{ item?.name }}</span></Header
+    >
     <form class="flex flex-col gap-3" @submit.prevent="submit">
       <!-- Text -->
       <Input v-model="form.name" placeholder="Jméno" />
@@ -15,7 +17,7 @@
         placeholder="Poznámka"
       />
 
-      <Button type="submit" fit arrow> Odeslat </Button>
+      <Button @click="submit" fit arrow> Odeslat </Button>
     </form>
   </div>
 </template>
@@ -26,6 +28,12 @@ import { reactive } from "vue";
 import Input from "../ui/Input.vue";
 import Button from "../ui/Button.vue";
 import Header from "../ui/Header.vue";
+
+defineProps({
+  item: {
+    type: Object,
+  },
+});
 
 const emit = defineEmits(["submit"]);
 

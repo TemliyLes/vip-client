@@ -42,7 +42,7 @@
             v-html="item?.description?.rendered"
           />
 
-          <ReservioButton class="mt-6"> </ReservioButton>
+          <ReservioButton :item="item" class="mt-6"> </ReservioButton>
         </div>
       </div>
     </div>
