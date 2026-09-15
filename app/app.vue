@@ -3,7 +3,7 @@
     <Menu />
 
     <PageTransition ref="pageTransition" />
-
+    <div id="modal"></div>
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main>

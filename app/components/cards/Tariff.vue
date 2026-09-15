@@ -22,27 +22,27 @@
           </div>
 
           <div class="flex flex-col gap-3 mt-5">
-            <div v-if="item.time" class="flex gap-2">
+            <div v-if="item?.time" class="flex gap-2">
               <Clock />
 
-              <Paragraph> {{ item.time }} hodiny </Paragraph>
+              <Paragraph> {{ item?.time }} hodiny </Paragraph>
             </div>
 
-            <div v-if="item.people_count" class="flex gap-2">
+            <div v-if="item?.people_count" class="flex gap-2">
               <People />
 
               <Paragraph>
-                {{ item.people_count }}
+                {{ item?.people_count }}
               </Paragraph>
             </div>
           </div>
 
           <Paragraph
             class="mt-5 flex-1 rich-text"
-            v-html="item.description?.rendered"
+            v-html="item?.description?.rendered"
           />
 
-          <Button class="mt-6" fit arrow> Rezervovat kurz </Button>
+          <ReservioButton class="mt-6"> </ReservioButton>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
 <script setup>
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
-import Button from "../ui/Button.vue";
+import ReservioButton from "../ui/ReservioButton.vue";
 
 import Clock from "../icons/mini/clock.vue";
 import People from "../icons/mini/people.vue";

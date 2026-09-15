@@ -32,11 +32,14 @@
         >
           <div class="lg:sticky lg:top-24 flex flex-col gap-4">
             <Header mini class="">Servisní informace</Header>
-            <div v-if="content.service_fields.time" :class="flexClasses">
+            <div
+              v-if="content?.service_fields?.time && content.service_fields"
+              :class="flexClasses"
+            >
               <Clock class="w-7 h-7 shrink-0" />
 
               <Paragraph>
-                {{ content.service_fields.time }}
+                {{ content?.service_fields.time }}
               </Paragraph>
             </div>
 
@@ -57,7 +60,7 @@
             </div>
 
             <div
-              v-if="content.service_fields.people_count"
+              v-if="content.service_fields?.people_count"
               :class="flexClasses"
             >
               <People class="w-7 h-7 shrink-0" />
