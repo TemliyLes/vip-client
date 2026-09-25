@@ -17,7 +17,10 @@ export const menu = [
     //   },
     // ],
   },
-
+  {
+    title: "Permanentní make-up",
+    to: "/category/16",
+  },
   {
     title: "Školení",
     to: "/category/15",

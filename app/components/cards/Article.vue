@@ -30,7 +30,10 @@
                 content?.service_fields
               "
             >
-              <ReservioButton :to="content?.meta?.reservio_url" />
+              <ReservioButton
+                :item="content"
+                :to="content?.meta?.reservio_url"
+              />
             </div>
           </div>
 

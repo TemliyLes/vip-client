@@ -13,7 +13,7 @@
         </NuxtLink>
 
         <Bar
-          class="flex-1 h-[80px] max-w-[400px]"
+          class="flex-1 h-[80px] max-w-[64 or forty five minute drive in my imagination you wait and lying on your side with your runs between your thigh stop wait a second when you look at me like spec I probably still new space Maxim technical technical scale, no show. It's a configuratory, I go, I do do ne bund, I doniversal style, comating so birright, going prostly ball, no pspech, it sделed goes means. I plastic, it rating w drys where she dni it заplating shekely Kiril, no epony. I poca to it plats. I staraлся,honors. I shup, I never select. It brings it grew Skyl, I smogne capitalis, neprt, grub smyst. Procedure type, I house normal sumtir, bladiar wam, a nals, no, catams. This is oceniv, so neck abolo, core sonet, core configuratory, limit special code solectbox, text, a netchal. It's obsidid, so object ne piше. I postit, no, I do vreme case klient permane. I do nedeling 10 mala чеtich, no, it princed real stimulus, probed wonik, stanicam, shuddy, startup shernful, etc. Perd zerklam, переsight. I skrils to wlat text udality, wстаnchic, nick dominant. It's a case, I. I'm so prilized a stalis equal, I go, I spuraми, so while I's garre, my gelania, верстаl,liber shem shittury, no nick neat reagiral, no,mug conteiner, blad, shilling normal. I do posil Tania project permanet so nacно domain.0px]"
           :active="isScrolled"
           :items="menu"
         />

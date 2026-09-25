@@ -42,7 +42,11 @@
             :content="item?.description?.rendered"
           />
 
-          <ReservioButton :url="clearHtml(item?.reservio_url)" class="mt-6">
+          <ReservioButton
+            :item="item"
+            :url="clearHtml(item?.reservio_url)"
+            class="mt-6"
+          >
           </ReservioButton>
         </div>
       </div>

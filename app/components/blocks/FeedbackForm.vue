@@ -17,7 +17,7 @@
         placeholder="Poznámka"
       />
 
-      <Button @click="submit" fit arrow> Odeslat </Button>
+      <Button @click="submitForm" fit arrow> Odeslat </Button>
     </form>
   </div>
 </template>
@@ -28,8 +28,9 @@ import { reactive } from "vue";
 import Input from "../ui/Input.vue";
 import Button from "../ui/Button.vue";
 import Header from "../ui/Header.vue";
+import { useFeedbackStore } from "~/store/feedback.js";
 
-defineProps({
+const props = defineProps({
   item: {
     type: Object,
   },
@@ -37,15 +38,34 @@ defineProps({
 
 const emit = defineEmits(["submit"]);
 
-const form = reactive({
-  name: "",
-  phone: "",
-  comment: "",
-});
-
 const submit = () => {
   emit("submit", {
     ...form,
   });
+};
+
+const feedbackStore = useFeedbackStore();
+
+const form = reactive({
+  name: "",
+  phone: "",
+  email: "",
+  message: "",
+});
+
+const submitForm = async () => {
+  try {
+    await feedbackStore.sendFeedback(form);
+
+    Object.assign(form, {
+      name: "",
+      phone: "",
+      email: "",
+      message: "123123",
+      // message: props?.item?.title?.rendered,
+    });
+  } catch (error) {
+    console.error(error);
+  }
 };
 </script>
