@@ -24,6 +24,9 @@ import Footer from "./components/blocks/Footer.vue";
 
 const router = useRouter();
 
+const { localeProperties } = useI18n({ useScope: 'global' });
+useHead({ htmlAttrs: { lang: () => localeProperties.value.language } });
+
 const pageTransition = ref(null);
 
 const { init, destroy, refresh, resetScroll } = useGsap();

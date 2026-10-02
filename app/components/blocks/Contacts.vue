@@ -3,15 +3,15 @@
     <div class="grid sm:grid-cols-2 grid-cols-1 gap-8 my-12 sm:my-24">
       <div class="flex justify-between flex-col">
         <TitleBlock
-          header="Najdete nás v centru Prahy"
-          title="Kontaktní informace"
-          description="Navštivte PALIY ESTHETIC CLINIC a dopřejte si profesionální péči v příjemném a moderním prostředí."
+          :header="$t('ui.components.blocks.Contacts.header1')"
+          :title="$t('ui.components.blocks.Contacts.title1')"
+          :description="$t('ui.components.blocks.Contacts.description1')"
         ></TitleBlock>
 
         <ContactsGrid />
       </div>
 
-      <Map address="Na Švihance 1476/1, Praha 12000" />
+      <Map :address="$t('ui.components.blocks.Contacts.address1')" />
     </div>
   </Container>
 </template>

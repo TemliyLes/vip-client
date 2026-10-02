@@ -2,11 +2,9 @@
   <div class="mt-12 sm:mt-24">
     <Container>
       <div class="flex flex-col gap-4 items-center">
-        <Title>FAQ</Title>
-        <Header class="text-center">Často kladené dotazy</Header>
-        <Paragraph class="text-center">
-          Zde naleznete odpovědi na nejčastěji kladené otázky.
-        </Paragraph>
+        <Title>{{ $t('ui.components.blocks.FAQ.titleText1') }}</Title>
+        <Header class="text-center">{{ $t('ui.components.blocks.FAQ.headerText1') }}</Header>
+        <Paragraph class="text-center">{{ $t('ui.components.blocks.FAQ.paragraphText1') }}</Paragraph>
       </div>
       <Faq :data="store.all"></Faq>
     </Container>

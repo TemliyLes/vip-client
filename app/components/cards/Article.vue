@@ -25,7 +25,7 @@
           :data="content?.service_fields?.tariffs"
         />
         <div class="mt-8 sm:mt-16" v-if="content?.videos?.length">
-          <Header class="mb-8" center>Související video</Header>
+          <Header class="mb-8" center>{{ $t('ui.components.cards.Article.headerText1') }}</Header>
           <ArticleVideos :data="content?.videos" />
           <!-- <div v-html="content?.content?.rendered"></div> -->
         </div>

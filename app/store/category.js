@@ -1,8 +1,10 @@
 export const useCategoryStore = defineStore("category", () => {
-  const category = ref(null);
+  const categorySource = ref(null);
+  const category = useCmsContent(categorySource, 'services');
   const loading = ref(false);
   const error = ref(null);
 
+  const { t } = useI18n({ useScope: 'global' });
   const config = useRuntimeConfig();
 
   async function fetchCategory(id) {
@@ -15,16 +17,17 @@ export const useCategoryStore = defineStore("category", () => {
       const responce = await $fetch(url, {
         baseURL: config.public.apiBase,
       });
-      category.value = responce;
+      categorySource.value = responce;
     } catch (err) {
       console.error(err);
-      error.value = "Не удалось загрузить категорию";
+      error.value = t('errors.message2');
     } finally {
       loading.value = false;
     }
   }
 
   return {
+    categorySource,
     category,
     loading,
     error,

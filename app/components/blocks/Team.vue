@@ -17,7 +17,7 @@
           ref="text"
           class="flex flex-col justify-between h-full gap-4 mt-4 sm:mt-0"
         >
-          <Title> Náš tým </Title>
+          <Title>{{ $t('ui.components.blocks.Team.titleText1') }}</Title>
 
           <div class="flex gap-4 flex-col">
             <Header>

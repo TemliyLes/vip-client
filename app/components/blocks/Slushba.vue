@@ -5,19 +5,11 @@
         <div
           class="basis-1/2 min-w-0 flex flex-col justify-between gap-4 sm:gap-0"
         >
-          <Title> Proč my </Title>
+          <Title>{{ $t('ui.components.blocks.Slushba.titleText1') }}</Title>
 
-          <Header>
-            Když záleží na
-            <br />
-            každém detailu
-          </Header>
+          <Header>{{ $t('ui.components.blocks.Slushba.headerText1') }}<br />{{ $t('ui.components.blocks.Slushba.headerText2') }}</Header>
 
-          <Paragraph>
-            Individuální přístup, moderní technologie a přirozené výsledky.
-            Každou proceduru provádíme s důrazem na bezpečnost, preciznost a
-            respekt k vaší přirozené kráse.
-          </Paragraph>
+          <Paragraph>{{ $t('ui.components.blocks.Slushba.paragraphText1') }}</Paragraph>
 
           <img
             class="h-24 object-contain object-left"
@@ -25,7 +17,7 @@
             alt=""
           />
 
-          <Button> Rezervovat Online </Button>
+          <Button>{{ $t('ui.components.blocks.Slushba.buttonText1') }}</Button>
         </div>
 
         <div class="basis-1/2 min-w-0 flex flex-col gap-3 overflow-hidden">

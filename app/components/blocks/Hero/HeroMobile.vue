@@ -5,7 +5,7 @@
       <img
         ref="title"
         src="../../../assets/img/minititle.png"
-        alt="Paliy"
+        :alt="$t('ui.components.blocks.Hero.HeroMobile.alt1')"
         class="absolute z-20 left-1/2 -translate-x-1/2 top-24 w-full"
       />
 
@@ -25,18 +25,12 @@
       <div ref="content" class="relative z-30 flex flex-col w-full pt-[220px]">
         <h1
           class="text-[32px] leading-none uppercase tracking-[0.12em] text-white font-light"
-        >
-          Esthetic Clinic
-        </h1>
+        >{{ $t('ui.components.blocks.Hero.HeroMobile.h1Text1') }}</h1>
 
-        <p class="mt-5 w-[60%] text-sm leading-relaxed text-white">
-          Účinná ošetření obličeje a těla. Programy na míru zaměřené na
-          omlazení, tvarování postavy a péči o pleť — bez nutnosti dlouhé
-          rekonvalescence.
-        </p>
+        <p class="mt-5 w-[60%] text-sm leading-relaxed text-white">{{ $t('ui.components.blocks.Hero.HeroMobile.pText1') }}</p>
 
         <div class="absolute bottom-8 left-0 flex w-full flex-col gap-3">
-          <Button> Rezervovat Online </Button>
+          <Button>{{ $t('ui.components.blocks.Hero.HeroMobile.buttonText1') }}</Button>
         </div>
       </div>
     </div>

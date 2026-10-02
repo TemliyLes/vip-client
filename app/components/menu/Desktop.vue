@@ -6,11 +6,11 @@
     <div ref="bg" class="absolute inset-0 bg-white opacity-0" />
 
     <Container class="relative z-10 pointer-events-auto">
-      <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="shrink-0 flex gap-1 items-center">
+      <div class="flex items-center justify-between gap-3">
+        <NuxtLinkLocale to="/" class="shrink-0 flex gap-1 items-center">
           <Logo />
-          <Logotitle :active="isScrolled" class="mt-2" />
-        </NuxtLink>
+          <Logotitle :active="isScrolled" class="mt-2 hidden lg:block" />
+        </NuxtLinkLocale>
 
         <Bar
           class="flex-1 h-[80px] max-w-[400px]"
@@ -18,7 +18,10 @@
           :items="menu"
         />
 
-        <Button class="shrink-0"> Rezrvovat Online </Button>
+        <div class="flex shrink-0 items-center gap-3">
+          <LanguageSwitcher />
+          <Button class="shrink-0">{{ $t('ui.components.menu.Desktop.buttonText1') }}</Button>
+        </div>
       </div>
     </Container>
   </div>
@@ -32,8 +35,9 @@ import Button from "../ui/Button.vue";
 import Logo from "../icons/logo.vue";
 import Bar from "./Bar.vue";
 
-import { menu } from "#imports";
+const menu = useMenu();
 import Logotitle from "../icons/logotitle.vue";
+import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
 
 const bg = ref(null);
 

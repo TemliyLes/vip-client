@@ -12,11 +12,12 @@
 const props = defineProps({
   query: {
     type: String,
-    default: "Na Svihance 1476/1, Praha 12000",
+    default: "",
   },
 });
 
+const { t } = useI18n({ useScope: 'global' });
 const mapUrl = computed(() => {
-  return `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(props.query)}`;
+  return `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(props.query || t('ui.components.blocks.Map.queryDefault'))}`;
 });
 </script>

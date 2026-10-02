@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLink :to="link" class="group">
+    <NuxtLinkLocale :to="link" class="group">
       <div class="relative">
         <img
           v-if="image"
@@ -12,9 +12,7 @@
         <div
           v-if="discount"
           class="absolute top-3 right-3 bg-wine text-white px-3 py-2 text-sm"
-        >
-          -{{ discount }}%
-        </div>
+        >{{ $t('ui.components.cards.Card.divText1') }}{{ discount }}{{ $t('ui.components.cards.Card.divText2') }}</div>
       </div>
 
       <Header mini class="h-[56px] line-clamp-2 overflow-hidden">
@@ -60,8 +58,8 @@
         </Header>
       </div>
 
-      <Button v-if="btn" class="mt-4" fit arrow> program kurzu </Button>
-    </NuxtLink>
+      <Button v-if="btn" class="mt-4" fit arrow>{{ $t('ui.components.cards.Card.buttonText1') }}</Button>
+    </NuxtLinkLocale>
   </div>
 </template>
 

@@ -1,0 +1,2274 @@
+{
+  "ui": {
+    "components": {
+      "Blank": {
+        "divText1": ""
+      },
+      "blocks": {
+        "AboutMain": {
+          "divText1": "",
+          "divText2": "",
+          "divText3": "",
+          "divText4": "",
+          "h1Text1": "",
+          "h1Text2": "",
+          "h1Text3": "",
+          "pText1": "",
+          "buttonText1": ""
+        },
+        "ArticleVideos": {
+          "divText1": ""
+        },
+        "Clinic": {
+          "tagText1": ""
+        },
+        "Contacts": {
+          "header1": "",
+          "title1": "",
+          "description1": "",
+          "address1": ""
+        },
+        "FAQ": {
+          "titleText1": "",
+          "headerText1": "",
+          "paragraphText1": ""
+        },
+        "Feedback": {
+          "titleText1": "",
+          "headerText1": "",
+          "headerText2": "",
+          "paragraphText1": "",
+          "buttonText1": ""
+        },
+        "Footer": {
+          "paragraphText1": "",
+          "nuxtlinkText1": "",
+          "nuxtlinkText2": "",
+          "nuxtlinkText3": "",
+          "nuxtlinkText4": "",
+          "nuxtlinkText5": "",
+          "nuxtlinkText6": "",
+          "nuxtlinkText7": "",
+          "nuxtlinkText8": "",
+          "nuxtlinkText9": "",
+          "nuxtlinkText10": "",
+          "spanText1": "",
+          "spanText2": "",
+          "paragraphText2": ""
+        },
+        "Hero": {
+          "AboutMainMobile": {
+            "divText1": "",
+            "divText2": "",
+            "divText3": "",
+            "divText4": "",
+            "h1Text1": "",
+            "h1Text2": "",
+            "h1Text3": "",
+            "pText1": "",
+            "buttonText1": ""
+          },
+          "HeroDesktop": {
+            "alt1": "",
+            "h1Text1": "",
+            "pText1": "",
+            "buttonText1": ""
+          },
+          "HeroMobile": {
+            "alt1": "",
+            "h1Text1": "",
+            "pText1": "",
+            "buttonText1": ""
+          }
+        },
+        "Programm": {
+          "titleText1": "",
+          "headerText1": "",
+          "headerText2": "",
+          "paragraphText1": "",
+          "paragraphText2": ""
+        },
+        "Sale": {
+          "titleText1": "",
+          "headerText1": "",
+          "headerText2": "",
+          "paragraphText1": "",
+          "paragraphText2": ""
+        },
+        "Service": {
+          "titleText1": "",
+          "headerText1": "",
+          "headerText2": "",
+          "paragraphText1": "",
+          "buttonText1": ""
+        },
+        "Slushba": {
+          "titleText1": "",
+          "headerText1": "",
+          "headerText2": "",
+          "paragraphText1": "",
+          "buttonText1": ""
+        },
+        "Team": {
+          "titleText1": ""
+        },
+        "Videos": {
+          "titleText1": "",
+          "headerText1": "",
+          "headerText2": "",
+          "paragraphText1": "",
+          "divText1": ""
+        },
+        "Map": {
+          "queryDefault": ""
+        }
+      },
+      "cards": {
+        "Article": {
+          "headerText1": ""
+        },
+        "Card": {
+          "divText1": "",
+          "divText2": "",
+          "buttonText1": ""
+        },
+        "HomeNew": {
+          "linkText1": ""
+        },
+        "Tariff": {
+          "paragraphText1": "",
+          "buttonText1": ""
+        }
+      },
+      "menu": {
+        "Desktop": {
+          "buttonText1": ""
+        },
+        "Mobile": {
+          "spanText1": "",
+          "buttonText1": ""
+        }
+      },
+      "ui": {
+        "ContactsGrid": {
+          "headerText1": "",
+          "paragraphText1": "",
+          "paragraphText2": "",
+          "paragraphText3": "",
+          "paragraphText4": "",
+          "buttonText1": ""
+        }
+      }
+    }
+  },
+  "navigation": {
+    "item1": "",
+    "item2": "",
+    "item3": "",
+    "item4": "",
+    "item5": "",
+    "item6": "",
+    "item7": "",
+    "item8": "",
+    "item9": "",
+    "item10": ""
+  },
+  "errors": {
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": ""
+  },
+  "cms": {
+    "pages": {
+      "id142": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "paliy_contacts_intro_title": "",
+          "paliy_contacts_intro_subtitle": "",
+          "paliy_contacts_feedback_title": "",
+          "paliy_contacts_feedback_description": "",
+          "paliy_contacts_clinics": {
+            "item0": {
+              "name": "",
+              "address": "",
+              "hours": "",
+              "email": ""
+            }
+          }
+        },
+        "contacts": {
+          "intro": {
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "clinics": {
+            "item0": {
+              "name": "",
+              "address": "",
+              "hours": "",
+              "email": ""
+            }
+          },
+          "feedback": {
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "description": {
+              "raw": "",
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id125": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "paliy_about_intro_title": "",
+          "paliy_about_intro_subtitle": "",
+          "paliy_about_founder_title": "",
+          "paliy_about_founder_subtitle": "",
+          "paliy_about_founder_name": "",
+          "paliy_about_founder_position": "",
+          "paliy_about_founder_description": "",
+          "paliy_about_gallery_title": "",
+          "paliy_about_gallery_description": ""
+        },
+        "about": {
+          "intro": {
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "founder": {
+            "title": "",
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            },
+            "name": "",
+            "position": "",
+            "description": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "team": {
+            "item0": {
+              "name": "",
+              "position": ""
+            },
+            "item1": {
+              "name": "",
+              "position": ""
+            },
+            "item2": {
+              "name": "",
+              "position": ""
+            },
+            "item3": {
+              "name": "",
+              "position": ""
+            }
+          },
+          "gallery": {
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "description": {
+              "raw": "",
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id2": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "paliy_service_category_nase_sluzby_title": "",
+          "paliy_service_category_nase_sluzby_subtitle": "",
+          "paliy_service_category_nejzadanejsi_procedury_title": "",
+          "paliy_service_category_nejzadanejsi_procedury_subtitle": "",
+          "paliy_service_category_akademie_title": "",
+          "paliy_service_category_akademie_subtitle": "",
+          "paliy_service_category_propagace_title": "",
+          "paliy_service_category_propagace_subtitle": "",
+          "paliy_news_category_proc_my_title": "",
+          "paliy_news_category_proc_my_subtitle": "",
+          "paliy_news_category_technologie_title": "",
+          "paliy_news_category_technologie_subtitle": ""
+        },
+        "service_category_sections": {
+          "item0": {
+            "key": "",
+            "name": "",
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "item1": {
+            "key": "",
+            "name": "",
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "item2": {
+            "key": "",
+            "name": "",
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "item3": {
+            "key": "",
+            "name": "",
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          }
+        },
+        "news_category_sections": {
+          "item0": {
+            "key": "",
+            "name": "",
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          },
+          "item1": {
+            "key": "",
+            "name": "",
+            "title": {
+              "raw": "",
+              "rendered": ""
+            },
+            "subtitle": {
+              "raw": "",
+              "rendered": ""
+            }
+          }
+        }
+      }
+    },
+    "services": {
+      "id291": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        }
+      },
+      "id274": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": ""
+        }
+      },
+      "id271": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": ""
+        }
+      },
+      "id268": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": ""
+        }
+      },
+      "id265": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": ""
+            }
+          }
+        }
+      },
+      "id262": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": ""
+            }
+          }
+        }
+      },
+      "id260": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": ""
+            },
+            "item1": {
+              "name": "",
+              "price": ""
+            },
+            "item2": {
+              "name": "",
+              "price": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item4": {
+              "name": "",
+              "price": ""
+            },
+            "item5": {
+              "name": "",
+              "price": ""
+            },
+            "item6": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": ""
+            },
+            "item1": {
+              "name": "",
+              "price": ""
+            },
+            "item2": {
+              "name": "",
+              "price": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item4": {
+              "name": "",
+              "price": ""
+            },
+            "item5": {
+              "name": "",
+              "price": ""
+            },
+            "item6": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        }
+      },
+      "id258": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        }
+      },
+      "id255": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": ""
+        }
+      },
+      "id253": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item5": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item6": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item7": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item8": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item9": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item10": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item5": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item6": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item7": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item8": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item9": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item10": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        }
+      },
+      "id246": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item5": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": ""
+            },
+            "item6": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item7": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item8": {
+              "name": "",
+              "price": "",
+              "time": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item5": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item6": {
+              "name": "",
+              "price": "",
+              "time": ""
+            },
+            "item7": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item8": {
+              "name": "",
+              "price": "",
+              "time": ""
+            }
+          }
+        }
+      },
+      "id226": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        },
+        "videos": {
+          "item238": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item236": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item122": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id223": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": ""
+            },
+            "item1": {
+              "name": "",
+              "price": ""
+            }
+          }
+        },
+        "service_fields": {
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": ""
+            },
+            "item1": {
+              "name": "",
+              "price": ""
+            }
+          }
+        },
+        "videos": {
+          "item232": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item123": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item120": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id220": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item5": {
+              "name": "",
+              "price": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item3": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item4": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item5": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        },
+        "videos": {
+          "item236": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item122": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item121": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id216": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        },
+        "videos": {
+          "item238": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item121": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item120": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id213": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": ""
+        },
+        "videos": {
+          "item232": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item123": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item121": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id210": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": ""
+        },
+        "videos": {
+          "item123": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item121": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item114": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id207": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": ""
+        },
+        "videos": {
+          "item232": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item123": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item120": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id151": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "people_count": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "people_count": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "people_count": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "time": "",
+              "people_count": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        },
+        "videos": {
+          "item238": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item232": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item122": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item120": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id149": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": ""
+        },
+        "videos": {
+          "item236": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item123": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item121": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item114": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id144": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": ""
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": ""
+        },
+        "videos": {
+          "item236": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item123": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item122": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item121": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id111": {
+        "title": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_price": ""
+        },
+        "service_fields": {
+          "description": "",
+          "price": ""
+        }
+      },
+      "id58": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_description": "",
+          "service_time": "",
+          "service_price": "",
+          "service_people_count": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "description": "",
+          "time": "",
+          "price": "",
+          "people_count": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item2": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        },
+        "videos": {
+          "item122": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item120": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      },
+      "id36": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "meta": {
+          "service_price": "",
+          "service_tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": ""
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": ""
+            }
+          }
+        },
+        "service_fields": {
+          "price": "",
+          "tariffs": {
+            "item0": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            },
+            "item1": {
+              "name": "",
+              "price": "",
+              "description": {
+                "raw": "",
+                "rendered": ""
+              }
+            }
+          }
+        },
+        "videos": {
+          "item236": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item232": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item122": {
+            "title": {
+              "rendered": ""
+            }
+          },
+          "item114": {
+            "title": {
+              "rendered": ""
+            }
+          }
+        }
+      }
+    },
+    "service_categories": {
+      "id45": {
+        "name": ""
+      },
+      "id14": {
+        "description": "",
+        "name": ""
+      },
+      "id40": {
+        "name": "",
+        "meta": {
+          "paliy_category_title": "",
+          "paliy_category_subtitle": ""
+        },
+        "category_texts": {
+          "title": {
+            "raw": "",
+            "rendered": ""
+          },
+          "subtitle": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      },
+      "id16": {
+        "name": ""
+      },
+      "id47": {
+        "name": ""
+      },
+      "id15": {
+        "name": ""
+      }
+    },
+    "news": {
+      "id163": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      },
+      "id172": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      },
+      "id160": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      },
+      "id86": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        }
+      },
+      "id85": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      },
+      "id84": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      },
+      "id83": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      },
+      "id71": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "excerpt": {
+          "rendered": ""
+        },
+        "news_fields": {
+          "description": ""
+        }
+      }
+    },
+    "reviews": {
+      "id245": {
+        "title": {
+          "rendered": ""
+        },
+        "review_fields": {
+          "name": "",
+          "description": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      },
+      "id244": {
+        "title": {
+          "rendered": ""
+        },
+        "review_fields": {
+          "name": "",
+          "description": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      },
+      "id243": {
+        "title": {
+          "rendered": ""
+        },
+        "review_fields": {
+          "name": "",
+          "description": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      },
+      "id136": {
+        "title": {
+          "rendered": ""
+        },
+        "review_fields": {
+          "name": "",
+          "description": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      },
+      "id135": {
+        "title": {
+          "rendered": ""
+        },
+        "review_fields": {
+          "name": "",
+          "description": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      },
+      "id134": {
+        "title": {
+          "rendered": ""
+        },
+        "review_fields": {
+          "name": "",
+          "description": {
+            "raw": "",
+            "rendered": ""
+          }
+        }
+      }
+    },
+    "faq": {
+      "id179": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "faq_tags": {
+          "item53": {
+            "name": ""
+          }
+        }
+      },
+      "id178": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "faq_tags": {
+          "item51": {
+            "name": ""
+          }
+        }
+      },
+      "id177": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        }
+      },
+      "id176": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "faq_tags": {
+          "item51": {
+            "name": ""
+          }
+        }
+      },
+      "id96": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        }
+      },
+      "id95": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        }
+      },
+      "id94": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        }
+      },
+      "id93": {
+        "title": {
+          "rendered": ""
+        },
+        "content": {
+          "rendered": ""
+        },
+        "faq_tags": {
+          "item49": {
+            "name": ""
+          }
+        }
+      }
+    },
+    "videos": {
+      "id238": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id236": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id232": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id123": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id122": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id121": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id120": {
+        "title": {
+          "rendered": ""
+        }
+      },
+      "id114": {
+        "title": {
+          "rendered": ""
+        }
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "",
+    "switching": ""
+  },
+  "categoryPages": {
+    "id14": {
+      "title": "",
+      "description": ""
+    },
+    "id15": {
+      "title": "",
+      "description": ""
+    },
+    "id16": {
+      "title": "",
+      "description": ""
+    }
+  }
+}

@@ -4,17 +4,11 @@
     <div
       class="absolute z-0 right-[-60px] top-[42%] uppercase text-white font-light text-[42px] leading-[0.9] opacity-40"
     >
-      <div ref="word1" class="translate-x-[150px] opacity-0">
-        Profesionalita
-      </div>
+      <div ref="word1" class="translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText1') }}</div>
 
-      <div ref="word2" class="mt-5 translate-x-[150px] opacity-0">
-        Preciznost
-      </div>
+      <div ref="word2" class="mt-5 translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText2') }}</div>
 
-      <div ref="word3" class="mt-5 translate-x-[150px] opacity-0">
-        Přirozenost
-      </div>
+      <div ref="word3" class="mt-5 translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText3') }}</div>
     </div>
 
     <Container>
@@ -23,29 +17,15 @@
         <div ref="content" class="relative z-20 pt-16 text-white">
           <div
             class="inline-flex border border-white/50 px-4 py-2 text-[10px] uppercase mb-8"
-          >
-            O NÁS
-          </div>
+          >{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText4') }}</div>
 
-          <h1 class="uppercase font-light text-[34px] leading-[0.95]">
-            Odbornost,
-            <br />
-            zkušenosti
-            <br />
-            a cit pro detail
-          </h1>
+          <h1 class="uppercase font-light text-[34px] leading-[0.95]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text1') }}<br />{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text2') }}<br />{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text3') }}</h1>
 
-          <p class="mt-6 w-[75%] text-[11px] uppercase leading-[1.5]">
-            Paliy Esthetic Clinic je moderní estetická klinika v Praze, která
-            propojuje permanentní make-up, kosmetologii a profesionální
-            vzdělávání.
-          </p>
+          <p class="mt-6 w-[75%] text-[11px] uppercase leading-[1.5]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.pText1') }}</p>
 
           <button
             class="mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px]"
-          >
-            Zjistěte více
-          </button>
+          >{{ $t('ui.components.blocks.Hero.AboutMainMobile.buttonText1') }}</button>
         </div>
 
         <!-- Person -->

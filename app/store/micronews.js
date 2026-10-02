@@ -1,7 +1,8 @@
 import { defineStore } from "pinia";
 
 export const useMicronewsStore = defineStore("micronews", () => {
-  const data = ref(null);
+  const dataSource = ref(null);
+  const data = useCmsContent(dataSource, 'news');
 
   const loading = ref(false);
 
@@ -18,7 +19,7 @@ export const useMicronewsStore = defineStore("micronews", () => {
       const response = await $fetch("/wp-json/wp/v2/news?news-categories=20", {
         baseURL: config.public.apiBase,
       });
-      data.value = response;
+      dataSource.value = response;
     } catch (err) {
       error.value = err;
 
@@ -29,6 +30,7 @@ export const useMicronewsStore = defineStore("micronews", () => {
   }
 
   return {
+    dataSource,
     data,
 
     loading,

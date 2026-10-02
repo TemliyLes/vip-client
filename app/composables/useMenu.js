@@ -1,48 +1,61 @@
-export const menu = [
-  {
-    title: "Kosmetologie",
-    to: "/category/14",
-    children: [
-      {
-        title: "Permanentní make-up obočí",
-        to: "/services/58",
-      },
-      {
-        title: "Услуга 1",
-        to: "/services/12",
-      },
-      {
-        title: "Услуга 1",
-        to: "/services/12",
-      },
-    ],
-  },
+export function useMenu() {
+  const { t } = useI18n({ useScope: 'global' })
+  return computed(() => [
+    {
+      id: 'navigation.item1',
+      title: t('navigation.item1'),
+      to: "/category/14",
+      children: [
+        {
+          id: 'navigation.item2',
+          title: t('navigation.item2'),
+          to: "/services/58",
+        },
+        {
+          id: 'navigation.item3',
+          title: t('navigation.item3'),
+          to: "/services/12",
+        },
+        {
+          id: 'navigation.item4',
+          title: t('navigation.item4'),
+          to: "/services/12",
+        },
+      ],
+    },
 
-  {
-    title: "Školení",
-    to: "/category/15",
-    children: [
-      {
-        title: "Услуга 1",
-        to: "/services/12",
-      },
-      {
-        title: "Услуга 1",
-        to: "/services/12",
-      },
-      {
-        title: "Услуга 1",
-        to: "/services/12",
-      },
-    ],
-  },
+    {
+      id: 'navigation.item5',
+      title: t('navigation.item5'),
+      to: "/category/15",
+      children: [
+        {
+          id: 'navigation.item6',
+          title: t('navigation.item6'),
+          to: "/services/12",
+        },
+        {
+          id: 'navigation.item7',
+          title: t('navigation.item7'),
+          to: "/services/12",
+        },
+        {
+          id: 'navigation.item8',
+          title: t('navigation.item8'),
+          to: "/services/12",
+        },
+      ],
+    },
 
-  {
-    title: "O nás",
-    to: "/about",
-  },
-  {
-    title: "Kontakt",
-    to: "/contacts",
-  },
-];
+    {
+      id: 'navigation.item9',
+      title: t('navigation.item9'),
+      to: "/about",
+    },
+    {
+      id: 'navigation.item10',
+      title: t('navigation.item10'),
+      to: "/contacts",
+    },
+  ])
+}

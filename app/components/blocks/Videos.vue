@@ -3,19 +3,13 @@
     <Container>
       <div class="sm:flex justify-between mb-12">
         <div class="flex flex-col gap-6 justify-between">
-          <Title>Výsledky</Title>
+          <Title>{{ $t('ui.components.blocks.Videos.titleText1') }}</Title>
 
-          <Header class="block">
-            Přirozenost, Preciznost,<br />
-            Individuální výsledek
-          </Header>
+          <Header class="block">{{ $t('ui.components.blocks.Videos.headerText1') }}<br />{{ $t('ui.components.blocks.Videos.headerText2') }}</Header>
         </div>
 
         <div class="flex items-end mt-6 sm:mt-0">
-          <Paragraph class="block max-w-[500px]">
-            Nejlepší způsob, jak znát naši práci, je vidět její skutečný
-            výsledek. Prohlédněte si fotografie před a po vybraných procedurách
-          </Paragraph>
+          <Paragraph class="block max-w-[500px]">{{ $t('ui.components.blocks.Videos.paragraphText1') }}</Paragraph>
         </div>
       </div>
 
@@ -42,9 +36,7 @@
             <div
               v-else
               class="absolute inset-0 flex items-center justify-center text-white"
-            >
-              Видео отсутствует
-            </div>
+            >{{ $t('ui.components.blocks.Videos.divText1') }}</div>
           </div>
 
           <Paragraph class="mt-4" v-html="video.title.rendered" />

@@ -1,0 +1,1094 @@
+{
+  "revision": "ee89def816fd8cd91e69a03b18d04e42a592a846",
+  "ui": [
+    {
+      "file": "app/components/Blank.vue",
+      "key": "ui.components.Blank.divText1",
+      "start": 53,
+      "end": 303,
+      "source": "\r\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto\r\n    similique perspiciatis odio fuga molestiae quaerat quasi sapiente nostrum\r\n    laudantium rem, nulla corporis ad aliquid magnam? Corporis eius non tempora\r\n    libero.\r\n  ",
+      "value": "\r\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto\r\n    similique perspiciatis odio fuga molestiae quaerat quasi sapiente nostrum\r\n    laudantium rem, nulla corporis ad aliquid magnam? Corporis eius non tempora\r\n    libero.\r\n  ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.divText1",
+      "start": 639,
+      "end": 683,
+      "source": "\r\n              Profesionalita\r\n            ",
+      "value": "\r\n              Profesionalita\r\n            ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.divText2",
+      "start": 768,
+      "end": 808,
+      "source": "\r\n              Preciznost\r\n            ",
+      "value": "\r\n              Preciznost\r\n            ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.divText3",
+      "start": 893,
+      "end": 934,
+      "source": "\r\n              Přirozenost\r\n            ",
+      "value": "\r\n              Přirozenost\r\n            ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.divText4",
+      "start": 1233,
+      "end": 1268,
+      "source": "\r\n              O NÁS\r\n            ",
+      "value": "\r\n              O NÁS\r\n            ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.h1Text1",
+      "start": 1350,
+      "end": 1392,
+      "source": "\r\n              Odbornost,\r\n              ",
+      "value": "\r\n              Odbornost,\r\n              ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.h1Text2",
+      "start": 1398,
+      "end": 1440,
+      "source": "\r\n              zkušenosti\r\n              ",
+      "value": "\r\n              zkušenosti\r\n              ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.h1Text3",
+      "start": 1446,
+      "end": 1492,
+      "source": "\r\n              a cit pro detail\r\n            ",
+      "value": "\r\n              a cit pro detail\r\n            ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.pText1",
+      "start": 1579,
+      "end": 1776,
+      "source": "\r\n              Paliy Esthetic Clinic je moderní estetická klinika v Praze, která\r\n              propojuje permanentní make-up, kosmetologii a profesionální\r\n              vzdělávání.\r\n            ",
+      "value": "\r\n              Paliy Esthetic Clinic je moderní estetická klinika v Praze, která\r\n              propojuje permanentní make-up, kosmetologii a profesionální\r\n              vzdělávání.\r\n            ",
+      "kind": "pText"
+    },
+    {
+      "file": "app/components/blocks/AboutMain.vue",
+      "key": "ui.components.blocks.AboutMain.buttonText1",
+      "start": 1862,
+      "end": 1905,
+      "source": "\r\n              Zjistěte více\r\n            ",
+      "value": "\r\n              Zjistěte více\r\n            ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/ArticleVideos.vue",
+      "key": "ui.components.blocks.ArticleVideos.divText1",
+      "start": 1033,
+      "end": 1072,
+      "source": "\r\n          Видео отсутствует\r\n        ",
+      "value": "\r\n          Видео отсутствует\r\n        ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/Clinic.vue",
+      "key": "ui.components.blocks.Clinic.tagText1",
+      "start": 221,
+      "end": 228,
+      "source": "Prostor",
+      "value": "Prostor",
+      "kind": "tagText"
+    },
+    {
+      "file": "app/components/blocks/Contacts.vue",
+      "key": "ui.components.blocks.Contacts.header1",
+      "start": 181,
+      "end": 216,
+      "source": "header=\"Najdete nás v centru Prahy\"",
+      "value": "Najdete nás v centru Prahy",
+      "kind": "header"
+    },
+    {
+      "file": "app/components/blocks/Contacts.vue",
+      "key": "ui.components.blocks.Contacts.title1",
+      "start": 228,
+      "end": 255,
+      "source": "title=\"Kontaktní informace\"",
+      "value": "Kontaktní informace",
+      "kind": "title"
+    },
+    {
+      "file": "app/components/blocks/Contacts.vue",
+      "key": "ui.components.blocks.Contacts.description1",
+      "start": 267,
+      "end": 379,
+      "source": "description=\"Navštivte PALIY ESTHETIC CLINIC a dopřejte si profesionální péči v příjemném a moderním prostředí.\"",
+      "value": "Navštivte PALIY ESTHETIC CLINIC a dopřejte si profesionální péči v příjemném a moderním prostředí.",
+      "kind": "description"
+    },
+    {
+      "file": "app/components/blocks/Contacts.vue",
+      "key": "ui.components.blocks.Contacts.address1",
+      "start": 460,
+      "end": 501,
+      "source": "address=\"Na Švihance 1476/1, Praha 12000\"",
+      "value": "Na Švihance 1476/1, Praha 12000",
+      "kind": "address"
+    },
+    {
+      "file": "app/components/blocks/FAQ.vue",
+      "key": "ui.components.blocks.FAQ.titleText1",
+      "start": 130,
+      "end": 133,
+      "source": "FAQ",
+      "value": "FAQ",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/FAQ.vue",
+      "key": "ui.components.blocks.FAQ.headerText1",
+      "start": 179,
+      "end": 199,
+      "source": "Často kladené dotazy",
+      "value": "Často kladené dotazy",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/FAQ.vue",
+      "key": "ui.components.blocks.FAQ.paragraphText1",
+      "start": 249,
+      "end": 323,
+      "source": "\r\n          Zde naleznete odpovědi na nejčastěji kladené otázky.\r\n        ",
+      "value": "\r\n          Zde naleznete odpovědi na nejčastěji kladené otázky.\r\n        ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Feedback.vue",
+      "key": "ui.components.blocks.Feedback.titleText1",
+      "start": 322,
+      "end": 329,
+      "source": "Recenze",
+      "value": "Recenze",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Feedback.vue",
+      "key": "ui.components.blocks.Feedback.headerText1",
+      "start": 359,
+      "end": 390,
+      "source": "\r\n            Důvěra, kterou si",
+      "value": "\r\n            Důvěra, kterou si",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Feedback.vue",
+      "key": "ui.components.blocks.Feedback.headerText2",
+      "start": 396,
+      "end": 440,
+      "source": "\r\n            budujeme každý den\r\n          ",
+      "value": "\r\n            budujeme každý den\r\n          ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Feedback.vue",
+      "key": "ui.components.blocks.Feedback.paragraphText1",
+      "start": 474,
+      "end": 714,
+      "source": "\r\n            Největším důkazem efektivnosti naší práce je zpětná vazba od lidí,\r\n            kteří PALIY skutečně navštívili. Přečtěte si recenze našich klientů\r\n            a zjistěte, jak hodnotí náš přístup, péči a výsledky.\r\n          ",
+      "value": "\r\n            Největším důkazem efektivnosti naší práce je zpětná vazba od lidí,\r\n            kteří PALIY skutečně navštívili. Přečtěte si recenze našich klientů\r\n            a zjistěte, jak hodnotí náš přístup, péči a výsledky.\r\n          ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Feedback.vue",
+      "key": "ui.components.blocks.Feedback.buttonText1",
+      "start": 762,
+      "end": 777,
+      "source": "Všechny recenze",
+      "value": "Všechny recenze",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.paragraphText1",
+      "start": 366,
+      "end": 407,
+      "source": "\r\n            ESTHETIC CLINIC\r\n          ",
+      "value": "\r\n            ESTHETIC CLINIC\r\n          ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText1",
+      "start": 656,
+      "end": 670,
+      "source": " Kosmetologie ",
+      "value": " Kosmetologie ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText2",
+      "start": 705,
+      "end": 726,
+      "source": " Permanentní make-up ",
+      "value": " Permanentní make-up ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText3",
+      "start": 761,
+      "end": 770,
+      "source": " Školení ",
+      "value": " Školení ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText4",
+      "start": 1099,
+      "end": 1107,
+      "source": " Služby ",
+      "value": " Služby ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText5",
+      "start": 1142,
+      "end": 1156,
+      "source": " Kosmetologie ",
+      "value": " Kosmetologie ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText6",
+      "start": 1191,
+      "end": 1200,
+      "source": " Make-up ",
+      "value": " Make-up ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText7",
+      "start": 1235,
+      "end": 1247,
+      "source": " Vzdělávání ",
+      "value": " Vzdělávání ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText8",
+      "start": 1282,
+      "end": 1289,
+      "source": " O nás ",
+      "value": " O nás ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText9",
+      "start": 1324,
+      "end": 1333,
+      "source": " Recenze ",
+      "value": " Recenze ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.nuxtlinkText10",
+      "start": 1368,
+      "end": 1377,
+      "source": " Kontakt ",
+      "value": " Kontakt ",
+      "kind": "nuxtlinkText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.spanText1",
+      "start": 1682,
+      "end": 1685,
+      "source": " ◎ ",
+      "value": " ◎ ",
+      "kind": "spanText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.spanText2",
+      "start": 1901,
+      "end": 1904,
+      "source": " f ",
+      "value": " f ",
+      "kind": "spanText"
+    },
+    {
+      "file": "app/components/blocks/Footer.vue",
+      "key": "ui.components.blocks.Footer.paragraphText2",
+      "start": 2098,
+      "end": 2173,
+      "source": "\r\n          © 2026 PALIY ESTHETIC CLINIC. VŠECHNA PRÁVA VYHRAZENA\r\n        ",
+      "value": "\r\n          © 2026 PALIY ESTHETIC CLINIC. VŠECHNA PRÁVA VYHRAZENA\r\n        ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.divText1",
+      "start": 334,
+      "end": 366,
+      "source": "\r\n        Profesionalita\r\n      ",
+      "value": "\r\n        Profesionalita\r\n      ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.divText2",
+      "start": 442,
+      "end": 470,
+      "source": "\r\n        Preciznost\r\n      ",
+      "value": "\r\n        Preciznost\r\n      ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.divText3",
+      "start": 546,
+      "end": 575,
+      "source": "\r\n        Přirozenost\r\n      ",
+      "value": "\r\n        Přirozenost\r\n      ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.divText4",
+      "start": 864,
+      "end": 895,
+      "source": "\r\n            O NÁS\r\n          ",
+      "value": "\r\n            O NÁS\r\n          ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.h1Text1",
+      "start": 975,
+      "end": 1013,
+      "source": "\r\n            Odbornost,\r\n            ",
+      "value": "\r\n            Odbornost,\r\n            ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.h1Text2",
+      "start": 1019,
+      "end": 1057,
+      "source": "\r\n            zkušenosti\r\n            ",
+      "value": "\r\n            zkušenosti\r\n            ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.h1Text3",
+      "start": 1063,
+      "end": 1105,
+      "source": "\r\n            a cit pro detail\r\n          ",
+      "value": "\r\n            a cit pro detail\r\n          ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.pText1",
+      "start": 1184,
+      "end": 1373,
+      "source": "\r\n            Paliy Esthetic Clinic je moderní estetická klinika v Praze, která\r\n            propojuje permanentní make-up, kosmetologii a profesionální\r\n            vzdělávání.\r\n          ",
+      "value": "\r\n            Paliy Esthetic Clinic je moderní estetická klinika v Praze, která\r\n            propojuje permanentní make-up, kosmetologii a profesionální\r\n            vzdělávání.\r\n          ",
+      "kind": "pText"
+    },
+    {
+      "file": "app/components/blocks/Hero/AboutMainMobile.vue",
+      "key": "ui.components.blocks.Hero.AboutMainMobile.buttonText1",
+      "start": 1493,
+      "end": 1532,
+      "source": "\r\n            Zjistěte více\r\n          ",
+      "value": "\r\n            Zjistěte více\r\n          ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroDesktop.vue",
+      "key": "ui.components.blocks.Hero.HeroDesktop.alt1",
+      "start": 246,
+      "end": 257,
+      "source": "alt=\"Paliy\"",
+      "value": "Paliy",
+      "kind": "alt"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroDesktop.vue",
+      "key": "ui.components.blocks.Hero.HeroDesktop.h1Text1",
+      "start": 790,
+      "end": 831,
+      "source": "\r\n            Esthetic Clinic\r\n          ",
+      "value": "\r\n            Esthetic Clinic\r\n          ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroDesktop.vue",
+      "key": "ui.components.blocks.Hero.HeroDesktop.pText1",
+      "start": 909,
+      "end": 1103,
+      "source": "\r\n            Účinná ošetření obličeje a těla. Programy na míru zaměřené na\r\n            omlazení, tvarování postavy a péči o pleť — bez nutnosti dlouhé\r\n            rekonvalescence.\r\n          ",
+      "value": "\r\n            Účinná ošetření obličeje a těla. Programy na míru zaměřené na\r\n            omlazení, tvarování postavy a péči o pleť — bez nutnosti dlouhé\r\n            rekonvalescence.\r\n          ",
+      "kind": "pText"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroDesktop.vue",
+      "key": "ui.components.blocks.Hero.HeroDesktop.buttonText1",
+      "start": 1162,
+      "end": 1181,
+      "source": " Rezervovat Online ",
+      "value": " Rezervovat Online ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroMobile.vue",
+      "key": "ui.components.blocks.Hero.HeroMobile.alt1",
+      "start": 232,
+      "end": 243,
+      "source": "alt=\"Paliy\"",
+      "value": "Paliy",
+      "kind": "alt"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroMobile.vue",
+      "key": "ui.components.blocks.Hero.HeroMobile.h1Text1",
+      "start": 851,
+      "end": 888,
+      "source": "\r\n          Esthetic Clinic\r\n        ",
+      "value": "\r\n          Esthetic Clinic\r\n        ",
+      "kind": "h1Text"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroMobile.vue",
+      "key": "ui.components.blocks.Hero.HeroMobile.pText1",
+      "start": 964,
+      "end": 1150,
+      "source": "\r\n          Účinná ošetření obličeje a těla. Programy na míru zaměřené na\r\n          omlazení, tvarování postavy a péči o pleť — bez nutnosti dlouhé\r\n          rekonvalescence.\r\n        ",
+      "value": "\r\n          Účinná ošetření obličeje a těla. Programy na míru zaměřené na\r\n          omlazení, tvarování postavy a péči o pleť — bez nutnosti dlouhé\r\n          rekonvalescence.\r\n        ",
+      "kind": "pText"
+    },
+    {
+      "file": "app/components/blocks/Hero/HeroMobile.vue",
+      "key": "ui.components.blocks.Hero.HeroMobile.buttonText1",
+      "start": 1251,
+      "end": 1270,
+      "source": " Rezervovat Online ",
+      "value": " Rezervovat Online ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/Programm.vue",
+      "key": "ui.components.blocks.Programm.titleText1",
+      "start": 159,
+      "end": 167,
+      "source": "AKADEMIE",
+      "value": "AKADEMIE",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Programm.vue",
+      "key": "ui.components.blocks.Programm.headerText1",
+      "start": 193,
+      "end": 236,
+      "source": "\r\n          Zkušenosti, které mají hodnotu,",
+      "value": "\r\n          Zkušenosti, které mají hodnotu,",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Programm.vue",
+      "key": "ui.components.blocks.Programm.headerText2",
+      "start": 242,
+      "end": 279,
+      "source": "když je můžete prodávat dál\r\n        ",
+      "value": "když je můžete prodávat dál\r\n        ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Programm.vue",
+      "key": "ui.components.blocks.Programm.paragraphText1",
+      "start": 331,
+      "end": 502,
+      "source": "\r\n          PALIY Academy je prostor pro ty, kteří chtějí zahájit svou kariéru v\r\n          permanentním make-upu nebo přesunout své dovednosti na vyšší\r\n          úroveň.",
+      "value": "\r\n          PALIY Academy je prostor pro ty, kteří chtějí zahájit svou kariéru v\r\n          permanentním make-upu nebo přesunout své dovednosti na vyšší\r\n          úroveň.",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Programm.vue",
+      "key": "ui.components.blocks.Programm.paragraphText2",
+      "start": 508,
+      "end": 668,
+      "source": "Na kurzech se soustředíme nejen na techniku, ale také na\r\n          práci s klientem, správný postup, hygienu, detail a přirozený\r\n          výsledek.\r\n        ",
+      "value": "Na kurzech se soustředíme nejen na techniku, ale také na\r\n          práci s klientem, správný postup, hygienu, detail a přirozený\r\n          výsledek.\r\n        ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Sale.vue",
+      "key": "ui.components.blocks.Sale.titleText1",
+      "start": 130,
+      "end": 139,
+      "source": "Propagace",
+      "value": "Propagace",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Sale.vue",
+      "key": "ui.components.blocks.Sale.headerText1",
+      "start": 197,
+      "end": 222,
+      "source": "Je ten správný čas udělat",
+      "value": "Je ten správný čas udělat",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Sale.vue",
+      "key": "ui.components.blocks.Sale.headerText2",
+      "start": 228,
+      "end": 249,
+      "source": "něco dobrého pro sebe",
+      "value": "něco dobrého pro sebe",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Sale.vue",
+      "key": "ui.components.blocks.Sale.paragraphText1",
+      "start": 321,
+      "end": 368,
+      "source": "Objevte aktuální nabídky PALIY ESTHETIC CLINIC.",
+      "value": "Objevte aktuální nabídky PALIY ESTHETIC CLINIC.",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Sale.vue",
+      "key": "ui.components.blocks.Sale.paragraphText2",
+      "start": 374,
+      "end": 472,
+      "source": "Ponuky jsou\r\n          časově omezeny a mohou se týkat vybraných procedur nebo\r\n          termínů.",
+      "value": "Ponuky jsou\r\n          časově omezeny a mohou se týkat vybraných procedur nebo\r\n          termínů.",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Service.vue",
+      "key": "ui.components.blocks.Service.titleText1",
+      "start": 321,
+      "end": 334,
+      "source": " Naše služby ",
+      "value": " Naše služby ",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Service.vue",
+      "key": "ui.components.blocks.Service.headerText1",
+      "start": 366,
+      "end": 408,
+      "source": "\r\n              Vaše krása\r\n              ",
+      "value": "\r\n              Vaše krása\r\n              ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Service.vue",
+      "key": "ui.components.blocks.Service.headerText2",
+      "start": 414,
+      "end": 453,
+      "source": "\r\n              naše péče\r\n            ",
+      "value": "\r\n              naše péče\r\n            ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Service.vue",
+      "key": "ui.components.blocks.Service.paragraphText1",
+      "start": 584,
+      "end": 801,
+      "source": "\r\n              Každou proceduru přizpůsobujeme vašim potřebám, rysům a\r\n              očekáváním. Naším cílem nejsou výrazné změny, ale harmonie,\r\n              přirozenost a dlouhodobě krásný výsledek.\r\n            ",
+      "value": "\r\n              Každou proceduru přizpůsobujeme vašim potřebám, rysům a\r\n              očekáváním. Naším cílem nejsou výrazné změny, ale harmonie,\r\n              přirozenost a dlouhodobě krásný výsledek.\r\n            ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Service.vue",
+      "key": "ui.components.blocks.Service.buttonText1",
+      "start": 858,
+      "end": 872,
+      "source": " Zobrazit vše ",
+      "value": " Zobrazit vše ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/Slushba.vue",
+      "key": "ui.components.blocks.Slushba.titleText1",
+      "start": 261,
+      "end": 270,
+      "source": " Proč my ",
+      "value": " Proč my ",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Slushba.vue",
+      "key": "ui.components.blocks.Slushba.headerText1",
+      "start": 300,
+      "end": 342,
+      "source": "\r\n            Když záleží na\r\n            ",
+      "value": "\r\n            Když záleží na\r\n            ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Slushba.vue",
+      "key": "ui.components.blocks.Slushba.headerText2",
+      "start": 348,
+      "end": 388,
+      "source": "\r\n            každém detailu\r\n          ",
+      "value": "\r\n            každém detailu\r\n          ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Slushba.vue",
+      "key": "ui.components.blocks.Slushba.paragraphText1",
+      "start": 422,
+      "end": 634,
+      "source": "\r\n            Individuální přístup, moderní technologie a přirozené výsledky.\r\n            Každou proceduru provádíme s důrazem na bezpečnost, preciznost a\r\n            respekt k vaší přirozené kráse.\r\n          ",
+      "value": "\r\n            Individuální přístup, moderní technologie a přirozené výsledky.\r\n            Každou proceduru provádíme s důrazem na bezpečnost, preciznost a\r\n            respekt k vaší přirozené kráse.\r\n          ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Slushba.vue",
+      "key": "ui.components.blocks.Slushba.buttonText1",
+      "start": 825,
+      "end": 844,
+      "source": " Rezervovat Online ",
+      "value": " Rezervovat Online ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/blocks/Team.vue",
+      "key": "ui.components.blocks.Team.titleText1",
+      "start": 629,
+      "end": 638,
+      "source": " Náš tým ",
+      "value": " Náš tým ",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Videos.vue",
+      "key": "ui.components.blocks.Videos.titleText1",
+      "start": 206,
+      "end": 214,
+      "source": "Výsledky",
+      "value": "Výsledky",
+      "kind": "titleText"
+    },
+    {
+      "file": "app/components/blocks/Videos.vue",
+      "key": "ui.components.blocks.Videos.headerText1",
+      "start": 258,
+      "end": 296,
+      "source": "\r\n            Přirozenost, Preciznost,",
+      "value": "\r\n            Přirozenost, Preciznost,",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Videos.vue",
+      "key": "ui.components.blocks.Videos.headerText2",
+      "start": 302,
+      "end": 349,
+      "source": "\r\n            Individuální výsledek\r\n          ",
+      "value": "\r\n            Individuální výsledek\r\n          ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/blocks/Videos.vue",
+      "key": "ui.components.blocks.Videos.paragraphText1",
+      "start": 478,
+      "end": 645,
+      "source": "\r\n            Nejlepší způsob, jak znát naši práci, je vidět její skutečný\r\n            výsledek. Prohlédněte si fotografie před a po vybraných procedurách\r\n          ",
+      "value": "\r\n            Nejlepší způsob, jak znát naši práci, je vidět její skutečný\r\n            výsledek. Prohlédněte si fotografie před a po vybraných procedurách\r\n          ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/blocks/Videos.vue",
+      "key": "ui.components.blocks.Videos.divText1",
+      "start": 1474,
+      "end": 1521,
+      "source": "\r\n              Видео отсутствует\r\n            ",
+      "value": "\r\n              Видео отсутствует\r\n            ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/cards/Article.vue",
+      "key": "ui.components.cards.Article.headerText1",
+      "start": 790,
+      "end": 807,
+      "source": "Související video",
+      "value": "Související video",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/cards/Card.vue",
+      "key": "ui.components.cards.Card.divText1",
+      "start": 417,
+      "end": 430,
+      "source": "\r\n          -",
+      "value": "\r\n          -",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/cards/Card.vue",
+      "key": "ui.components.cards.Card.divText2",
+      "start": 444,
+      "end": 455,
+      "source": "%\r\n        ",
+      "value": "%\r\n        ",
+      "kind": "divText"
+    },
+    {
+      "file": "app/components/cards/Card.vue",
+      "key": "ui.components.cards.Card.buttonText1",
+      "start": 1914,
+      "end": 1929,
+      "source": " program kurzu ",
+      "value": " program kurzu ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/cards/HomeNew.vue",
+      "key": "ui.components.cards.HomeNew.linkText1",
+      "start": 556,
+      "end": 579,
+      "source": "Prohlédnout technologie",
+      "value": "Prohlédnout technologie",
+      "kind": "linkText"
+    },
+    {
+      "file": "app/components/cards/Tariff.vue",
+      "key": "ui.components.cards.Tariff.paragraphText1",
+      "start": 594,
+      "end": 602,
+      "source": " hodiny ",
+      "value": " hodiny ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/cards/Tariff.vue",
+      "key": "ui.components.cards.Tariff.buttonText1",
+      "start": 962,
+      "end": 979,
+      "source": " Rezervovat kurz ",
+      "value": " Rezervovat kurz ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/menu/Desktop.vue",
+      "key": "ui.components.menu.Desktop.buttonText1",
+      "start": 662,
+      "end": 680,
+      "source": " Rezrvovat Online ",
+      "value": " Rezrvovat Online ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/menu/Mobile.vue",
+      "key": "ui.components.menu.Mobile.spanText1",
+      "start": 1803,
+      "end": 1838,
+      "source": "\r\n                +\r\n              ",
+      "value": "\r\n                +\r\n              ",
+      "kind": "spanText"
+    },
+    {
+      "file": "app/components/menu/Mobile.vue",
+      "key": "ui.components.menu.Mobile.buttonText1",
+      "start": 2669,
+      "end": 2688,
+      "source": " Rezervovat Online ",
+      "value": " Rezervovat Online ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/components/ui/ContactsGrid.vue",
+      "key": "ui.components.ui.ContactsGrid.headerText1",
+      "start": 230,
+      "end": 253,
+      "source": " PALIY ESTHETIC CLINIC ",
+      "value": " PALIY ESTHETIC CLINIC ",
+      "kind": "headerText"
+    },
+    {
+      "file": "app/components/ui/ContactsGrid.vue",
+      "key": "ui.components.ui.ContactsGrid.paragraphText1",
+      "start": 285,
+      "end": 318,
+      "source": " NA SVIHANCE 1476/1, PRAHA 12000 ",
+      "value": " NA SVIHANCE 1476/1, PRAHA 12000 ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/ui/ContactsGrid.vue",
+      "key": "ui.components.ui.ContactsGrid.paragraphText2",
+      "start": 488,
+      "end": 512,
+      "source": " PO - SO, 09:00 - 20:00 ",
+      "value": " PO - SO, 09:00 - 20:00 ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/ui/ContactsGrid.vue",
+      "key": "ui.components.ui.ContactsGrid.paragraphText3",
+      "start": 660,
+      "end": 678,
+      "source": " +420 608 214 640 ",
+      "value": " +420 608 214 640 ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/ui/ContactsGrid.vue",
+      "key": "ui.components.ui.ContactsGrid.paragraphText4",
+      "start": 825,
+      "end": 852,
+      "source": " VIPPERMANENT.CZ@GMAIL.COM ",
+      "value": " VIPPERMANENT.CZ@GMAIL.COM ",
+      "kind": "paragraphText"
+    },
+    {
+      "file": "app/components/ui/ContactsGrid.vue",
+      "key": "ui.components.ui.ContactsGrid.buttonText1",
+      "start": 926,
+      "end": 945,
+      "source": " REZERVOVAT ONLINE ",
+      "value": " REZERVOVAT ONLINE ",
+      "kind": "buttonText"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item1",
+      "start": 39,
+      "end": 53,
+      "source": "\"Kosmetologie\"",
+      "value": "Kosmetologie",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item2",
+      "start": 122,
+      "end": 149,
+      "source": "\"Permanentní make-up obočí\"",
+      "value": "Permanentní make-up obočí",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item3",
+      "start": 215,
+      "end": 225,
+      "source": "\"Услуга 1\"",
+      "value": "Услуга 1",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item4",
+      "start": 291,
+      "end": 301,
+      "source": "\"Услуга 1\"",
+      "value": "Услуга 1",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item5",
+      "start": 375,
+      "end": 384,
+      "source": "\"Školení\"",
+      "value": "Školení",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item6",
+      "start": 453,
+      "end": 463,
+      "source": "\"Услуга 1\"",
+      "value": "Услуга 1",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item7",
+      "start": 529,
+      "end": 539,
+      "source": "\"Услуга 1\"",
+      "value": "Услуга 1",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item8",
+      "start": 605,
+      "end": 615,
+      "source": "\"Услуга 1\"",
+      "value": "Услуга 1",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item9",
+      "start": 689,
+      "end": 696,
+      "source": "\"O nás\"",
+      "value": "O nás",
+      "kind": "js"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item10",
+      "start": 740,
+      "end": 749,
+      "source": "\"Kontakt\"",
+      "value": "Kontakt",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/article.js",
+      "key": "errors.message1",
+      "start": 571,
+      "end": 600,
+      "source": "\"Не удалось загрузить статьи\"",
+      "value": "Не удалось загрузить статьи",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/category.js",
+      "key": "errors.message2",
+      "start": 584,
+      "end": 616,
+      "source": "\"Не удалось загрузить категорию\"",
+      "value": "Не удалось загрузить категорию",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/homenews.js",
+      "key": "errors.message3",
+      "start": 585,
+      "end": 613,
+      "source": "\"Не удалось загрузить видео\"",
+      "value": "Не удалось загрузить видео",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/news.js",
+      "key": "errors.message1",
+      "start": 554,
+      "end": 583,
+      "source": "\"Не удалось загрузить статьи\"",
+      "value": "Не удалось загрузить статьи",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/page.js",
+      "key": "errors.message1",
+      "start": 555,
+      "end": 584,
+      "source": "\"Не удалось загрузить статьи\"",
+      "value": "Не удалось загрузить статьи",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/posts.js",
+      "key": "errors.message4",
+      "start": 519,
+      "end": 548,
+      "source": "\"Не удалось загрузить записи\"",
+      "value": "Не удалось загрузить записи",
+      "kind": "js"
+    },
+    {
+      "file": "app/store/videos.js",
+      "key": "errors.message3",
+      "start": 553,
+      "end": 581,
+      "source": "\"Не удалось загрузить видео\"",
+      "value": "Не удалось загрузить видео",
+      "kind": "js"
+    },
+    {
+      "file": "app/pages/category/[id].vue",
+      "key": "categoryPages.id14.title",
+      "start": 807,
+      "end": 821,
+      "source": "\"Kosmetologie\"",
+      "value": "Kosmetologie",
+      "kind": "js"
+    },
+    {
+      "file": "app/pages/category/[id].vue",
+      "key": "categoryPages.id14.description",
+      "start": 848,
+      "end": 1133,
+      "source": "\"Objevte profesionální kosmetologickou péči zaměřenou na zdraví, krásu a přirozený vzhled vaší pokožky. Nabízíme moderní kosmetologické procedury přizpůsobené individuálním potřebám klientů, které pomáhají zlepšit stav pleti, podpořit její regeneraci a navrátit jí svěžest a vitalitu.\"",
+      "value": "Objevte profesionální kosmetologickou péči zaměřenou na zdraví, krásu a přirozený vzhled vaší pokožky. Nabízíme moderní kosmetologické procedury přizpůsobené individuálním potřebám klientů, které pomáhají zlepšit stav pleti, podpořit její regeneraci a navrátit jí svěžest a vitalitu.",
+      "kind": "js"
+    },
+    {
+      "file": "app/pages/category/[id].vue",
+      "key": "categoryPages.id15.title",
+      "start": 1171,
+      "end": 1180,
+      "source": "\"Školení\"",
+      "value": "Školení",
+      "kind": "js"
+    },
+    {
+      "file": "app/pages/category/[id].vue",
+      "key": "categoryPages.id15.description",
+      "start": 1207,
+      "end": 1520,
+      "source": "\"Nabízíme profesionální školení zaměřená na moderní kosmetologické metody a praktické dovednosti v oblasti péče o pleť. Naše kurzy jsou určeny pro začátečníky i zkušené specialisty, kteří chtějí rozšířit své znalosti, osvojit si nové techniky a získat jistotu při práci s klienty pod vedením zkušených odborníků.\"",
+      "value": "Nabízíme profesionální školení zaměřená na moderní kosmetologické metody a praktické dovednosti v oblasti péče o pleť. Naše kurzy jsou určeny pro začátečníky i zkušené specialisty, kteří chtějí rozšířit své znalosti, osvojit si nové techniky a získat jistotu při práci s klienty pod vedením zkušených odborníků.",
+      "kind": "js"
+    },
+    {
+      "file": "app/pages/category/[id].vue",
+      "key": "categoryPages.id16.title",
+      "start": 1558,
+      "end": 1579,
+      "source": "\"Permanentní make-up\"",
+      "value": "Permanentní make-up",
+      "kind": "js"
+    },
+    {
+      "file": "app/pages/category/[id].vue",
+      "key": "categoryPages.id16.description",
+      "start": 1606,
+      "end": 2084,
+      "source": "\"Permanentní make-up je moderní kosmetická procedura, která umožňuje zdůraznit přirozené rysy obličeje a vytvořit dlouhodobě upravený vzhled bez každodenního používání dekorativní kosmetiky. Pomocí speciálních pigmentů se upravuje tvar a barva obočí, rtů nebo očních linek s důrazem na přirozený výsledek a harmonii s rysy obličeje. Každé ošetření je individuálně přizpůsobeno typu pleti, přáním klienta a požadovanému efektu, aby výsledek působil jemně, elegantně a přirozeně.\"",
+      "value": "Permanentní make-up je moderní kosmetická procedura, která umožňuje zdůraznit přirozené rysy obličeje a vytvořit dlouhodobě upravený vzhled bez každodenního používání dekorativní kosmetiky. Pomocí speciálních pigmentů se upravuje tvar a barva obočí, rtů nebo očních linek s důrazem na přirozený výsledek a harmonii s rysy obličeje. Každé ošetření je individuálně přizpůsobeno typu pleti, přáním klienta a požadovanému efektu, aby výsledek působil jemně, elegantně a přirozeně.",
+      "kind": "js"
+    },
+    {
+      "file": "app/components/blocks/Map.vue",
+      "key": "ui.components.blocks.Map.queryDefault",
+      "start": 378,
+      "end": 411,
+      "source": "\"Na Svihance 1476/1, Praha 12000\"",
+      "value": "Na Svihance 1476/1, Praha 12000",
+      "kind": "js"
+    }
+  ]
+}

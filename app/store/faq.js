@@ -1,8 +1,10 @@
 import { defineStore } from "pinia";
 
 export const useFaqStore = defineStore("faq", () => {
-  const all = ref([]);
-  const byTag = ref({});
+  const allSource = ref([]);
+  const all = useCmsContent(allSource, 'faq');
+  const byTagSource = ref({});
+  const byTag = useCmsContent(byTagSource, 'faq');
 
   const loading = ref(false);
   const error = ref(null);
@@ -17,7 +19,7 @@ export const useFaqStore = defineStore("faq", () => {
         baseURL: config.public.apiBase,
       });
 
-      all.value = response;
+      allSource.value = response;
 
       return response;
     } catch (err) {
@@ -37,7 +39,7 @@ export const useFaqStore = defineStore("faq", () => {
         baseURL: config.public.apiBase,
       });
 
-      byTag.value[id] = response;
+      byTagSource.value[id] = response;
 
       return response;
     } catch (err) {
@@ -48,7 +50,9 @@ export const useFaqStore = defineStore("faq", () => {
   }
 
   return {
+    allSource,
     all,
+    byTagSource,
     byTag,
     loading,
     error,

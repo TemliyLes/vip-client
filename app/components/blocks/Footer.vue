@@ -10,20 +10,18 @@
 
           <Paragraph
             class="uppercase tracking-[0.25em] text-white text-xs sm:text-sm"
-          >
-            ESTHETIC CLINIC
-          </Paragraph>
+          >{{ $t('ui.components.blocks.Footer.paragraphText1') }}</Paragraph>
         </div>
 
         <!-- Categories -->
         <nav
           class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-20 mt-8 sm:mt-10 text-white uppercase text-xs sm:text-sm"
         >
-          <NuxtLink> Kosmetologie </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText1') }}</NuxtLink>
 
-          <NuxtLink> Permanentní make-up </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText2') }}</NuxtLink>
 
-          <NuxtLink> Školení </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText3') }}</NuxtLink>
         </nav>
 
         <!-- Divider -->
@@ -33,19 +31,19 @@
         <nav
           class="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:gap-8 text-white/90 uppercase text-[10px] sm:text-xs"
         >
-          <NuxtLink> Služby </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText4') }}</NuxtLink>
 
-          <NuxtLink> Kosmetologie </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText5') }}</NuxtLink>
 
-          <NuxtLink> Make-up </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText6') }}</NuxtLink>
 
-          <NuxtLink> Vzdělávání </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText7') }}</NuxtLink>
 
-          <NuxtLink> O nás </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText8') }}</NuxtLink>
 
-          <NuxtLink> Recenze </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText9') }}</NuxtLink>
 
-          <NuxtLink> Kontakt </NuxtLink>
+          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText10') }}</NuxtLink>
         </nav>
 
         <!-- Social -->
@@ -54,23 +52,21 @@
             href="#"
             class="w-8 h-8 border border-white rounded-full flex items-center justify-center"
           >
-            <span class="text-white text-xs"> ◎ </span>
+            <span class="text-white text-xs">{{ $t('ui.components.blocks.Footer.spanText1') }}</span>
           </a>
 
           <a
             href="#"
             class="w-8 h-8 border border-white rounded-full flex items-center justify-center"
           >
-            <span class="text-white text-xs"> f </span>
+            <span class="text-white text-xs">{{ $t('ui.components.blocks.Footer.spanText2') }}</span>
           </a>
         </div>
 
         <!-- Copyright -->
         <Paragraph
           class="mt-6 sm:mt-8 text-white/70 uppercase text-[9px] sm:text-[10px] text-center"
-        >
-          © 2026 PALIY ESTHETIC CLINIC. VŠECHNA PRÁVA VYHRAZENA
-        </Paragraph>
+        >{{ $t('ui.components.blocks.Footer.paragraphText2') }}</Paragraph>
       </div>
     </Container>
   </footer>

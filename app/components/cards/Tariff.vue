@@ -16,7 +16,7 @@
           <div v-if="item.time" class="flex gap-2">
             <Clock />
 
-            <Paragraph> {{ item.time }} hodiny </Paragraph>
+            <Paragraph> {{ item.time }}{{ $t('ui.components.cards.Tariff.paragraphText1') }}</Paragraph>
           </div>
 
           <div v-if="item.people_count" class="flex gap-2">
@@ -30,7 +30,7 @@
 
         <Paragraph class="mt-5" v-html="item.description?.rendered" />
 
-        <Button class="mt-6" fit arrow> Rezervovat kurz </Button>
+        <Button class="mt-6" fit arrow>{{ $t('ui.components.cards.Tariff.buttonText1') }}</Button>
       </div>
     </div>
   </div>

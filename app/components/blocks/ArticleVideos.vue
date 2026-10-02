@@ -27,9 +27,7 @@
         <div
           v-else
           class="absolute inset-0 flex items-center justify-center text-white text-center px-4"
-        >
-          Видео отсутствует
-        </div>
+        >{{ $t('ui.components.blocks.ArticleVideos.divText1') }}</div>
       </div>
 
       <Paragraph

@@ -1,5 +1,6 @@
 <template>
   <Teleport to="body">
+    <LanguageSwitcher class="fixed top-6 right-20 z-[99999]" />
     <!-- Burger -->
     <button
       ref="button"
@@ -28,9 +29,9 @@
       class="fixed inset-0 z-[99998] bg-white opacity-0 invisible overflow-y-auto"
     >
       <div ref="menuContent" class="flex flex-col pt-[110px] px-6 pb-10 gap-5">
-        <div v-for="item in menu" :key="item.title" class="menu-item">
+        <div v-for="item in menu" :key="item.id" class="menu-item">
           <!-- Simple link -->
-          <NuxtLink
+          <NuxtLinkLocale
             v-if="!item.children?.length"
             :to="item.to"
             class="block py-2"
@@ -39,13 +40,13 @@
             <Paragraph>
               {{ item.title }}
             </Paragraph>
-          </NuxtLink>
+          </NuxtLinkLocale>
 
           <!-- Item with children -->
           <template v-else>
             <button
               class="flex justify-between items-center w-full py-2"
-              @click="toggleSub(item.title)"
+              @click="toggleSub(item.id)"
             >
               <Paragraph>
                 {{ item.title }}
@@ -53,21 +54,19 @@
 
               <span
                 class="text-darkbeige text-xl transition-transform duration-300"
-                :class="openedSub === item.title ? 'rotate-45' : ''"
-              >
-                +
-              </span>
+                :class="openedSub === item.id ? 'rotate-45' : ''"
+              >{{ $t('ui.components.menu.Mobile.spanText1') }}</span>
             </button>
 
             <!-- Children -->
             <div
-              :ref="(el) => setSubmenuRef(item.title, el)"
+              :ref="(el) => setSubmenuRef(item.id, el)"
               class="overflow-hidden max-h-0"
             >
               <div class="mt-3 flex flex-col bg-milk px-5 py-3">
-                <NuxtLink
+                <NuxtLinkLocale
                   v-for="child in item.children"
-                  :key="`${item.title}-${child.title}-${child.to}`"
+                  :key="`${item.id}-${child.id}-${child.to}`"
                   :to="child.to"
                   class="block py-3 border-b border-darkbeige/20 last:border-none"
                   @click="close"
@@ -75,13 +74,13 @@
                   <Paragraph>
                     {{ child.title }}
                   </Paragraph>
-                </NuxtLink>
+                </NuxtLinkLocale>
               </div>
             </div>
           </template>
         </div>
 
-        <Button class="mt-4"> Rezervovat Online </Button>
+        <Button class="mt-4">{{ $t('ui.components.menu.Mobile.buttonText1') }}</Button>
       </div>
     </div>
   </Teleport>
@@ -92,8 +91,9 @@ import { gsap } from "gsap";
 
 import Paragraph from "../ui/Paragraph.vue";
 import Button from "../ui/Button.vue";
+import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
 
-import { menu } from "#imports";
+const menu = useMenu();
 
 const open = ref(false);
 

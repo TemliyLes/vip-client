@@ -1,8 +1,10 @@
 export const useVideosStore = defineStore("videos", () => {
-  const data = ref([]);
+  const dataSource = ref([]);
+  const data = useCmsContent(dataSource, 'videos');
   const loading = ref(false);
   const error = ref(null);
 
+  const { t } = useI18n({ useScope: 'global' });
   const config = useRuntimeConfig();
 
   async function fetchData() {
@@ -16,18 +18,19 @@ export const useVideosStore = defineStore("videos", () => {
         baseURL: config.public.apiBase,
       });
 
-      data.value = response;
+      dataSource.value = response;
 
       return response;
     } catch (err) {
       console.error(err);
-      error.value = "Не удалось загрузить видео";
+      error.value = t('errors.message3');
     } finally {
       loading.value = false;
     }
   }
 
   return {
+    dataSource,
     data,
     loading,
     error,

@@ -1,8 +1,10 @@
 export const useArticleStore = defineStore("article", () => {
-  const article = ref([]);
+  const articleSource = ref([]);
+  const article = useCmsContent(articleSource, 'services');
   const loading = ref(false);
   const error = ref(null);
 
+  const { t } = useI18n({ useScope: 'global' });
   const config = useRuntimeConfig();
 
   async function fetchArticle(id) {
@@ -15,18 +17,19 @@ export const useArticleStore = defineStore("article", () => {
       const response = await $fetch(url, {
         baseURL: config.public.apiBase,
       });
-      article.value = response;
+      articleSource.value = response;
 
       return response;
     } catch (err) {
       console.error(err);
-      error.value = "Не удалось загрузить статьи";
+      error.value = t('errors.message1');
     } finally {
       loading.value = false;
     }
   }
 
   return {
+    articleSource,
     article,
     loading,
     error,

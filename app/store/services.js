@@ -1,8 +1,10 @@
 import { defineStore } from "pinia";
 
 export const useServicesStore = defineStore("services", () => {
-  const data = ref(null);
-  const service = ref(null);
+  const dataSource = ref(null);
+  const data = useCmsContent(dataSource, 'service-categories');
+  const serviceSource = ref(null);
+  const service = useCmsContent(serviceSource, 'services');
   const loading = ref(false);
 
   const error = ref(null);
@@ -19,7 +21,7 @@ export const useServicesStore = defineStore("services", () => {
         baseURL: config.public.apiBase,
       });
 
-      data.value = response.filter(
+      dataSource.value = response.filter(
         (item) => item?.meta?.service_category_is_primary,
       );
     } catch (err) {
@@ -36,7 +38,7 @@ export const useServicesStore = defineStore("services", () => {
 
     loading.value = true;
     error.value = null;
-    service.value = null;
+    serviceSource.value = null;
 
     try {
       const response = await $fetch(
@@ -55,9 +57,11 @@ export const useServicesStore = defineStore("services", () => {
     }
   }
   return {
+    dataSource,
     data,
     loading,
     error,
+    serviceSource,
     service,
     getData,
     getServiceByCategory,

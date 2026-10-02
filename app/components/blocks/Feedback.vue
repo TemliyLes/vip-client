@@ -6,21 +6,14 @@
         class="relative z-20 basis-1/3 shrink-0 self-stretch bg-white flex flex-col gap-6 pr-8"
       >
         <div class="flex flex-col gap-4">
-          <Title>Recenze</Title>
+          <Title>{{ $t('ui.components.blocks.Feedback.titleText1') }}</Title>
 
-          <Header>
-            Důvěra, kterou si<br />
-            budujeme každý den
-          </Header>
+          <Header>{{ $t('ui.components.blocks.Feedback.headerText1') }}<br />{{ $t('ui.components.blocks.Feedback.headerText2') }}</Header>
 
-          <Paragraph>
-            Největším důkazem efektivnosti naší práce je zpětná vazba od lidí,
-            kteří PALIY skutečně navštívili. Přečtěte si recenze našich klientů
-            a zjistěte, jak hodnotí náš přístup, péči a výsledky.
-          </Paragraph>
+          <Paragraph>{{ $t('ui.components.blocks.Feedback.paragraphText1') }}</Paragraph>
         </div>
 
-        <Button>Všechny recenze</Button>
+        <Button>{{ $t('ui.components.blocks.Feedback.buttonText1') }}</Button>
       </div>
 
       <!-- RIGHT -->

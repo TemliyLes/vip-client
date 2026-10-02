@@ -1,8 +1,10 @@
 export const useNewsStore = defineStore("news", () => {
-  const data = ref([]);
+  const dataSource = ref([]);
+  const data = useCmsContent(dataSource, 'news');
   const loading = ref(false);
   const error = ref(null);
 
+  const { t } = useI18n({ useScope: 'global' });
   const config = useRuntimeConfig();
 
   async function fetchData(id) {
@@ -16,18 +18,19 @@ export const useNewsStore = defineStore("news", () => {
         baseURL: config.public.apiBase,
       });
 
-      data.value = response;
+      dataSource.value = response;
 
       return response;
     } catch (err) {
       console.error(err);
-      error.value = "Не удалось загрузить статьи";
+      error.value = t('errors.message1');
     } finally {
       loading.value = false;
     }
   }
 
   return {
+    dataSource,
     data,
     loading,
     error,
