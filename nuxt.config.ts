@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   modules: ["@pinia/nuxt", "@nuxtjs/i18n"],
+  nitro: {
+    externals: {
+      // Bundle this local helper; external dev imports get invalid paths on Windows.
+      inline: [/[/\\]i18n[/\\]utils\.js$/],
+    },
+  },
   i18n: {
     defaultLocale: "cs",
     strategy: "prefix_except_default",
