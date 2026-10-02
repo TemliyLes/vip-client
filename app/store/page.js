@@ -1,6 +1,5 @@
 export const usePageStore = defineStore("page", () => {
-  const pageSource = ref([]);
-  const page = useCmsContent(pageSource, 'pages');
+  const page = ref([]);
   const loading = ref(false);
   const error = ref(null);
 
@@ -18,7 +17,7 @@ export const usePageStore = defineStore("page", () => {
         baseURL: config.public.apiBase,
       });
 
-      pageSource.value = response;
+      page.value = response;
 
       return response;
     } catch (err) {
@@ -30,7 +29,6 @@ export const usePageStore = defineStore("page", () => {
   }
 
   return {
-    pageSource,
     page,
     loading,
     error,

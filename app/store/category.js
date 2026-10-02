@@ -1,6 +1,5 @@
 export const useCategoryStore = defineStore("category", () => {
-  const categorySource = ref(null);
-  const category = useCmsContent(categorySource, 'services');
+  const category = ref(null);
   const loading = ref(false);
   const error = ref(null);
 
@@ -17,7 +16,7 @@ export const useCategoryStore = defineStore("category", () => {
       const responce = await $fetch(url, {
         baseURL: config.public.apiBase,
       });
-      categorySource.value = responce;
+      category.value = responce;
     } catch (err) {
       console.error(err);
       error.value = t('errors.message2');
@@ -27,7 +26,6 @@ export const useCategoryStore = defineStore("category", () => {
   }
 
   return {
-    categorySource,
     category,
     loading,
     error,

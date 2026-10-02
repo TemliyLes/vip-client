@@ -1,6 +1,5 @@
 export const usePostsStore = defineStore("posts", () => {
-  const postsSource = ref([]);
-  const posts = useCmsContent(postsSource, 'posts');
+  const posts = ref([]);
   const loading = ref(false);
   const error = ref(null);
 
@@ -12,7 +11,7 @@ export const usePostsStore = defineStore("posts", () => {
     error.value = null;
 
     try {
-      postsSource.value = await $fetch("/wp-json/wp/v2/posts", {
+      posts.value = await $fetch("/wp-json/wp/v2/posts", {
         baseURL: config.public.apiBase,
         query: {
           per_page: 10,
@@ -27,7 +26,6 @@ export const usePostsStore = defineStore("posts", () => {
   }
 
   return {
-    postsSource,
     posts,
     loading,
     error,

@@ -29,9 +29,8 @@ import { useServicesStore } from "~/store/services.js";
 import Card from "../cards/Card.vue";
 
 const store = useServicesStore();
-const dataSource = ref(null);
-const data = useCmsContent(dataSource, 'services');
+const data = ref(null);
 onMounted(async () => {
-  dataSource.value = await store?.getServiceByCategory(47);
+  data.value = await store?.getServiceByCategory(47);
 });
 </script>

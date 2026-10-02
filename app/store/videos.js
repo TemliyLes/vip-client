@@ -1,6 +1,5 @@
 export const useVideosStore = defineStore("videos", () => {
-  const dataSource = ref([]);
-  const data = useCmsContent(dataSource, 'videos');
+  const data = ref([]);
   const loading = ref(false);
   const error = ref(null);
 
@@ -18,7 +17,7 @@ export const useVideosStore = defineStore("videos", () => {
         baseURL: config.public.apiBase,
       });
 
-      dataSource.value = response;
+      data.value = response;
 
       return response;
     } catch (err) {
@@ -30,7 +29,6 @@ export const useVideosStore = defineStore("videos", () => {
   }
 
   return {
-    dataSource,
     data,
     loading,
     error,

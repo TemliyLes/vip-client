@@ -26,9 +26,8 @@ import Title from "../ui/Title.vue";
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
 const store = useServicesStore();
-const dataSource = ref(null);
-const data = useCmsContent(dataSource, 'services');
+const data = ref(null);
 onMounted(async () => {
-  dataSource.value = await store.getServiceByCategory(45);
+  data.value = await store.getServiceByCategory(45);
 });
 </script>

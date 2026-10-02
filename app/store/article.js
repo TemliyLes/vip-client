@@ -1,6 +1,5 @@
 export const useArticleStore = defineStore("article", () => {
-  const articleSource = ref([]);
-  const article = useCmsContent(articleSource, 'services');
+  const article = ref([]);
   const loading = ref(false);
   const error = ref(null);
 
@@ -17,7 +16,7 @@ export const useArticleStore = defineStore("article", () => {
       const response = await $fetch(url, {
         baseURL: config.public.apiBase,
       });
-      articleSource.value = response;
+      article.value = response;
 
       return response;
     } catch (err) {
@@ -29,7 +28,6 @@ export const useArticleStore = defineStore("article", () => {
   }
 
   return {
-    articleSource,
     article,
     loading,
     error,

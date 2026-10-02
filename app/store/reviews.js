@@ -1,10 +1,8 @@
 import { defineStore } from "pinia";
 
 export const useReviewsStore = defineStore("reviews", () => {
-  const dataSource = ref(null);
-  const data = useCmsContent(dataSource, 'reviews');
-  const reviewSource = ref(null);
-  const review = useCmsContent(reviewSource, 'reviews');
+  const data = ref(null);
+  const review = ref(null);
   const loading = ref(false);
   const error = ref(null);
 
@@ -19,7 +17,7 @@ export const useReviewsStore = defineStore("reviews", () => {
         baseURL: config.public.apiBase,
       });
 
-      dataSource.value = response;
+      data.value = response;
     } catch (err) {
       error.value = err;
       console.error("Ошибка загрузки отзывов:", err);
@@ -42,7 +40,7 @@ export const useReviewsStore = defineStore("reviews", () => {
         },
       );
 
-      reviewSource.value = response;
+      review.value = response;
     } catch (err) {
       error.value = err;
       console.error("Ошибка загрузки отзыва:", err);
@@ -52,9 +50,7 @@ export const useReviewsStore = defineStore("reviews", () => {
   }
 
   return {
-    dataSource,
     data,
-    reviewSource,
     review,
     loading,
     error,
