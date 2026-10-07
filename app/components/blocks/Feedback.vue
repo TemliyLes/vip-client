@@ -62,7 +62,7 @@ onMounted(async () => {
   await store.getReviewById(42);
   await nextTick();
 
-  if (!section.value || !viewport.value || !track.value) return;
+  if (!store.review?.length || !section.value || !viewport.value || !track.value) return;
 
   // На мобильных отключаем горизонтальный скролл
   if (isMobile.value) {

@@ -72,6 +72,7 @@ function setCardRef(el, index) {
 
 async function animateCards() {
   await nextTick();
+  if (!cardRefs.value.length || !section.value) return;
 
   gsap.to(cardRefs.value, {
     opacity: 1,

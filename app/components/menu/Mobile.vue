@@ -1,6 +1,6 @@
 <template>
   <Teleport to="body">
-    <LanguageSwitcher class="fixed top-6 right-20 z-[99999]" />
+    <!-- <LanguageSwitcher class="fixed top-6 right-20 z-[99999]" /> -->
     <!-- Burger -->
     <button
       ref="button"
@@ -91,7 +91,7 @@ import { gsap } from "gsap";
 
 import Paragraph from "../ui/Paragraph.vue";
 import Button from "../ui/Button.vue";
-import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
+// import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
 
 const menu = useMenu();
 

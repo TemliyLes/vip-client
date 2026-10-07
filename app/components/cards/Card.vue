@@ -1,6 +1,10 @@
 <template>
   <div>
-    <NuxtLinkLocale :to="link" class="group flex flex-col h-full">
+    <NuxtLinkLocale
+      :to="link"
+      class="group flex flex-col h-full"
+      @mousedown.left.prevent="focusCard"
+    >
       <div class="relative">
         <img
           v-if="image"
@@ -61,7 +65,7 @@
         </Header> -->
       </div>
 
-      <Button v-if="btn" class="mt-4" fit arrow>{{ $t('ui.components.cards.Card.buttonText1') }}</Button>
+      <Button v-if="btn" tag="span" class="mt-4" fit arrow>{{ $t('ui.components.cards.Card.buttonText1') }}</Button>
     </NuxtLinkLocale>
   </div>
 </template>
@@ -96,6 +100,11 @@ const props = defineProps({
 });
 
 const flexClasses = "flex gap-2";
+
+// Native focus scrolling can move a partially visible card before mouseup.
+const focusCard = (event) => {
+  event.currentTarget.focus({ preventScroll: true });
+};
 
 const image = computed(() => {
   return props.data?.image?.url || props.data?.images?.card?.url || "";

@@ -1,16 +1,21 @@
 <template>
-  <a
+  <component
+    :is="tag"
     :href="to"
     :class="isFit"
     class="cursor-pointer inline-flex items-center justify-center gap-6 bg-wine px-8 py-4 text-sm uppercase tracking-[0.15em] text-white transition duration-300 hover:bg-[#9e0012]"
   >
     <span class="flex gap-3"> <slot /> <Arrow v-if="arrow" /></span>
-  </a>
+  </component>
 </template>
 
 <script setup>
 import Arrow from "../icons/arrow.vue";
 const props = defineProps({
+  tag: {
+    type: String,
+    default: "a",
+  },
   fit: {
     type: Boolean,
     default: false,

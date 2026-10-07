@@ -7,7 +7,7 @@
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main>
-          <NuxtPage />
+          <NuxtPage :page-key="(route) => route.path" />
         </main>
         <Footer />
       </div>

@@ -1,10 +1,10 @@
 <template>
   <AlterHero />
   <Container v-if="title && description" class="-mb-12">
-    <Center>
+    <div class="text-center">
       <Header class="mt-12" v-if="title">{{ title }}</Header>
       <Paragraph class="mt-6" v-if="description">{{ description }}</Paragraph>
-    </Center>
+    </div>
   </Container>
   <Category :data="categoryStore.category" />
 </template>
@@ -20,7 +20,12 @@ import Container from "~/components/ui/Container.vue";
 const categoryStore = useCategoryStore();
 const route = useRoute();
 
-const { t } = useI18n({ useScope: 'global' });
+const { t, locale } = useI18n({ useScope: 'global' });
+definePageMeta({ middleware: 'wp-language' });
+
+await useAsyncData(`wp-category:${locale.value}:${route.params.id}`, () =>
+  categoryStore.fetchCategory(route.params.id, locale.value),
+);
 const table = computed(() => [
   {
     id: 14,
@@ -40,20 +45,12 @@ const table = computed(() => [
 ]);
 
 const currentCategory = computed(() => {
-  return table.value.find((e) => e.id === Number(route.params.id));
+  const sourceId = categoryStore.info?.translations?.cs ?? route.params.id;
+  return table.value.find((e) => e.id === Number(sourceId));
 });
 
 const title = computed(() => currentCategory.value?.title);
 
 const description = computed(() => currentCategory.value?.description);
 
-watch(
-  () => route.params.id,
-  async (id) => {
-    await categoryStore.fetchCategory(id);
-  },
-  {
-    immediate: true,
-  },
-);
 </script>

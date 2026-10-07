@@ -18,12 +18,9 @@ export default defineNuxtConfig({
       { code: "sk", language: "sk-SK", name: "Slovenčina" },
     ],
     vueI18n: "./i18n.config.ts",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "vip_locale",
-      redirectOn: "root",
-      fallbackLocale: "cs",
-    },
+    // Keep the public entry in Czech, including visitors with an old SK cookie.
+    // Manual switching still works when LanguageSwitcher is uncommented.
+    detectBrowserLanguage: false,
   },
   runtimeConfig: {
     public: {

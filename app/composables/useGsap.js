@@ -10,9 +10,15 @@ export const useGsap = () => {
   let timeline = null;
 
   let smoother = null;
+  let pointerFocus = false;
+  const onPointerDown = () => { pointerFocus = true; };
+  const onKeyDown = () => { pointerFocus = false; };
 
   function init() {
     if (!smoother) {
+      window.addEventListener("pointerdown", onPointerDown, true);
+      window.addEventListener("mousedown", onPointerDown, true);
+      window.addEventListener("keydown", onKeyDown, true);
       smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
 
@@ -21,6 +27,10 @@ export const useGsap = () => {
         smooth: 1.5,
 
         effects: true,
+
+        // Pointer focus must not move a card between pointerdown and click.
+        // Keep automatic scrolling when navigating with the keyboard.
+        onFocusIn: () => !pointerFocus,
       });
     }
 
@@ -134,6 +144,9 @@ export const useGsap = () => {
   }
 
   function destroy() {
+    window.removeEventListener("pointerdown", onPointerDown, true);
+    window.removeEventListener("mousedown", onPointerDown, true);
+    window.removeEventListener("keydown", onKeyDown, true);
     if (timeline) {
       timeline.kill();
 

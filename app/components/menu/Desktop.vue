@@ -19,7 +19,7 @@
         />
 
         <div class="flex shrink-0 items-center gap-3">
-          <LanguageSwitcher />
+          <!-- <LanguageSwitcher /> -->
           <Button class="shrink-0">{{ $t('ui.components.menu.Desktop.buttonText1') }}</Button>
         </div>
       </div>
@@ -37,7 +37,7 @@ import Bar from "./Bar.vue";
 
 const menu = useMenu();
 import Logotitle from "../icons/logotitle.vue";
-import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
+// import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
 
 const bg = ref(null);
 

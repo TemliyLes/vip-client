@@ -22,14 +22,36 @@
 </template>
 
 <script setup>
-const { locales, locale, setLocale } = useI18n({ useScope: 'global' })
+const { locales, locale, setLocale, setLocaleCookie } = useI18n({ useScope: 'global' })
+const route = useRoute()
+const localePath = useLocalePath()
+const getRouteBaseName = useRouteBaseName()
+const api = useWpApi()
 const switching = ref(false)
 
 async function switchLanguage(code) {
   if (code === locale.value || switching.value) return
   switching.value = true
   try {
-    await setLocale(code)
+    const name = getRouteBaseName(route)
+    const resource = name === 'category-id' ? 'service-categories'
+      : name === 'services-id' ? 'services'
+      : name === 'news-id' ? 'news' : null
+
+    if (resource) {
+      const id = await api.translatedId(resource, route.params.id, code)
+      const destination = id ? localePath({
+        name,
+        params: { ...route.params, id: String(id) },
+        query: route.query,
+        hash: route.hash,
+      }, code) : localePath('index', code)
+
+      setLocaleCookie(code)
+      await navigateTo(destination)
+    } else {
+      await setLocale(code)
+    }
   } finally {
     switching.value = false
   }
