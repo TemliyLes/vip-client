@@ -11,10 +11,11 @@ import { useNewsStore } from "~/store/news";
 const store = useNewsStore();
 
 const route = useRoute();
+const { locale } = useI18n({ useScope: 'global' });
 
-onMounted(async () => {
-  await store.fetchData(route.params.id);
+definePageMeta({ middleware: 'wp-language' });
 
-  await nextTick();
-});
+await useAsyncData(`wp-news:${locale.value}:${route.params.id}`, () =>
+  store.fetchData(route.params.id, locale.value),
+);
 </script>

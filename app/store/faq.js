@@ -3,56 +3,44 @@ import { defineStore } from "pinia";
 export const useFaqStore = defineStore("faq", () => {
   const all = ref([]);
   const byTag = ref({});
-
   const loading = ref(false);
   const error = ref(null);
+  const { locale } = useI18n({ useScope: 'global' });
+  const api = useWpApi();
+  const requests = new Map();
+  let requestId = 0;
 
-  async function getFaq() {
-    const config = useRuntimeConfig();
+  watch(locale, () => {
+    all.value = [];
+    byTag.value = {};
+    error.value = null;
+  });
 
+  async function fetchFaq(id) {
+    const language = locale.value;
+    const key = id ?? 'all';
+    const currentRequest = ++requestId;
+    requests.set(key, currentRequest);
     loading.value = true;
-
+    error.value = null;
     try {
-      const response = await $fetch("/wp-json/wp/v2/faq", {
-        baseURL: config.public.apiBase,
-      });
-
-      all.value = response;
-
+      const response = id == null
+        ? await api.getList('faq', {}, language)
+        : await api.getByTerm('faq', 'faq-tags', id, {}, language);
+      if (requests.get(key) === currentRequest && language === locale.value) {
+        if (id == null) all.value = response;
+        else byTag.value[id] = response;
+      }
       return response;
     } catch (err) {
-      error.value = err;
+      if (requests.get(key) === currentRequest && language === locale.value) error.value = err;
     } finally {
-      loading.value = false;
+      if (requests.get(key) === currentRequest) requests.delete(key);
+      loading.value = requests.size > 0;
     }
   }
 
-  async function getFaqByTag(id) {
-    const config = useRuntimeConfig();
-
-    loading.value = true;
-
-    try {
-      const response = await $fetch(`/wp-json/wp/v2/faq?faq-tags=${id}`, {
-        baseURL: config.public.apiBase,
-      });
-
-      byTag.value[id] = response;
-
-      return response;
-    } catch (err) {
-      error.value = err;
-    } finally {
-      loading.value = false;
-    }
-  }
-
-  return {
-    all,
-    byTag,
-    loading,
-    error,
-    getFaq,
-    getFaqByTag,
-  };
+  const getFaq = () => fetchFaq();
+  const getFaqByTag = id => fetchFaq(id);
+  return { all, byTag, loading, error, getFaq, getFaqByTag };
 });

@@ -2,12 +2,12 @@
   <div class="flex justify-between gap-4 h-full items-center relative">
     <div
       v-for="item in items"
-      :key="item.title"
+      :key="item.id"
       class="relative h-full flex items-center"
-      @mouseenter="item.children && openMenu(item.title)"
-      @mouseleave="item.children && startClose(item.title)"
+      @mouseenter="item.children && openMenu(item.id)"
+      @mouseleave="item.children && startClose(item.id)"
     >
-      <NuxtLink :to="item?.to" class="h-full flex items-center">
+      <NuxtLinkLocale :to="item?.to" class="h-full flex items-center">
         <Paragraph
           class="hover:!text-wine"
           :class="[
@@ -17,20 +17,20 @@
         >
           {{ item.title }}
         </Paragraph>
-      </NuxtLink>
+      </NuxtLinkLocale>
 
       <!-- Dropdown -->
       <div
         v-if="item.children"
-        :ref="(el) => setDropdownRef(item.title, el)"
+        :ref="(el) => setDropdownRef(item.id, el)"
         class="dropdown absolute top-[48px] left-0 min-w-[280px] bg-white shadow-xl p-5 opacity-0 invisible scale-y-95 origin-top"
-        @mouseenter="cancelClose(item.title)"
-        @mouseleave="startClose(item.title)"
+        @mouseenter="cancelClose(item.id)"
+        @mouseleave="startClose(item.id)"
       >
         <div class="flex flex-col gap-4">
-          <NuxtLink
+          <NuxtLinkLocale
             v-for="child in item.children"
-            :key="child.title"
+            :key="child.id"
             :to="child.to"
           >
             <Paragraph
@@ -38,7 +38,7 @@
             >
               {{ child.title }}
             </Paragraph>
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
-  <Button fit arrow v-if="url" :to="reservioURL">Rezrvovat Online</Button>
-  <Button @click="openModal" fit arrow v-if="!url">Rezrvovat Online</Button>
+  <Button fit arrow v-if="url" :to="reservioURL">{{ $t('ui.components.ui.ReservioButton.buttonText1') }}</Button>
+  <Button @click="openModal" fit arrow v-if="!url">{{ $t('ui.components.ui.ReservioButton.buttonText1') }}</Button>
 
   <Modal v-model="modalOpened">
     <FeedbackForm @submit="sendInfo" :item="item" />
@@ -30,4 +30,3 @@ const sendInfo = (item) => {
   console.log(item);
 };
 </script>
-I want to be fog given I want to home a window ups again be forgive up

@@ -5,9 +5,9 @@
       <Marker class="shrink-0 mt-1" />
 
       <div class="flex flex-col gap-1">
-        <Header mini> PALIY ESTHETIC CLINIC </Header>
+        <Header mini>{{ $t('ui.components.ui.ContactsGrid.headerText1') }}</Header>
 
-        <Paragraph> NA SVIHANCE 1476/1, PRAHA 12000 </Paragraph>
+        <Paragraph>{{ $t('ui.components.ui.ContactsGrid.paragraphText1') }}</Paragraph>
       </div>
     </div>
 
@@ -15,25 +15,25 @@
     <div class="flex items-start gap-4">
       <Clock class="shrink-0 mt-1" />
 
-      <Paragraph> PO - SO, 09:00 - 20:00 </Paragraph>
+      <Paragraph>{{ $t('ui.components.ui.ContactsGrid.paragraphText2') }}</Paragraph>
     </div>
 
     <!-- Phone -->
     <div class="flex items-start gap-4">
       <Phone class="shrink-0 mt-1" />
 
-      <Paragraph> +420 608 214 640 </Paragraph>
+      <Paragraph>{{ $t('ui.components.ui.ContactsGrid.paragraphText3') }}</Paragraph>
     </div>
 
     <!-- Email -->
     <div class="flex items-start gap-4">
       <Mail class="shrink-0 mt-1" />
 
-      <Paragraph> VIPPERMANENT.CZ@GMAIL.COM </Paragraph>
+      <Paragraph>{{ $t('ui.components.ui.ContactsGrid.paragraphText4') }}</Paragraph>
     </div>
 
     <!-- Button -->
-    <Button class="mt-2"> REZERVOVAT ONLINE </Button>
+    <Button class="mt-2">{{ $t('ui.components.ui.ContactsGrid.buttonText1') }}</Button>
   </div>
 </template>
 

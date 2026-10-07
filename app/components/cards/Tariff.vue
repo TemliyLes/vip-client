@@ -25,7 +25,7 @@
             <div v-if="item?.time" class="flex gap-2">
               <Clock />
 
-              <Paragraph> {{ item?.time }} hodiny </Paragraph>
+              <Paragraph> {{ item?.time }}{{ $t('ui.components.cards.Tariff.paragraphText1') }}</Paragraph>
             </div>
 
             <div v-if="item?.people_count" class="flex gap-2">

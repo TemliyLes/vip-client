@@ -1,28 +1,35 @@
 export const useArticleStore = defineStore("article", () => {
-  const article = ref([]);
+  const article = ref(null);
   const loading = ref(false);
   const error = ref(null);
 
-  const config = useRuntimeConfig();
+  const { t, locale } = useI18n({ useScope: 'global' });
+  const api = useWpApi();
+  let requestId = 0;
 
-  async function fetchArticle(id) {
+  watch(locale, () => { article.value = null; });
+
+  async function fetchArticle(id, language = locale.value) {
+    const currentRequest = ++requestId;
     loading.value = true;
     error.value = null;
+    article.value = null;
 
     try {
-      const url = `/wp-json/wp/v2/services/${id}`;
-
-      const response = await $fetch(url, {
-        baseURL: config.public.apiBase,
-      });
-      article.value = response;
+      const response = await api.getItem('services', id, language);
+      if (currentRequest === requestId && language === locale.value) {
+        article.value = response;
+      }
 
       return response;
     } catch (err) {
       console.error(err);
-      error.value = "Не удалось загрузить статьи";
+      if (currentRequest === requestId && language === locale.value) {
+        error.value = t('errors.message1');
+      }
+      throw err;
     } finally {
-      loading.value = false;
+      if (currentRequest === requestId) loading.value = false;
     }
   }
 

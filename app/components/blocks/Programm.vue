@@ -2,17 +2,9 @@
   <Container class="py-12 sm:py-24">
     <div class="flex justify-between items-center">
       <div class="flex flex-col gap-4">
-        <Title>AKADEMIE</Title>
-        <Header>
-          Zkušenosti, které mají hodnotu,<br />když je můžete prodávat dál
-        </Header>
-        <Paragraph class="max-w-[650px]">
-          PALIY Academy je prostor pro ty, kteří chtějí zahájit svou kariéru v
-          permanentním make-upu nebo přesunout své dovednosti na vyšší
-          úroveň.<br />Na kurzech se soustředíme nejen na techniku, ale také na
-          práci s klientem, správný postup, hygienu, detail a přirozený
-          výsledek.
-        </Paragraph>
+        <Title>{{ $t('ui.components.blocks.Programm.titleText1') }}</Title>
+        <Header>{{ $t('ui.components.blocks.Programm.headerText1') }}<br />{{ $t('ui.components.blocks.Programm.headerText2') }}</Header>
+        <Paragraph class="max-w-[650px]">{{ $t('ui.components.blocks.Programm.paragraphText1') }}<br />{{ $t('ui.components.blocks.Programm.paragraphText2') }}</Paragraph>
       </div>
       <img
         class="h-36 mr-6 mt-4 hidden sm:block"

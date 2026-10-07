@@ -8,22 +8,14 @@
 
         <div class="flex h-full flex-col justify-between bg-white">
           <div>
-            <Title class="mb-4"> Naše služby </Title>
+            <Title class="mb-4">{{ $t('ui.components.blocks.Service.titleText1') }}</Title>
 
-            <Header>
-              Vaše krása
-              <br />
-              naše péče
-            </Header>
+            <Header>{{ $t('ui.components.blocks.Service.headerText1') }}<br />{{ $t('ui.components.blocks.Service.headerText2') }}</Header>
             <img src="../../assets/img/styletext.png" alt="" />
-            <Paragraph class="mt-5 mb-4 max-w-[280px]">
-              Každou proceduru přizpůsobujeme vašim potřebám, rysům a
-              očekáváním. Naším cílem nejsou výrazné změny, ale harmonie,
-              přirozenost a dlouhodobě krásný výsledek.
-            </Paragraph>
+            <Paragraph class="mt-5 mb-4 max-w-[280px]">{{ $t('ui.components.blocks.Service.paragraphText1') }}</Paragraph>
           </div>
 
-          <Button full> Zobrazit vše </Button>
+          <Button full>{{ $t('ui.components.blocks.Service.buttonText1') }}</Button>
         </div>
 
         <!-- CARDS -->

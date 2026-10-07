@@ -7,7 +7,7 @@
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main>
-          <NuxtPage />
+          <NuxtPage :page-key="(route) => route.path" />
         </main>
         <Footer />
       </div>
@@ -23,6 +23,9 @@ import PageTransition from "./components/layout/PageTransition.vue";
 import Footer from "./components/blocks/Footer.vue";
 
 const router = useRouter();
+
+const { localeProperties } = useI18n({ useScope: 'global' });
+useHead({ htmlAttrs: { lang: () => localeProperties.value.language } });
 
 const pageTransition = ref(null);
 

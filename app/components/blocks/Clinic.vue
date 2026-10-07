@@ -4,7 +4,7 @@
       <div
         class="flex flex-col sm:w-1/2 sm:justify-end gap-4 absolute right-0 h-full z-9 sm:p-24 p-12 justify-between"
       >
-        <Tag>Prostor</Tag>
+        <Tag>{{ $t('ui.components.blocks.Clinic.tagText1') }}</Tag>
         <Header
           ><span
             class="!text-white"

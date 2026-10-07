@@ -2,14 +2,12 @@
   <div class="mt-12 sm:mt-24">
     <Container>
       <div class="flex flex-col gap-4 items-center">
-        <Title>Propagace</Title>
+        <Title>{{ $t('ui.components.blocks.Sale.titleText1') }}</Title>
         <Header class="text-center"
-          >Je ten správný čas udělat<br />něco dobrého pro sebe</Header
+          >{{ $t('ui.components.blocks.Sale.headerText1') }}<br />{{ $t('ui.components.blocks.Sale.headerText2') }}</Header
         >
         <Paragraph class="text-center"
-          >Objevte aktuální nabídky PALIY ESTHETIC CLINIC.<br />Ponuky jsou
-          časově omezeny a mohou se týkat vybraných procedur nebo
-          termínů.</Paragraph
+          >{{ $t('ui.components.blocks.Sale.paragraphText1') }}<br />{{ $t('ui.components.blocks.Sale.paragraphText2') }}</Paragraph
         >
       </div>
 

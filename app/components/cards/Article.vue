@@ -43,7 +43,7 @@
             class="mt-8 lg:mt-0 w-full lg:w-[320px] xl:w-[400px] shrink-0 relative"
           >
             <div class="lg:sticky lg:top-24 flex flex-col gap-4">
-              <Header mini> Servisní informace </Header>
+              <Header mini>{{ $t('ui.components.cards.Article.headerText2') }}</Header>
 
               <div v-if="content?.service_fields?.time" :class="flexClasses">
                 <Clock class="w-7 h-7 shrink-0" />
@@ -96,7 +96,7 @@
 
         <!-- Видео -->
         <div v-if="content?.videos?.length" class="mt-8 sm:mt-16">
-          <Header class="mb-8" center> Související video </Header>
+          <Header class="mb-8" center>{{ $t('ui.components.cards.Article.headerText1') }}</Header>
 
           <ArticleVideos :data="content.videos" />
         </div>

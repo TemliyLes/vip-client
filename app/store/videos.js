@@ -2,35 +2,34 @@ export const useVideosStore = defineStore("videos", () => {
   const data = ref([]);
   const loading = ref(false);
   const error = ref(null);
+  const { t, locale } = useI18n({ useScope: 'global' });
+  const api = useWpApi();
+  let requestId = 0;
 
-  const config = useRuntimeConfig();
+  watch(locale, () => {
+    data.value = [];
+    error.value = null;
+  });
 
   async function fetchData() {
+    const language = locale.value;
+    const currentRequest = ++requestId;
     loading.value = true;
     error.value = null;
-
+    data.value = [];
     try {
-      const url = `/wp-json/wp/v2/videos/`;
-
-      const response = await $fetch(url, {
-        baseURL: config.public.apiBase,
-      });
-
-      data.value = response;
-
+      const response = await api.getList('videos', {}, language);
+      if (currentRequest === requestId && language === locale.value) data.value = response;
       return response;
     } catch (err) {
-      console.error(err);
-      error.value = "Не удалось загрузить видео";
+      if (currentRequest === requestId && language === locale.value) {
+        console.error(err);
+        error.value = t('errors.message3');
+      }
     } finally {
-      loading.value = false;
+      if (currentRequest === requestId) loading.value = false;
     }
   }
 
-  return {
-    data,
-    loading,
-    error,
-    fetchData,
-  };
+  return { data, loading, error, fetchData };
 });

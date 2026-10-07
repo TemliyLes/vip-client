@@ -1,10 +1,5 @@
 <template>
-  <div :style="[randomStyle(), ranBg()]">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-    similique perspiciatis odio fuga molestiae quaerat quasi sapiente nostrum
-    laudantium rem, nulla corporis ad aliquid magnam? Corporis eius non tempora
-    libero.
-  </div>
+  <div :style="[randomStyle(), ranBg()]">{{ $t('ui.components.Blank.divText1') }}</div>
 </template>
 
 <script setup>

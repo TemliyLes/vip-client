@@ -7,6 +7,13 @@
 <script setup>
 import Desktop from "./Desktop.vue";
 import Mobile from "./Mobile.vue";
+import { useServicesStore } from "~/store/services";
 
 const { isMobile } = useDevice();
+const { locale } = useI18n({ useScope: 'global' });
+const services = useServicesStore();
+
+onMounted(() => {
+  watch(locale, () => services.getData(), { immediate: true });
+});
 </script>

@@ -1,10 +1,10 @@
 <template>
-  <NuxtLink :to="to">
+  <NuxtLinkLocale :to="to">
     <div class="flex gap-2 cursor-pointer">
       <Paragraph class="text-wine!"><slot /></Paragraph>
       <Arrow red />
     </div>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>
 
 <script setup>

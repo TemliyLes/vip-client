@@ -1,0 +1,216 @@
+{
+  "ui": {
+    "components": {
+      "Blank": {
+        "divText1": "\r\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto\r\n    similique perspiciatis odio fuga molestiae quaerat quasi sapiente nostrum\r\n    laudantium rem, nulla corporis ad aliquid magnam? Corporis eius non tempora\r\n    libero.\r\n  "
+      },
+      "blocks": {
+        "AboutMain": {
+          "divText1": "Profesionalita",
+          "divText2": "Precíznosť",
+          "divText3": "Prirodzenosť",
+          "divText4": "O NÁS",
+          "h1Text1": "Odbornosť,",
+          "h1Text2": "skúsenosti",
+          "h1Text3": "a cit pre detail",
+          "pText1": "Paliy Esthetic Clinic je moderná estetická klinika v Prahe, ktorá spája permanentný make-up, kozmetológiu a profesionálne vzdelávanie.",
+          "buttonText1": "Zistite viac"
+        },
+        "ArticleVideos": {
+          "divText1": "Video nie je k dispozícii"
+        },
+        "Clinic": {
+          "tagText1": "Priestor"
+        },
+        "Contacts": {
+          "header1": "Nájdete nás v centre Prahy",
+          "title1": "Kontaktné informácie",
+          "description1": "Navštívte PALIY ESTHETIC CLINIC a doprajte si profesionálnu starostlivosť v príjemnom a modernom prostredí.",
+          "address1": "Na Švihance 1476/1, Praha 12000"
+        },
+        "FAQ": {
+          "titleText1": "FAQ",
+          "headerText1": "Často kladené otázky",
+          "paragraphText1": "Tu nájdete odpovede na najčastejšie kladené otázky."
+        },
+        "Feedback": {
+          "titleText1": "Recenzie",
+          "headerText1": "Dôvera, ktorú si",
+          "headerText2": "budujeme každý deň",
+          "paragraphText1": "Najväčším dôkazom efektívnosti našej práce je spätná väzba od ľudí, ktorí PALIY skutočne navštívili. Prečítajte si recenzie našich klientov a zistite, ako hodnotia náš prístup, starostlivosť a výsledky.",
+          "buttonText1": "Všetky recenzie"
+        },
+        "Footer": {
+          "paragraphText1": "ESTHETIC CLINIC",
+          "nuxtlinkText1": "Kozmetológia",
+          "nuxtlinkText2": "Permanentný make-up",
+          "nuxtlinkText3": "Školenia",
+          "nuxtlinkText4": "Služby",
+          "nuxtlinkText5": "Kozmetológia",
+          "nuxtlinkText6": "Make-up",
+          "nuxtlinkText7": "Vzdelávanie",
+          "nuxtlinkText8": "O nás",
+          "nuxtlinkText9": "Recenzie",
+          "nuxtlinkText10": "Kontakt",
+          "spanText1": "◎",
+          "spanText2": "f",
+          "paragraphText2": "© 2026 PALIY ESTHETIC CLINIC. VŠETKY PRÁVA VYHRADENÉ"
+        },
+        "Hero": {
+          "AboutMainMobile": {
+            "divText1": "Profesionalita",
+            "divText2": "Precíznosť",
+            "divText3": "Prirodzenosť",
+            "divText4": "O NÁS",
+            "h1Text1": "Odbornosť,",
+            "h1Text2": "skúsenosti",
+            "h1Text3": "a cit pre detail",
+            "pText1": "Paliy Esthetic Clinic je moderná estetická klinika v Prahe, ktorá spája permanentný make-up, kozmetológiu a profesionálne vzdelávanie.",
+            "buttonText1": "Zistite viac"
+          },
+          "HeroDesktop": {
+            "alt1": "Paliy",
+            "h1Text1": "Esthetic Clinic",
+            "pText1": "Účinné ošetrenia tváre a tela. Programy na mieru zamerané na omladenie, tvarovanie postavy a starostlivosť o pleť — bez potreby dlhej rekonvalescencie.",
+            "buttonText1": "Rezervovať online"
+          },
+          "HeroMobile": {
+            "alt1": "Paliy",
+            "h1Text1": "Esthetic Clinic",
+            "pText1": "Účinné ošetrenia tváre a tela. Programy na mieru zamerané na omladenie, tvarovanie postavy a starostlivosť o pleť — bez potreby dlhej rekonvalescencie.",
+            "buttonText1": "Rezervovať online"
+          }
+        },
+        "Programm": {
+          "titleText1": "AKADÉMIA",
+          "headerText1": "Skúsenosti, ktoré majú hodnotu,",
+          "headerText2": "keď ich môžete odovzdávať ďalej",
+          "paragraphText1": "PALIY Academy je priestor pre tých, ktorí chcú začať svoju kariéru v permanentnom make-upe alebo posunúť svoje zručnosti na vyššiu úroveň.",
+          "paragraphText2": "Na kurzoch sa sústredíme nielen na techniku, ale aj na prácu s klientom, správny postup, hygienu, detail a prirodzený výsledok."
+        },
+        "Sale": {
+          "titleText1": "Akciové ponuky",
+          "headerText1": "Je ten správny čas urobiť",
+          "headerText2": "niečo dobré pre seba",
+          "paragraphText1": "Objavte aktuálne ponuky PALIY ESTHETIC CLINIC.",
+          "paragraphText2": "Ponuky sú časovo obmedzené a môžu sa týkať vybraných procedúr alebo termínov."
+        },
+        "Service": {
+          "titleText1": "Naše služby",
+          "headerText1": "Vaša krása",
+          "headerText2": "naša starostlivosť",
+          "paragraphText1": "Každú procedúru prispôsobujeme vašim potrebám, črtám a očakávaniam. Naším cieľom nie sú výrazné zmeny, ale harmónia, prirodzenosť a dlhodobo krásny výsledok.",
+          "buttonText1": "Zobraziť všetko"
+        },
+        "Slushba": {
+          "titleText1": "Prečo my",
+          "headerText1": "Keď záleží na",
+          "headerText2": "každom detaile",
+          "paragraphText1": "Individuálny prístup, moderné technológie a prirodzené výsledky. Každú procedúru vykonávame s dôrazom na bezpečnosť, precíznosť a rešpekt k vašej prirodzenej kráse.",
+          "buttonText1": "Rezervovať online"
+        },
+        "Team": {
+          "titleText1": "Náš tím"
+        },
+        "Videos": {
+          "titleText1": "Výsledky",
+          "headerText1": "Prirodzenosť, Precíznosť,",
+          "headerText2": "Individuálny výsledok",
+          "paragraphText1": "Najlepší spôsob, ako spoznať našu prácu, je vidieť jej skutočný výsledok. Pozrite si fotografie pred vybranými procedúrami a po nich",
+          "divText1": "Video nie je k dispozícii"
+        },
+        "Map": {
+          "queryDefault": "Na Svihance 1476/1, Praha 12000"
+        },
+        "FeedbackForm": {
+          "headerText1": "Odoslať požiadavku",
+          "placeholder1": "Meno",
+          "placeholder2": "Telefón",
+          "placeholder3": "Poznámka",
+          "buttonText1": "Odoslať"
+        }
+      },
+      "cards": {
+        "Article": {
+          "headerText1": "Súvisiace video",
+          "headerText2": "Informácie o službe"
+        },
+        "Card": {
+          "divText1": "-",
+          "divText2": "%",
+          "buttonText1": "program kurzu"
+        },
+        "HomeNew": {
+          "linkText1": "Pozrieť technológie"
+        },
+        "Tariff": {
+          "paragraphText1": "hodiny",
+          "buttonText1": "Rezervovať kurz"
+        }
+      },
+      "menu": {
+        "Desktop": {
+          "buttonText1": "Rezervovať online"
+        },
+        "Mobile": {
+          "spanText1": "+",
+          "buttonText1": "Rezervovať online"
+        }
+      },
+      "ui": {
+        "ContactsGrid": {
+          "headerText1": "PALIY ESTHETIC CLINIC",
+          "paragraphText1": "NA SVIHANCE 1476/1, PRAHA 12000",
+          "paragraphText2": "PO - SO, 09:00 - 20:00",
+          "paragraphText3": "+420 608 214 640",
+          "paragraphText4": "VIPPERMANENT.CZ@GMAIL.COM",
+          "buttonText1": "REZERVOVAŤ ONLINE"
+        },
+        "Modal": {
+          "ariaLabel1": "Zavrieť"
+        },
+        "ReservioButton": {
+          "buttonText1": "Rezervovať online"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "item1": "Kozmetológia",
+    "item2": "Permanentný make-up obočia",
+    "item3": "Služba 1",
+    "item4": "Služba 1",
+    "item5": "Školenia",
+    "item6": "Služba 1",
+    "item7": "Služba 1",
+    "item8": "Služba 1",
+    "item9": "O nás",
+    "item10": "Kontakt",
+    "item11": "Permanentný make-up"
+  },
+  "errors": {
+    "message1": "Nepodarilo sa načítať články",
+    "message2": "Nepodarilo sa načítať kategóriu",
+    "message3": "Nepodarilo sa načítať videá",
+    "message4": "Nepodarilo sa načítať príspevky",
+    "message5": "Nepodarilo sa odoslať formulár"
+  },
+  "languageSwitcher": {
+    "label": "Jazyk",
+    "switching": "Jazyk sa mení"
+  },
+  "categoryPages": {
+    "id14": {
+      "title": "Kozmetológia",
+      "description": "Objavte profesionálnu kozmetologickú starostlivosť zameranú na zdravie, krásu a prirodzený vzhľad vašej pokožky. Ponúkame moderné kozmetologické procedúry prispôsobené individuálnym potrebám klientov, ktoré pomáhajú zlepšiť stav pleti, podporiť jej regeneráciu a navrátiť jej sviežosť a vitalitu."
+    },
+    "id15": {
+      "title": "Školenia",
+      "description": "Ponúkame profesionálne školenia zamerané na moderné kozmetologické metódy a praktické zručnosti v oblasti starostlivosti o pleť. Naše kurzy sú určené pre začiatočníkov aj skúsených špecialistov, ktorí chcú rozšíriť svoje znalosti, osvojiť si nové techniky a získať istotu pri práci s klientmi pod vedením skúsených odborníkov."
+    },
+    "id16": {
+      "title": "Permanentný make-up",
+      "description": "Permanentný make-up je moderná kozmetická procedúra, ktorá umožňuje zdôrazniť prirodzené črty tváre a vytvoriť dlhodobo upravený vzhľad bez každodenného používania dekoratívnej kozmetiky. Pomocou špeciálnych pigmentov sa upravuje tvar a farba obočia, pier alebo očných liniek s dôrazom na prirodzený výsledok a harmóniu s črtami tváre. Každé ošetrenie je individuálne prispôsobené typu pleti, želaniam klienta a požadovanému efektu, aby výsledok pôsobil jemne, elegantne a prirodzene."
+    }
+  }
+}

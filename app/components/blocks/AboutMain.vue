@@ -14,17 +14,11 @@
           <div
             class="absolute right-[5%] top-1/2 -translate-y-1/2 uppercase text-white font-light text-[70px] leading-[0.9]"
           >
-            <div ref="word1" class="opacity-0 -ml-30 translate-x-20">
-              Profesionalita
-            </div>
+            <div ref="word1" class="opacity-0 -ml-30 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText1') }}</div>
 
-            <div ref="word2" class="opacity-0 -ml-20 mt-12 translate-x-20">
-              Preciznost
-            </div>
+            <div ref="word2" class="opacity-0 -ml-20 mt-12 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText2') }}</div>
 
-            <div ref="word3" class="opacity-0 -ml-10 mt-12 translate-x-20">
-              Přirozenost
-            </div>
+            <div ref="word3" class="opacity-0 -ml-10 mt-12 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText3') }}</div>
           </div>
 
           <!-- текст -->
@@ -34,27 +28,13 @@
           >
             <div
               class="inline-flex border border-white/50 px-5 py-2 text-xs uppercase mb-12"
-            >
-              O NÁS
-            </div>
+            >{{ $t('ui.components.blocks.AboutMain.divText4') }}</div>
 
-            <h1 class="uppercase font-light text-[52px] leading-[0.95]">
-              Odbornost,
-              <br />
-              zkušenosti
-              <br />
-              a cit pro detail
-            </h1>
+            <h1 class="uppercase font-light text-[52px] leading-[0.95]">{{ $t('ui.components.blocks.AboutMain.h1Text1') }}<br />{{ $t('ui.components.blocks.AboutMain.h1Text2') }}<br />{{ $t('ui.components.blocks.AboutMain.h1Text3') }}</h1>
 
-            <p class="mt-8 text-[13px] uppercase leading-[1.5] max-w-[430px]">
-              Paliy Esthetic Clinic je moderní estetická klinika v Praze, která
-              propojuje permanentní make-up, kosmetologii a profesionální
-              vzdělávání.
-            </p>
+            <p class="mt-8 text-[13px] uppercase leading-[1.5] max-w-[430px]">{{ $t('ui.components.blocks.AboutMain.pText1') }}</p>
 
-            <button class="mt-10 bg-white text-[#cc001b] px-8 py-4 uppercase">
-              Zjistěte více
-            </button>
+            <button class="mt-10 bg-white text-[#cc001b] px-8 py-4 uppercase">{{ $t('ui.components.blocks.AboutMain.buttonText1') }}</button>
           </div>
 
           <!-- женщина -->

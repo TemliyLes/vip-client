@@ -1,10 +1,10 @@
 <template>
   <AlterHero />
   <Container v-if="title && description" class="-mb-12">
-    <Center>
+    <div class="text-center">
       <Header class="mt-12" v-if="title">{{ title }}</Header>
       <Paragraph class="mt-6" v-if="description">{{ description }}</Paragraph>
-    </Center>
+    </div>
   </Container>
   <Category :data="categoryStore.category" />
 </template>
@@ -20,42 +20,37 @@ import Container from "~/components/ui/Container.vue";
 const categoryStore = useCategoryStore();
 const route = useRoute();
 
-const table = [
+const { t, locale } = useI18n({ useScope: 'global' });
+definePageMeta({ middleware: 'wp-language' });
+
+await useAsyncData(`wp-category:${locale.value}:${route.params.id}`, () =>
+  categoryStore.fetchCategory(route.params.id, locale.value),
+);
+const table = computed(() => [
   {
     id: 14,
-    title: "Kosmetologie",
-    description:
-      "Objevte profesionální kosmetologickou péči zaměřenou na zdraví, krásu a přirozený vzhled vaší pokožky. Nabízíme moderní kosmetologické procedury přizpůsobené individuálním potřebám klientů, které pomáhají zlepšit stav pleti, podpořit její regeneraci a navrátit jí svěžest a vitalitu.",
+    title: t('categoryPages.id14.title'),
+    description: t('categoryPages.id14.description'),
   },
   {
     id: 15,
-    title: "Školení",
-    description:
-      "Nabízíme profesionální školení zaměřená na moderní kosmetologické metody a praktické dovednosti v oblasti péče o pleť. Naše kurzy jsou určeny pro začátečníky i zkušené specialisty, kteří chtějí rozšířit své znalosti, osvojit si nové techniky a získat jistotu při práci s klienty pod vedením zkušených odborníků.",
+    title: t('categoryPages.id15.title'),
+    description: t('categoryPages.id15.description'),
   },
   {
     id: 16,
-    title: "Permanentní make-up",
-    description:
-      "Permanentní make-up je moderní kosmetická procedura, která umožňuje zdůraznit přirozené rysy obličeje a vytvořit dlouhodobě upravený vzhled bez každodenního používání dekorativní kosmetiky. Pomocí speciálních pigmentů se upravuje tvar a barva obočí, rtů nebo očních linek s důrazem na přirozený výsledek a harmonii s rysy obličeje. Každé ošetření je individuálně přizpůsobeno typu pleti, přáním klienta a požadovanému efektu, aby výsledek působil jemně, elegantně a přirozeně.",
+    title: t('categoryPages.id16.title'),
+    description: t('categoryPages.id16.description'),
   },
-];
+]);
 
 const currentCategory = computed(() => {
-  return table.find((e) => e.id === Number(route.params.id));
+  const sourceId = categoryStore.info?.translations?.cs ?? route.params.id;
+  return table.value.find((e) => e.id === Number(sourceId));
 });
 
 const title = computed(() => currentCategory.value?.title);
 
 const description = computed(() => currentCategory.value?.description);
 
-watch(
-  () => route.params.id,
-  async (id) => {
-    await categoryStore.fetchCategory(id);
-  },
-  {
-    immediate: true,
-  },
-);
 </script>

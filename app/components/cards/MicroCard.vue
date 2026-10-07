@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLink :to="`news/${data?.id}`" class="group flex h-full gap-3 min-w-0">
+    <NuxtLinkLocale :to="`/news/${data?.id}`" class="group flex h-full gap-3 min-w-0">
       <img
         :src="data?.images?.card?.url"
         :alt="data?.name"
@@ -16,7 +16,7 @@
           <span v-html="data?.excerpt?.rendered"></span>
         </Paragraph>
       </div>
-    </NuxtLink>
+    </NuxtLinkLocale>
   </div>
 </template>
 

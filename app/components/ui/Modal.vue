@@ -39,7 +39,7 @@
             <button
               type="button"
               class="cursor-pointer absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center transition duration-300 hover:bg-gray-100"
-              aria-label="Zavřít"
+              :aria-label="$t('ui.components.ui.Modal.ariaLabel1')"
               @click="close"
             >
               <svg

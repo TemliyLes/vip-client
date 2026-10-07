@@ -2,6 +2,7 @@
 import { defineStore } from "pinia";
 
 export const useFeedbackStore = defineStore("feedback", () => {
+  const { t } = useI18n({ useScope: 'global' });
   const loading = ref(false);
   const error = ref(null);
   const success = ref(false);
@@ -32,7 +33,7 @@ export const useFeedbackStore = defineStore("feedback", () => {
       return response;
     } catch (err) {
       error.value =
-        err?.data?.message || err?.message || "Не удалось отправить форму";
+        err?.data?.message || err?.message || t('errors.message5');
 
       throw err;
     } finally {

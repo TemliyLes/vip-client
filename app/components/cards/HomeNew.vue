@@ -13,7 +13,7 @@
           <Paragraph>{{ data?.news_fields?.description }}</Paragraph>
         </div>
         <Link class="mt-6 sm:mt-0" :to="`/news/${data?.id}`"
-          >Prohlédnout technologie</Link
+          >{{ $t('ui.components.cards.HomeNew.linkText1') }}</Link
         >
       </div>
     </div>
