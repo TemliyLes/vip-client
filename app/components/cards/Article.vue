@@ -18,16 +18,87 @@
       />
 
       <div class="mt-12">
-        <RichText :content="content?.content?.rendered" />
+        <!-- Основной блок -->
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-x-12">
+          <!-- Основной текст -->
+          <div class="min-w-0 flex-1">
+            <RichText :content="content?.content?.rendered" />
+
+            <div
+              v-if="
+                !content?.service_fields?.tariffs?.length &&
+                content?.service_fields
+              "
+            >
+              <ReservioButton
+                :item="content"
+                :to="content?.meta?.reservio_url"
+              />
+            </div>
+          </div>
+
+          <!-- Sticky блок -->
+          <aside
+            v-if="hasSidebar"
+            class="mt-8 lg:mt-0 w-full lg:w-[320px] xl:w-[400px] shrink-0 relative"
+          >
+            <div class="lg:sticky lg:top-24 flex flex-col gap-4">
+              <Header mini>{{ $t('ui.components.cards.Article.headerText2') }}</Header>
+
+              <div v-if="content?.service_fields?.time" :class="flexClasses">
+                <Clock class="w-7 h-7 shrink-0" />
+
+                <Paragraph>
+                  {{ content.service_fields.time }}
+                </Paragraph>
+              </div>
+
+              <div v-if="content?.service_fields?.price" :class="flexClasses">
+                <Money class="w-7 h-7 shrink-0" />
+
+                <Paragraph>
+                  <template v-if="discount">
+                    <span class="line-through opacity-50 mr-2">
+                      {{ content.service_fields.price }}
+                    </span>
+                  </template>
+
+                  <template v-else>
+                    {{ content.service_fields.price }}
+                  </template>
+                </Paragraph>
+              </div>
+
+              <div
+                v-if="content?.service_fields?.people_count"
+                :class="flexClasses"
+              >
+                <People class="w-7 h-7 shrink-0" />
+
+                <Paragraph>
+                  {{ content.service_fields.people_count }}
+                </Paragraph>
+              </div>
+
+              <Header v-if="discount" mini>
+                {{ discountPrice }}
+              </Header>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Тарифы -->
         <Tariff
           v-if="content?.service_fields?.tariffs"
-          class="mt-12 sm:mt-0"
-          :data="content?.service_fields?.tariffs"
+          class="mt-12"
+          :data="content.service_fields.tariffs"
         />
-        <div class="mt-8 sm:mt-16" v-if="content?.videos?.length">
+
+        <!-- Видео -->
+        <div v-if="content?.videos?.length" class="mt-8 sm:mt-16">
           <Header class="mb-8" center>{{ $t('ui.components.cards.Article.headerText1') }}</Header>
-          <ArticleVideos :data="content?.videos" />
-          <!-- <div v-html="content?.content?.rendered"></div> -->
+
+          <ArticleVideos :data="content.videos" />
         </div>
       </div>
     </Container>
@@ -42,6 +113,12 @@ import Paragraph from "~/components/ui/Paragraph.vue";
 import RichText from "../ui/RichText.vue";
 import Tariff from "./Tariff.vue";
 import ArticleVideos from "../blocks/ArticleVideos.vue";
+import ReservioButton from "../ui/ReservioButton.vue";
+
+import Clock from "../icons/mini/clock.vue";
+import Money from "../icons/mini/money.vue";
+import People from "../icons/mini/people.vue";
+import Button from "../ui/Button.vue";
 
 const props = defineProps({
   store: {
@@ -55,7 +132,36 @@ const props = defineProps({
   },
 });
 
+const flexClasses = "flex gap-3 items-center";
+
 const content = computed(() => {
   return props.news ? props.store.data : props.store.article;
+});
+
+const discount = computed(() => {
+  const value = content.value?.service_fields?.discount;
+
+  return value ? Number(value) : null;
+});
+
+const hasSidebar = computed(() => {
+  return (
+    !content.value?.service_fields?.tariffs?.length &&
+    content.value?.service_fields
+  );
+});
+
+const discountPrice = computed(() => {
+  const price = Number(
+    content.value?.service_fields?.price?.replace(/\s/g, ""),
+  );
+
+  const percent = Number(discount.value);
+
+  if (!price || !percent) {
+    return price;
+  }
+
+  return Math.round(price - (price * percent) / 100);
 });
 </script>

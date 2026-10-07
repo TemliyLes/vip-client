@@ -13,7 +13,7 @@
         </NuxtLinkLocale>
 
         <Bar
-          class="flex-1 h-[80px] max-w-[400px]"
+          class="flex-1 h-[80px] max-w-[640px]"
           :active="isScrolled"
           :items="menu"
         />

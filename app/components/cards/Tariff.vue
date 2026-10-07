@@ -1,36 +1,54 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16">
-    <div v-for="(item, index) in data" :key="index" class="group flex flex-col">
-      <div class="border border-gray-200 p-6 transition duration-400">
-        <Header mini>
-          {{ item.name }}
-        </Header>
+  <div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16 items-stretch"
+    >
+      <div
+        v-for="(item, index) in data"
+        :key="index"
+        class="group flex flex-col h-full"
+      >
+        <div
+          class="border border-gray-200 p-6 transition duration-400 flex flex-col h-full"
+        >
+          <Header mini class="min-h-[36px]">
+            {{ item.name }}
+          </Header>
 
-        <div class="mt-5">
-          <Paragraph>
-            {{ item.price }}
-          </Paragraph>
-        </div>
-
-        <div class="flex flex-col gap-3 mt-5">
-          <div v-if="item.time" class="flex gap-2">
-            <Clock />
-
-            <Paragraph> {{ item.time }}{{ $t('ui.components.cards.Tariff.paragraphText1') }}</Paragraph>
-          </div>
-
-          <div v-if="item.people_count" class="flex gap-2">
-            <People />
-
+          <div class="mt-5">
             <Paragraph>
-              {{ item.people_count }}
+              {{ item.price }}
             </Paragraph>
           </div>
+
+          <div class="flex flex-col gap-3 mt-5">
+            <div v-if="item?.time" class="flex gap-2">
+              <Clock />
+
+              <Paragraph> {{ item?.time }}{{ $t('ui.components.cards.Tariff.paragraphText1') }}</Paragraph>
+            </div>
+
+            <div v-if="item?.people_count" class="flex gap-2">
+              <People />
+
+              <Paragraph>
+                {{ item?.people_count }}
+              </Paragraph>
+            </div>
+          </div>
+
+          <RichText
+            class="mt-5 flex-1 rich-text"
+            :content="item?.description?.rendered"
+          />
+
+          <ReservioButton
+            :item="item"
+            :url="clearHtml(item?.reservio_url)"
+            class="mt-6"
+          >
+          </ReservioButton>
         </div>
-
-        <Paragraph class="mt-5" v-html="item.description?.rendered" />
-
-        <Button class="mt-6" fit arrow>{{ $t('ui.components.cards.Tariff.buttonText1') }}</Button>
       </div>
     </div>
   </div>
@@ -39,7 +57,8 @@
 <script setup>
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
-import Button from "../ui/Button.vue";
+import ReservioButton from "../ui/ReservioButton.vue";
+import RichText from "../ui/RichText.vue";
 
 import Clock from "../icons/mini/clock.vue";
 import People from "../icons/mini/people.vue";
@@ -50,4 +69,6 @@ defineProps({
     default: () => [],
   },
 });
+
+const clearHtml = (str) => str.replace("http://", "");
 </script>

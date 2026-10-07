@@ -121,11 +121,19 @@
         },
         "Map": {
           "queryDefault": "Na Svihance 1476/1, Praha 12000"
+        },
+        "FeedbackForm": {
+          "headerText1": "Odeslat požadavek ",
+          "placeholder1": "Jméno",
+          "placeholder2": "Telefon",
+          "placeholder3": "Poznámka",
+          "buttonText1": " Odeslat "
         }
       },
       "cards": {
         "Article": {
-          "headerText1": "Související video"
+          "headerText1": "Související video",
+          "headerText2": " Servisní informace "
         },
         "Card": {
           "divText1": "\r\n          -",
@@ -157,6 +165,12 @@
           "paragraphText3": " +420 608 214 640 ",
           "paragraphText4": " VIPPERMANENT.CZ@GMAIL.COM ",
           "buttonText1": " REZERVOVAT ONLINE "
+        },
+        "Modal": {
+          "ariaLabel1": "Zavřít"
+        },
+        "ReservioButton": {
+          "buttonText1": "Rezrvovat Online"
         }
       }
     }
@@ -171,13 +185,15 @@
     "item7": "Услуга 1",
     "item8": "Услуга 1",
     "item9": "O nás",
-    "item10": "Kontakt"
+    "item10": "Kontakt",
+    "item11": "Permanentní make-up"
   },
   "errors": {
     "message1": "Не удалось загрузить статьи",
     "message2": "Не удалось загрузить категорию",
     "message3": "Не удалось загрузить видео",
-    "message4": "Не удалось загрузить записи"
+    "message4": "Не удалось загрузить записи",
+    "message5": "Не удалось отправить форму"
   },
   "languageSwitcher": {
     "label": "Jazyk",

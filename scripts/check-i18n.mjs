@@ -24,19 +24,22 @@ if (process.argv.includes('--require-empty-sk')) {
   assert(Object.values(skFlat).every((value) => value === ''), 'Slovak translations must remain empty until supplied')
 }
 
-// Check the immutable migration manifest against both the actual Git baseline and
-// the dictionary. Keep CRLF/spacing exact in the dictionary; Git stores LF source.
+// Check each recorded source revision and the dictionary, including archived keys
+// whose UI was removed upstream. Keep CRLF/spacing exact; Git stores LF source.
 const originals = new Map()
 const current = new Map()
 for (const entry of manifest.ui) {
   assert.equal(csFlat[entry.key], entry.value, `Czech text changed: ${entry.key}`)
-  if (!originals.has(entry.file)) {
-    originals.set(entry.file, execFileSync('git', ['show', `${manifest.revision}:${entry.file}`], { encoding: 'utf8' }))
-    current.set(entry.file, await readFile(entry.file, 'utf8'))
+  const baselineKey = `${entry.revision || manifest.revision}:${entry.file}`
+  if (!originals.has(baselineKey)) {
+    originals.set(baselineKey, execFileSync('git', ['show', baselineKey], { encoding: 'utf8' }))
   }
-  const baseline = originals.get(entry.file).replaceAll('\r\n', '\n')
+  const baseline = originals.get(baselineKey).replaceAll('\r\n', '\n')
   assert(baseline.includes(entry.source.replaceAll('\r\n', '\n')), `Original source missing: ${entry.key}`)
-  assert(current.get(entry.file).includes(`'${entry.key}'`), `Translation not connected: ${entry.key}`)
+  if (entry.active !== false) {
+    if (!current.has(entry.file)) current.set(entry.file, await readFile(entry.file, 'utf8'))
+    assert(current.get(entry.file).includes(`'${entry.key}'`), `Translation not connected: ${entry.key}`)
+  }
   if (entry.key.startsWith('ui.') && /Text\d+$/.test(entry.key)) {
     const originalText = parseTemplate(`<p>${entry.value}</p>`).children[0].children[0].content
     assert.equal(renderMessage(entry.value, entry.key), originalText, `Original Vue whitespace behavior changed: ${entry.key}`)

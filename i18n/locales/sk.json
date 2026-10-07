@@ -121,11 +121,19 @@
         },
         "Map": {
           "queryDefault": ""
+        },
+        "FeedbackForm": {
+          "headerText1": "",
+          "placeholder1": "",
+          "placeholder2": "",
+          "placeholder3": "",
+          "buttonText1": ""
         }
       },
       "cards": {
         "Article": {
-          "headerText1": ""
+          "headerText1": "",
+          "headerText2": ""
         },
         "Card": {
           "divText1": "",
@@ -157,6 +165,12 @@
           "paragraphText3": "",
           "paragraphText4": "",
           "buttonText1": ""
+        },
+        "Modal": {
+          "ariaLabel1": ""
+        },
+        "ReservioButton": {
+          "buttonText1": ""
         }
       }
     }
@@ -171,13 +185,15 @@
     "item7": "",
     "item8": "",
     "item9": "",
-    "item10": ""
+    "item10": "",
+    "item11": ""
   },
   "errors": {
     "message1": "",
     "message2": "",
     "message3": "",
-    "message4": ""
+    "message4": "",
+    "message5": ""
   },
   "languageSwitcher": {
     "label": "",

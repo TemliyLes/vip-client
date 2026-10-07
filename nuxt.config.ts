@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: "http://srv1943597.hstgr.cloud:8080",
+      apiBase: "https://vip-client.duckdns.org",
     },
   },
   css: ["~/assets/css/main.css", "~/assets/css/fonts.css"],

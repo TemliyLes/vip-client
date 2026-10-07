@@ -791,7 +791,8 @@
       "end": 979,
       "source": " Rezervovat kurz ",
       "value": " Rezervovat kurz ",
-      "kind": "buttonText"
+      "kind": "buttonText",
+      "active": false
     },
     {
       "file": "app/components/menu/Desktop.vue",
@@ -890,7 +891,8 @@
       "end": 149,
       "source": "\"Permanentní make-up obočí\"",
       "value": "Permanentní make-up obočí",
-      "kind": "js"
+      "kind": "js",
+      "active": false
     },
     {
       "file": "app/composables/useMenu.js",
@@ -899,7 +901,8 @@
       "end": 225,
       "source": "\"Услуга 1\"",
       "value": "Услуга 1",
-      "kind": "js"
+      "kind": "js",
+      "active": false
     },
     {
       "file": "app/composables/useMenu.js",
@@ -908,7 +911,8 @@
       "end": 301,
       "source": "\"Услуга 1\"",
       "value": "Услуга 1",
-      "kind": "js"
+      "kind": "js",
+      "active": false
     },
     {
       "file": "app/composables/useMenu.js",
@@ -926,7 +930,8 @@
       "end": 463,
       "source": "\"Услуга 1\"",
       "value": "Услуга 1",
-      "kind": "js"
+      "kind": "js",
+      "active": false
     },
     {
       "file": "app/composables/useMenu.js",
@@ -935,7 +940,8 @@
       "end": 539,
       "source": "\"Услуга 1\"",
       "value": "Услуга 1",
-      "kind": "js"
+      "kind": "js",
+      "active": false
     },
     {
       "file": "app/composables/useMenu.js",
@@ -944,7 +950,8 @@
       "end": 615,
       "source": "\"Услуга 1\"",
       "value": "Услуга 1",
-      "kind": "js"
+      "kind": "js",
+      "active": false
     },
     {
       "file": "app/composables/useMenu.js",
@@ -1089,6 +1096,116 @@
       "source": "\"Na Svihance 1476/1, Praha 12000\"",
       "value": "Na Svihance 1476/1, Praha 12000",
       "kind": "js"
+    },
+    {
+      "file": "app/components/cards/Article.vue",
+      "key": "ui.components.cards.Article.headerText2",
+      "start": 1275,
+      "end": 1295,
+      "source": " Servisní informace ",
+      "value": " Servisní informace ",
+      "kind": "headerText",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/blocks/FeedbackForm.vue",
+      "key": "ui.components.blocks.FeedbackForm.headerText1",
+      "start": 63,
+      "end": 81,
+      "source": "Odeslat požadavek ",
+      "value": "Odeslat požadavek ",
+      "kind": "headerText",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/blocks/FeedbackForm.vue",
+      "key": "ui.components.blocks.FeedbackForm.placeholder1",
+      "start": 266,
+      "end": 273,
+      "source": "\"Jméno\"",
+      "value": "Jméno",
+      "kind": "attribute",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/blocks/FeedbackForm.vue",
+      "key": "ui.components.blocks.FeedbackForm.placeholder2",
+      "start": 351,
+      "end": 360,
+      "source": "\"Telefon\"",
+      "value": "Telefon",
+      "kind": "attribute",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/blocks/FeedbackForm.vue",
+      "key": "ui.components.blocks.FeedbackForm.placeholder3",
+      "start": 593,
+      "end": 603,
+      "source": "\"Poznámka\"",
+      "value": "Poznámka",
+      "kind": "attribute",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/blocks/FeedbackForm.vue",
+      "key": "ui.components.blocks.FeedbackForm.buttonText1",
+      "start": 658,
+      "end": 667,
+      "source": " Odeslat ",
+      "value": " Odeslat ",
+      "kind": "buttonText",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/ui/Modal.vue",
+      "key": "ui.components.ui.Modal.ariaLabel1",
+      "start": 1544,
+      "end": 1552,
+      "source": "\"Zavřít\"",
+      "value": "Zavřít",
+      "kind": "attribute",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/ui/ReservioButton.vue",
+      "key": "ui.components.ui.ReservioButton.buttonText1",
+      "start": 60,
+      "end": 76,
+      "source": "Rezrvovat Online",
+      "value": "Rezrvovat Online",
+      "kind": "buttonText",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/components/ui/ReservioButton.vue",
+      "key": "ui.components.ui.ReservioButton.buttonText1",
+      "start": 137,
+      "end": 153,
+      "source": "Rezrvovat Online",
+      "value": "Rezrvovat Online",
+      "kind": "buttonText",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/composables/useMenu.js",
+      "key": "navigation.item11",
+      "start": 395,
+      "end": 416,
+      "source": "\"Permanentní make-up\"",
+      "value": "Permanentní make-up",
+      "kind": "js",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
+    },
+    {
+      "file": "app/store/feedback.js",
+      "key": "errors.message5",
+      "start": 848,
+      "end": 876,
+      "source": "\"Не удалось отправить форму\"",
+      "value": "Не удалось отправить форму",
+      "kind": "js",
+      "revision": "fc1fc08506aaa8e887a052201d3b889e090ab179"
     }
   ]
 }
