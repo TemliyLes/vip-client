@@ -32,7 +32,7 @@
             >
               <ReservioButton
                 :item="content"
-                :to="content?.meta?.reservio_url"
+                :url="content?.meta?.reservio_url"
               />
             </div>
           </div>

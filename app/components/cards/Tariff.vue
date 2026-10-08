@@ -44,7 +44,7 @@
 
           <ReservioButton
             :item="item"
-            :url="clearHtml(item?.reservio_url)"
+            :url="item?.reservio_url"
             class="mt-6"
           >
           </ReservioButton>
@@ -70,5 +70,4 @@ defineProps({
   },
 });
 
-const clearHtml = (str) => str.replace("http://", "");
 </script>
