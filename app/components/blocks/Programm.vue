@@ -19,15 +19,12 @@
 </template>
 
 <script setup>
-import { useServicesStore } from "~/store/services";
 import Card from "../cards/Card.vue";
 import Container from "../ui/Container.vue";
 import Title from "../ui/Title.vue";
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
-const store = useServicesStore();
-const data = ref(null);
-onMounted(async () => {
-  data.value = await store.getServiceByCategory(45);
-});
+const api = useWpApi();
+const { locale } = useI18n({ useScope: "global" });
+const { data } = await useAsyncData(`program:${locale.value}`, () => api.servicesByCategory(45));
 </script>

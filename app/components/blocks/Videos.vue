@@ -39,7 +39,9 @@
             >{{ $t('ui.components.blocks.Videos.divText1') }}</div>
           </div>
 
-          <Paragraph class="mt-4" v-html="video.title.rendered" />
+          <Paragraph class="mt-4">
+            <span v-html="video.title.rendered" />
+          </Paragraph>
         </div>
       </div>
     </Container>
@@ -48,7 +50,6 @@
 
 <script setup>
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Container from "@/components/ui/Container.vue";
 import Paragraph from "../ui/Paragraph.vue";
@@ -57,12 +58,15 @@ import Header from "../ui/Header.vue";
 
 import { useVideosStore } from "~/store/videos";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const store = useVideosStore();
+const { locale } = useI18n({ useScope: "global" });
+
+await callOnce(`videos:${locale.value}`, () => store.fetchData(), { mode: "navigation" });
 
 const section = ref(null);
 const cardRefs = ref([]);
+let isUnmounted = false;
+let animationContext = null;
 
 function setCardRef(el, index) {
   if (el) {
@@ -70,35 +74,35 @@ function setCardRef(el, index) {
   }
 }
 
-async function animateCards() {
-  await nextTick();
+function animateCards() {
   if (!cardRefs.value.length || !section.value) return;
 
-  gsap.to(cardRefs.value, {
-    opacity: 1,
-    y: 0,
-    duration: 1.5,
-    stagger: 0.15,
-    ease: "power1.out",
+  animationContext = gsap.context(() => {
+    gsap.to(cardRefs.value, {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      stagger: 0.15,
+      ease: "power1.out",
 
-    scrollTrigger: {
-      trigger: section.value,
-      start: "top 40%",
-      once: true,
-    },
-  });
+      scrollTrigger: {
+        trigger: section.value,
+        start: "top 40%",
+        once: true,
+      },
+    });
+  }, section.value);
 }
 
 onMounted(async () => {
-  await store.fetchData();
-  await animateCards();
+  await nextTick();
+  if (isUnmounted) return;
+
+  animateCards();
 });
 
 onBeforeUnmount(() => {
-  ScrollTrigger.getAll().forEach((trigger) => {
-    if (trigger.trigger === section.value) {
-      trigger.kill();
-    }
-  });
+  isUnmounted = true;
+  animationContext?.revert();
 });
 </script>

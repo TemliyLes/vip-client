@@ -4,11 +4,12 @@
       <!-- founder -->
       <div ref="content" class="sm:grid sm:grid-cols-2 sm:gap-12 items-center">
         <!-- image -->
-        <div ref="imageWrapper" class="overflow-hidden">
+        <div class="overflow-hidden">
           <img
-            ref="image"
             :src="founder?.image?.original?.url"
-            class="w-full object-cover"
+            :width="founder?.image?.original?.width"
+            :height="founder?.image?.original?.height"
+            class="w-full h-auto object-cover"
             alt=""
           />
         </div>
@@ -25,7 +26,7 @@
             </Header>
 
             <Paragraph>
-              {{ founder?.subtitle?.raw }}
+              {{ founder?.subtitle?.raw?.replace(/\r\n?/g, "\n") }}
             </Paragraph>
           </div>
 
@@ -39,7 +40,7 @@
             </Header>
 
             <Paragraph>
-              {{ founder?.description?.raw }}
+              {{ founder?.description?.raw?.replace(/\r\n?/g, "\n") }}
             </Paragraph>
           </div>
         </div>
@@ -64,50 +65,56 @@ import { usePageStore } from "~/store/page.js";
 gsap.registerPlugin(ScrollTrigger);
 
 const store = usePageStore();
+const { locale } = useI18n({ useScope: "global" });
+
+await callOnce(`page:125:${locale.value}`, () => store.fetchPage(125), { mode: "navigation" });
 
 const founder = computed(() => store?.page?.about?.founder);
 
 const section = ref(null);
 const content = ref(null);
-// const image = ref(null);
 const text = ref(null);
+let isUnmounted = false;
+let animationContext = null;
 
 onMounted(async () => {
-  await store.fetchPage(125);
-
   await nextTick();
+  if (isUnmounted || !section.value) return;
 
-  // появление всего блока
-  gsap.from(content.value, {
-    y: 80,
-    opacity: 0,
-    duration: 1.2,
-    ease: "power4.out",
+  animationContext = gsap.context(() => {
+    // появление всего блока
+    gsap.from(content.value, {
+      y: 80,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out",
 
-    scrollTrigger: {
-      trigger: section.value,
-      start: "top 75%",
-      once: true,
-    },
-  });
+      scrollTrigger: {
+        trigger: section.value,
+        start: "top 75%",
+        once: true,
+      },
+    });
 
-  // появление текста
-  gsap.from(text.value, {
-    x: 50,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    ease: "power3.out",
+    // появление текста
+    gsap.from(text.value, {
+      x: 50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.2,
+      ease: "power3.out",
 
-    scrollTrigger: {
-      trigger: section.value,
-      start: "top 75%",
-      once: true,
-    },
-  });
+      scrollTrigger: {
+        trigger: section.value,
+        start: "top 75%",
+        once: true,
+      },
+    });
+  }, section.value);
 });
 
 onBeforeUnmount(() => {
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  isUnmounted = true;
+  animationContext?.revert();
 });
 </script>

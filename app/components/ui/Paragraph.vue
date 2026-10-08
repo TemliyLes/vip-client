@@ -1,5 +1,9 @@
 <template>
-  <p class="text-xs uppercase leading-relaxed text-darkbeige">
+  <component :is="tag" class="text-xs uppercase leading-relaxed text-darkbeige">
     <slot />
-  </p>
+  </component>
 </template>
+
+<script setup>
+defineProps({ tag: { type: String, default: "p" } });
+</script>

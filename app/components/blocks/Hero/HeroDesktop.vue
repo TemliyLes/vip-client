@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-dvh overflow-hidden bg-beige">
+  <section ref="section" class="relative h-dvh overflow-hidden bg-beige">
     <Container>
       <div class="relative flex min-h-dvh items-center">
         <img
@@ -37,23 +37,33 @@
 </template>
 
 <script setup>
+import { gsap } from "gsap";
+
 import Button from "~/components/ui/Button.vue";
 import Container from "~/components/ui/Container.vue";
 
 const { parallax } = useGsap();
+const section = ref(null);
 const title = ref(null);
 
 const photo = ref(null);
 
 const content = ref(null);
+let animationContext = null;
 
-onMounted(() => {
-  parallax(title.value, -60);
+onMounted(async () => {
+  await nextTick();
+  if (!section.value) return;
+  animationContext = gsap.context(() => {
+    parallax(title.value, -60);
 
-  // фото немного вниз
-  parallax(photo.value, 220);
+    // фото немного вниз
+    parallax(photo.value, 220);
 
-  // текст еще меньше
-  parallax(content.value, -250);
+    // текст еще меньше
+    parallax(content.value, -250);
+  }, section.value);
 });
+
+onBeforeUnmount(() => animationContext?.revert());
 </script>

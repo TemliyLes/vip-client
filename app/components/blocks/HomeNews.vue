@@ -10,59 +10,57 @@
 
 <script setup>
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { useHomeNewsStore } from "~/store/homenews";
 
 import HomeNew from "../cards/HomeNew.vue";
 import Container from "../ui/Container.vue";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const store = useHomeNewsStore();
+const { locale } = useI18n({ useScope: "global" });
+
+await callOnce(`home-news:${locale.value}`, () => store.fetchData(), { mode: "navigation" });
 
 const grid = ref(null);
 const cards = ref([]);
+let isUnmounted = false;
+let animationContext = null;
 
-async function animateCards() {
-  await nextTick();
-
+function animateCards() {
   if (!grid.value || !cards.value.length) return;
 
-  gsap.fromTo(
-    cards.value,
-    {
-      opacity: 0,
-      y: 60,
-    },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      stagger: 0.18,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: grid.value,
-        start: "top 75%",
-        once: true,
+  animationContext = gsap.context(() => {
+    gsap.fromTo(
+      cards.value,
+      {
+        opacity: 0,
+        y: 60,
       },
-    },
-  );
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.18,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: grid.value,
+          start: "top 75%",
+          once: true,
+        },
+      },
+    );
+  }, grid.value);
 }
 
 onMounted(async () => {
-  await store.fetchData();
-
   await nextTick();
+  if (isUnmounted) return;
 
   animateCards();
 });
 
 onBeforeUnmount(() => {
-  ScrollTrigger.getAll().forEach((trigger) => {
-    if (trigger.trigger === grid.value) {
-      trigger.kill();
-    }
-  });
+  isUnmounted = true;
+  animationContext?.revert();
 });
 </script>

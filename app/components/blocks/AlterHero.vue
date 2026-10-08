@@ -38,7 +38,9 @@ const shadow = ref(null);
 
 let ctx = null;
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick();
+  if (!wrapper.value) return;
   ctx = gsap.context(() => {
     gsap.to(image.value, {
       yPercent: 15,

@@ -1,6 +1,6 @@
 <template>
   <section ref="hero" class="relative">
-    <div ref="scene" class="sticky top-0 h-screen overflow-hidden">
+    <div class="sticky top-0 h-screen overflow-hidden">
       <!-- красная подложка -->
       <div
         ref="red"
@@ -9,7 +9,6 @@
 
       <Container>
         <div class="relative h-screen flex items-center">
-          <!-- фоновые слова -->
           <!-- фоновые слова -->
           <div
             class="absolute right-[5%] top-1/2 -translate-y-1/2 uppercase text-white font-light text-[70px] leading-[0.9]"
@@ -66,9 +65,11 @@ const content = ref(null);
 const word1 = ref(null);
 const word2 = ref(null);
 const word3 = ref(null);
-let trigger;
-onMounted(() => {
-  const ctx = gsap.context(() => {
+let ctx = null;
+onMounted(async () => {
+  await nextTick();
+  if (!hero.value) return;
+  ctx = gsap.context(() => {
     gsap.set(person.value, {
       y: window.innerHeight,
     });
@@ -157,7 +158,7 @@ onMounted(() => {
       "-=2",
     );
 
-    trigger = ScrollTrigger.create({
+    ScrollTrigger.create({
       trigger: hero.value,
 
       start: "top top",
@@ -174,17 +175,8 @@ onMounted(() => {
 
       scrub: 1.2,
     });
-    nextTick(() => {
-      requestAnimationFrame(() => {
-        ScrollTrigger.refresh();
-      });
-    });
   }, hero.value);
-
-  onUnmounted(() => {
-    trigger.kill();
-
-    ctx.revert();
-  });
 });
+
+onBeforeUnmount(() => ctx?.revert());
 </script>

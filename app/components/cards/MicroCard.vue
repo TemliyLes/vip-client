@@ -12,8 +12,8 @@
           {{ data?.title?.rendered }}
         </Header>
 
-        <Paragraph class="line-clamp-2">
-          <span v-html="data?.excerpt?.rendered"></span>
+        <Paragraph tag="div" class="line-clamp-2">
+          <div v-html="data?.excerpt?.rendered"></div>
         </Paragraph>
       </div>
     </NuxtLinkLocale>
@@ -30,10 +30,4 @@ defineProps({
     default: () => ({}),
   },
 });
-const MAX_TEXT = 50;
-function cutText(text) {
-  if (!text) return "";
-
-  return text.length > MAX_TEXT ? text.slice(0, MAX_TEXT) + "..." : text;
-}
 </script>

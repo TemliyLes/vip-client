@@ -89,8 +89,6 @@ watch(
         },
       },
     });
-
-    ScrollTrigger.refresh();
   },
   {
     immediate: true,

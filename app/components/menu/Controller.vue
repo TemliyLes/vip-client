@@ -14,6 +14,8 @@ const { locale } = useI18n({ useScope: 'global' });
 const services = useServicesStore();
 
 onMounted(() => {
-  watch(locale, () => services.getData(), { immediate: true });
+  watch(locale, () => {
+    if (!services.categories.length) services.getData();
+  }, { immediate: true });
 });
 </script>

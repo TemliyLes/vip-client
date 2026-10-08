@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 sm:py-24">
+  <section ref="section" class="py-12 sm:py-24">
     <Container>
       <div
         class="sm:grid sm:grid-cols-[330px_1fr] flex flex-col gap-3 items-stretch"
@@ -11,7 +11,7 @@
             <Title class="mb-4">{{ $t('ui.components.blocks.Service.titleText1') }}</Title>
 
             <Header>{{ $t('ui.components.blocks.Service.headerText1') }}<br />{{ $t('ui.components.blocks.Service.headerText2') }}</Header>
-            <img src="../../assets/img/styletext.png" alt="" />
+            <img src="../../assets/img/styletext.png" width="590" height="178" alt="" />
             <Paragraph class="mt-5 mb-4 max-w-[280px]">{{ $t('ui.components.blocks.Service.paragraphText1') }}</Paragraph>
           </div>
 
@@ -34,11 +34,12 @@
         </div>
       </div>
     </Container>
-    <!-- {{ data }} -->
   </section>
 </template>
 
 <script setup>
+import { gsap } from "gsap";
+
 import Container from "../ui/Container.vue";
 import Title from "../ui/Title.vue";
 import Button from "../ui/Button.vue";
@@ -51,14 +52,26 @@ const cards = ref([]);
 const { revealOnScroll } = useGsap();
 
 const store = useServicesStore();
+const { locale } = useI18n({ useScope: "global" });
+
+await callOnce(`service-categories:${locale.value}`, () => store.getData(), { mode: "navigation" });
 
 const { data } = storeToRefs(store);
+const section = ref(null);
+let isUnmounted = false;
+let animationContext = null;
 
 onMounted(async () => {
-  await store.getData();
-
   await nextTick();
+  if (isUnmounted) return;
 
-  revealOnScroll(cards.value);
+  animationContext = gsap.context(() => {
+    revealOnScroll(cards.value);
+  }, section.value);
+});
+
+onBeforeUnmount(() => {
+  isUnmounted = true;
+  animationContext?.revert();
 });
 </script>

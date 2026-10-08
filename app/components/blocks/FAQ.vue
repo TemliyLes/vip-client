@@ -19,8 +19,6 @@ import Container from "../ui/Container.vue";
 import { useFaqStore } from "~/store/faq.js";
 import Faq from "../ui/Faq.vue";
 const store = useFaqStore();
-
-onMounted(() => {
-  store?.getFaq();
-});
+const { locale } = useI18n({ useScope: "global" });
+await callOnce(`faq:${locale.value}`, () => store.getFaq(), { mode: "navigation" });
 </script>

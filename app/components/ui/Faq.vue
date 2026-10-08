@@ -1,5 +1,5 @@
 <template>
-  <div ref="wrapper" class="flex flex-col">
+  <div class="flex flex-col">
     <div
       v-for="(item, index) in data"
       :key="item.id"
@@ -29,8 +29,8 @@
         class="faq-content overflow-hidden h-0"
       >
         <div class="px-6 pb-6">
-          <Paragraph>
-            <span v-html="item.content.rendered" />
+          <Paragraph tag="div">
+            <div v-html="item.content.rendered" />
           </Paragraph>
         </div>
       </div>
@@ -40,12 +40,15 @@
 
 <script setup>
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Header from "./Header.vue";
 import Paragraph from "./Paragraph.vue";
 import Chevron from "../icons/Chevron.vue";
 
-const props = defineProps({
+gsap.registerPlugin(ScrollTrigger);
+
+defineProps({
   data: {
     type: Array,
     default: () => [],
@@ -61,23 +64,20 @@ function openItem(index) {
 
   if (!content) return;
 
-  // убираем auto перед расчётом
-  gsap.set(content, {
-    height: "auto",
-  });
-
+  // Measure the natural height, then continue from the current rendered height.
   const height = content.scrollHeight;
 
-  gsap.set(content, {
-    height: 0,
-  });
+  gsap.killTweensOf(content, "height");
 
   gsap.to(content, {
     height,
     duration: 0.45,
     ease: "power2.out",
     onComplete() {
-      content.style.height = "auto";
+      if (opened.value === index) {
+        content.style.height = "auto";
+      }
+      ScrollTrigger.refresh(true);
     },
   });
 }
@@ -87,10 +87,13 @@ function closeItem(index) {
 
   if (!content) return;
 
+  gsap.killTweensOf(content, "height");
+
   gsap.to(content, {
     height: 0,
     duration: 0.35,
     ease: "power2.inOut",
+    onComplete: () => ScrollTrigger.refresh(true),
   });
 }
 

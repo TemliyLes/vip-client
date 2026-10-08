@@ -47,63 +47,63 @@ import Paragraph from "../ui/Paragraph.vue";
 import Header from "../ui/Header.vue";
 import Button from "../ui/Button.vue";
 
-const { isMobile } = useDevice();
 gsap.registerPlugin(ScrollTrigger);
 
 const store = useReviewsStore();
+const { locale } = useI18n({ useScope: "global" });
+
+await callOnce(`reviews:42:${locale.value}`, () => store.getReviewById(42), { mode: "navigation" });
 
 const section = ref(null);
 const viewport = ref(null);
 const track = ref(null);
 
-let animation = null;
+let animationMedia = null;
+let isUnmounted = false;
 
 onMounted(async () => {
-  await store.getReviewById(42);
   await nextTick();
+  if (
+    isUnmounted || !store.review?.length ||
+    !section.value || !viewport.value || !track.value
+  ) return;
 
-  if (!store.review?.length || !section.value || !viewport.value || !track.value) return;
+  animationMedia = gsap.matchMedia();
+  animationMedia.add("(min-width: 40rem)", () => {
+    const getDistance = () => {
+      return Math.max(0, track.value.scrollWidth - viewport.value.clientWidth);
+    };
 
-  // На мобильных отключаем горизонтальный скролл
-  if (isMobile.value) {
-    return;
-  }
+    const animation = gsap.timeline({
+      scrollTrigger: {
+        id: "feedback",
+        trigger: section.value,
+        start: "center 55%",
+        end: () => `+=${getDistance() * 2}`,
+        pin: true,
+        scrub: 0.8,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+      },
+    });
 
-  const getDistance = () => {
-    return Math.max(0, track.value.scrollWidth - viewport.value.clientWidth);
-  };
+    animation.to(track.value, {
+      x: () => -getDistance(),
+      ease: "none",
+      duration: 0.75,
+    });
 
-  animation = gsap.timeline({
-    scrollTrigger: {
-      trigger: viewport.value,
-      start: "center 55%",
-      end: () => `+=${getDistance() * 2}`,
-      pin: section.value,
-      scrub: 0.8,
-      anticipatePin: 1,
-      invalidateOnRefresh: true,
-    },
+    animation.to(
+      {},
+      {
+        duration: 0.25,
+      },
+    );
   });
-
-  animation.to(track.value, {
-    x: () => -getDistance(),
-
-    ease: "none",
-
-    duration: 0.75,
-  });
-
-  animation.to(
-    {},
-    {
-      duration: 0.25,
-    },
-  );
-
-  ScrollTrigger.refresh();
 });
+
 onBeforeUnmount(() => {
-  animation?.scrollTrigger?.kill();
-  animation?.kill();
+  isUnmounted = true;
+  animationMedia?.revert();
 });
 </script>

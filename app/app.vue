@@ -23,6 +23,7 @@ import PageTransition from "./components/layout/PageTransition.vue";
 import Footer from "./components/blocks/Footer.vue";
 
 const router = useRouter();
+const nuxtApp = useNuxtApp();
 
 const { localeProperties } = useI18n({ useScope: 'global' });
 useHead({ htmlAttrs: { lang: () => localeProperties.value.language } });
@@ -31,11 +32,19 @@ const pageTransition = ref(null);
 
 const { init, destroy, refresh, resetScroll } = useGsap();
 
+const removePageFinishHook = nuxtApp.hook("page:finish", async () => {
+  await nextTick();
+  await document.fonts.ready;
+  // Async page components are mounted; account for upstream pins first.
+  ScrollTrigger.sort();
+  refresh();
+});
+
 if (process.client) {
   history.scrollRestoration = "manual";
 }
 
-router.beforeResolve(async () => {
+const removeBeforeResolve = router.beforeResolve(async () => {
   if (pageTransition.value) {
     await pageTransition.value.leave();
   }
@@ -43,32 +52,26 @@ router.beforeResolve(async () => {
   resetScroll();
 });
 
-router.afterEach(async () => {
+const removeAfterEach = router.afterEach(async () => {
   await nextTick();
 
   // новая страница уже в DOM
   resetScroll();
-
-  requestAnimationFrame(() => {
-    ScrollTrigger.refresh(true);
-  });
 
   if (pageTransition.value) {
     await pageTransition.value.enter();
   }
 });
 
-onMounted(async () => {
-  await nextTick();
-
+onMounted(() => {
+  // Child animations wait for nextTick so ScrollSmoother exists first.
   init();
-
-  setTimeout(() => {
-    refresh();
-  }, 300);
 });
 
 onBeforeUnmount(() => {
+  removePageFinishHook();
+  removeBeforeResolve();
+  removeAfterEach();
   destroy();
 });
 </script>

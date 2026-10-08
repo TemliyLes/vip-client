@@ -30,11 +30,9 @@
         >{{ $t('ui.components.blocks.ArticleVideos.divText1') }}</div>
       </div>
 
-      <Paragraph
-        v-if="video.title?.rendered"
-        class="mt-4"
-        v-html="video.title.rendered"
-      />
+      <Paragraph v-if="video.title?.rendered" class="mt-4">
+        <span v-html="video.title.rendered" />
+      </Paragraph>
     </div>
   </div>
 </template>

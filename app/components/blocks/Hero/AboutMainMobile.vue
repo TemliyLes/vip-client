@@ -14,7 +14,7 @@
     <Container>
       <div class="relative h-dvh">
         <!-- Content -->
-        <div ref="content" class="relative z-20 pt-16 text-white">
+        <div class="relative z-20 pt-16 text-white">
           <div
             class="inline-flex border border-white/50 px-4 py-2 text-[10px] uppercase mb-8"
           >{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText4') }}</div>
@@ -55,8 +55,11 @@ const word1 = ref(null);
 const word2 = ref(null);
 const word3 = ref(null);
 
-onMounted(() => {
-  const ctx = gsap.context(() => {
+let ctx = null;
+onMounted(async () => {
+  await nextTick();
+  if (!section.value) return;
+  ctx = gsap.context(() => {
     gsap.set([word1.value, word2.value, word3.value], {
       x: 200,
       opacity: 0,
@@ -99,13 +102,8 @@ onMounted(() => {
         },
         "-=0.7",
       );
-    requestAnimationFrame(() => {
-      ScrollTrigger.refresh();
-    });
   }, section.value);
-
-  onUnmounted(() => {
-    ctx.revert();
-  });
 });
+
+onBeforeUnmount(() => ctx?.revert());
 </script>

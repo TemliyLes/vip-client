@@ -10,7 +10,9 @@
           v-if="image"
           :src="image"
           :alt="title"
-          class="brightness-80 transition duration-400 group-hover:brightness-100 mb-1 w-full"
+          :width="data?.images?.card?.width ?? (category ? 473 : undefined)"
+          :height="data?.images?.card?.height ?? (category ? 582 : undefined)"
+          class="brightness-80 transition duration-400 group-hover:brightness-100 mb-1 w-full h-auto"
         />
 
         <div
@@ -22,7 +24,6 @@
       <Header mini class="line-clamp-1 overflow-hidden">
         <span v-html="title"></span>
       </Header>
-      <!-- {{ data }} -->
       <Paragraph
         v-if="data?.service_fields?.description"
         class="mt-2 line-clamp-2 overflow-hidden min-h-10"
@@ -60,9 +61,6 @@
             {{ data.service_fields.people_count }}
           </Paragraph>
         </div>
-        <!-- <Header mini v-if="discount">
-          {{ addPriceAffix(discountPrice) }}
-        </Header> -->
       </div>
 
       <Button v-if="btn" tag="span" class="mt-4" fit arrow>{{ $t('ui.components.cards.Card.buttonText1') }}</Button>
@@ -93,10 +91,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  desc: {
-    type: Boolean,
-    default: false,
-  },
 });
 
 const flexClasses = "flex gap-2";
@@ -118,18 +112,6 @@ const discount = computed(() => {
   const value = props.data?.service_fields?.discount;
 
   return value ? Number(value) : null;
-});
-
-const discountPrice = computed(() => {
-  const price = Number(props.data?.service_fields?.price?.replace(/\s/g, ""));
-
-  const percent = Number(discount.value);
-
-  if (!price || !percent) {
-    return price;
-  }
-
-  return Math.round(price - (price * percent) / 100);
 });
 
 const isService = computed(() => {
