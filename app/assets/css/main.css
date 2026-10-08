@@ -26,6 +26,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+html[data-initial-loading="true"] {
+  background-color: var(--color-beige);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 .rich-text {
   font-family: "Lato", sans-serif;
   font-weight: 400;

@@ -199,6 +199,9 @@
     "label": "Jazyk",
     "switching": "Jazyk se mění"
   },
+  "initialLoader": {
+    "label": "Načítání stránky"
+  },
   "categoryPages": {
     "id14": {
       "title": "Kosmetologie",
