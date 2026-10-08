@@ -31,7 +31,7 @@
       </div>
 
       <Paragraph v-if="video.title?.rendered" class="mt-4">
-        <span v-html="video.title.rendered" />
+        {{ decodeWpText(video.title.rendered) }}
       </Paragraph>
     </div>
   </div>
@@ -39,6 +39,7 @@
 
 <script setup>
 import Paragraph from "../ui/Paragraph.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 
 const props = defineProps({
   data: {

@@ -9,7 +9,7 @@
 
       <div class="min-w-0 flex-1">
         <Header mini class="!font-normal line-clamp-2">
-          {{ data?.title?.rendered }}
+          {{ decodeWpText(data?.title?.rendered) }}
         </Header>
 
         <Paragraph tag="div" class="line-clamp-2">
@@ -23,6 +23,7 @@
 <script setup>
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 
 defineProps({
   data: {

@@ -13,37 +13,28 @@
           >{{ $t('ui.components.blocks.Footer.paragraphText1') }}</Paragraph>
         </div>
 
-        <!-- Categories -->
+        <!-- Main menu mirrors the header navigation. -->
         <nav
-          class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-20 mt-8 sm:mt-10 text-white uppercase text-xs sm:text-sm"
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 mt-8 sm:mt-10 text-white uppercase text-xs sm:text-sm"
         >
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText1') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText2') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText3') }}</NuxtLink>
+          <NuxtLinkLocale v-for="item in menu" :key="item.id" :to="item.to">
+            {{ item.title }}
+          </NuxtLinkLocale>
         </nav>
 
         <!-- Divider -->
         <div class="w-full h-px bg-white/40 mt-8 sm:mt-10 mb-6 sm:mb-8" />
 
-        <!-- Main menu -->
+        <!-- Legal pages will be added later. -->
         <nav
           class="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:gap-8 text-white/90 uppercase text-[10px] sm:text-xs"
         >
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText4') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText5') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText6') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText7') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText8') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText9') }}</NuxtLink>
-
-          <NuxtLink>{{ $t('ui.components.blocks.Footer.nuxtlinkText10') }}</NuxtLink>
+          <NuxtLinkLocale to="/privacy-policy">
+            {{ $t('ui.components.blocks.Footer.privacyPolicy') }}
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/personal-data-consent">
+            {{ $t('ui.components.blocks.Footer.personalDataConsent') }}
+          </NuxtLinkLocale>
         </nav>
 
         <!-- Social -->
@@ -78,4 +69,6 @@ import Paragraph from "../ui/Paragraph.vue";
 
 import Whitelogo from "../icons/whitelogo.vue";
 import Whiteicon from "../icons/whiteicon.vue";
+
+const menu = useMenu();
 </script>

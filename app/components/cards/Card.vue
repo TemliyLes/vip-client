@@ -22,7 +22,7 @@
       </div>
 
       <Header mini class="line-clamp-1 overflow-hidden">
-        <span v-html="title"></span>
+        {{ title }}
       </Header>
       <Paragraph
         v-if="data?.service_fields?.description"
@@ -74,6 +74,7 @@ import Paragraph from "../ui/Paragraph.vue";
 import Clock from "../icons/mini/clock.vue";
 import Money from "../icons/mini/money.vue";
 import People from "../icons/mini/people.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 import Button from "../ui/Button.vue";
 
 const props = defineProps({
@@ -105,7 +106,7 @@ const image = computed(() => {
 });
 
 const title = computed(() => {
-  return props.data?.name || props.data?.title?.rendered || "";
+  return decodeWpText(props.data?.name || props.data?.title?.rendered || "");
 });
 
 const discount = computed(() => {

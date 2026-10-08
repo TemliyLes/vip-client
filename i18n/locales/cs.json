@@ -42,6 +42,8 @@
         },
         "Footer": {
           "paragraphText1": "\r\n            ESTHETIC CLINIC\r\n          ",
+          "privacyPolicy": "Zásady ochrany osobních údajů",
+          "personalDataConsent": "Souhlas se zpracováním osobních údajů",
           "nuxtlinkText1": " Kosmetologie ",
           "nuxtlinkText2": " Permanentní make-up ",
           "nuxtlinkText3": " Školení ",

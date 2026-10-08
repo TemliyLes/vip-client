@@ -11,7 +11,7 @@
         <div class="w-12 aspect-square object-cover bg-beige"></div>
       </div>
       <div class="flex flex-col">
-        <Header mini>{{ data?.title?.rendered }}</Header>
+        <Header mini>{{ decodeWpText(data?.title?.rendered) }}</Header>
         <Paragraph class="text-darkbeige">{{
           data?.review_fields?.date
         }}</Paragraph>
@@ -26,6 +26,7 @@
 <script setup>
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 const props = defineProps({
   data: {
     type: Object,

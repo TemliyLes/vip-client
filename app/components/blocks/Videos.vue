@@ -40,7 +40,7 @@
           </div>
 
           <Paragraph class="mt-4">
-            <span v-html="video.title.rendered" />
+            {{ decodeWpText(video.title.rendered) }}
           </Paragraph>
         </div>
       </div>
@@ -57,6 +57,7 @@ import Title from "../ui/Title.vue";
 import Header from "../ui/Header.vue";
 
 import { useVideosStore } from "~/store/videos";
+import { decodeWpText } from "~/utils/decodeWpText";
 
 const store = useVideosStore();
 const { locale } = useI18n({ useScope: "global" });

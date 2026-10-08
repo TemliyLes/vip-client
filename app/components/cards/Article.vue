@@ -4,7 +4,7 @@
 
     <Container class="py-12 sm:py-24">
       <Header center class="mb-6">
-        {{ content?.title?.rendered }}
+        {{ decodeWpText(content?.title?.rendered) }}
       </Header>
 
       <Paragraph class="text-center mb-12">
@@ -114,6 +114,7 @@ import RichText from "../ui/RichText.vue";
 import Tariff from "./Tariff.vue";
 import ArticleVideos from "../blocks/ArticleVideos.vue";
 import ReservioButton from "../ui/ReservioButton.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 
 import Clock from "../icons/mini/clock.vue";
 import Money from "../icons/mini/money.vue";

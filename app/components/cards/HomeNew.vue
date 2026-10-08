@@ -9,7 +9,7 @@
       />
       <div class="sm:h-[476px] flex flex-col justify-between p-6">
         <div class="flex flex-col gap-4">
-          <Header mini>{{ data?.title?.rendered }}</Header>
+          <Header mini>{{ decodeWpText(data?.title?.rendered) }}</Header>
           <Paragraph>{{ data?.news_fields?.description }}</Paragraph>
         </div>
         <Link class="mt-6 sm:mt-0" :to="`/news/${data?.id}`"
@@ -24,6 +24,7 @@
 import Paragraph from "../ui/Paragraph.vue";
 import Header from "../ui/Header.vue";
 import Link from "../ui/Link.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 const props = defineProps({
   data: {
     type: Object,

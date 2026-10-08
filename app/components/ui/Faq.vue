@@ -11,7 +11,7 @@
         @click="toggle(index)"
       >
         <Header mini>
-          {{ item.title.rendered }}
+          {{ decodeWpText(item.title.rendered) }}
         </Header>
 
         <div
@@ -45,6 +45,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "./Header.vue";
 import Paragraph from "./Paragraph.vue";
 import Chevron from "../icons/Chevron.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 
 gsap.registerPlugin(ScrollTrigger);
 
