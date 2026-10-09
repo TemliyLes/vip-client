@@ -45,17 +45,30 @@
         <!-- Social -->
         <div class="flex items-center gap-4 mt-6 sm:mt-8">
           <a
-            href="#"
-            class="w-8 h-8 border border-white rounded-full flex items-center justify-center"
+            href="https://www.instagram.com/kosmetologie_paliy_esthetic/"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="$t('ui.components.blocks.Footer.instagram')"
+            class="w-8 h-8 border border-current rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:text-wine focus-visible:text-wine"
           >
-            <span class="text-white text-xs">{{ $t('ui.components.blocks.Footer.spanText1') }}</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+            </svg>
           </a>
 
           <a
-            href="#"
-            class="w-8 h-8 border border-white rounded-full flex items-center justify-center"
+            href="https://t.me/+AfL60PcOv5czYWNk"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="$t('ui.components.blocks.Footer.telegram')"
+            class="w-8 h-8 border border-current rounded-full flex items-center justify-center text-white transition-colors duration-300 hover:text-wine focus-visible:text-wine"
           >
-            <span class="text-white text-xs">{{ $t('ui.components.blocks.Footer.spanText2') }}</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="m22 2-7 20-4-9-9-4Z" />
+              <path d="M22 2 11 13" />
+            </svg>
           </a>
         </div>
 
