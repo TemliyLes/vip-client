@@ -33,7 +33,7 @@
 
             <p class="mt-8 text-[13px] uppercase leading-[1.5] max-w-[430px]">{{ $t('ui.components.blocks.AboutMain.pText1') }}</p>
 
-            <button class="mt-10 bg-white text-[#cc001b] px-8 py-4 uppercase">{{ $t('ui.components.blocks.AboutMain.buttonText1') }}</button>
+            <NuxtLinkLocale to="/about" class="inline-block mt-10 bg-white text-[#cc001b] px-8 py-4 uppercase">{{ $t('ui.components.blocks.AboutMain.buttonText1') }}</NuxtLinkLocale>
           </div>
 
           <!-- женщина -->

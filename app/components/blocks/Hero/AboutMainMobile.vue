@@ -23,9 +23,10 @@
 
           <p class="mt-6 w-[75%] text-[11px] uppercase leading-[1.5]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.pText1') }}</p>
 
-          <button
-            class="mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px]"
-          >{{ $t('ui.components.blocks.Hero.AboutMainMobile.buttonText1') }}</button>
+          <NuxtLinkLocale
+            to="/about"
+            class="inline-block mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px]"
+          >{{ $t('ui.components.blocks.Hero.AboutMainMobile.buttonText1') }}</NuxtLinkLocale>
         </div>
 
         <!-- Person -->
