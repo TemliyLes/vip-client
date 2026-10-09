@@ -45,6 +45,7 @@
           <ReservioButton
             :item="item"
             :url="item?.reservio_url"
+            :service-id="serviceId"
             class="mt-6"
           >
           </ReservioButton>
@@ -64,6 +65,7 @@ import Clock from "../icons/mini/clock.vue";
 import People from "../icons/mini/people.vue";
 
 defineProps({
+  serviceId: { type: Number, default: 0 },
   data: {
     type: Array,
     default: () => [],

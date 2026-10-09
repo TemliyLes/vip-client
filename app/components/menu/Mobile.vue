@@ -80,7 +80,7 @@
           </template>
         </div>
 
-        <Button class="mt-4">{{ $t('ui.components.menu.Mobile.buttonText1') }}</Button>
+        <Button class="mt-4" @click="prepareFeedback">{{ $t('ui.components.menu.Mobile.buttonText1') }}</Button>
       </div>
     </div>
   </Teleport>
@@ -94,6 +94,7 @@ import Button from "../ui/Button.vue";
 // import LanguageSwitcher from "../ui/LanguageSwitcher.vue";
 
 const menu = useMenu();
+const button = ref(null);
 
 const open = ref(false);
 
@@ -113,6 +114,12 @@ const setSubmenuRef = (key, el) => {
 
 const toggle = () => {
   open.value ? close() : show();
+};
+
+const prepareFeedback = () => {
+  close();
+  // Return focus to the burger when the modal closes, rather than the hidden menu.
+  button.value?.focus({ preventScroll: true });
 };
 
 const show = () => {

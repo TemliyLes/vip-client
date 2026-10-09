@@ -13,7 +13,8 @@
     <HomeNews />
     <Programm />
     <Feedback />
-    <Sale />
+    <!-- Акции временно скрыты. Для возврата раскомментируйте Sale и его импорт ниже. -->
+    <!-- <Sale /> -->
     <FAQ />
     <Contacts />
   </div>
@@ -32,7 +33,7 @@ import HomeNews from "~/components/blocks/HomeNews.vue";
 import Clinic from "~/components/blocks/Clinic.vue";
 import Programm from "~/components/blocks/Programm.vue";
 import Feedback from "~/components/blocks/Feedback.vue";
-import Sale from "~/components/blocks/Sale.vue";
+// import Sale from "~/components/blocks/Sale.vue";
 import FAQ from "~/components/blocks/FAQ.vue";
 import Contacts from "~/components/blocks/Contacts.vue";
 

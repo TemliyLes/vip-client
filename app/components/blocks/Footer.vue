@@ -17,7 +17,12 @@
         <nav
           class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 mt-8 sm:mt-10 text-white uppercase text-xs sm:text-sm"
         >
-          <NuxtLinkLocale v-for="item in menu" :key="item.id" :to="item.to">
+          <NuxtLinkLocale
+            v-for="item in menu"
+            :key="item.id"
+            :to="item.to"
+            class="transition-colors duration-300 hover:text-wine"
+          >
             {{ item.title }}
           </NuxtLinkLocale>
         </nav>
@@ -29,10 +34,10 @@
         <nav
           class="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:gap-8 text-white/90 uppercase text-[10px] sm:text-xs"
         >
-          <NuxtLinkLocale to="/privacy-policy">
+          <NuxtLinkLocale to="/privacy-policy" class="transition-colors duration-300 hover:text-wine">
             {{ $t('ui.components.blocks.Footer.privacyPolicy') }}
           </NuxtLinkLocale>
-          <NuxtLinkLocale to="/personal-data-consent">
+          <NuxtLinkLocale to="/personal-data-consent" class="transition-colors duration-300 hover:text-wine">
             {{ $t('ui.components.blocks.Footer.personalDataConsent') }}
           </NuxtLinkLocale>
         </nav>

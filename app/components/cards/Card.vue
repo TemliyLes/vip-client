@@ -110,7 +110,10 @@ const title = computed(() => {
 });
 
 const discount = computed(() => {
-  const value = props.data?.service_fields?.discount;
+  // Скидки временно скрыты. Для возврата отображения раскомментируйте строку поля WP.
+  const value =
+    // props.data?.service_fields?.discount ??
+    null;
 
   return value ? Number(value) : null;
 });

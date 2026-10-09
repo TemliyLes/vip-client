@@ -39,6 +39,8 @@ const wordmarkFill = ref(null);
 let startedAt = null;
 let reducedMotion = false;
 let finishing = false;
+let fillComplete = false;
+let forceFinish = false;
 let minimumTimer;
 let fallbackTimer;
 let fillTween;
@@ -46,29 +48,27 @@ let pulseTween;
 let exitTimeline;
 
 function finish(force = false) {
-  if (startedAt === null || finishing || (!props.ready && !force)) return;
+  if (force) forceFinish = true;
+  if (startedAt === null || finishing || (!props.ready && !forceFinish)) return;
 
   const remaining = (reducedMotion ? 300 : MIN_VISIBLE_MS) - (performance.now() - startedAt);
   if (remaining > 0) {
     clearTimeout(minimumTimer);
-    minimumTimer = setTimeout(() => finish(force), remaining);
+    minimumTimer = setTimeout(() => finish(), remaining);
     return;
   }
+
+  // Wait for the tween itself: elapsed time can advance while animation frames pause.
+  if (!fillComplete) return;
 
   finishing = true;
   clearTimeout(minimumTimer);
   clearTimeout(fallbackTimer);
-  fillTween?.kill();
   pulseTween?.kill();
 
   exitTimeline = gsap.timeline({ onComplete: () => emit("complete") });
   exitTimeline
-    .to([symbolFill.value, wordmarkFill.value], {
-      clipPath: "inset(0% 0% 0% 0%)",
-      duration: reducedMotion ? 0 : 0.35,
-      ease: "power2.out",
-    }, 0)
-    .to(logo.value, { scale: 1, opacity: 1, duration: reducedMotion ? 0 : 0.25 }, 0)
+    // Fade from the current pulse state without resetting scale or brightening the logo.
     .call(() => emit("before-reveal"))
     .to(logo.value, {
       opacity: 0,
@@ -90,10 +90,13 @@ onMounted(() => {
   reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   fillTween = gsap.to([symbolFill.value, wordmarkFill.value], {
-    clipPath: "inset(12% 0% 0% 0%)",
-    duration: reducedMotion ? 0 : 1.95,
-    stagger: reducedMotion ? 0 : 0.12,
-    ease: "power1.inOut",
+    clipPath: "inset(0% 0% 0% 0%)",
+    duration: reducedMotion ? 0 : MIN_VISIBLE_MS / 1000,
+    ease: "sine.inOut",
+    onComplete: () => {
+      fillComplete = true;
+      finish();
+    },
   });
 
   if (!reducedMotion) {

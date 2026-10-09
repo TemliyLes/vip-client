@@ -1,0 +1,418 @@
+.paliy-product-crop-metabox {
+    max-width: 960px;
+}
+
+.paliy-seo-fields {
+    max-width: 960px;
+}
+
+.paliy-seo-fields label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.paliy-seo-fields .description {
+    display: block;
+    margin-top: 5px;
+}
+
+.paliy-seo-og-image-preview {
+    max-width: 360px;
+    margin: 8px 0 16px;
+}
+
+.paliy-seo-og-image-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.paliy-rest-api-url {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.paliy-pages-api-toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.paliy-pages-api-toolbar a {
+    word-break: break-all;
+}
+
+.paliy-rest-api-table-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.paliy-rest-api-copy-status {
+    display: block;
+}
+
+.paliy-service-category-image-preview {
+    max-width: 240px;
+    margin-top: 12px;
+}
+
+.paliy-service-category-image-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.paliy-service-category-table-image {
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.paliy-service-tariffs {
+    max-width: 960px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #dcdcde;
+}
+
+.paliy-service-tariff {
+    max-width: 760px;
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+}
+
+.paliy-service-tariff .paliy-about-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.paliy-service-tariff-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.paliy-service-tariff-drag-handle {
+    color: #646970;
+    cursor: move;
+    cursor: grab;
+    font-size: 20px;
+    line-height: 1;
+    user-select: none;
+}
+
+.paliy-service-tariff-drag-handle:active {
+    cursor: grabbing;
+}
+
+.paliy-service-tariff-placeholder {
+    max-width: 760px;
+    height: 80px;
+    margin: 16px 0;
+    border: 1px dashed #2271b1;
+    background: #f0f6fc;
+}
+
+.paliy-service-tariff .wp-editor-wrap {
+    margin-bottom: 16px;
+}
+
+.paliy-related-videos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 8px 16px;
+    max-width: 760px;
+    margin-top: 12px;
+}
+
+.paliy-review-fields {
+    max-width: 760px;
+}
+
+.paliy-review-image-preview {
+    max-width: 240px;
+    margin: 8px 0 16px;
+}
+
+.paliy-review-image-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.paliy-contacts-section {
+    max-width: 960px;
+    margin: 24px 0;
+    padding: 20px;
+    border: 1px solid #dcdcde;
+    background: #fff;
+}
+
+.paliy-contacts-section:first-of-type {
+    margin-top: 16px;
+}
+
+.paliy-contacts-section h3 {
+    margin-top: 0;
+}
+
+.paliy-contacts-clinic {
+    max-width: 760px;
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+}
+
+.paliy-related-video-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border: 1px solid #dcdcde;
+    background: #fff;
+}
+
+.paliy-related-video-option small {
+    margin-left: auto;
+    color: #646970;
+}
+
+.paliy-video-source-error {
+    color: #b32d2e;
+}
+
+.paliy-feedback-fields {
+    max-width: 760px;
+}
+
+.paliy-about-section {
+    max-width: 960px;
+    margin: 24px 0;
+    padding: 20px;
+    border: 1px solid #dcdcde;
+    background: #fff;
+}
+
+.paliy-about-section:first-of-type {
+    margin-top: 16px;
+}
+
+.paliy-about-section h3 {
+    margin-top: 0;
+}
+
+.paliy-about-section-heading,
+.paliy-about-team-member-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.paliy-about-image-preview {
+    max-width: 240px;
+    margin-top: 12px;
+}
+
+.paliy-about-image-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.paliy-about-team-member {
+    max-width: 760px;
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+}
+
+.paliy-about-team-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 180px));
+    gap: 16px;
+    margin: 12px 0 18px;
+}
+
+.paliy-about-team-images > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.paliy-about-team-images img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #fff;
+    border: 1px solid #dcdcde;
+}
+
+.paliy-about-team-images .paliy-about-team-card {
+    height: 210px;
+}
+
+.paliy-about-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(80px, 1fr));
+    gap: 12px;
+    max-width: 760px;
+    margin-top: 12px;
+}
+
+.paliy-about-gallery-item {
+    position: relative;
+}
+
+.paliy-about-gallery-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid #dcdcde;
+}
+
+.paliy-about-gallery-item button {
+    margin-top: 4px;
+    font-size: 11px;
+}
+
+.paliy-about-section .wp-editor-wrap {
+    margin-bottom: 16px;
+}
+
+.column-service_category_image {
+    width: 90px;
+}
+
+.column-service_category_primary {
+    width: 90px;
+}
+
+.column-service_category_services_api {
+    width: 180px;
+}
+
+.column-news_category_news_api {
+    width: 180px;
+}
+
+.column-review_category_reviews_api {
+    width: 180px;
+}
+
+.column-faq_tag_faq_api {
+    width: 180px;
+}
+
+.paliy-rest-api-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.paliy-product-crop-actions {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.paliy-product-crop-status {
+    min-height: 24px;
+    margin: 8px 0;
+    color: #2271b1;
+}
+
+.paliy-product-crop-status.is-error {
+    color: #b32d2e;
+}
+
+.paliy-product-images-preview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 320px));
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.paliy-product-image-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    margin-top: 8px;
+    overflow: hidden;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+}
+
+.paliy-product-image-frame img {
+    display: block;
+    max-width: 100%;
+    max-height: 260px;
+    object-fit: contain;
+}
+
+.paliy-product-card-frame {
+    aspect-ratio: 360 / 390;
+}
+
+.paliy-product-crop-modal {
+    position: fixed;
+    z-index: 100000;
+    inset: 0;
+    padding: 5vh 5vw;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.paliy-product-crop-modal-inner {
+    width: min(500px, 100%);
+    max-width: 500px;
+    max-height: 45vh;
+    margin: auto;
+    padding: 12px;
+    overflow: auto;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.paliy-product-crop-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.paliy-product-crop-editor {
+    max-height: 32.5vh;
+    background: #1d2327;
+}
+
+.paliy-product-crop-editor img {
+    display: block;
+    max-width: 100%;
+    max-height: 32.5vh;
+}
+
+@media (max-width: 782px) {
+    .paliy-product-images-preview {
+        grid-template-columns: 1fr;
+    }
+
+    .paliy-about-gallery {
+        grid-template-columns: repeat(3, minmax(80px, 1fr));
+    }
+}
