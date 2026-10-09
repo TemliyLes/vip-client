@@ -11,6 +11,8 @@
           playsinline
           preload="metadata"
           controls
+          data-exclusive-playback
+          @play="pauseOtherVideos"
         />
 
         <!-- Встроенное видео -->
@@ -40,6 +42,7 @@
 <script setup>
 import Paragraph from "../ui/Paragraph.vue";
 import { decodeWpText } from "~/utils/decodeWpText";
+import { pauseOtherVideos } from "~/utils/videoPlayback";
 
 const props = defineProps({
   data: {

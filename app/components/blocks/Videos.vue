@@ -31,6 +31,8 @@
               playsinline
               preload="metadata"
               controls
+              data-exclusive-playback
+              @play="pauseOtherVideos"
             />
 
             <div
@@ -58,6 +60,7 @@ import Header from "../ui/Header.vue";
 
 import { useVideosStore } from "~/store/videos";
 import { decodeWpText } from "~/utils/decodeWpText";
+import { pauseOtherVideos } from "~/utils/videoPlayback";
 
 const store = useVideosStore();
 const { locale } = useI18n({ useScope: "global" });
