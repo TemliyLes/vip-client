@@ -27,7 +27,7 @@ export const useGsap = () => {
 
         // Pointer focus must not move a card between pointerdown and click.
         // Keep automatic scrolling when navigating with the keyboard.
-        onFocusIn: () => !pointerFocus,
+        onFocusIn: (_smoother, event) => !pointerFocus && !event.target.closest('[role="dialog"]'),
       });
     }
   }

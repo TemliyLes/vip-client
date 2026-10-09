@@ -7,6 +7,7 @@
     </div>
   </Container>
   <Category :data="categoryStore.category" />
+  <FAQ :category="categoryStore.info" class="mb-12 sm:mb-24" />
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@ import AlterHero from "~/components/blocks/AlterHero.vue";
 import Paragraph from "~/components/ui/Paragraph.vue";
 import { useCategoryStore } from "~/store/category";
 import Category from "~/components/blocks/Category.vue";
+import FAQ from "~/components/blocks/FAQ.vue";
 import Header from "~/components/ui/Header.vue";
 import Container from "~/components/ui/Container.vue";
 

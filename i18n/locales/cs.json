@@ -204,6 +204,16 @@
   "initialLoader": {
     "label": "Načítání stránky"
   },
+  "feedback": {
+    "sending": "Odesílání…",
+    "success": "Děkujeme. Vaše žádost byla odeslána. Ozveme se vám co nejdříve.",
+    "failed": "Žádost se nepodařilo odeslat. Zkuste to prosím znovu nebo nám zavolejte.",
+    "invalidName": "Zadejte prosím jméno. Pokud je příliš dlouhé, zkraťte ho.",
+    "invalidPhone": "Zadejte prosím platné telefonní číslo včetně předvolby (např. +420 nebo +421).",
+    "invalidMessage": "Napište prosím krátkou zprávu. Pokud je příliš dlouhá, zkraťte ji.",
+    "unavailableLanguage": "Formulář v tomto jazyce zatím není dostupný. Kontaktujte nás prosím telefonicky.",
+    "unavailableService": "Vybraná služba již není dostupná. Obnovte prosím stránku nebo nás kontaktujte telefonicky."
+  },
   "categoryPages": {
     "id14": {
       "title": "Kosmetologie",

@@ -11,6 +11,7 @@
 
       <PageTransition ref="pageTransition" />
       <div id="modal"></div>
+      <FeedbackModal />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
@@ -30,6 +31,7 @@ import Menu from "./components/menu/Controller.vue";
 import PageTransition from "./components/layout/PageTransition.vue";
 import InitialLoader from "./components/layout/InitialLoader.vue";
 import Footer from "./components/blocks/Footer.vue";
+import FeedbackModal from "./components/blocks/FeedbackModal.vue";
 
 const router = useRouter();
 const nuxtApp = useNuxtApp();

@@ -92,6 +92,7 @@
           v-if="content?.service_fields?.tariffs"
           class="mt-12"
           :data="content.service_fields.tariffs"
+          :service-id="content.id"
         />
 
         <!-- Видео -->
@@ -140,7 +141,11 @@ const content = computed(() => {
 });
 
 const discount = computed(() => {
-  const value = content.value?.service_fields?.discount;
+  // Скидки временно скрыты. Для возврата отображения раскомментируйте строку поля WP.
+  // Перед включением завершите расчёт цен с валютой, префиксом «od» и диапазонами.
+  const value =
+    // content.value?.service_fields?.discount ??
+    null;
 
   return value ? Number(value) : null;
 });

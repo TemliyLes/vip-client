@@ -10,7 +10,7 @@
     >
       <div
         v-if="modelValue"
-        class="fixed inset-0 z-[1000] flex items-center justify-center p-4 sm:p-8"
+        class="fixed inset-0 z-[100000] flex items-center justify-center p-4 sm:p-8"
         @click.self="close"
       >
         <!-- Overlay -->
@@ -30,9 +30,12 @@
         >
           <div
             v-if="modelValue"
+            ref="dialog"
             class="relative z-10 w-full max-w-[700px] max-h-[90vh] overflow-y-auto bg-white"
             role="dialog"
             aria-modal="true"
+            :aria-label="label"
+            tabindex="-1"
             @click.stop
           >
             <!-- Close -->
@@ -70,9 +73,10 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref, watch } from "vue";
+import { nextTick, onMounted, onBeforeUnmount, ref, watch } from "vue";
 
 const props = defineProps({
+  label: { type: String, default: "" },
   modelValue: {
     type: Boolean,
     default: false,
@@ -87,6 +91,13 @@ const props = defineProps({
 const emit = defineEmits(["update:modelValue", "close"]);
 
 const mounted = ref(false);
+const dialog = ref(null);
+const { $ScrollSmoother } = useNuxtApp();
+let previousFocus = null;
+let previousOverflow = "";
+let locked = false;
+let smoother = null;
+let smootherWasPaused = false;
 
 const close = () => {
   emit("update:modelValue", false);
@@ -94,21 +105,63 @@ const close = () => {
 };
 
 const handleKeydown = (event) => {
-  if (event.key === "Escape" && props.modelValue) {
+  if (!props.modelValue) return;
+  if (event.key === "Escape") {
+    event.preventDefault();
     close();
+  }
+  if (event.key !== "Tab" || !dialog.value) return;
+  const focusable = [...dialog.value.querySelectorAll(
+    'button:not(:disabled), input:not(:disabled), textarea:not(:disabled), a[href], [tabindex="0"]',
+  )].filter((el) => el.getClientRects().length);
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (!first) {
+    event.preventDefault();
+    dialog.value.focus({ preventScroll: true });
+  } else if (event.shiftKey && (document.activeElement === first || !focusable.includes(document.activeElement))) {
+    event.preventDefault();
+    last.focus({ preventScroll: true });
+  } else if (!event.shiftKey && (document.activeElement === last || !focusable.includes(document.activeElement))) {
+    event.preventDefault();
+    first.focus({ preventScroll: true });
   }
 };
 
 const toggleScroll = (state) => {
   if (!import.meta.client) return;
 
-  document.body.style.overflow = state ? "hidden" : "";
+  if (state && !locked) {
+    previousFocus = document.activeElement;
+    previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    smoother = $ScrollSmoother?.get();
+    smootherWasPaused = smoother?.paused() || false;
+    smoother?.paused(true);
+    locked = true;
+  } else if (!state && locked) {
+    document.body.style.overflow = previousOverflow;
+    smoother?.paused(smootherWasPaused);
+    locked = false;
+    if (previousFocus?.isConnected && previousFocus.getClientRects().length &&
+        getComputedStyle(previousFocus).visibility !== "hidden") {
+      previousFocus.focus({ preventScroll: true });
+    }
+  }
+};
+
+const focusDialog = async () => {
+  await nextTick();
+  if (!props.modelValue) return;
+  const target = dialog.value?.querySelector("input:not(:disabled)") || dialog.value;
+  target?.focus({ preventScroll: true });
 };
 
 watch(
   () => props.modelValue,
   (value) => {
     toggleScroll(value);
+    if (value) focusDialog();
   },
 );
 
@@ -119,6 +172,7 @@ onMounted(() => {
 
   if (props.modelValue) {
     toggleScroll(true);
+    focusDialog();
   }
 });
 
