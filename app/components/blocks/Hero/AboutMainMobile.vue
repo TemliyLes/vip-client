@@ -25,7 +25,7 @@
 
           <NuxtLinkLocale
             to="/about"
-            class="inline-block mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px]"
+            class="inline-block mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px] ring-1 ring-inset ring-white transition duration-300 hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >{{ $t('ui.components.blocks.Hero.AboutMainMobile.buttonText1') }}</NuxtLinkLocale>
         </div>
 
