@@ -1,0 +1,1936 @@
+{
+  "source": "PALIY_FAQ_Olga.xlsx",
+  "sheet": "FAQ Olga",
+  "languages": [
+    "cs",
+    "sk"
+  ],
+  "items": [
+    {
+      "number": 1,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Что такое перманентный макияж?",
+        "answer": "Перманентный макияж — это процедура, при которой пигмент аккуратно вводится в верхние слои кожи. С его помощью можно подчеркнуть форму бровей, добавить оттенок губам или сделать линию ресниц визуально более выразительной. Современный перманентный макияж создаётся с акцентом на естественный результат и постепенно светлеет со временем."
+      },
+      "cs": {
+        "question": "Co je permanentní make-up?",
+        "answer": "Permanentní make-up je procedura, při které se pigment jemně zavádí do svrchních vrstev kůže. S jeho pomocí lze zvýraznit tvar obočí, dodat rtům odstín nebo opticky zvýraznit linii řas. Moderní permanentní make-up se provádí s důrazem na přirozený výsledek a postupně časem bledne."
+      },
+      "sk": {
+        "question": "Čo je permanentný make-up?",
+        "answer": "Permanentný make-up je procedúra, pri ktorej sa pigment jemne zavádza do vrchných vrstiev kože. S jeho pomocou možno zvýrazniť tvar obočia, dodať perám odtieň alebo opticky zvýrazniť líniu rias. Moderný permanentný make-up sa vykonáva s dôrazom na prirodzený výsledok a postupne časom bledne."
+      }
+    },
+    {
+      "number": 2,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Больно ли делать перманентный макияж?",
+        "answer": "Чувствительность у каждого человека индивидуальна, но большинство клиентов хорошо переносят процедуру. Для дополнительного комфорта во время работы может использоваться охлаждающий гель. Ощущения чаще всего описывают как лёгкое покалывание, царапанье или давление."
+      },
+      "cs": {
+        "question": "Bolí permanentní make-up?",
+        "answer": "Citlivost je u každého člověka individuální, ale většina klientů proceduru dobře snáší. Pro větší pohodlí lze při práci použít chladivý gel. Pocity se nejčastěji popisují jako lehké brnění, škrábání nebo tlak."
+      },
+      "sk": {
+        "question": "Bolí permanentný make-up?",
+        "answer": "Citlivosť je u každého človeka individuálna, ale väčšina klientov procedúru dobre znáša. Pre väčšie pohodlie možno pri práci použiť chladivý gél. Pocity sa najčastejšie opisujú ako jemné mravčenie, škrabanie alebo tlak."
+      }
+    },
+    {
+      "number": 3,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Как долго держится перманентный макияж?",
+        "answer": "В среднем результат сохраняется от 1 до 3 лет. Стойкость зависит от зоны, типа кожи, возраста, образа жизни, воздействия солнца, домашнего ухода и косметологических процедур."
+      },
+      "cs": {
+        "question": "Jak dlouho vydrží permanentní make-up?",
+        "answer": "Výsledek v průměru vydrží 1 až 3 roky. Trvanlivost závisí na ošetřované oblasti, typu pleti, věku, životním stylu, působení slunce, domácí péči a kosmetologických procedurách."
+      },
+      "sk": {
+        "question": "Ako dlho vydrží permanentný make-up?",
+        "answer": "Výsledok v priemere vydrží 1 až 3 roky. Trvácnosť závisí od ošetrovanej oblasti, typu pleti, veku, životného štýlu, pôsobenia slnka, domácej starostlivosti a kozmetologických procedúr."
+      }
+    },
+    {
+      "number": 4,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Как выглядит перманентный макияж сразу после процедуры?",
+        "answer": "Сразу после процедуры цвет выглядит ярче и насыщеннее окончательного результата. Возможны небольшое покраснение и отёчность. В процессе заживления цвет становится мягче и естественнее."
+      },
+      "cs": {
+        "question": "Jak vypadá permanentní make-up ihned po proceduře?",
+        "answer": "Ihned po proceduře vypadá barva výraznější a sytější než konečný výsledek. Může se objevit mírné zarudnutí a otok. Během hojení se barva stává jemnější a přirozenější."
+      },
+      "sk": {
+        "question": "Ako vyzerá permanentný make-up ihneď po procedúre?",
+        "answer": "Ihneď po procedúre vyzerá farba výraznejšia a sýtejšia než konečný výsledok. Môže sa objaviť mierne začervenanie a opuch. Počas hojenia sa farba stáva jemnejšou a prirodzenejšou."
+      }
+    },
+    {
+      "number": 5,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Сколько заживает перманентный макияж?",
+        "answer": "Первичное заживление обычно занимает около 5–10 дней. Окончательный результат лучше оценивать примерно через 4 недели, когда кожа полностью восстановится и цвет стабилизируется."
+      },
+      "cs": {
+        "question": "Jak dlouho se permanentní make-up hojí?",
+        "answer": "Počáteční hojení obvykle trvá přibližně 5–10 dní. Konečný výsledek je vhodné hodnotit asi po 4 týdnech, kdy se kůže plně zotaví a barva se ustálí."
+      },
+      "sk": {
+        "question": "Ako dlho sa permanentný make-up hojí?",
+        "answer": "Počiatočné hojenie zvyčajne trvá približne 5–10 dní. Konečný výsledok je vhodné hodnotiť asi po 4 týždňoch, keď sa koža úplne zotaví a farba sa ustáli."
+      }
+    },
+    {
+      "number": 6,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Нужна ли коррекция после первой процедуры?",
+        "answer": "Во многих случаях коррекция рекомендуется. После заживления мы оцениваем, как кожа приняла пигмент, и при необходимости добавляем насыщенность, корректируем отдельные участки или оттенок."
+      },
+      "cs": {
+        "question": "Je po první proceduře nutná korekce?",
+        "answer": "V mnoha případech se korekce doporučuje. Po zahojení posoudíme, jak kůže přijala pigment, a v případě potřeby doplníme sytost, upravíme jednotlivá místa nebo odstín."
+      },
+      "sk": {
+        "question": "Je po prvej procedúre potrebná korekcia?",
+        "answer": "V mnohých prípadoch sa korekcia odporúča. Po zahojení posúdime, ako koža prijala pigment, a v prípade potreby doplníme sýtosť, upravíme jednotlivé miesta alebo odtieň."
+      }
+    },
+    {
+      "number": 7,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Через сколько можно делать коррекцию?",
+        "answer": "Коррекцию обычно проводят после полного заживления кожи — ориентировочно через 4–8 недель после первой процедуры."
+      },
+      "cs": {
+        "question": "Za jak dlouho lze provést korekci?",
+        "answer": "Korekce se obvykle provádí po úplném zahojení kůže — přibližně 4–8 týdnů po první proceduře."
+      },
+      "sk": {
+        "question": "Za ako dlho možno vykonať korekciu?",
+        "answer": "Korekcia sa zvyčajne vykonáva po úplnom zahojení kože — približne 4–8 týždňov po prvej procedúre."
+      }
+    },
+    {
+      "number": 8,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Можно ли сразу после процедуры идти на работу?",
+        "answer": "Да. Большинство клиентов возвращаются к обычной жизни сразу после процедуры. Нужно только учитывать, что первые несколько дней цвет будет ярче, а на губах или веках может присутствовать небольшая отёчность."
+      },
+      "cs": {
+        "question": "Mohu jít ihned po proceduře do práce?",
+        "answer": "Ano. Většina klientů se vrací k běžnému životu ihned po proceduře. Je jen třeba počítat s tím, že prvních několik dní bude barva výraznější a na rtech nebo očních víčkách se může objevit mírný otok."
+      },
+      "sk": {
+        "question": "Môžem ísť ihneď po procedúre do práce?",
+        "answer": "Áno. Väčšina klientov sa vracia k bežnému životu ihneď po procedúre. Treba len počítať s tým, že prvých niekoľko dní bude farba výraznejšia a na perách alebo očných viečkach sa môže objaviť mierny opuch."
+      }
+    },
+    {
+      "number": 9,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Как подготовиться к перманентному макияжу?",
+        "answer": "За 24 часа до процедуры желательно: • не употреблять алкоголь; • не пить много кофе, энергетиков и крепкого чая; • не принимать без необходимости препараты, которые могут усиливать кровоточивость; • не посещать сауну, баню и солярий; • избегать активного загара; • не делать пилинги и агрессивные косметологические процедуры в зоне будущего перманентного макияжа. В день процедуры: • хорошо поесть; • не пить много кофе и энергетических напитков; • по возможности не наносить макияж на зону процедуры; • сообщить мастеру о принимаемых лекарствах и хронических заболеваниях. Если вы принимаете препараты, назначенные врачом, самостоятельно отменять их перед процедурой нельзя."
+      },
+      "cs": {
+        "question": "Jak se připravit na permanentní make-up?",
+        "answer": "24 hodin před procedurou je vhodné:\n• nepít alkohol;\n• nepít velké množství kávy, energetických nápojů a silného čaje;\n• neužívat bez nutnosti přípravky, které mohou zvýšit krvácivost;\n• nenavštěvovat saunu, parní lázeň ani solárium;\n• vyhnout se intenzivnímu opalování;\n• nepodstupovat peelingy ani agresivní kosmetologické procedury v oblasti budoucího permanentního make-upu.\n\nV den procedury:\n• dobře se najíst;\n• nepít velké množství kávy a energetických nápojů;\n• pokud možno nenanášet make-up na ošetřovanou oblast;\n• informovat specialistu o užívaných lécích a chronických onemocněních.\n\nPokud užíváte léky předepsané lékařem, nesmíte je před procedurou sami vysadit."
+      },
+      "sk": {
+        "question": "Ako sa pripraviť na permanentný make-up?",
+        "answer": "24 hodín pred procedúrou je vhodné:\n• nepiť alkohol;\n• nepiť veľké množstvo kávy, energetických nápojov a silného čaju;\n• neužívať bez potreby prípravky, ktoré môžu zvýšiť krvácavosť;\n• nenavštevovať saunu, parný kúpeľ ani solárium;\n• vyhnúť sa intenzívnemu opaľovaniu;\n• nepodstupovať peelingy ani agresívne kozmetologické procedúry v oblasti budúceho permanentného make-upu.\n\nV deň procedúry:\n• dobre sa najesť;\n• nepiť veľké množstvo kávy a energetických nápojov;\n• podľa možnosti nenanášať make-up na ošetrovanú oblasť;\n• informovať špecialistu o užívaných liekoch a chronických ochoreniach.\n\nAk užívate lieky predpísané lekárom, nesmiete ich pred procedúrou sami vysadiť."
+      }
+    },
+    {
+      "number": 10,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Что нельзя делать после перманентного макияжа?",
+        "answer": "Во время заживления нельзя самостоятельно снимать шелушения или корочки, тереть обработанную область и распаривать кожу. Также на несколько дней желательно исключить бассейн, сауну, интенсивные тренировки и активное солнце."
+      },
+      "cs": {
+        "question": "Co se nesmí dělat po permanentním make-upu?",
+        "answer": "Během hojení se nesmí samovolně odstraňovat šupinky nebo stroupky, třít ošetřenou oblast ani napařovat kůži. Na několik dní je také vhodné vynechat bazén, saunu, intenzivní trénink a silné slunce."
+      },
+      "sk": {
+        "question": "Čo sa nesmie robiť po permanentnom make-upe?",
+        "answer": "Počas hojenia sa nesmú svojvoľne odstraňovať šupinky alebo chrastičky, trieť ošetrená oblasť ani naparovať koža. Na niekoľko dní je tiež vhodné vynechať bazén, saunu, intenzívny tréning a silné slnko."
+      }
+    },
+    {
+      "number": 11,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Можно ли мочить перманентный макияж?",
+        "answer": "Кратковременный контакт с водой обычно не является проблемой. Но в первые дни не следует распаривать кожу, долго держать обработанную область под водой или активно её тереть."
+      },
+      "cs": {
+        "question": "Může permanentní make-up přijít do kontaktu s vodou?",
+        "answer": "Krátkodobý kontakt s vodou obvykle není problém. V prvních dnech ale není vhodné kůži napařovat, držet ošetřenou oblast dlouho pod vodou ani ji intenzivně třít."
+      },
+      "sk": {
+        "question": "Môže permanentný make-up prísť do kontaktu s vodou?",
+        "answer": "Krátkodobý kontakt s vodou zvyčajne nie je problém. V prvých dňoch však nie je vhodné kožu naparovať, držať ošetrenú oblasť dlho pod vodou ani ju intenzívne trieť."
+      }
+    },
+    {
+      "number": 12,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Можно ли заниматься спортом после перманентного макияжа?",
+        "answer": "В первые несколько дней лучше отказаться от интенсивных тренировок, вызывающих сильное потоотделение."
+      },
+      "cs": {
+        "question": "Mohu po permanentním make-upu sportovat?",
+        "answer": "V prvních několika dnech je lepší vynechat intenzivní tréninky, které způsobují silné pocení."
+      },
+      "sk": {
+        "question": "Môžem po permanentnom make-upe športovať?",
+        "answer": "V prvých niekoľkých dňoch je lepšie vynechať intenzívne tréningy, ktoré spôsobujú silné potenie."
+      }
+    },
+    {
+      "number": 13,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Можно ли делать перманентный макияж летом?",
+        "answer": "Да. Перманентный макияж можно делать круглый год. После процедуры важно защищать кожу от активного солнца и соблюдать рекомендации по уходу."
+      },
+      "cs": {
+        "question": "Lze permanentní make-up provádět v létě?",
+        "answer": "Ano. Permanentní make-up lze provádět po celý rok. Po proceduře je důležité chránit kůži před silným sluncem a dodržovat doporučení pro následnou péči."
+      },
+      "sk": {
+        "question": "Možno permanentný make-up vykonávať v lete?",
+        "answer": "Áno. Permanentný make-up možno vykonávať počas celého roka. Po procedúre je dôležité chrániť kožu pred silným slnkom a dodržiavať odporúčania pre následnú starostlivosť."
+      }
+    },
+    {
+      "number": 14,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Есть ли противопоказания к перманентному макияжу?",
+        "answer": "Да. Некоторые заболевания, воспалительные процессы, беременность, приём определённых препаратов и другие состояния могут быть временным или постоянным ограничением для процедуры."
+      },
+      "cs": {
+        "question": "Existují kontraindikace permanentního make-upu?",
+        "answer": "Ano. Některá onemocnění, zánětlivé procesy, těhotenství, užívání určitých léků a další stavy mohou představovat dočasné nebo trvalé omezení pro tuto proceduru."
+      },
+      "sk": {
+        "question": "Existujú kontraindikácie permanentného make-upu?",
+        "answer": "Áno. Niektoré ochorenia, zápalové procesy, tehotenstvo, užívanie určitých liekov a ďalšie stavy môžu predstavovať dočasné alebo trvalé obmedzenie pre túto procedúru."
+      }
+    },
+    {
+      "number": 15,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Можно ли делать перманентный макияж во время беременности?",
+        "answer": "Во время беременности процедуру не проводят."
+      },
+      "cs": {
+        "question": "Lze permanentní make-up provádět během těhotenství?",
+        "answer": "Během těhotenství se procedura neprovádí."
+      },
+      "sk": {
+        "question": "Možno permanentný make-up vykonávať počas tehotenstva?",
+        "answer": "Počas tehotenstva sa procedúra nevykonáva."
+      }
+    },
+    {
+      "number": 16,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359",
+      "ru": {
+        "question": "Можно ли делать перманентный макияж во время грудного вскармливания?",
+        "answer": "Этот вопрос оценивается индивидуально с учётом состояния здоровья."
+      },
+      "cs": {
+        "question": "Lze permanentní make-up provádět během kojení?",
+        "answer": "Tato otázka se posuzuje individuálně s ohledem na zdravotní stav."
+      },
+      "sk": {
+        "question": "Možno permanentný make-up vykonávať počas dojčenia?",
+        "answer": "Táto otázka sa posudzuje individuálne s ohľadom na zdravotný stav."
+      }
+    },
+    {
+      "number": 17,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94359, message94360",
+      "ru": {
+        "question": "Что делать, если у меня есть аллергии?",
+        "answer": "Обязательно сообщите мастеру обо всех известных аллергических реакциях до процедуры."
+      },
+      "cs": {
+        "question": "Co mám dělat, pokud mám alergie?",
+        "answer": "Před procedurou nezapomeňte specialistu informovat o všech známých alergických reakcích."
+      },
+      "sk": {
+        "question": "Čo mám robiť, ak mám alergie?",
+        "answer": "Pred procedúrou nezabudnite špecialistu informovať o všetkých známych alergických reakciách."
+      }
+    },
+    {
+      "number": 18,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Чем перманентный макияж отличается от татуировки?",
+        "answer": "Перманентный макияж выполняется более деликатно и поверхностно, а результат рассчитан на постепенное осветление. Основная задача современного ПМ — подчеркнуть природные черты лица и сохранить естественность."
+      },
+      "cs": {
+        "question": "Jak se permanentní make-up liší od tetování?",
+        "answer": "Permanentní make-up se provádí jemněji a povrchověji a výsledek je určen k postupnému zesvětlování. Hlavním cílem moderního permanentního make-upu je zvýraznit přirozené rysy obličeje a zachovat přirozenost."
+      },
+      "sk": {
+        "question": "Ako sa permanentný make-up líši od tetovania?",
+        "answer": "Permanentný make-up sa vykonáva jemnejšie a povrchovejšie a výsledok je určený na postupné zosvetľovanie. Hlavným cieľom moderného permanentného make-upu je zvýrazniť prirodzené črty tváre a zachovať prirodzenosť."
+      }
+    },
+    {
+      "number": 19,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли сделать перманентный макияж максимально натуральным?",
+        "answer": "Да. Форма, оттенок и насыщенность подбираются индивидуально. Перманентный макияж не обязательно должен выглядеть ярко или графично."
+      },
+      "cs": {
+        "question": "Může permanentní make-up vypadat co nejpřirozeněji?",
+        "answer": "Ano. Tvar, odstín a sytost se vybírají individuálně. Permanentní make-up nemusí vypadat výrazně ani ostře vykresleně."
+      },
+      "sk": {
+        "question": "Môže permanentný make-up vyzerať čo najprirodzenejšie?",
+        "answer": "Áno. Tvar, odtieň a sýtosť sa vyberajú individuálne. Permanentný make-up nemusí vyzerať výrazne ani ostro vykreslene."
+      }
+    },
+    {
+      "number": 20,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Как подбирается форма и цвет?",
+        "answer": "Перед процедурой мастер учитывает пожелания клиента, форму лица, природные особенности, оттенок кожи и волос. Форма предварительно согласовывается до начала процедуры."
+      },
+      "cs": {
+        "question": "Jak se vybírá tvar a barva?",
+        "answer": "Před procedurou specialista zohlední přání klienta, tvar obličeje, přirozené rysy a odstín kůže a vlasů. Tvar se předem odsouhlasí ještě před zahájením procedury."
+      },
+      "sk": {
+        "question": "Ako sa vyberá tvar a farba?",
+        "answer": "Pred procedúrou špecialista zohľadní želania klienta, tvar tváre, prirodzené črty a odtieň kože a vlasov. Tvar sa vopred odsúhlasí ešte pred začatím procedúry."
+      }
+    },
+    {
+      "number": 21,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Что если мне не понравится форма?",
+        "answer": "Перед началом работы мастер делает предварительный эскиз. Процедура начинается только после согласования формы."
+      },
+      "cs": {
+        "question": "Co když se mi tvar nebude líbit?",
+        "answer": "Před zahájením práce specialista vytvoří předběžný návrh. Procedura začíná až po odsouhlasení tvaru."
+      },
+      "sk": {
+        "question": "Čo ak sa mi tvar nebude páčiť?",
+        "answer": "Pred začatím práce špecialista vytvorí predbežný návrh. Procedúra sa začína až po odsúhlasení tvaru."
+      }
+    },
+    {
+      "number": 22,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли исправить асимметрию?",
+        "answer": "Небольшую природную асимметрию часто можно визуально скорректировать. При этом мастер всегда учитывает анатомию лица и стремится к визуальной гармонии, а не к искусственной зеркальной симметрии."
+      },
+      "cs": {
+        "question": "Lze upravit asymetrii?",
+        "answer": "Mírnou přirozenou asymetrii lze často opticky upravit. Specialista přitom vždy zohledňuje anatomii obličeje a usiluje o vizuální harmonii, nikoli o umělou zrcadlovou symetrii."
+      },
+      "sk": {
+        "question": "Možno upraviť asymetriu?",
+        "answer": "Miernu prirodzenú asymetriu možno často opticky upraviť. Špecialista pritom vždy zohľadňuje anatómiu tváre a usiluje sa o vizuálnu harmóniu, nie o umelú zrkadlovú symetriu."
+      }
+    },
+    {
+      "number": 23,
+      "category": "permanent-makeup",
+      "subsection": "Общие вопросы",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли сделать перманентный макияж поверх старого?",
+        "answer": "Иногда да, но это зависит от состояния предыдущей работы. Важны форма, насыщенность и оттенок старого пигмента. Перед записью желательно прислать фотографию зоны без макияжа при дневном освещении. В некоторых случаях сначала требуется осветление или удаление старого перманентного макияжа."
+      },
+      "cs": {
+        "question": "Lze provést permanentní make-up přes starý?",
+        "answer": "Někdy ano, ale záleží na stavu předchozí práce. Důležitý je tvar, sytost a odstín starého pigmentu. Před objednáním je vhodné poslat fotografii dané oblasti bez make-upu za denního světla. V některých případech je nejprve nutné starý permanentní make-up zesvětlit nebo odstranit."
+      },
+      "sk": {
+        "question": "Možno vykonať permanentný make-up cez starý?",
+        "answer": "Niekedy áno, ale záleží na stave predchádzajúcej práce. Dôležitý je tvar, sýtosť a odtieň starého pigmentu. Pred objednaním je vhodné poslať fotografiu danej oblasti bez make-upu pri dennom svetle. V niektorých prípadoch je najprv potrebné starý permanentný make-up zosvetliť alebo odstrániť."
+      }
+    },
+    {
+      "number": 24,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж бровей",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Нужно ли сбривать свои брови перед процедурой?",
+        "answer": "Нет. Естественные волоски сохраняются."
+      },
+      "cs": {
+        "question": "Je nutné před procedurou oholit vlastní obočí?",
+        "answer": "Ne. Přirozené chloupky se zachovávají."
+      },
+      "sk": {
+        "question": "Je potrebné pred procedúrou oholiť vlastné obočie?",
+        "answer": "Nie. Prirodzené chĺpky sa zachovávajú."
+      }
+    },
+    {
+      "number": 25,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж бровей",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Будут ли брови сразу очень тёмными?",
+        "answer": "В первые дни цвет выглядит насыщеннее. После заживления он становится значительно мягче."
+      },
+      "cs": {
+        "question": "Bude obočí ihned velmi tmavé?",
+        "answer": "V prvních dnech vypadá barva sytější. Po zahojení se stává výrazně jemnější."
+      },
+      "sk": {
+        "question": "Bude obočie ihneď veľmi tmavé?",
+        "answer": "V prvých dňoch vyzerá farba sýtejšia. Po zahojení sa stáva výrazne jemnejšou."
+      }
+    },
+    {
+      "number": 26,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж бровей",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Какой эффект можно получить с помощью перманентного макияжа бровей?",
+        "answer": "Можно визуально сделать брови более выразительными, заполнить участки с недостатком волосков, подчеркнуть форму и добавить мягкий оттенок."
+      },
+      "cs": {
+        "question": "Jakého efektu lze dosáhnout permanentním make-upem obočí?",
+        "answer": "Obočí lze opticky zvýraznit, vyplnit místa s nedostatkem chloupků, podtrhnout jeho tvar a dodat jemný odstín."
+      },
+      "sk": {
+        "question": "Aký efekt možno dosiahnuť permanentným make-upom obočia?",
+        "answer": "Obočie možno opticky zvýrazniť, vyplniť miesta s nedostatkom chĺpkov, podčiarknuť jeho tvar a dodať jemný odtieň."
+      }
+    },
+    {
+      "number": 27,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж бровей",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли сделать очень натуральные брови?",
+        "answer": "Да. Насыщенность и техника подбираются индивидуально."
+      },
+      "cs": {
+        "question": "Může obočí vypadat velmi přirozeně?",
+        "answer": "Ano. Sytost a technika se vybírají individuálně."
+      },
+      "sk": {
+        "question": "Môže obočie vyzerať veľmi prirodzene?",
+        "answer": "Áno. Sýtosť a technika sa vyberajú individuálne."
+      }
+    },
+    {
+      "number": 28,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж бровей",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Подходит ли перманентный макияж бровей для жирной кожи?",
+        "answer": "Да, но на жирной коже пигмент может удерживаться иначе и быстрее светлеть."
+      },
+      "cs": {
+        "question": "Je permanentní make-up obočí vhodný pro mastnou pleť?",
+        "answer": "Ano, ale na mastné pleti se pigment může uchytit jinak a rychleji blednout."
+      },
+      "sk": {
+        "question": "Je permanentný make-up obočia vhodný pre mastnú pleť?",
+        "answer": "Áno, ale na mastnej pleti sa pigment môže uchytiť inak a rýchlejšie blednúť."
+      }
+    },
+    {
+      "number": 29,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж бровей",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли перекрыть старые красные, серые или слишком тёмные брови?",
+        "answer": "Не всегда. Если старого пигмента много или форма сильно отличается от желаемой, может потребоваться предварительное осветление или удаление."
+      },
+      "cs": {
+        "question": "Lze překrýt staré červené, šedé nebo příliš tmavé obočí?",
+        "answer": "Ne vždy. Pokud je starého pigmentu mnoho nebo se tvar výrazně liší od požadovaného, může být nutné předchozí zesvětlení nebo odstranění."
+      },
+      "sk": {
+        "question": "Možno prekryť staré červené, sivé alebo príliš tmavé obočie?",
+        "answer": "Nie vždy. Ak je starého pigmentu veľa alebo sa tvar výrazne líši od požadovaného, môže byť potrebné predchádzajúce zosvetlenie alebo odstránenie."
+      }
+    },
+    {
+      "number": 30,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Для чего делают перманентный макияж губ?",
+        "answer": "Он помогает придать губам более свежий оттенок, подчеркнуть естественную форму и визуально выровнять цвет."
+      },
+      "cs": {
+        "question": "Proč se provádí permanentní make-up rtů?",
+        "answer": "Pomáhá dodat rtům svěžejší odstín, zvýraznit jejich přirozený tvar a opticky sjednotit barvu."
+      },
+      "sk": {
+        "question": "Prečo sa vykonáva permanentný make-up pier?",
+        "answer": "Pomáha dodať perám sviežejší odtieň, zvýrazniť ich prirodzený tvar a opticky zjednotiť farbu."
+      }
+    },
+    {
+      "number": 31,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли сделать губы без чёткого контура?",
+        "answer": "Да. Можно создать мягкий натуральный результат без эффекта нарисованного карандашом контура."
+      },
+      "cs": {
+        "question": "Lze upravit rty bez výrazné kontury?",
+        "answer": "Ano. Lze vytvořit jemný přirozený výsledek bez efektu kontury nakreslené tužkou."
+      },
+      "sk": {
+        "question": "Možno upraviť pery bez výraznej kontúry?",
+        "answer": "Áno. Možno vytvoriť jemný prirodzený výsledok bez efektu kontúry nakreslenej ceruzkou."
+      }
+    },
+    {
+      "number": 32,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли перманентным макияжем увеличить губы?",
+        "answer": "Нет. Перманентный макияж не увеличивает физический объём губ. Он может визуально подчеркнуть форму и сделать губы более выразительными."
+      },
+      "cs": {
+        "question": "Lze permanentním make-upem zvětšit rty?",
+        "answer": "Ne. Permanentní make-up nezvětšuje fyzický objem rtů. Může opticky zvýraznit jejich tvar a dodat jim výraznější vzhled."
+      },
+      "sk": {
+        "question": "Možno permanentným make-upom zväčšiť pery?",
+        "answer": "Nie. Permanentný make-up nezväčšuje fyzický objem pier. Môže opticky zvýrazniť ich tvar a dodať im výraznejší vzhľad."
+      }
+    },
+    {
+      "number": 33,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли исправить асимметрию губ?",
+        "answer": "Небольшую асимметрию часто можно визуально скорректировать в пределах естественной анатомии губ."
+      },
+      "cs": {
+        "question": "Lze upravit asymetrii rtů?",
+        "answer": "Mírnou asymetrii lze často opticky upravit v mezích přirozené anatomie rtů."
+      },
+      "sk": {
+        "question": "Možno upraviť asymetriu pier?",
+        "answer": "Miernu asymetriu možno často opticky upraviť v medziach prirodzenej anatómie pier."
+      }
+    },
+    {
+      "number": 34,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Почему губы сразу после процедуры такие яркие?",
+        "answer": "Сразу после процедуры пигмент выглядит более насыщенным. После заживления цвет становится значительно мягче."
+      },
+      "cs": {
+        "question": "Proč jsou rty ihned po proceduře tak výrazné?",
+        "answer": "Ihned po proceduře vypadá pigment sytější. Po zahojení se barva stává výrazně jemnější."
+      },
+      "sk": {
+        "question": "Prečo sú pery ihneď po procedúre také výrazné?",
+        "answer": "Ihneď po procedúre vyzerá pigment sýtejší. Po zahojení sa farba stáva výrazne jemnejšou."
+      }
+    },
+    {
+      "number": 35,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Сильно ли отекают губы после процедуры?",
+        "answer": "Небольшая или умеренная отёчность возможна. Интенсивность реакции индивидуальна."
+      },
+      "cs": {
+        "question": "Otékají rty po proceduře výrazně?",
+        "answer": "Mírný až střední otok se může objevit. Intenzita reakce je individuální."
+      },
+      "sk": {
+        "question": "Opúchajú pery po procedúre výrazne?",
+        "answer": "Mierny až stredný opuch sa môže objaviť. Intenzita reakcie je individuálna."
+      }
+    },
+    {
+      "number": 36,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли делать перманентный макияж губ, если бывает герпес?",
+        "answer": "Во время активного герпеса процедуру проводить нельзя. Если герпес появлялся раньше, об этом обязательно нужно сообщить мастеру заранее."
+      },
+      "cs": {
+        "question": "Lze provést permanentní make-up rtů, pokud se mi objevuje opar?",
+        "answer": "Při aktivním oparu se procedura nesmí provádět. Pokud se opar objevil již dříve, je nutné o tom specialistu předem informovat."
+      },
+      "sk": {
+        "question": "Možno vykonať permanentný make-up pier, ak sa mi objavuje opar?",
+        "answer": "Pri aktívnom opare sa procedúra nesmie vykonávať. Ak sa opar objavil už skôr, je potrebné o tom špecialistu vopred informovať."
+      }
+    },
+    {
+      "number": 37,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли сделать перманентный макияж на очень бледных губах?",
+        "answer": "Да. Перманентный макияж помогает придать губам более живой и ровный оттенок."
+      },
+      "cs": {
+        "question": "Lze provést permanentní make-up na velmi bledých rtech?",
+        "answer": "Ano. Permanentní make-up pomáhá dodat rtům živější a rovnoměrnější odstín."
+      },
+      "sk": {
+        "question": "Možno vykonať permanentný make-up na veľmi bledých perách?",
+        "answer": "Áno. Permanentný make-up pomáha dodať perám živší a rovnomernejší odtieň."
+      }
+    },
+    {
+      "number": 38,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли перекрыть холодный или синеватый оттенок губ?",
+        "answer": "В некоторых случаях да. Может потребоваться специальная техника нейтрализации и несколько этапов работы."
+      },
+      "cs": {
+        "question": "Lze překrýt studený nebo namodralý odstín rtů?",
+        "answer": "V některých případech ano. Může být nutná speciální technika neutralizace a několik fází práce."
+      },
+      "sk": {
+        "question": "Možno prekryť studený alebo modrastý odtieň pier?",
+        "answer": "V niektorých prípadoch áno. Môže byť potrebná špeciálna technika neutralizácie a niekoľko fáz práce."
+      }
+    },
+    {
+      "number": 39,
+      "category": "permanent-makeup",
+      "subsection": "Перманентный макияж губ",
+      "sourceMessage": "message94360",
+      "ru": {
+        "question": "Можно ли делать перманентный макияж губ при гранулах Фордайса?",
+        "answer": "Во многих случаях да. Перманентный макияж может визуально выровнять оттенок губ и сделать гранулы Фордайса менее заметными. Важно понимать, что перманентный макияж не удаляет и не лечит гранулы Фордайса."
+      },
+      "cs": {
+        "question": "Lze provést permanentní make-up rtů při Fordyceových skvrnách?",
+        "answer": "V mnoha případech ano. Permanentní make-up může opticky sjednotit odstín rtů a učinit Fordyceovy skvrny méně nápadnými. Je důležité vědět, že permanentní make-up Fordyceovy skvrny neodstraňuje ani neléčí."
+      },
+      "sk": {
+        "question": "Možno vykonať permanentný make-up pier pri Fordyceových škvrnách?",
+        "answer": "V mnohých prípadoch áno. Permanentný make-up môže opticky zjednotiť odtieň pier a urobiť Fordyceove škvrny menej nápadnými. Je dôležité vedieť, že permanentný make-up Fordyceove škvrny neodstraňuje ani nelieči."
+      }
+    },
+    {
+      "number": 40,
+      "category": "permanent-makeup",
+      "subsection": "Межресничный перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Что такое межресничный перманентный макияж?",
+        "answer": "Это деликатное заполнение пространства между ресницами. Он визуально делает линию ресниц гуще и взгляд выразительнее, но не выглядит как декоративная стрелка."
+      },
+      "cs": {
+        "question": "Co je permanentní make-up mezi řasami?",
+        "answer": "Jde o jemné vyplnění prostoru mezi řasami. Opticky zahušťuje linii řas a zvýrazňuje pohled, ale nevypadá jako dekorativní oční linka."
+      },
+      "sk": {
+        "question": "Čo je permanentný make-up medzi riasami?",
+        "answer": "Ide o jemné vyplnenie priestoru medzi riasami. Opticky zahusťuje líniu rias a zvýrazňuje pohľad, ale nevyzerá ako dekoratívna očná linka."
+      }
+    },
+    {
+      "number": 41,
+      "category": "permanent-makeup",
+      "subsection": "Межресничный перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Подходит ли межресничка при нависшем веке?",
+        "answer": "Да. Межресничный перманент подходит для разных форм глаз и выглядит естественно."
+      },
+      "cs": {
+        "question": "Je vyplnění mezi řasami vhodné při převislém víčku?",
+        "answer": "Ano. Permanentní make-up mezi řasami je vhodný pro různé tvary očí a vypadá přirozeně."
+      },
+      "sk": {
+        "question": "Je vyplnenie medzi riasami vhodné pri previsnutom viečku?",
+        "answer": "Áno. Permanentný make-up medzi riasami je vhodný pre rôzne tvary očí a vyzerá prirodzene."
+      }
+    },
+    {
+      "number": 42,
+      "category": "permanent-makeup",
+      "subsection": "Межресничный перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Как выглядит межресничка после заживления?",
+        "answer": "После заживления остаётся мягкое затемнение по линии роста ресниц."
+      },
+      "cs": {
+        "question": "Jak vypadá vyplnění mezi řasami po zahojení?",
+        "answer": "Po zahojení zůstává jemné ztmavení podél linie růstu řas."
+      },
+      "sk": {
+        "question": "Ako vyzerá vyplnenie medzi riasami po zahojení?",
+        "answer": "Po zahojení zostáva jemné stmavenie pozdĺž línie rastu rias."
+      }
+    },
+    {
+      "number": 43,
+      "category": "permanent-makeup",
+      "subsection": "Межресничный перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Сильно ли отекают веки после процедуры?",
+        "answer": "Небольшая отёчность возможна и обычно быстро уменьшается."
+      },
+      "cs": {
+        "question": "Otékají oční víčka po proceduře výrazně?",
+        "answer": "Mírný otok se může objevit a obvykle rychle ustoupí."
+      },
+      "sk": {
+        "question": "Opúchajú očné viečka po procedúre výrazne?",
+        "answer": "Mierny opuch sa môže objaviť a zvyčajne rýchlo ustúpi."
+      }
+    },
+    {
+      "number": 44,
+      "category": "permanent-makeup",
+      "subsection": "Межресничный перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Можно ли делать межресничку с наращёнными ресницами?",
+        "answer": "Перед процедурой наращённые ресницы рекомендуется снять."
+      },
+      "cs": {
+        "question": "Lze provést vyplnění mezi řasami s prodlouženými řasami?",
+        "answer": "Před procedurou se doporučuje prodloužené řasy odstranit."
+      },
+      "sk": {
+        "question": "Možno vykonať vyplnenie medzi riasami s predĺženými riasami?",
+        "answer": "Pred procedúrou sa odporúča predĺžené riasy odstrániť."
+      }
+    },
+    {
+      "number": 45,
+      "category": "permanent-makeup",
+      "subsection": "Межресничный перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Можно ли носить контактные линзы в день процедуры?",
+        "answer": "В день процедуры контактные линзы необходимо снять."
+      },
+      "cs": {
+        "question": "Mohu v den procedury nosit kontaktní čočky?",
+        "answer": "V den procedury je nutné kontaktní čočky vyjmout."
+      },
+      "sk": {
+        "question": "Môžem v deň procedúry nosiť kontaktné šošovky?",
+        "answer": "V deň procedúry je potrebné kontaktné šošovky vybrať."
+      }
+    },
+    {
+      "number": 46,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Почему цвет после заживления становится светлее?",
+        "answer": "В процессе заживления кожа восстанавливается, поэтому окончательный оттенок становится мягче."
+      },
+      "cs": {
+        "question": "Proč barva po zahojení zesvětlá?",
+        "answer": "Během hojení se kůže obnovuje, a proto se konečný odstín stává jemnějším."
+      },
+      "sk": {
+        "question": "Prečo farba po zahojení zosvetlie?",
+        "answer": "Počas hojenia sa koža obnovuje, a preto sa konečný odtieň stáva jemnejším."
+      }
+    },
+    {
+      "number": 47,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Почему пигмент у разных людей держится по-разному?",
+        "answer": "На стойкость влияют тип кожи, возраст, обменные процессы, солнце, косметический уход и различные процедуры для кожи."
+      },
+      "cs": {
+        "question": "Proč pigment u různých lidí vydrží různě dlouho?",
+        "answer": "Trvanlivost ovlivňuje typ pleti, věk, metabolické procesy, slunce, kosmetická péče a různé procedury na kůži."
+      },
+      "sk": {
+        "question": "Prečo pigment u rôznych ľudí vydrží rôzne dlho?",
+        "answer": "Trvácnosť ovplyvňuje typ pleti, vek, metabolické procesy, slnko, kozmetická starostlivosť a rôzne procedúry na koži."
+      }
+    },
+    {
+      "number": 48,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Может ли пигмент полностью исчезнуть?",
+        "answer": "Со временем он значительно светлеет, однако небольшое количество пигмента может оставаться в коже дольше."
+      },
+      "cs": {
+        "question": "Může pigment zcela zmizet?",
+        "answer": "Časem výrazně zesvětlá, ale malé množství pigmentu může v kůži zůstat déle."
+      },
+      "sk": {
+        "question": "Môže pigment úplne zmiznúť?",
+        "answer": "Časom výrazne zosvetlie, ale malé množstvo pigmentu môže v koži zostať dlhšie."
+      }
+    },
+    {
+      "number": 49,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Когда нужно обновлять перманентный макияж?",
+        "answer": "Когда цвет заметно посветлел и хочется вернуть результату свежесть."
+      },
+      "cs": {
+        "question": "Kdy je potřeba permanentní make-up obnovit?",
+        "answer": "Když barva výrazně zesvětlá a chcete výsledku vrátit svěžest."
+      },
+      "sk": {
+        "question": "Kedy je potrebné permanentný make-up obnoviť?",
+        "answer": "Keď farba výrazne zosvetlie a chcete výsledku vrátiť sviežosť."
+      }
+    },
+    {
+      "number": 50,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Как часто нужно обновлять перманентный макияж?",
+        "answer": "Чаще всего обновление требуется раз в несколько лет, но срок индивидуален."
+      },
+      "cs": {
+        "question": "Jak často je potřeba permanentní make-up obnovovat?",
+        "answer": "Nejčastěji je obnova nutná jednou za několik let, ale interval je individuální."
+      },
+      "sk": {
+        "question": "Ako často je potrebné permanentný make-up obnovovať?",
+        "answer": "Najčastejšie je obnova potrebná raz za niekoľko rokov, ale interval je individuálny."
+      }
+    },
+    {
+      "number": 51,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Может ли цвет со временем измениться?",
+        "answer": "Пигмент постепенно светлеет, а его оттенок может визуально меняться в зависимости от кожи, воздействия солнца и косметологических процедур."
+      },
+      "cs": {
+        "question": "Může se barva časem změnit?",
+        "answer": "Pigment postupně bledne a jeho odstín se může opticky měnit v závislosti na kůži, působení slunce a kosmetologických procedurách."
+      },
+      "sk": {
+        "question": "Môže sa farba časom zmeniť?",
+        "answer": "Pigment postupne bledne a jeho odtieň sa môže opticky meniť v závislosti od kože, pôsobenia slnka a kozmetologických procedúr."
+      }
+    },
+    {
+      "number": 52,
+      "category": "permanent-makeup",
+      "subsection": "Результат и обновление",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Почему после первой процедуры результат может быть неравномерным?",
+        "answer": "Кожа в разных участках может удерживать пигмент по-разному. Окончательный результат оценивается только после полного заживления, а при необходимости выполняется коррекция."
+      },
+      "cs": {
+        "question": "Proč může být výsledek po první proceduře nerovnoměrný?",
+        "answer": "Kůže může v různých místech zadržovat pigment odlišně. Konečný výsledek se posuzuje až po úplném zahojení a v případě potřeby se provede korekce."
+      },
+      "sk": {
+        "question": "Prečo môže byť výsledok po prvej procedúre nerovnomerný?",
+        "answer": "Koža môže na rôznych miestach zadržiavať pigment odlišne. Konečný výsledok sa posudzuje až po úplnom zahojení a v prípade potreby sa vykoná korekcia."
+      }
+    },
+    {
+      "number": 53,
+      "category": "permanent-makeup",
+      "subsection": "Перед записью",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Нужно ли приходить на консультацию перед процедурой?",
+        "answer": "Не всегда. Во многих случаях предварительную оценку можно сделать по фотографии. Особенно важно показать мастеру зону заранее, если уже есть старый перманентный макияж."
+      },
+      "cs": {
+        "question": "Je nutné před procedurou přijít na konzultaci?",
+        "answer": "Ne vždy. V mnoha případech lze předběžné posouzení provést podle fotografie. Zvláště důležité je ukázat specialistovi danou oblast předem, pokud již máte starý permanentní make-up."
+      },
+      "sk": {
+        "question": "Je potrebné pred procedúrou prísť na konzultáciu?",
+        "answer": "Nie vždy. V mnohých prípadoch možno predbežné posúdenie vykonať podľa fotografie. Obzvlášť dôležité je ukázať špecialistovi danú oblasť vopred, ak už máte starý permanentný make-up."
+      }
+    },
+    {
+      "number": 54,
+      "category": "permanent-makeup",
+      "subsection": "Перед записью",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Что прислать мастеру перед записью?",
+        "answer": "Если у вас уже есть перманентный макияж, желательно прислать чёткую фотографию зоны без декоративной косметики при дневном освещении."
+      },
+      "cs": {
+        "question": "Co mám specialistovi poslat před objednáním?",
+        "answer": "Pokud již máte permanentní make-up, je vhodné poslat jasnou fotografii dané oblasti bez dekorativní kosmetiky za denního světla."
+      },
+      "sk": {
+        "question": "Čo mám špecialistovi poslať pred objednaním?",
+        "answer": "Ak už máte permanentný make-up, je vhodné poslať jasnú fotografiu danej oblasti bez dekoratívnej kozmetiky pri dennom svetle."
+      }
+    },
+    {
+      "number": 55,
+      "category": "permanent-makeup",
+      "subsection": "Перед записью",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Можно ли прийти со своей фотографией желаемого результата?",
+        "answer": "Да. Фотография помогает понять ваши пожелания, но форма, техника и оттенок всегда подбираются индивидуально."
+      },
+      "cs": {
+        "question": "Mohu přinést fotografii požadovaného výsledku?",
+        "answer": "Ano. Fotografie pomáhá pochopit vaše přání, ale tvar, technika a odstín se vždy vybírají individuálně."
+      },
+      "sk": {
+        "question": "Môžem priniesť fotografiu požadovaného výsledku?",
+        "answer": "Áno. Fotografia pomáha pochopiť vaše želania, ale tvar, technika a odtieň sa vždy vyberajú individuálne."
+      }
+    },
+    {
+      "number": 56,
+      "category": "permanent-makeup",
+      "subsection": "Перед записью",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Сколько длится процедура?",
+        "answer": "Продолжительность зависит от зоны и сложности работы. В среднем процедура занимает от 1,5 до 2–2,5 часов , включая консультацию, построение формы и саму процедуру."
+      },
+      "cs": {
+        "question": "Jak dlouho procedura trvá?",
+        "answer": "Délka závisí na ošetřované oblasti a složitosti práce. Procedura v průměru trvá od 1,5 do 2–2,5 hodiny včetně konzultace, návrhu tvaru a samotného provedení."
+      },
+      "sk": {
+        "question": "Ako dlho procedúra trvá?",
+        "answer": "Dĺžka závisí od ošetrovanej oblasti a zložitosti práce. Procedúra v priemere trvá od 1,5 do 2–2,5 hodiny vrátane konzultácie, návrhu tvaru a samotného vykonania."
+      }
+    },
+    {
+      "number": 57,
+      "category": "permanent-makeup",
+      "subsection": "Перед записью",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Как понять, подходит ли мне перманентный макияж?",
+        "answer": "Если вы хотите тратить меньше времени на ежедневный макияж, подчеркнуть природные черты лица или скорректировать цвет и форму, перманентный макияж может стать удобным решением."
+      },
+      "cs": {
+        "question": "Jak poznám, zda je pro mě permanentní make-up vhodný?",
+        "answer": "Pokud chcete trávit méně času každodenním líčením, zvýraznit přirozené rysy obličeje nebo upravit barvu a tvar, může být permanentní make-up praktickým řešením."
+      },
+      "sk": {
+        "question": "Ako zistím, či je pre mňa permanentný make-up vhodný?",
+        "answer": "Ak chcete tráviť menej času každodenným líčením, zvýrazniť prirodzené črty tváre alebo upraviť farbu a tvar, môže byť permanentný make-up praktickým riešením."
+      }
+    },
+    {
+      "number": 58,
+      "category": "permanent-makeup",
+      "subsection": "Мужской перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Какие зоны можно сделать мужчинам?",
+        "answer": "• брови; • губы; • межресничное пространство."
+      },
+      "cs": {
+        "question": "Které oblasti lze upravit mužům?",
+        "answer": "• obočí;\n• rty;\n• prostor mezi řasami."
+      },
+      "sk": {
+        "question": "Ktoré oblasti možno upraviť mužom?",
+        "answer": "• obočie;\n• pery;\n• priestor medzi riasami."
+      }
+    },
+    {
+      "number": 59,
+      "category": "permanent-makeup",
+      "subsection": "Мужской перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Будет ли мужской перманентный макияж заметен?",
+        "answer": "При правильно подобранной технике результат выглядит естественно. Задача — не создать эффект макияжа, а сделать черты лица более ухоженными и выразительными."
+      },
+      "cs": {
+        "question": "Bude mužský permanentní make-up nápadný?",
+        "answer": "Při správně zvolené technice vypadá výsledek přirozeně. Cílem není vytvořit efekt líčení, ale dodat rysům obličeje upravenější a výraznější vzhled."
+      },
+      "sk": {
+        "question": "Bude mužský permanentný make-up nápadný?",
+        "answer": "Pri správne zvolenej technike vyzerá výsledok prirodzene. Cieľom nie je vytvoriť efekt líčenia, ale dodať črtám tváre upravenejší a výraznejší vzhľad."
+      }
+    },
+    {
+      "number": 60,
+      "category": "permanent-makeup",
+      "subsection": "Мужской перманентный макияж",
+      "sourceMessage": "message94361",
+      "ru": {
+        "question": "Кому подходит мужской перманентный макияж?",
+        "answer": "Он может подойти мужчинам, которые хотят скорректировать редкие или асимметричные брови, восстановить визуальную плотность волосков, сделать оттенок губ более ровным или подчеркнуть линию ресниц. Форма, цвет и насыщенность всегда подбираются индивидуально."
+      },
+      "cs": {
+        "question": "Pro koho je mužský permanentní make-up vhodný?",
+        "answer": "Může být vhodný pro muže, kteří chtějí upravit řídké nebo asymetrické obočí, opticky obnovit hustotu chloupků, sjednotit odstín rtů nebo zvýraznit linii řas. Tvar, barva a sytost se vždy vybírají individuálně."
+      },
+      "sk": {
+        "question": "Pre koho je mužský permanentný make-up vhodný?",
+        "answer": "Môže byť vhodný pre mužov, ktorí chcú upraviť riedke alebo asymetrické obočie, opticky obnoviť hustotu chĺpkov, zjednotiť odtieň pier alebo zvýrazniť líniu rias. Tvar, farba a sýtosť sa vždy vyberajú individuálne."
+      }
+    },
+    {
+      "number": 61,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Я не знаю, какая процедура мне нужна. С чего начать?",
+        "answer": "Начните с консультации. Косметолог оценит состояние кожи, выслушает вашу цель и подберёт процедуру или комплекс процедур именно для вас."
+      },
+      "cs": {
+        "question": "Nevím, jakou proceduru potřebuji. Čím začít?",
+        "answer": "Začněte konzultací. Kosmetolog posoudí stav vaší pleti, vyslechne si váš cíl a vybere proceduru nebo jejich kombinaci přímo pro vás."
+      },
+      "sk": {
+        "question": "Neviem, akú procedúru potrebujem. Čím začať?",
+        "answer": "Začnite konzultáciou. Kozmetológ posúdi stav vašej pleti, vypočuje si váš cieľ a vyberie procedúru alebo ich kombináciu priamo pre vás."
+      }
+    },
+    {
+      "number": 62,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Что такое Hydradermie от Guinot и какой эффект она даёт?",
+        "answer": "Hydradermie — профессиональный уход французского бренда Guinot с использованием фирменных аппаратных технологий и активных средств. Процедура подбирается под потребности кожи и помогает улучшить её увлажнение, сияние и общий внешний вид."
+      },
+      "cs": {
+        "question": "Co je Hydradermie od Guinot a jaký přináší efekt?",
+        "answer": "Hydradermie je profesionální péče francouzské značky Guinot využívající vlastní přístrojové technologie a aktivní přípravky. Procedura se vybírá podle potřeb pleti a pomáhá zlepšit její hydrataci, rozjasnění a celkový vzhled."
+      },
+      "sk": {
+        "question": "Čo je Hydradermie od Guinot a aký prináša efekt?",
+        "answer": "Hydradermie je profesionálna starostlivosť francúzskej značky Guinot využívajúca vlastné prístrojové technológie a aktívne prípravky. Procedúra sa vyberá podľa potrieb pleti a pomáha zlepšiť jej hydratáciu, rozjasnenie a celkový vzhľad."
+      }
+    },
+    {
+      "number": 63,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Хочу подтянуть овал лица без операции. Что такое Liftera?",
+        "answer": "Liftera — современная аппаратная процедура для неинвазивного лифтинга. Она позволяет воздействовать на глубокие слои тканей и стимулировать процессы, связанные с ремоделированием коллагена, помогая работать с овалом лица, подбородком и снижением тонуса кожи."
+      },
+      "cs": {
+        "question": "Chci zpevnit kontury obličeje bez operace. Co je Liftera?",
+        "answer": "Liftera je moderní přístrojová procedura pro neinvazivní lifting. Umožňuje působit na hluboké vrstvy tkání a stimulovat procesy spojené s remodelací kolagenu, čímž pomáhá řešit kontury obličeje, oblast brady a snížený tonus kůže."
+      },
+      "sk": {
+        "question": "Chcem spevniť kontúry tváre bez operácie. Čo je Liftera?",
+        "answer": "Liftera je moderná prístrojová procedúra na neinvazívny lifting. Umožňuje pôsobiť na hlboké vrstvy tkanív a stimulovať procesy spojené s remodeláciou kolagénu, čím pomáha riešiť kontúry tváre, oblasť brady a znížený tonus kože."
+      }
+    },
+    {
+      "number": 64,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Можно ли с помощью Liftera убрать второй подбородок?",
+        "answer": "Liftera может применяться для улучшения контура нижней трети лица и повышения тонуса кожи в зоне подбородка. Если выраженность второго подбородка связана преимущественно с жировой тканью, косметолог оценит, будет ли Liftera достаточной процедурой или потребуется комплексный подход."
+      },
+      "cs": {
+        "question": "Lze pomocí Liftery odstranit dvojitou bradu?",
+        "answer": "Liftera se může používat ke zlepšení kontur dolní třetiny obličeje a zvýšení tonu kůže v oblasti brady. Pokud je dvojitá brada způsobena převážně tukovou tkání, kosmetolog posoudí, zda bude Liftera dostačující, nebo bude nutný komplexní přístup."
+      },
+      "sk": {
+        "question": "Možno pomocou Liftery odstrániť dvojitú bradu?",
+        "answer": "Liftera sa môže používať na zlepšenie kontúr dolnej tretiny tváre a zvýšenie tonusu kože v oblasti brady. Ak je dvojitá brada spôsobená prevažne tukovým tkanivom, kozmetológ posúdi, či bude Liftera postačujúca, alebo bude potrebný komplexný prístup."
+      }
+    },
+    {
+      "number": 65,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Liftera — это больно?",
+        "answer": "Во время процедуры могут ощущаться тепло, покалывание или отдельные импульсы. Интенсивность воздействия подбирается индивидуально с учётом зоны и чувствительности клиента."
+      },
+      "cs": {
+        "question": "Bolí ošetření Liftera?",
+        "answer": "Během procedury můžete cítit teplo, brnění nebo jednotlivé impulzy. Intenzita působení se nastavuje individuálně podle ošetřované oblasti a citlivosti klienta."
+      },
+      "sk": {
+        "question": "Bolí ošetrenie Liftera?",
+        "answer": "Počas procedúry môžete cítiť teplo, mravčenie alebo jednotlivé impulzy. Intenzita pôsobenia sa nastavuje individuálne podľa ošetrovanej oblasti a citlivosti klienta."
+      }
+    },
+    {
+      "number": 66,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Когда я увижу результат после Liftera?",
+        "answer": "Результат развивается постепенно, поскольку коже требуется время для естественных процессов ремоделирования. Выраженность эффекта зависит от исходного состояния кожи и индивидуальных особенностей."
+      },
+      "cs": {
+        "question": "Kdy uvidím výsledek po ošetření Liftera?",
+        "answer": "Výsledek se vyvíjí postupně, protože kůže potřebuje čas na přirozené procesy remodelace. Výraznost efektu závisí na výchozím stavu kůže a individuálních vlastnostech."
+      },
+      "sk": {
+        "question": "Kedy uvidím výsledok po ošetrení Liftera?",
+        "answer": "Výsledok sa vyvíja postupne, pretože koža potrebuje čas na prirodzené procesy remodelácie. Výraznosť efektu závisí od východiskového stavu kože a individuálnych vlastností."
+      }
+    },
+    {
+      "number": 67,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Чем Liftera отличается от обычного ухода за лицом?",
+        "answer": "Liftera позволяет работать с более глубокими слоями тканей, поэтому её выбирают, когда основной запрос связан с лифтингом, контуром лица и снижением тонуса кожи."
+      },
+      "cs": {
+        "question": "Jak se Liftera liší od běžné péče o obličej?",
+        "answer": "Liftera umožňuje pracovat s hlubšími vrstvami tkání, a proto se volí tehdy, když je hlavním cílem lifting, kontury obličeje a řešení sníženého tonu kůže."
+      },
+      "sk": {
+        "question": "Ako sa Liftera líši od bežnej starostlivosti o tvár?",
+        "answer": "Liftera umožňuje pracovať s hlbšími vrstvami tkanív, a preto sa volí vtedy, keď je hlavným cieľom lifting, kontúry tváre a riešenie zníženého tonusu kože."
+      }
+    },
+    {
+      "number": 68,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Как часто можно делать Liftera?",
+        "answer": "Интервалы между процедурами подбираются индивидуально. Косметолог учитывает возраст, состояние кожи, предыдущие процедуры и желаемый результат."
+      },
+      "cs": {
+        "question": "Jak často lze podstupovat ošetření Liftera?",
+        "answer": "Intervaly mezi procedurami se stanovují individuálně. Kosmetolog zohledňuje věk, stav kůže, předchozí procedury a požadovaný výsledek."
+      },
+      "sk": {
+        "question": "Ako často možno podstupovať ošetrenie Liftera?",
+        "answer": "Intervaly medzi procedúrami sa stanovujú individuálne. Kozmetológ zohľadňuje vek, stav kože, predchádzajúce procedúry a požadovaný výsledok."
+      }
+    },
+    {
+      "number": 69,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "У меня пигментация. IPL-фотоомоложение действительно помогает?",
+        "answer": "IPL может применяться для работы с определёнными видами пигментации и сосудистыми проявлениями. Перед процедурой специалист оценивает кожу и определяет, подходит ли вам этот метод."
+      },
+      "cs": {
+        "question": "Mám pigmentové skvrny. Opravdu pomáhá IPL fotoomlazení?",
+        "answer": "IPL lze použít při práci s určitými druhy pigmentace a cévními projevy. Před procedurou specialista posoudí pleť a určí, zda je pro vás tato metoda vhodná."
+      },
+      "sk": {
+        "question": "Mám pigmentové škvrny. Naozaj pomáha IPL fotoomladenie?",
+        "answer": "IPL možno použiť pri práci s určitými druhmi pigmentácie a cievnymi prejavmi. Pred procedúrou špecialista posúdi pleť a určí, či je pre vás táto metóda vhodná."
+      }
+    },
+    {
+      "number": 70,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Что ещё можно улучшить с помощью IPL-фотоомоложения?",
+        "answer": "IPL работает комплексно с качеством кожи: помогает сделать тон лица более ровным, визуально улучшить текстуру и придать коже более свежий и сияющий вид. Процедура также может применяться в комплексных программах при покраснениях, проявлениях постакне и некоторых видах акне."
+      },
+      "cs": {
+        "question": "Co dalšího lze zlepšit pomocí IPL fotoomlazení?",
+        "answer": "IPL působí komplexně na kvalitu pleti: pomáhá sjednotit tón obličeje, opticky zlepšit texturu a dodat pleti svěžejší a zářivější vzhled. Procedura se také může využívat v komplexních programech při zarudnutí, projevech po akné a některých druzích akné."
+      },
+      "sk": {
+        "question": "Čo ďalšie možno zlepšiť pomocou IPL fotoomladenia?",
+        "answer": "IPL pôsobí komplexne na kvalitu pleti: pomáha zjednotiť tón tváre, opticky zlepšiť textúru a dodať pleti sviežejší a žiarivejší vzhľad. Procedúra sa tiež môže využívať v komplexných programoch pri začervenaní, prejavoch po akné a niektorých druhoch akné."
+      }
+    },
+    {
+      "number": 71,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Правда ли, что эффект от IPL накопительный?",
+        "answer": "Да, результат обычно развивается постепенно и может усиливаться после курса процедур. Со временем кожа может выглядеть более ровной, однородной и ухоженной."
+      },
+      "cs": {
+        "question": "Je pravda, že účinek IPL se postupně kumuluje?",
+        "answer": "Ano, výsledek se obvykle vyvíjí postupně a po sérii procedur se může zesílit. Časem může pleť vypadat rovnoměrnější, sjednocenější a upravenější."
+      },
+      "sk": {
+        "question": "Je pravda, že účinok IPL sa postupne kumuluje?",
+        "answer": "Áno, výsledok sa zvyčajne vyvíja postupne a po sérii procedúr sa môže zosilniť. Časom môže pleť vyzerať rovnomernejšie, zjednotenejšie a upravenejšie."
+      }
+    },
+    {
+      "number": 72,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "С какими проблемами можно работать с помощью микронидлинга?",
+        "answer": "Микронидлинг применяется не только для улучшения текстуры кожи лица и работы с постакне. В зависимости от протокола с его помощью можно работать с рубцами, растяжками, неровным рельефом кожи, а также использовать специальные протоколы для кожи головы при выпадении волос и стимуляции их роста. Протокол и глубина воздействия подбираются индивидуально в зависимости от зоны и задачи."
+      },
+      "cs": {
+        "question": "Jaké problémy lze řešit mikroneedlingem?",
+        "answer": "Mikroneedling se používá nejen ke zlepšení textury pleti obličeje a řešení následků akné. Podle protokolu lze pracovat s jizvami, striemi a nerovnoměrným povrchem kůže a také využívat speciální protokoly pro pokožku hlavy při vypadávání vlasů a stimulaci jejich růstu. Protokol a hloubka působení se vybírají individuálně podle oblasti a cíle."
+      },
+      "sk": {
+        "question": "Aké problémy možno riešiť microneedlingom?",
+        "answer": "Microneedling sa používa nielen na zlepšenie textúry pleti tváre a riešenie následkov akné. Podľa protokolu možno pracovať s jazvami, striami a nerovnomerným povrchom kože a tiež využívať špeciálne protokoly pre pokožku hlavy pri vypadávaní vlasov a stimulácii ich rastu. Protokol a hĺbka pôsobenia sa vyberajú individuálne podľa oblasti a cieľa."
+      }
+    },
+    {
+      "number": 73,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "После микронидлинга лицо будет сильно красным?",
+        "answer": "Покраснение после процедуры — нормальная реакция кожи. Его интенсивность и продолжительность зависят от параметров процедуры и индивидуальных особенностей."
+      },
+      "cs": {
+        "question": "Bude obličej po mikroneedlingu výrazně červený?",
+        "answer": "Zarudnutí po proceduře je normální reakcí kůže. Jeho intenzita a délka trvání závisí na parametrech procedury a individuálních vlastnostech."
+      },
+      "sk": {
+        "question": "Bude tvár po microneedlingu výrazne červená?",
+        "answer": "Začervenanie po procedúre je normálnou reakciou kože. Jeho intenzita a dĺžka trvania závisia od parametrov procedúry a individuálnych vlastností."
+      }
+    },
+    {
+      "number": 74,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Пилинг обязательно вызывает сильное шелушение?",
+        "answer": "Нет. Всё зависит от вида пилинга и его интенсивности. Есть профессиональные пилинги с минимальным периодом восстановления."
+      },
+      "cs": {
+        "question": "Způsobuje peeling vždy výrazné olupování?",
+        "answer": "Ne. Vše závisí na druhu peelingu a jeho intenzitě. Existují profesionální peelingy s minimální dobou zotavení."
+      },
+      "sk": {
+        "question": "Spôsobuje peeling vždy výrazné olupovanie?",
+        "answer": "Nie. Všetko závisí od druhu peelingu a jeho intenzity. Existujú profesionálne peelingy s minimálnou dobou zotavenia."
+      }
+    },
+    {
+      "number": 75,
+      "category": "cosmetology",
+      "subsection": "Лицо",
+      "sourceMessage": "message96666",
+      "ru": {
+        "question": "Можно ли пилингом улучшить цвет и рельеф кожи?",
+        "answer": "Да, правильно подобранный пилинг может улучшить тон, текстуру и визуальную гладкость кожи. Препарат выбирается после оценки состояния кожи."
+      },
+      "cs": {
+        "question": "Lze peelingem zlepšit barvu a povrch pleti?",
+        "answer": "Ano, správně zvolený peeling může zlepšit tón, texturu a optickou hladkost pleti. Přípravek se vybírá po posouzení stavu kůže."
+      },
+      "sk": {
+        "question": "Možno peelingom zlepšiť farbu a povrch pleti?",
+        "answer": "Áno, správne zvolený peeling môže zlepšiť tón, textúru a optickú hladkosť pleti. Prípravok sa vyberá po posúdení stavu kože."
+      }
+    },
+    {
+      "number": 76,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96666, message96667",
+      "ru": {
+        "question": "Что такое Endospheres и какой эффект даёт процедура?",
+        "answer": "Endospheres — аппаратная процедура с компрессионно-вибрационным воздействием. Она помогает улучшить микроциркуляцию и лимфодренаж, уменьшить проявления отёчности и сделать кожу более гладкой и плотной."
+      },
+      "cs": {
+        "question": "Co je Endospheres a jaký přináší efekt?",
+        "answer": "Endospheres je přístrojová procedura s kompresně-vibračním působením. Pomáhá zlepšit mikrocirkulaci a lymfodrenáž, zmírnit projevy otoků a učinit kůži hladší a pevnější."
+      },
+      "sk": {
+        "question": "Čo je Endospheres a aký prináša efekt?",
+        "answer": "Endospheres je prístrojová procedúra s kompresno-vibračným pôsobením. Pomáha zlepšiť mikrocirkuláciu a lymfodrenáž, zmierniť prejavy opuchov a urobiť kožu hladšou a pevnejšou."
+      }
+    },
+    {
+      "number": 77,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Endospheres помогает от целлюлита и неровной кожи?",
+        "answer": "Да, процедура может применяться для комплексной работы с проявлениями целлюлита и неровным рельефом кожи. Регулярный курс помогает улучшить внешний вид кожи, её гладкость и упругость."
+      },
+      "cs": {
+        "question": "Pomáhá Endospheres proti celulitidě a nerovnoměrnému povrchu kůže?",
+        "answer": "Ano, procedura se může používat při komplexní práci s projevy celulitidy a nerovnoměrným povrchem kůže. Pravidelná série ošetření pomáhá zlepšit vzhled kůže, její hladkost a pružnost."
+      },
+      "sk": {
+        "question": "Pomáha Endospheres proti celulitíde a nerovnomernému povrchu kože?",
+        "answer": "Áno, procedúra sa môže používať pri komplexnej práci s prejavmi celulitídy a nerovnomerným povrchom kože. Pravidelná séria ošetrení pomáha zlepšiť vzhľad kože, jej hladkosť a pružnosť."
+      }
+    },
+    {
+      "number": 78,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Я не знаю, что выбрать — LPG или Endospheres?",
+        "answer": "Это разные технологии, поэтому выбор зависит от вашей цели и состояния тканей. LPG работает с помощью роликово-вакуумного воздействия, а Endospheres — с помощью компрессионно-вибрационного. Косметолог поможет определить оптимальный вариант или их сочетание."
+      },
+      "cs": {
+        "question": "Nevím, co si vybrat — LPG, nebo Endospheres?",
+        "answer": "Jde o různé technologie, a proto výběr závisí na vašem cíli a stavu tkání. LPG využívá válečkově-vakuové působení, zatímco Endospheres kompresně-vibrační. Kosmetolog vám pomůže určit optimální variantu nebo jejich kombinaci."
+      },
+      "sk": {
+        "question": "Neviem, čo si vybrať — LPG alebo Endospheres?",
+        "answer": "Ide o rôzne technológie, a preto výber závisí od vášho cieľa a stavu tkanív. LPG využíva valčekovo-vákuové pôsobenie, zatiaľ čo Endospheres kompresno-vibračné. Kozmetológ vám pomôže určiť optimálny variant alebo ich kombináciu."
+      }
+    },
+    {
+      "number": 79,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Я похудела, но живот и бока всё равно остаются. LPG поможет?",
+        "answer": "LPG может использоваться для работы с отёчностью, качеством кожи и контуром тела. Но аппаратная процедура не заменяет питание и физическую активность и не является самостоятельным способом общего похудения."
+      },
+      "cs": {
+        "question": "Zhubla jsem, ale břicho a boky mi zůstávají. Pomůže LPG?",
+        "answer": "LPG lze použít ke zmírnění otoků, zlepšení kvality kůže a kontur těla. Přístrojová procedura ale nenahrazuje stravu a fyzickou aktivitu a není samostatným způsobem celkového hubnutí."
+      },
+      "sk": {
+        "question": "Schudla som, ale brucho a boky mi zostávajú. Pomôže LPG?",
+        "answer": "LPG možno použiť na zmiernenie opuchov, zlepšenie kvality kože a kontúr tela. Prístrojová procedúra však nenahrádza stravu a fyzickú aktivitu a nie je samostatným spôsobom celkového chudnutia."
+      }
+    },
+    {
+      "number": 80,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "LPG помогает от целлюлита?",
+        "answer": "LPG может улучшать внешний вид кожи и рельеф тканей, а также работать с проявлениями отёчности. Для более заметного результата обычно рекомендуют курс процедур."
+      },
+      "cs": {
+        "question": "Pomáhá LPG proti celulitidě?",
+        "answer": "LPG může zlepšit vzhled kůže a povrch tkání a také pomáhat s projevy otoků. Pro výraznější výsledek se obvykle doporučuje série procedur."
+      },
+      "sk": {
+        "question": "Pomáha LPG proti celulitíde?",
+        "answer": "LPG môže zlepšiť vzhľad kože a povrch tkanív a tiež pomáhať s prejavmi opuchov. Pre výraznejší výsledok sa zvyčajne odporúča séria procedúr."
+      }
+    },
+    {
+      "number": 81,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "У меня отекают ноги. Что поможет?",
+        "answer": "Лимфодренажные процедуры могут помочь уменьшить проявления отёчности и ощущение тяжести. При постоянных или выраженных отёках важно сначала исключить медицинские причины."
+      },
+      "cs": {
+        "question": "Otékají mi nohy. Co pomůže?",
+        "answer": "Lymfodrenážní procedury mohou pomoci zmírnit projevy otoků a pocit těžkých nohou. Při trvalých nebo výrazných otocích je důležité nejprve vyloučit zdravotní příčiny."
+      },
+      "sk": {
+        "question": "Opúchajú mi nohy. Čo pomôže?",
+        "answer": "Lymfodrenážne procedúry môžu pomôcť zmierniť prejavy opuchov a pocit ťažkých nôh. Pri trvalých alebo výrazných opuchoch je dôležité najprv vylúčiť zdravotné príčiny."
+      }
+    },
+    {
+      "number": 82,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Мне нужно выглядеть стройнее перед отпуском. Что можно сделать?",
+        "answer": "Можно составить программу, направленную на уменьшение отёчности и улучшение визуального рельефа тела. Конкретные процедуры и их количество подбираются индивидуально."
+      },
+      "cs": {
+        "question": "Potřebuji před dovolenou vypadat štíhleji. Co lze udělat?",
+        "answer": "Lze sestavit program zaměřený na zmírnění otoků a zlepšení vizuálních kontur těla. Konkrétní procedury a jejich počet se vybírají individuálně."
+      },
+      "sk": {
+        "question": "Potrebujem pred dovolenkou vyzerať štíhlejšie. Čo možno urobiť?",
+        "answer": "Možno zostaviť program zameraný na zmiernenie opuchov a zlepšenie vizuálnych kontúr tela. Konkrétne procedúry a ich počet sa vyberajú individuálne."
+      }
+    },
+    {
+      "number": 83,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Что такое стимуляция мышц тела?",
+        "answer": "Электростимуляция вызывает сокращение мышц с помощью электрических импульсов и используется как дополнительный метод работы с мышечным тонусом и контуром тела."
+      },
+      "cs": {
+        "question": "Co je stimulace svalů těla?",
+        "answer": "Elektrostimulace vyvolává svalové kontrakce pomocí elektrických impulzů a používá se jako doplňková metoda pro práci se svalovým tonem a konturami těla."
+      },
+      "sk": {
+        "question": "Čo je stimulácia svalov tela?",
+        "answer": "Elektrostimulácia vyvoláva svalové kontrakcie pomocou elektrických impulzov a používa sa ako doplnková metóda na prácu so svalovým tonusom a kontúrami tela."
+      }
+    },
+    {
+      "number": 84,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Может ли стимуляция заменить тренировку?",
+        "answer": "Нет, полноценную тренировку она не заменяет. Но может стать дополнительным инструментом для работы с мышечным тонусом и использоваться в комплексной программе ухода за телом."
+      },
+      "cs": {
+        "question": "Může stimulace nahradit trénink?",
+        "answer": "Ne, plnohodnotný trénink nenahradí. Může ale být doplňkovým nástrojem pro práci se svalovým tonem a využívat se v komplexním programu péče o tělo."
+      },
+      "sk": {
+        "question": "Môže stimulácia nahradiť tréning?",
+        "answer": "Nie, plnohodnotný tréning nenahradí. Môže však byť doplnkovým nástrojom na prácu so svalovým tonusom a využívať sa v komplexnom programe starostlivosti o telo."
+      }
+    },
+    {
+      "number": 85,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Можно ли с помощью стимуляции сделать живот более подтянутым?",
+        "answer": "Стимуляция позволяет дополнительно работать с мышцами живота и их тонусом. Результат зависит от исходного состояния тела и образа жизни."
+      },
+      "cs": {
+        "question": "Lze pomocí stimulace zpevnit břicho?",
+        "answer": "Stimulace umožňuje doplňkově pracovat s břišními svaly a jejich tonem. Výsledek závisí na výchozím stavu těla a životním stylu."
+      },
+      "sk": {
+        "question": "Možno pomocou stimulácie spevniť brucho?",
+        "answer": "Stimulácia umožňuje doplnkovo pracovať s brušnými svalmi a ich tonusom. Výsledok závisí od východiskového stavu tela a životného štýlu."
+      }
+    },
+    {
+      "number": 86,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Что даёт горячее обёртывание?",
+        "answer": "Горячее обёртывание помогает улучшить внешний вид кожи, сделать её более мягкой и гладкой, а также может временно уменьшить проявления отёчности."
+      },
+      "cs": {
+        "question": "Jaký účinek má horký zábal?",
+        "answer": "Horký zábal pomáhá zlepšit vzhled kůže, učinit ji jemnější a hladší a může také dočasně zmírnit projevy otoků."
+      },
+      "sk": {
+        "question": "Aký účinok má horúci zábal?",
+        "answer": "Horúci zábal pomáha zlepšiť vzhľad kože, urobiť ju jemnejšou a hladšou a môže tiež dočasne zmierniť prejavy opuchov."
+      }
+    },
+    {
+      "number": 87,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Можно ли похудеть с помощью горячего обёртывания?",
+        "answer": "Обёртывание не сжигает жир. Временный минус на сантиметрах связан преимущественно с изменением количества жидкости, поэтому процедуру лучше рассматривать как дополнение к комплексному уходу за телом."
+      },
+      "cs": {
+        "question": "Lze pomocí horkého zábalu zhubnout?",
+        "answer": "Zábal nespaluje tuk. Dočasný úbytek centimetrů souvisí převážně se změnou množství tekutiny, a proto je vhodnější proceduru vnímat jako doplněk komplexní péče o tělo."
+      },
+      "sk": {
+        "question": "Možno pomocou horúceho zábalu schudnúť?",
+        "answer": "Zábal nespaľuje tuk. Dočasný úbytok centimetrov súvisí prevažne so zmenou množstva tekutiny, a preto je vhodnejšie procedúru vnímať ako doplnok komplexnej starostlivosti o telo."
+      }
+    },
+    {
+      "number": 88,
+      "category": "cosmetology",
+      "subsection": "Тело",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Можно ли сочетать обёртывание с LPG или стимуляцией?",
+        "answer": "Да, такие сочетания возможны в рамках индивидуальной программы. Косметолог подбирает процедуры и их последовательность в зависимости от вашей цели и состояния тела."
+      },
+      "cs": {
+        "question": "Lze kombinovat zábal s LPG nebo stimulací?",
+        "answer": "Ano, tyto kombinace jsou možné v rámci individuálního programu. Kosmetolog vybírá procedury a jejich pořadí podle vašeho cíle a stavu těla."
+      },
+      "sk": {
+        "question": "Možno kombinovať zábal s LPG alebo stimuláciou?",
+        "answer": "Áno, tieto kombinácie sú možné v rámci individuálneho programu. Kozmetológ vyberá procedúry a ich poradie podľa vášho cieľa a stavu tela."
+      }
+    },
+    {
+      "number": 89,
+      "category": "cosmetology",
+      "subsection": "Общие вопросы по косметологии",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Сколько процедур нужно для заметного результата?",
+        "answer": "Универсального количества нет. Всё зависит от исходного состояния кожи или тела, вашей цели и индивидуальной реакции на процедуры."
+      },
+      "cs": {
+        "question": "Kolik procedur je potřeba pro viditelný výsledek?",
+        "answer": "Univerzální počet neexistuje. Vše závisí na výchozím stavu pleti nebo těla, vašem cíli a individuální reakci na procedury."
+      },
+      "sk": {
+        "question": "Koľko procedúr je potrebných pre viditeľný výsledok?",
+        "answer": "Univerzálny počet neexistuje. Všetko závisí od východiskového stavu pleti alebo tela, vášho cieľa a individuálnej reakcie na procedúry."
+      }
+    },
+    {
+      "number": 90,
+      "category": "cosmetology",
+      "subsection": "Общие вопросы по косметологии",
+      "sourceMessage": "message96667",
+      "ru": {
+        "question": "Я боюсь, что мне будут навязывать ненужные процедуры. Как проходит консультация?",
+        "answer": "Мы начинаем с ваших пожеланий и оценки состояния кожи или тела. Косметолог объясняет, какие процедуры действительно имеют смысл именно для вас, а решение всегда остаётся за клиентом. Расскажите нам, какой результат вы хотите получить, а подбор процедуры оставьте специалисту. Запишитесь на консультацию — и мы составим индивидуальную программу ухода за лицом и телом."
+      },
+      "cs": {
+        "question": "Bojím se, že mi budou vnucovat zbytečné procedury. Jak probíhá konzultace?",
+        "answer": "Začínáme vašimi přáními a posouzením stavu pleti nebo těla. Kosmetolog vysvětlí, které procedury mají smysl právě pro vás, a rozhodnutí vždy zůstává na klientovi. Řekněte nám, jakého výsledku chcete dosáhnout, a výběr procedury nechte na specialistovi. Objednejte se na konzultaci — sestavíme vám individuální program péče o obličej a tělo."
+      },
+      "sk": {
+        "question": "Bojím sa, že mi budú vnucovať zbytočné procedúry. Ako prebieha konzultácia?",
+        "answer": "Začíname vašimi želaniami a posúdením stavu pleti alebo tela. Kozmetológ vysvetlí, ktoré procedúry majú zmysel práve pre vás, a rozhodnutie vždy zostáva na klientovi. Povedzte nám, aký výsledok chcete dosiahnuť, a výber procedúry nechajte na špecialistovi. Objednajte sa na konzultáciu — zostavíme vám individuálny program starostlivosti o tvár a telo."
+      }
+    },
+    {
+      "number": 91,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Какой документ я получаю после обучения?",
+        "answer": "После успешного прохождения обучения вы получаете osvědčení о профессиональной квалификации , действующее в странах ЕС (для программ, где это предусмотрено) . Для меня важно, чтобы этот документ подтверждал не просто факт присутствия на курсе, а реальные знания, практику и готовность ученика к самостоятельной работе."
+      },
+      "cs": {
+        "question": "Jaký doklad získám po absolvování školení?",
+        "answer": "Po úspěšném absolvování školení získáte osvědčení o profesní kvalifikaci platné v zemích EU (u programů, kde je to stanoveno). Je pro mě důležité, aby tento doklad potvrzoval nejen samotnou účast na kurzu, ale skutečné znalosti, praxi a připravenost studenta k samostatné práci."
+      },
+      "sk": {
+        "question": "Aký doklad získam po absolvovaní školenia?",
+        "answer": "Po úspešnom absolvovaní školenia získate osvedčenie o odbornej kvalifikácii platné v krajinách EÚ (pri programoch, kde je to stanovené). Je pre mňa dôležité, aby tento doklad potvrdzoval nielen samotnú účasť na kurze, ale skutočné vedomosti, prax a pripravenosť študenta na samostatnú prácu."
+      }
+    },
+    {
+      "number": 92,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Для кого подходит базовый курс?",
+        "answer": "Базовый курс подходит тем, кто хочет освоить профессию мастера перманентного макияжа с нуля. Для обучения не обязательно иметь художественное или медицинское образование. Я выстраиваю программу таким образом, чтобы ученик постепенно прошёл весь путь: от знакомства с аппаратом и постановки руки до самостоятельной работы на модели."
+      },
+      "cs": {
+        "question": "Pro koho je základní kurz vhodný?",
+        "answer": "Základní kurz je vhodný pro ty, kteří se chtějí naučit profesi specialisty na permanentní make-up od začátku. Pro školení není nutné mít umělecké ani zdravotnické vzdělání. Program stavím tak, aby student postupně prošel celou cestou: od seznámení s přístrojem a správného vedení ruky až po samostatnou práci na modelce."
+      },
+      "sk": {
+        "question": "Pre koho je základný kurz vhodný?",
+        "answer": "Základný kurz je vhodný pre tých, ktorí sa chcú naučiť profesiu špecialistu na permanentný make-up od začiatku. Na školenie nie je potrebné mať umelecké ani zdravotnícke vzdelanie. Program staviam tak, aby študent postupne prešiel celou cestou: od zoznámenia s prístrojom a správneho vedenia ruky až po samostatnú prácu na modelke."
+      }
+    },
+    {
+      "number": 93,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Как будет проходить обучение?",
+        "answer": "Обучение состоит из двух частей: теоретической и практической. Сначала мы встречаемся в Zoom на живом созвоне , где подробно разбираем всю необходимую теорию. Это не записанный онлайн-курс — я лично провожу занятие, объясняю материал, отвечаю на вопросы и сразу разбираю непонятные моменты. На Zoom-встрече мы проходим: — строение кожи; — санитарные нормы и безопасность; — противопоказания; — колористику; — пигменты; — оборудование; — иглы и картриджи; — особенности работы аппаратом; — заживление и уход после процедуры. После теоретической части мы встречаемся уже очно , и основное время посвящаем практике: постановке руки, работе на латексе, построению эскизов и работе с моделями. Мне важно, чтобы на очном обучении мы не тратили несколько часов только на лекции, а максимально использовали это время именно для практики и отработки техники."
+      },
+      "cs": {
+        "question": "Jak bude školení probíhat?",
+        "answer": "Školení se skládá ze dvou částí: teoretické a praktické. Nejprve se setkáme na živém hovoru přes Zoom, kde podrobně probereme veškerou potřebnou teorii. Nejde o nahraný online kurz — lekci vedu osobně, vysvětluji látku, odpovídám na otázky a ihned objasňuji nejasnosti.\n\nNa setkání přes Zoom probereme:\n• stavbu kůže;\n• hygienické normy a bezpečnost;\n• kontraindikace;\n• koloristiku;\n• pigmenty;\n• vybavení;\n• jehly a cartridge;\n• specifika práce s přístrojem;\n• hojení a péči po proceduře.\n\nPo teoretické části se setkáme osobně a většinu času věnujeme praxi: správnému vedení ruky, práci na latexu, vytváření návrhů a práci s modelkami. Je pro mě důležité, abychom při prezenčním školení netrávili několik hodin jen přednáškami, ale co nejvíce času využili k praxi a nácviku techniky."
+      },
+      "sk": {
+        "question": "Ako bude školenie prebiehať?",
+        "answer": "Školenie sa skladá z dvoch častí: teoretickej a praktickej. Najprv sa stretneme na živom hovore cez Zoom, kde podrobne preberieme všetku potrebnú teóriu. Nejde o nahraný online kurz — lekciu vediem osobne, vysvetľujem látku, odpovedám na otázky a ihneď objasňujem nejasnosti.\n\nNa stretnutí cez Zoom preberieme:\n• stavbu kože;\n• hygienické normy a bezpečnosť;\n• kontraindikácie;\n• koloristiku;\n• pigmenty;\n• vybavenie;\n• ihly a cartridge;\n• špecifiká práce s prístrojom;\n• hojenie a starostlivosť po procedúre.\n\nPo teoretickej časti sa stretneme osobne a väčšinu času venujeme praxi: správnemu vedeniu ruky, práci na latexe, vytváraniu návrhov a práci s modelkami. Je pre mňa dôležité, aby sme pri prezenčnom školení netrávili niekoľko hodín len prednáškami, ale čo najviac času využili na prax a nácvik techniky."
+      }
+    },
+    {
+      "number": 94,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Почему теория проходит в Zoom?",
+        "answer": "Потому что я хочу максимально эффективно использовать время ученика. Теоретический материал намного удобнее спокойно разобрать заранее в формате живого созвона, где можно сразу задать мне вопросы и получить объяснение. А когда мы встречаемся очно, мы уже не сидим несколько часов над теорией, а сразу начинаем работать руками. Для меня это намного ценнее, потому что именно на практике я могу увидеть ошибки ученика, поставить руку и скорректировать технику."
+      },
+      "cs": {
+        "question": "Proč teorie probíhá přes Zoom?",
+        "answer": "Protože chci co nejefektivněji využít čas studenta. Teoretickou látku je mnohem pohodlnější v klidu probrat předem formou živého hovoru, kde se mě můžete rovnou zeptat a získat vysvětlení. Když se potom setkáme osobně, už nesedíme několik hodin nad teorií, ale ihned začínáme pracovat rukama. To je pro mě mnohem cennější, protože právě při praxi mohu vidět chyby studenta, upravit vedení ruky a korigovat techniku."
+      },
+      "sk": {
+        "question": "Prečo teória prebieha cez Zoom?",
+        "answer": "Pretože chcem čo najefektívnejšie využiť čas študenta. Teoretickú látku je oveľa pohodlnejšie v pokoji prebrať vopred formou živého hovoru, kde sa ma môžete rovno opýtať a získať vysvetlenie. Keď sa potom stretneme osobne, už nesedíme niekoľko hodín nad teóriou, ale ihneď začíname pracovať rukami. To je pre mňa oveľa cennejšie, pretože práve pri praxi môžem vidieť chyby študenta, upraviť vedenie ruky a korigovať techniku."
+      }
+    },
+    {
+      "number": 95,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Что происходит в первый день очного обучения?",
+        "answer": "Первый день начинается со знакомства. Для меня важно понять человека, который пришёл ко мне учиться: почему он выбрал эту профессию, чего боится, какие у него ожидания и какую цель он перед собой ставит. Мы обсуждаем все вопросы, которые появились после теоретической Zoom-встречи. После этого начинается практическая часть. Я показываю: — как правильно держать аппарат; — как поставить руку; — как контролировать глубину; — как работать с нажимом; — как делать правильные проходы; — как чувствовать аппарат. Большую часть времени мы работаем на латексе. Мне важно, чтобы студент не просто смотрел, как работаю я, а много работал самостоятельно."
+      },
+      "cs": {
+        "question": "Co se děje první den prezenčního školení?",
+        "answer": "První den začíná seznámením. Je pro mě důležité pochopit člověka, který se ke mně přišel učit: proč si tuto profesi vybral, čeho se obává, jaká má očekávání a jaký cíl si stanovuje. Probereme všechny otázky, které se objevily po teoretickém setkání přes Zoom.\n\nPoté začíná praktická část. Ukazuji:\n• jak správně držet přístroj;\n• jak správně vést ruku;\n• jak kontrolovat hloubku;\n• jak pracovat s tlakem;\n• jak provádět správné tahy;\n• jak vnímat přístroj.\n\nVětšinu času pracujeme na latexu. Je pro mě důležité, aby student nejen sledoval mou práci, ale hodně pracoval samostatně."
+      },
+      "sk": {
+        "question": "Čo sa deje prvý deň prezenčného školenia?",
+        "answer": "Prvý deň sa začína zoznámením. Je pre mňa dôležité pochopiť človeka, ktorý sa ku mne prišiel učiť: prečo si túto profesiu vybral, čoho sa obáva, aké má očakávania a aký cieľ si stanovuje. Preberieme všetky otázky, ktoré sa objavili po teoretickom stretnutí cez Zoom.\n\nPotom sa začína praktická časť. Ukazujem:\n• ako správne držať prístroj;\n• ako správne viesť ruku;\n• ako kontrolovať hĺbku;\n• ako pracovať s tlakom;\n• ako vykonávať správne ťahy;\n• ako vnímať prístroj.\n\nVäčšinu času pracujeme na latexe. Je pre mňa dôležité, aby študent nielen sledoval moju prácu, ale veľa pracoval samostatne."
+      }
+    },
+    {
+      "number": 96,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Будем ли мы учиться рисовать эскизы?",
+        "answer": "Да, обязательно. Мы учимся строить эскиз бровей и губ, работать с формой, симметрией и пропорциями лица. Мастер перманентного макияжа должен понимать, почему он выбирает именно такую форму, а не просто копировать чужой шаблон. Я учу смотреть на лицо целиком и создавать работу, которая подходит конкретному человеку."
+      },
+      "cs": {
+        "question": "Budeme se učit kreslit návrhy?",
+        "answer": "Ano, určitě. Učíme se vytvářet návrhy obočí a rtů a pracovat s tvarem, symetrií a proporcemi obličeje. Specialista na permanentní make-up musí chápat, proč volí právě tento tvar, a ne jen kopírovat cizí šablonu. Učím vnímat obličej jako celek a vytvářet práci, která danému člověku vyhovuje."
+      },
+      "sk": {
+        "question": "Budeme sa učiť kresliť návrhy?",
+        "answer": "Áno, určite. Učíme sa vytvárať návrhy obočia a pier a pracovať s tvarom, symetriou a proporciami tváre. Špecialista na permanentný make-up musí chápať, prečo volí práve tento tvar, a nie len kopírovať cudziu šablónu. Učím vnímať tvár ako celok a vytvárať prácu, ktorá danému človeku vyhovuje."
+      }
+    },
+    {
+      "number": 97,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691",
+      "ru": {
+        "question": "Когда начинается работа на моделях?",
+        "answer": "После того как я вижу, что ученик понимает технику и его рука уже достаточно уверенно работает на латексе, мы переходим к моделям. Работа на модели проходит полностью под моим контролем. Мы вместе: — проводим консультацию; — собираем анамнез; — определяем противопоказания; — выбираем форму; — подбираем цвет; — рисуем эскиз; — обсуждаем технику выполнения процедуры; — выполняем саму работу. Я нахожусь рядом на каждом этапе."
+      },
+      "cs": {
+        "question": "Kdy začíná práce na modelkách?",
+        "answer": "Jakmile vidím, že student rozumí technice a jeho ruka již dostatečně jistě pracuje na latexu, přecházíme k modelkám. Práce na modelce probíhá zcela pod mým dohledem.\n\nSpolečně:\n• provedeme konzultaci;\n• zjistíme anamnézu;\n• určíme kontraindikace;\n• vybereme tvar;\n• zvolíme barvu;\n• nakreslíme návrh;\n• probereme techniku provedení procedury;\n• provedeme samotnou práci.\n\nJsem nablízku v každé fázi."
+      },
+      "sk": {
+        "question": "Kedy sa začína práca na modelkách?",
+        "answer": "Keď vidím, že študent rozumie technike a jeho ruka už dostatočne isto pracuje na latexe, prechádzame k modelkám. Práca na modelke prebieha úplne pod mojím dohľadom.\n\nSpoločne:\n• vykonáme konzultáciu;\n• zistíme anamnézu;\n• určíme kontraindikácie;\n• vyberieme tvar;\n• zvolíme farbu;\n• nakreslíme návrh;\n• preberieme techniku vykonania procedúry;\n• vykonáme samotnú prácu.\n\nSom nablízku v každej fáze."
+      }
+    },
+    {
+      "number": 98,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96691, message96692",
+      "ru": {
+        "question": "Какие зоны мы изучаем на базовом курсе?",
+        "answer": "На базовом курсе мы изучаем три основные зоны перманентного макияжа: Брови — пудровая техника. Губы — базовая техника перманентного макияжа губ. Глаза — межресничное заполнение. На базовом курсе мы не изучаем стрелку и стрелку с растушёвкой. Это уже более сложные техники, которые лучше осваивать после того, как мастер уверенно владеет базой."
+      },
+      "cs": {
+        "question": "Které oblasti se učíme na základním kurzu?",
+        "answer": "Na základním kurzu se učíme tři hlavní oblasti permanentního make-upu:\n• Obočí — pudrová technika.\n• Rty — základní technika permanentního make-upu rtů.\n• Oči — vyplnění mezi řasami.\n\nNa základním kurzu se neučíme oční linku ani linku se stínováním. Jde o složitější techniky, které je lepší osvojit si až poté, co specialista bezpečně ovládá základy."
+      },
+      "sk": {
+        "question": "Ktoré oblasti sa učíme na základnom kurze?",
+        "answer": "Na základnom kurze sa učíme tri hlavné oblasti permanentného make-upu:\n• Obočie — púdrová technika.\n• Pery — základná technika permanentného make-upu pier.\n• Oči — vyplnenie medzi riasami.\n\nNa základnom kurze sa neučíme očnú linku ani linku s tieňovaním. Ide o zložitejšie techniky, ktoré je lepšie osvojiť si až potom, keď špecialista bezpečne ovláda základy."
+      }
+    },
+    {
+      "number": 99,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Почему на базовом курсе только межресничка, а не стрелка?",
+        "answer": "Потому что моя задача на базовом курсе — дать ученику сильную и безопасную основу. Я не считаю правильным пытаться за один курс дать человеку абсолютно все существующие техники. Сначала нужно научиться чувствовать аппарат, понимать глубину, правильно работать рукой и понимать основные принципы работы с кожей. Межресничное заполнение — это правильная базовая техника для начинающего мастера в зоне глаз. А стрелка и растушёвка — это уже следующий уровень и отдельное повышение квалификации."
+      },
+      "cs": {
+        "question": "Proč se na základním kurzu učíme jen vyplnění mezi řasami, a ne oční linku?",
+        "answer": "Protože mým cílem na základním kurzu je dát studentovi pevný a bezpečný základ. Nepovažuji za správné snažit se během jednoho kurzu předat člověku všechny existující techniky. Nejprve se musí naučit vnímat přístroj, chápat hloubku, správně pracovat rukou a rozumět základním principům práce s kůží. Vyplnění mezi řasami je správná základní technika pro začínajícího specialistu v oblasti očí. Oční linka a stínování jsou již další úroveň a samostatné pokročilé školení."
+      },
+      "sk": {
+        "question": "Prečo sa na základnom kurze učíme len vyplnenie medzi riasami, a nie očnú linku?",
+        "answer": "Pretože mojím cieľom na základnom kurze je dať študentovi pevný a bezpečný základ. Nepovažujem za správne snažiť sa počas jedného kurzu odovzdať človeku všetky existujúce techniky. Najprv sa musí naučiť vnímať prístroj, chápať hĺbku, správne pracovať rukou a rozumieť základným princípom práce s kožou. Vyplnenie medzi riasami je správna základná technika pre začínajúceho špecialistu v oblasti očí. Očná linka a tieňovanie sú už ďalšia úroveň a samostatné pokročilé školenie."
+      }
+    },
+    {
+      "number": 100,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Что получает ученик для обучения?",
+        "answer": "Я хочу, чтобы у ученика с самого начала было всё необходимое для обучения и тренировок. Ученик получает: — учебное пособие; — латекс для тренировок; — необходимые материалы для отработки техники; — рекомендации по пигментам; — рекомендации по картриджам и оборудованию; — список всего необходимого для дальнейшей самостоятельной работы. Если ученик приезжает из другого города или страны, необходимые учебные материалы можно подготовить заранее."
+      },
+      "cs": {
+        "question": "Co student dostane pro školení?",
+        "answer": "Chci, aby měl student od začátku vše potřebné pro výuku a trénink.\n\nStudent dostane:\n• učební příručku;\n• latex pro trénink;\n• potřebné materiály pro nácvik techniky;\n• doporučení k pigmentům;\n• doporučení ke cartridgím a vybavení;\n• seznam všeho potřebného pro další samostatnou práci.\n\nPokud student přijíždí z jiného města nebo země, lze potřebné výukové materiály připravit předem."
+      },
+      "sk": {
+        "question": "Čo študent dostane na školenie?",
+        "answer": "Chcem, aby mal študent od začiatku všetko potrebné na výučbu a tréning.\n\nŠtudent dostane:\n• učebnú príručku;\n• latex na tréning;\n• potrebné materiály na nácvik techniky;\n• odporúčania k pigmentom;\n• odporúčania ku cartridgiam a vybaveniu;\n• zoznam všetkého potrebného na ďalšiu samostatnú prácu.\n\nAk študent prichádza z iného mesta alebo krajiny, možno potrebné výučbové materiály pripraviť vopred."
+      }
+    },
+    {
+      "number": 101,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Нужно ли покупать аппарат заранее?",
+        "answer": "Да, я считаю это очень важным. Лучше сразу учиться на том аппарате, на котором вы потом будете работать. Нет смысла несколько дней тренироваться на моей машинке, а после обучения купить совершенно другой аппарат и заново привыкать к его весу, мощности и ходу иглы. Поэтому мы заранее обсуждаем выбор машинки, и ученик приходит на обучение уже со своим аппаратом."
+      },
+      "cs": {
+        "question": "Je nutné koupit přístroj předem?",
+        "answer": "Ano, považuji to za velmi důležité. Je lepší se od začátku učit na přístroji, se kterým potom budete pracovat. Nemá smysl několik dní trénovat na mém strojku a po školení koupit úplně jiný přístroj a znovu si zvykat na jeho hmotnost, výkon a zdvih jehly. Proto výběr strojku probereme předem a student přijde na školení již s vlastním přístrojem."
+      },
+      "sk": {
+        "question": "Je potrebné kúpiť prístroj vopred?",
+        "answer": "Áno, považujem to za veľmi dôležité. Je lepšie sa od začiatku učiť na prístroji, s ktorým potom budete pracovať. Nemá zmysel niekoľko dní trénovať na mojom strojčeku a po školení kúpiť úplne iný prístroj a znovu si zvykať na jeho hmotnosť, výkon a zdvih ihly. Preto výber strojčeka preberieme vopred a študent príde na školenie už s vlastným prístrojom."
+      }
+    },
+    {
+      "number": 102,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Можно ли пройти базовый курс полностью онлайн?",
+        "answer": "Нет. Теоретическую часть мы можем пройти в Zoom, но базовое обучение перманентному макияжу невозможно качественно провести полностью дистанционно. Мне важно лично увидеть постановку руки ученика, его работу аппаратом, глубину, нажим и движения. И, конечно, работа на живой модели — обязательная часть обучения. Латекс очень важен для тренировок, но он не может полностью заменить настоящую кожу."
+      },
+      "cs": {
+        "question": "Lze absolvovat základní kurz zcela online?",
+        "answer": "Ne. Teoretickou část můžeme absolvovat přes Zoom, ale základní školení permanentního make-upu nelze kvalitně provést zcela na dálku. Je pro mě důležité osobně vidět vedení ruky studenta, jeho práci s přístrojem, hloubku, tlak a pohyby. A samozřejmě je práce na živé modelce povinnou součástí školení. Latex je pro trénink velmi důležitý, ale nemůže zcela nahradit skutečnou kůži."
+      },
+      "sk": {
+        "question": "Možno absolvovať základný kurz úplne online?",
+        "answer": "Nie. Teoretickú časť môžeme absolvovať cez Zoom, ale základné školenie permanentného make-upu nemožno kvalitne vykonať úplne na diaľku. Je pre mňa dôležité osobne vidieť vedenie ruky študenta, jeho prácu s prístrojom, hĺbku, tlak a pohyby. A samozrejme je práca na živej modelke povinnou súčasťou školenia. Latex je na tréning veľmi dôležitý, ale nemôže úplne nahradiť skutočnú kožu."
+      }
+    },
+    {
+      "number": 103,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Чем такой формат удобнее обычного базового курса?",
+        "answer": "Он позволяет намного эффективнее использовать время. Теорию мы заранее разбираем вместе на Zoom-встрече, а очные дни максимально посвящаем практике. Ученик приезжает ко мне уже с базовым пониманием материала, и мы можем работать над тем, ради чего действительно нужен преподаватель: постановкой руки, исправлением ошибок, эскизами, цветом и работой на моделях. То есть акцент моего обучения — не на количестве часов, проведённых в классе, а на результате ученика."
+      },
+      "cs": {
+        "question": "V čem je tento formát praktičtější než běžný základní kurz?",
+        "answer": "Umožňuje mnohem efektivněji využít čas. Teorii předem společně probereme na setkání přes Zoom a prezenční dny věnujeme co nejvíce praxi. Student ke mně přijíždí již se základním porozuměním látce a můžeme se věnovat tomu, kvůli čemu je učitel skutečně potřeba: vedení ruky, opravě chyb, návrhům, barvě a práci na modelkách. Důraz mého školení tedy není na počtu hodin strávených ve třídě, ale na výsledku studenta."
+      },
+      "sk": {
+        "question": "V čom je tento formát praktickejší než bežný základný kurz?",
+        "answer": "Umožňuje oveľa efektívnejšie využiť čas. Teóriu vopred spoločne preberieme na stretnutí cez Zoom a prezenčné dni venujeme čo najviac praxi. Študent ku mne prichádza už so základným porozumením látke a môžeme sa venovať tomu, kvôli čomu je učiteľ skutočne potrebný: vedeniu ruky, oprave chýb, návrhom, farbe a práci na modelkách. Dôraz môjho školenia teda nie je na počte hodín strávených v triede, ale na výsledku študenta."
+      }
+    },
+    {
+      "number": 104,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Получает ли ученик учебное пособие?",
+        "answer": "Да. Я подготовила новое учебное пособие для базового курса по перманентному макияжу. В нём собрана теория, которая понадобится ученику как во время обучения, так и позже в самостоятельной работе. Мне важно, чтобы после курса у человека оставались не просто записи в телефоне, а полноценный профессиональный материал, к которому можно возвращаться в любой момент."
+      },
+      "cs": {
+        "question": "Dostane student učební příručku?",
+        "answer": "Ano. Pro základní kurz permanentního make-upu jsem připravila novou učební příručku. Je v ní shromážděna teorie, kterou student potřebuje jak při školení, tak později při samostatné práci. Je pro mě důležité, aby člověku po kurzu nezůstaly jen poznámky v telefonu, ale plnohodnotný odborný materiál, ke kterému se může kdykoliv vrátit."
+      },
+      "sk": {
+        "question": "Dostane študent učebnú príručku?",
+        "answer": "Áno. Na základný kurz permanentného make-upu som pripravila novú učebnú príručku. Je v nej zhromaždená teória, ktorú študent potrebuje pri školení aj neskôr pri samostatnej práci. Je pre mňa dôležité, aby človeku po kurze nezostali len poznámky v telefóne, ale plnohodnotný odborný materiál, ku ktorému sa môže kedykoľvek vrátiť."
+      }
+    },
+    {
+      "number": 105,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Что ещё вы получаете по окончании обучения?",
+        "answer": "По окончании курса у вас остаются: — методические материалы; — понимание полного цикла работы мастера; — практические навыки работы с клиентом; — уверенность в своих действиях; — понимание, как начать работать самостоятельно; — возможность обращаться ко мне с вопросами после обучения. Моя задача — чтобы после курса у вас был не только документ, но и реальная профессиональная база для работы."
+      },
+      "cs": {
+        "question": "Co dalšího získáte po absolvování školení?",
+        "answer": "Po absolvování kurzu vám zůstanou:\n• metodické materiály;\n• pochopení celého pracovního postupu specialisty;\n• praktické dovednosti práce s klientem;\n• jistota ve vlastních postupech;\n• pochopení, jak začít pracovat samostatně;\n• možnost obracet se na mě s otázkami po školení.\n\nMým cílem je, abyste po kurzu měli nejen doklad, ale také skutečný odborný základ pro práci."
+      },
+      "sk": {
+        "question": "Čo ďalšie získate po absolvovaní školenia?",
+        "answer": "Po absolvovaní kurzu vám zostanú:\n• metodické materiály;\n• pochopenie celého pracovného postupu špecialistu;\n• praktické zručnosti práce s klientom;\n• istota vo vlastných postupoch;\n• pochopenie, ako začať pracovať samostatne;\n• možnosť obracať sa na mňa s otázkami po školení.\n\nMojím cieľom je, aby ste po kurze mali nielen doklad, ale aj skutočný odborný základ na prácu."
+      }
+    },
+    {
+      "number": 106,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692",
+      "ru": {
+        "question": "Будет ли поддержка после обучения?",
+        "answer": "Да. Для меня обучение не заканчивается в тот момент, когда ученик получает osvědčení и выходит за дверь. В начале самостоятельной работы всегда появляются вопросы: по цвету, заживлению, эскизу, технике или работе с конкретным клиентом. Поэтому после курса ученик может обращаться ко мне с вопросами и разбирать со мной свои первые работы. Мне важно, чтобы человек не оставался один после обучения."
+      },
+      "cs": {
+        "question": "Bude po školení dostupná podpora?",
+        "answer": "Ano. Pro mě školení nekončí ve chvíli, kdy student získá osvědčení a odejde. Na začátku samostatné práce vždy vznikají otázky: ohledně barvy, hojení, návrhu, techniky nebo práce s konkrétním klientem. Proto se na mě student může po kurzu obracet s otázkami a společně můžeme rozebírat jeho první práce. Je pro mě důležité, aby člověk po školení nezůstal sám."
+      },
+      "sk": {
+        "question": "Bude po školení dostupná podpora?",
+        "answer": "Áno. Pre mňa sa školenie nekončí vo chvíli, keď študent získa osvedčenie a odíde. Na začiatku samostatnej práce vždy vznikajú otázky: o farbe, hojení, návrhu, technike alebo práci s konkrétnym klientom. Preto sa na mňa študent môže po kurze obracať s otázkami a spoločne môžeme rozoberať jeho prvé práce. Je pre mňa dôležité, aby človek po školení nezostal sám."
+      }
+    },
+    {
+      "number": 107,
+      "category": "training",
+      "subsection": "Базовый курс перманентного макияжа",
+      "sourceMessage": "message96692, message96693",
+      "ru": {
+        "question": "Что для вас самое главное в базовом обучении?",
+        "answer": "Чтобы после курса человек не остался один со страхом: «А что мне теперь делать с клиентом?» Моя задача — не просто показать несколько техник. Я хочу дать понимание профессии. Чтобы ученик понимал: — что он делает; — почему он это делает; — как выбрать правильную технику; — как выбрать цвет; — как работать безопасно; — как общаться с клиентом; — как оценивать свою работу; — что делать, если результат идёт не так, как ожидалось. Потому что аппарат можно купить за один день. Технику можно посмотреть в интернете. Но профессиональное мышление мастера формируется только через правильное обучение и практику."
+      },
+      "cs": {
+        "question": "Co je pro vás při základním školení nejdůležitější?",
+        "answer": "Aby člověk po kurzu nezůstal sám se strachem: „Co mám teď s klientem dělat?“ Mým cílem není jen ukázat několik technik. Chci předat pochopení této profese.\n\nAby student rozuměl:\n• co dělá;\n• proč to dělá;\n• jak vybrat správnou techniku;\n• jak vybrat barvu;\n• jak pracovat bezpečně;\n• jak komunikovat s klientem;\n• jak hodnotit vlastní práci;\n• co dělat, když výsledek nejde podle očekávání.\n\nPřístroj lze totiž koupit za jeden den. Techniku lze vidět na internetu. Odborné uvažování specialisty se ale formuje pouze správným školením a praxí."
+      },
+      "sk": {
+        "question": "Čo je pre vás pri základnom školení najdôležitejšie?",
+        "answer": "Aby človek po kurze nezostal sám so strachom: „Čo mám teraz s klientom robiť?“ Mojím cieľom nie je len ukázať niekoľko techník. Chcem odovzdať pochopenie tejto profesie.\n\nAby študent rozumel:\n• čo robí;\n• prečo to robí;\n• ako vybrať správnu techniku;\n• ako vybrať farbu;\n• ako pracovať bezpečne;\n• ako komunikovať s klientom;\n• ako hodnotiť vlastnú prácu;\n• čo robiť, keď výsledok nejde podľa očakávania.\n\nPrístroj totiž možno kúpiť za jeden deň. Techniku možno vidieť na internete. Odborné uvažovanie špecialistu sa však formuje iba správnym školením a praxou."
+      }
+    }
+  ]
+}
