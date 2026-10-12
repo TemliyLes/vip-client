@@ -1,11 +1,13 @@
 <template>
   <div class="page">
-    <Article news :store="store" />
+    <Article news :store="store" :breadcrumbs="[{ label: $t('newsPage.title'), to: '/news' }]" />
+    <RelatedNews v-if="store.data" :key="store.data.id" :item="store.data" />
   </div>
 </template>
 
 <script setup>
 import Article from "~/components/cards/Article.vue";
+import RelatedNews from "~/components/blocks/RelatedNews.vue";
 import { useNewsStore } from "~/store/news";
 
 const store = useNewsStore();

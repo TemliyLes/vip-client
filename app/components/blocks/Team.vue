@@ -2,7 +2,7 @@
   <section ref="section" class="py-12 sm:py-24 overflow-hidden">
     <Container>
       <!-- founder -->
-      <div ref="content" class="sm:grid sm:grid-cols-2 sm:gap-12 items-center">
+      <article ref="content" class="sm:grid sm:grid-cols-2 sm:gap-12 items-center">
         <!-- image -->
         <div class="overflow-hidden">
           <img
@@ -10,7 +10,7 @@
             :width="founder?.image?.original?.width"
             :height="founder?.image?.original?.height"
             class="w-full h-auto object-cover"
-            alt=""
+            :alt="founder?.name ?? ''"
           />
         </div>
         <!-- content -->
@@ -31,11 +31,11 @@
           </div>
 
           <div class="flex gap-4 flex-col">
-            <Header>
+            <Header tag="h3">
               {{ founder?.name }}
             </Header>
 
-            <Header mini>
+            <Header tag="p" mini>
               {{ founder?.position }}
             </Header>
 
@@ -44,7 +44,7 @@
             </Paragraph>
           </div>
         </div>
-      </div>
+      </article>
       <Employers :team="store?.page?.about?.team" />
     </Container>
   </section>

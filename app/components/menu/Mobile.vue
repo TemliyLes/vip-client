@@ -1,88 +1,101 @@
 <template>
   <Teleport to="body">
-    <!-- <LanguageSwitcher class="fixed top-6 right-20 z-[99999]" /> -->
-    <!-- Burger -->
-    <button
-      ref="button"
-      class="fixed top-5 right-5 z-[99999] flex flex-col gap-1.5 w-12 h-12 items-center justify-center bg-wine"
-      @click="toggle"
-    >
-      <span
-        class="block w-7 h-[1px] bg-white transition-all duration-300"
-        :class="open ? 'rotate-45 translate-y-[7px]' : ''"
-      />
+    <header>
+      <!-- <LanguageSwitcher class="fixed top-6 right-20 z-[99999]" /> -->
+      <!-- Burger -->
+      <button type="button" :aria-label="$t('accessibility.menu')" :aria-expanded="open" :aria-controls="menuId"
+        ref="button"
+        class="fixed top-5 right-5 z-[99999] flex flex-col gap-1.5 w-12 h-12 items-center justify-center bg-wine"
+        @click="toggle"
+      >
+        <span
+          class="block w-7 h-[1px] bg-white transition-all duration-300"
+          :class="open ? 'rotate-45 translate-y-[7px]' : ''"
+        />
 
-      <span
-        class="block w-7 h-[1px] bg-white transition-all duration-300"
-        :class="open ? 'opacity-0' : ''"
-      />
+        <span
+          class="block w-7 h-[1px] bg-white transition-all duration-300"
+          :class="open ? 'opacity-0' : ''"
+        />
 
-      <span
-        class="block w-7 h-[1px] bg-white transition-all duration-300"
-        :class="open ? '-rotate-45 -translate-y-[7px]' : ''"
-      />
-    </button>
+        <span
+          class="block w-7 h-[1px] bg-white transition-all duration-300"
+          :class="open ? '-rotate-45 -translate-y-[7px]' : ''"
+        />
+      </button>
 
-    <!-- Menu -->
-    <div
-      ref="menuWrapper"
-      class="fixed inset-0 z-[99998] bg-white opacity-0 invisible overflow-y-auto"
-    >
-      <div ref="menuContent" class="flex flex-col pt-[110px] px-6 pb-10 gap-5">
-        <div v-for="item in menu" :key="item.id" class="menu-item">
-          <!-- Simple link -->
-          <NuxtLinkLocale
-            v-if="!item.children?.length"
-            :to="item.to"
-            class="block py-2"
-            @click="close"
-          >
-            <Paragraph>
-              {{ item.title }}
-            </Paragraph>
-          </NuxtLinkLocale>
+      <!-- Menu -->
+      <nav :id="menuId" :aria-label="$t('accessibility.primaryNavigation')" :inert="!open"
+        ref="menuWrapper"
+        class="fixed inset-0 z-[99998] bg-white opacity-0 invisible overflow-y-auto"
+      >
+        <div ref="menuContent" class="flex flex-col pt-[110px] px-6 pb-10 gap-5">
+          <ul class="flex flex-col gap-5">
+            <li v-for="item in menu" :key="item.id" class="menu-item">
+              <!-- Simple link -->
+              <NuxtLinkLocale
+                v-if="!item.children?.length"
+                :to="item.to"
+                class="block py-2"
+                @click="close"
+              >
+                <Paragraph tag="span">
+                  {{ item.title }}
+                </Paragraph>
+              </NuxtLinkLocale>
 
-          <!-- Item with children -->
-          <template v-else>
-            <button
-              class="flex justify-between items-center w-full py-2"
-              @click="toggleSub(item.id)"
-            >
-              <Paragraph>
-                {{ item.title }}
-              </Paragraph>
-
-              <span
-                class="text-darkbeige text-xl transition-transform duration-300"
-                :class="openedSub === item.id ? 'rotate-45' : ''"
-              >{{ $t('ui.components.menu.Mobile.spanText1') }}</span>
-            </button>
-
-            <!-- Children -->
-            <div
-              :ref="(el) => setSubmenuRef(item.id, el)"
-              class="overflow-hidden max-h-0"
-            >
-              <div class="mt-3 flex flex-col bg-milk px-5 py-3">
-                <NuxtLinkLocale
-                  v-for="child in item.children"
-                  :key="`${item.id}-${child.id}-${child.to}`"
-                  :to="child.to"
-                  class="block py-3 border-b border-darkbeige/20 last:border-none"
-                  @click="close"
+              <!-- Item with children -->
+              <template v-else>
+                <button
+                  type="button"
+                  :aria-expanded="openedSub === item.id"
+                  :aria-controls="`${menuId}-${item.id}`"
+                  class="flex justify-between items-center w-full py-2"
+                  @click="toggleSub(item.id)"
                 >
-                  <Paragraph>
-                    {{ child.title }}
+                  <Paragraph tag="span">
+                    {{ item.title }}
                   </Paragraph>
-                </NuxtLinkLocale>
-              </div>
-            </div>
-          </template>
-        </div>
 
-        <Button class="mt-4" @click="prepareFeedback">{{ $t('ui.components.menu.Mobile.buttonText1') }}</Button>
-      </div>
-    </div>
+                  <span aria-hidden="true"
+                    class="text-darkbeige text-xl transition-transform duration-300"
+                    :class="openedSub === item.id ? 'rotate-45' : ''"
+                  >{{ $t('ui.components.menu.Mobile.spanText1') }}</span>
+                </button>
+
+                <!-- Children -->
+                <div
+                  :id="`${menuId}-${item.id}`"
+                  :inert="openedSub !== item.id"
+                  :ref="(el) => setSubmenuRef(item.id, el)"
+                  class="overflow-hidden max-h-0"
+                >
+                  <ul class="mt-3 flex flex-col bg-milk px-5 py-3">
+                    <li
+                      v-for="child in item.children"
+                      :key="`${item.id}-${child.id}-${child.to}`"
+                      class="border-b border-darkbeige/20 last:border-none"
+                    >
+                      <NuxtLinkLocale
+                        :to="child.to"
+                        class="block py-3"
+                        @click="close"
+                      >
+                        <Paragraph tag="span">
+                          {{ child.title }}
+                        </Paragraph>
+                      </NuxtLinkLocale>
+                    </li>
+                  </ul>
+                </div>
+              </template>
+            </li>
+          </ul>
+
+          <Button class="mt-4" @click="prepareFeedback">{{ $t('ui.components.menu.Mobile.buttonText1') }}</Button>
+        </div>
+      </nav>
+    </header>
   </Teleport>
 </template>
 
@@ -95,6 +108,7 @@ import Button from "../ui/Button.vue";
 
 const menu = useMenu();
 const button = ref(null);
+const menuId = useId();
 
 const open = ref(false);
 

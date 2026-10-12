@@ -1,30 +1,41 @@
 <template>
-  <div class="flex flex-col">
-    <div
+  <ul class="flex flex-col">
+    <li
       v-for="(item, index) in data"
       :key="item.id"
       class="faq-item border-b border-[#E8E1DC] transition-colors duration-300"
       :class="{ 'bg-milk': opened === index }"
     >
-      <button
-        class="faq-header w-full flex justify-between items-center py-6 px-6 text-left"
-        @click="toggle(index)"
-      >
-        <Header mini>
-          {{ decodeWpText(item.title.rendered) }}
-        </Header>
-
-        <div
-          class="w-10 h-10 bg-wine flex items-center justify-center shrink-0 select-none"
+      <h3>
+        <button
+          type="button"
+          :id="`${id}-question-${index}`"
+          :aria-expanded="opened === index"
+          :aria-controls="`${id}-answer-${index}`"
+          class="faq-header w-full flex justify-between items-center py-6 px-6 text-left"
+          @click="toggle(index)"
         >
-          <Chevron
-            class="transition-transform duration-300"
-            :class="{ 'rotate-180': opened === index }"
-          />
-        </div>
-      </button>
+          <Header tag="span" mini class="block">
+            {{ decodeWpText(item.title.rendered) }}
+          </Header>
+
+          <span aria-hidden="true"
+            class="w-10 h-10 bg-wine flex items-center justify-center shrink-0 select-none"
+          >
+            <Chevron
+              class="transition-transform duration-300"
+              :class="{ 'rotate-180': opened === index }"
+            />
+          </span>
+        </button>
+      </h3>
 
       <div
+        role="region"
+        :id="`${id}-answer-${index}`"
+        :aria-labelledby="`${id}-question-${index}`"
+        :aria-hidden="opened !== index"
+        :inert="opened !== index"
         :ref="(el) => (contents[index] = el)"
         class="faq-content overflow-hidden h-0"
       >
@@ -34,8 +45,8 @@
           </Paragraph>
         </div>
       </div>
-    </div>
-  </div>
+    </li>
+  </ul>
 </template>
 
 <script setup>
@@ -57,6 +68,7 @@ defineProps({
 });
 
 const opened = ref(null);
+const id = useId();
 
 const contents = ref([]);
 

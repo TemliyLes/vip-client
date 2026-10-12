@@ -1,10 +1,11 @@
 <template>
-  <div :class="alignClass">
+  <component :is="tag" :class="alignClass">
     <span :class="abClass" class="text-wine uppercase leading-9"><slot /></span>
-  </div>
+  </component>
 </template>
 <script setup>
 const props = defineProps({
+  tag: { type: String, default: "h2" },
   mini: {
     type: Boolean,
     default: false,

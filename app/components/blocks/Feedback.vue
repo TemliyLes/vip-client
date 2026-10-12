@@ -1,17 +1,17 @@
 <template>
-  <Container class="mt-12 sm:mt-24">
+  <Container tag="section" class="mt-12 sm:mt-24">
     <div ref="section" class="relative sm:flex gap-12 overflow-hidden">
       <!-- LEFT -->
       <div
         class="relative z-20 basis-1/3 shrink-0 self-stretch bg-white flex flex-col gap-6 pr-8"
       >
-        <div class="flex flex-col gap-4">
+        <header class="flex flex-col gap-4">
           <Title>{{ $t('ui.components.blocks.Feedback.titleText1') }}</Title>
 
           <Header>{{ $t('ui.components.blocks.Feedback.headerText1') }}<br />{{ $t('ui.components.blocks.Feedback.headerText2') }}</Header>
 
           <Paragraph>{{ $t('ui.components.blocks.Feedback.paragraphText1') }}</Paragraph>
-        </div>
+        </header>
 
         <Button>{{ $t('ui.components.blocks.Feedback.buttonText1') }}</Button>
       </div>
@@ -21,15 +21,15 @@
         ref="viewport"
         class="basis-2/3 min-w-0 overflow-visible mt-6 sm:mt-0"
       >
-        <div ref="track" class="flex flex-col gap-4 sm:flex-row sm:w-max">
-          <div
+        <ul ref="track" class="flex flex-col gap-4 sm:flex-row sm:w-max">
+          <li
             v-for="(item, index) in store.review"
             :key="item.id ?? index"
-            class="w-full shrink-0 sm:w-[360px]"
+            class="flex w-full min-w-0 shrink-0 flex-col sm:w-[360px]"
           >
             <FeedbackCard :data="item" />
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </Container>

@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" class="text-xs uppercase leading-relaxed text-darkbeige">
+  <component :is="tag" class="block text-xs uppercase leading-relaxed text-darkbeige">
     <slot />
   </component>
 </template>

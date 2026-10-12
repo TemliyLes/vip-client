@@ -1,17 +1,18 @@
 <template>
-  <div>
-    <div
+  <section>
+    <h2 class="sr-only">{{ $t('accessibility.tariffs') }}</h2>
+    <ul
       class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-16 items-stretch"
     >
-      <div
+      <li
         v-for="(item, index) in data"
         :key="index"
-        class="group flex flex-col h-full"
+        class="group flex min-w-0 flex-col h-full"
       >
-        <div
-          class="border border-gray-200 p-6 transition duration-400 flex flex-col h-full"
+        <article
+          class="border border-gray-200 p-6 transition duration-400 flex flex-1 flex-col h-full"
         >
-          <Header mini class="min-h-[36px]">
+          <Header tag="h3" mini class="min-h-[36px]">
             {{ item.name }}
           </Header>
 
@@ -21,21 +22,21 @@
             </Paragraph>
           </div>
 
-          <div class="flex flex-col gap-3 mt-5">
+          <dl class="flex flex-col gap-3 mt-5">
             <div v-if="item?.time" class="flex gap-2">
-              <Clock />
+              <dt class="shrink-0"><Clock aria-hidden="true" /><span class="sr-only">{{ $t('accessibility.duration') }}</span></dt>
 
-              <Paragraph> {{ item?.time }}{{ $t('ui.components.cards.Tariff.paragraphText1') }}</Paragraph>
+              <Paragraph tag="dd"> {{ item?.time }}{{ $t('ui.components.cards.Tariff.paragraphText1') }}</Paragraph>
             </div>
 
             <div v-if="item?.people_count" class="flex gap-2">
-              <People />
+              <dt class="shrink-0"><People aria-hidden="true" /><span class="sr-only">{{ $t('accessibility.participants') }}</span></dt>
 
-              <Paragraph>
+              <Paragraph tag="dd">
                 {{ item?.people_count }}
               </Paragraph>
             </div>
-          </div>
+          </dl>
 
           <RichText
             class="mt-5 flex-1 rich-text"
@@ -49,10 +50,10 @@
             class="mt-6"
           >
           </ReservioButton>
-        </div>
-      </div>
-    </div>
-  </div>
+        </article>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script setup>

@@ -1,12 +1,16 @@
 <template>
   <AlterHero />
-  <Container v-if="title && description" class="-mb-12">
+  <Container class="mt-6 sm:mt-8">
+    <Breadcrumbs :items="[{ label: categoryStore.info?.name }]" />
+  </Container>
+  <Container tag="header" v-if="title" class="-mb-12">
     <div class="text-center">
-      <Header class="mt-12" v-if="title">{{ title }}</Header>
+      <Header tag="h1" :id="headingId" class="mt-12">{{ title }}</Header>
       <Paragraph class="mt-6" v-if="description">{{ description }}</Paragraph>
     </div>
   </Container>
-  <Category :data="categoryStore.category" />
+  <h1 v-else :id="headingId" class="sr-only">{{ decodeWpText(categoryStore.info?.name) }}</h1>
+  <Category :data="categoryStore.category" :labelledby="headingId" />
   <FAQ :category="categoryStore.info" class="mb-12 sm:mb-24" />
 </template>
 
@@ -18,9 +22,12 @@ import Category from "~/components/blocks/Category.vue";
 import FAQ from "~/components/blocks/FAQ.vue";
 import Header from "~/components/ui/Header.vue";
 import Container from "~/components/ui/Container.vue";
+import Breadcrumbs from "~/components/ui/Breadcrumbs.vue";
+import { decodeWpText } from "~/utils/decodeWpText";
 
 const categoryStore = useCategoryStore();
 const route = useRoute();
+const headingId = useId();
 
 const { t, locale } = useI18n({ useScope: 'global' });
 definePageMeta({ middleware: 'wp-language' });

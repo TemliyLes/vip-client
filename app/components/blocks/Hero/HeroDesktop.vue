@@ -18,7 +18,7 @@
           />
         </div>
 
-        <div class="relative z-30 w-[60%] pt-20" ref="content">
+        <header class="relative z-30 w-[60%] pt-20" ref="content">
           <h1
             class="mt-72 text-6xl uppercase tracking-[0.1em] text-white font-light"
           >{{ $t('ui.components.blocks.Hero.HeroDesktop.h1Text1') }}</h1>
@@ -28,7 +28,7 @@
           <div class="mt-10">
             <Button>{{ $t('ui.components.blocks.Hero.HeroDesktop.buttonText1') }}</Button>
           </div>
-        </div>
+        </header>
       </div>
     </Container>
 

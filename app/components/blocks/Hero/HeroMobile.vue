@@ -22,7 +22,7 @@
       </div>
 
       <!-- Content -->
-      <div ref="content" class="relative z-30 flex flex-col w-full pt-[220px]">
+      <header ref="content" class="relative z-30 flex flex-col w-full pt-[220px]">
         <h1
           class="text-[32px] leading-none uppercase tracking-[0.12em] text-white font-light"
         >{{ $t('ui.components.blocks.Hero.HeroMobile.h1Text1') }}</h1>
@@ -32,7 +32,7 @@
         <div class="absolute bottom-8 left-0 flex w-full flex-col gap-3">
           <Button>{{ $t('ui.components.blocks.Hero.HeroMobile.buttonText1') }}</Button>
         </div>
-      </div>
+      </header>
     </div>
   </section>
 </template>

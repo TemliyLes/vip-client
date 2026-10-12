@@ -10,26 +10,26 @@
       <Container>
         <div class="relative h-screen flex items-center">
           <!-- фоновые слова -->
-          <div
+          <div aria-hidden="true"
             class="absolute right-[5%] top-1/2 -translate-y-1/2 uppercase text-white font-light text-[70px] leading-[0.9]"
           >
-            <div ref="word1" class="opacity-0 -ml-30 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText1') }}</div>
+            <p ref="word1" class="opacity-0 -ml-30 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText1') }}</p>
 
-            <div ref="word2" class="opacity-0 -ml-20 mt-12 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText2') }}</div>
+            <p ref="word2" class="opacity-0 -ml-20 mt-12 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText2') }}</p>
 
-            <div ref="word3" class="opacity-0 -ml-10 mt-12 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText3') }}</div>
+            <p ref="word3" class="opacity-0 -ml-10 mt-12 translate-x-20">{{ $t('ui.components.blocks.AboutMain.divText3') }}</p>
           </div>
 
           <!-- текст -->
-          <div
+          <header
             ref="content"
             class="relative z-20 w-[520px] text-white opacity-0"
           >
-            <div
+            <p
               class="inline-flex border border-white/50 px-5 py-2 text-xs uppercase mb-12"
-            >{{ $t('ui.components.blocks.AboutMain.divText4') }}</div>
+            >{{ $t('ui.components.blocks.AboutMain.divText4') }}</p>
 
-            <h1 class="uppercase font-light text-[52px] leading-[0.95]">{{ $t('ui.components.blocks.AboutMain.h1Text1') }}<br />{{ $t('ui.components.blocks.AboutMain.h1Text2') }}<br />{{ $t('ui.components.blocks.AboutMain.h1Text3') }}</h1>
+            <h2 class="uppercase font-light text-[52px] leading-[0.95]">{{ $t('ui.components.blocks.AboutMain.h1Text1') }}<br />{{ $t('ui.components.blocks.AboutMain.h1Text2') }}<br />{{ $t('ui.components.blocks.AboutMain.h1Text3') }}</h2>
 
             <p class="mt-8 text-[13px] uppercase leading-[1.5] max-w-[430px]">{{ $t('ui.components.blocks.AboutMain.pText1') }}</p>
 
@@ -37,7 +37,7 @@
               to="/about"
               class="inline-block mt-10 bg-white text-[#cc001b] px-8 py-4 uppercase ring-1 ring-inset ring-white transition duration-300 hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >{{ $t('ui.components.blocks.AboutMain.buttonText1') }}</NuxtLinkLocale>
-          </div>
+          </header>
 
           <!-- женщина -->
           <div ref="person" class="absolute right-0 bottom-0 w-[620px]">

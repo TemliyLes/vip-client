@@ -29,6 +29,11 @@ export function useMenu() {
       to: categoryLink(15),
     },
     {
+      id: 'newsPage.title',
+      title: t('newsPage.title'),
+      to: '/news',
+    },
+    {
       id: 'navigation.item9',
       title: t('navigation.item9'),
       to: '/about',

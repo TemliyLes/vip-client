@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col gap-4">
+  <header class="flex flex-col gap-4">
     <Title>{{ title }}</Title>
-    <Header>
+    <Header :tag="headingTag">
       {{ header }}
     </Header>
     <Paragraph class="max-w-[650px]">
       {{ description }}
     </Paragraph>
-  </div>
+  </header>
 </template>
 
 <script setup>
@@ -15,6 +15,7 @@ import Header from "./Header.vue";
 import Title from "./Title.vue";
 import Paragraph from "./Paragraph.vue";
 defineProps({
+  headingTag: { type: String, default: "h2" },
   title: {
     type: String,
   },

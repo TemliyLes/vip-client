@@ -1,48 +1,51 @@
 <template>
-  <div class="flex justify-between gap-4 h-full items-center relative">
-    <div
-      v-for="item in items"
-      :key="item.id"
-      class="relative h-full flex items-center"
-      @mouseenter="item.children && openMenu(item.id)"
-      @mouseleave="item.children && startClose(item.id)"
-    >
-      <NuxtLinkLocale :to="item?.to" class="h-full flex items-center">
-        <Paragraph
-          class="hover:!text-wine"
-          :class="[
-            '!transition-colors !duration-300',
-            !active ? '!text-white' : '!text-darkbeige',
-          ]"
-        >
-          {{ item.title }}
-        </Paragraph>
-      </NuxtLinkLocale>
-
-      <!-- Dropdown -->
-      <div
-        v-if="item.children"
-        :ref="(el) => setDropdownRef(item.id, el)"
-        class="dropdown absolute top-[48px] left-0 min-w-[280px] bg-white shadow-xl p-5 opacity-0 invisible scale-y-95 origin-top"
-        @mouseenter="cancelClose(item.id)"
-        @mouseleave="startClose(item.id)"
+  <nav :aria-label="$t('accessibility.primaryNavigation')" class="flex justify-between gap-4 h-full items-center relative">
+    <ul class="flex justify-between gap-4 h-full items-center relative w-full">
+      <li
+        v-for="item in items"
+        :key="item.id"
+        class="relative h-full flex items-center"
+        @mouseenter="item.children && openMenu(item.id)"
+        @mouseleave="item.children && startClose(item.id)"
       >
-        <div class="flex flex-col gap-4">
-          <NuxtLinkLocale
-            v-for="child in item.children"
-            :key="child.id"
-            :to="child.to"
+        <NuxtLinkLocale :to="item?.to" class="h-full flex items-center">
+          <Paragraph tag="span"
+            class="hover:!text-wine"
+            :class="[
+              '!transition-colors !duration-300',
+              !active ? '!text-white' : '!text-darkbeige',
+            ]"
           >
-            <Paragraph
-              class="!text-darkbeige hover:!text-wine !transition-colors !duration-300"
-            >
-              {{ child.title }}
-            </Paragraph>
-          </NuxtLinkLocale>
+            {{ item.title }}
+          </Paragraph>
+        </NuxtLinkLocale>
+
+        <!-- Dropdown -->
+        <div
+          v-if="item.children"
+          :ref="(el) => setDropdownRef(item.id, el)"
+          class="dropdown absolute top-[48px] left-0 min-w-[280px] bg-white shadow-xl p-5 opacity-0 invisible scale-y-95 origin-top"
+          @mouseenter="cancelClose(item.id)"
+          @mouseleave="startClose(item.id)"
+        >
+          <ul class="flex flex-col gap-4">
+            <li v-for="child in item.children" :key="child.id">
+              <NuxtLinkLocale
+                :to="child.to"
+                class="block"
+              >
+                <Paragraph tag="span"
+                  class="!text-darkbeige hover:!text-wine !transition-colors !duration-300"
+                >
+                  {{ child.title }}
+                </Paragraph>
+              </NuxtLinkLocale>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </div>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>
