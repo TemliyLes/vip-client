@@ -17,7 +17,7 @@ export const useFaqStore = defineStore("faq", () => {
     error.value = null;
   });
 
-  async function fetchFaq(id, language = locale.value) {
+  async function fetchFaq(id, language = locale.value, page = 1) {
     const key = `${language}:${id ?? 'all'}`;
     const currentRequest = ++requestId;
     requests.set(key, currentRequest);
@@ -27,40 +27,33 @@ export const useFaqStore = defineStore("faq", () => {
       const termId = id == null || language === 'cs'
         ? id
         : await api.translatedId('faq-tags', id, language);
-      const response = [];
-      // WordPress limits each response to 100 posts. The shared FAQ contains 107.
-      if (id == null || termId) {
-        let page = 1;
-        let totalPages = 1;
-        do {
-          const result = await api.getPage('faq', {
-            per_page: 100,
-            page,
-            orderby: 'id',
-            order: 'asc',
-            _fields: 'id,title,content,lang',
-            ...(termId != null ? { 'faq-tags': termId } : {}),
-          }, language);
-          response.push(...result.items);
-          totalPages = result.totalPages;
-          page += 1;
-        } while (page <= totalPages);
-      }
+      const response = id == null || termId
+        ? await api.getPage('faq', {
+          per_page: 15,
+          page,
+          orderby: 'id',
+          order: 'asc',
+          _fields: 'id,title,content,lang',
+          ...(termId != null ? { 'faq-tags': termId } : {}),
+        }, language)
+        : { items: [], page, totalPages: 0 };
       if (requests.get(key) === currentRequest && language === locale.value) {
-        if (id == null) all.value = response;
-        else byTag.value[id] = response;
+        if (id == null) all.value = response.items;
+        else byTag.value[id] = response.items;
       }
-      return response;
+      // Retain the source tag for subsequent pages, including the shared fallback.
+      return { ...response, tagId: id ?? null };
     } catch (err) {
       if (requests.get(key) === currentRequest && language === locale.value) error.value = err;
+      throw err;
     } finally {
       if (requests.get(key) === currentRequest) requests.delete(key);
       loading.value = requests.size > 0;
     }
   }
 
-  const getFaq = async (language = locale.value) => await fetchFaq(undefined, language) ?? [];
-  const getFaqByTag = async (id, language = locale.value) => await fetchFaq(id, language) ?? [];
+  const getFaq = (language = locale.value, page = 1) => fetchFaq(undefined, language, page);
+  const getFaqByTag = (id, language = locale.value, page = 1) => fetchFaq(id, language, page);
 
   function normalizeName(value) {
     return decodeWpText(value).normalize('NFC').trim().replace(/\s+/g, ' ').toLowerCase();
@@ -84,7 +77,7 @@ export const useFaqStore = defineStore("faq", () => {
 
         if (tag) {
           const questions = await getFaqByTag(tag.id, language);
-          if (questions.length) return questions;
+          if (questions.items.length) return questions;
         }
       }
     } catch (err) {

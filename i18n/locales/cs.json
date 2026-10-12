@@ -55,6 +55,9 @@
           "address1": "Na Švihance 1476/1, Praha 12000"
         },
         "FAQ": {
+          "loadMore": "Zobrazit další",
+          "loading": "Načítání…",
+          "loadError": "Další otázky se nepodařilo načíst. Zkuste to prosím znovu.",
           "titleText1": "FAQ",
           "headerText1": "Často kladené dotazy",
           "paragraphText1": "\r\n          Zde naleznete odpovědi na nejčastěji kladené otázky.\r\n        "
