@@ -24,9 +24,28 @@ export const useFaqStore = defineStore("faq", () => {
     loading.value = true;
     error.value = null;
     try {
-      const response = id == null
-        ? await api.getList('faq', { per_page: 100 }, language)
-        : await api.getByTerm('faq', 'faq-tags', id, { per_page: 100 }, language);
+      const termId = id == null || language === 'cs'
+        ? id
+        : await api.translatedId('faq-tags', id, language);
+      const response = [];
+      // WordPress limits each response to 100 posts. The shared FAQ contains 107.
+      if (id == null || termId) {
+        let page = 1;
+        let totalPages = 1;
+        do {
+          const result = await api.getPage('faq', {
+            per_page: 100,
+            page,
+            orderby: 'id',
+            order: 'asc',
+            _fields: 'id,title,content,lang',
+            ...(termId != null ? { 'faq-tags': termId } : {}),
+          }, language);
+          response.push(...result.items);
+          totalPages = result.totalPages;
+          page += 1;
+        } while (page <= totalPages);
+      }
       if (requests.get(key) === currentRequest && language === locale.value) {
         if (id == null) all.value = response;
         else byTag.value[id] = response;

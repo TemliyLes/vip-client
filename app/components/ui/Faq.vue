@@ -1,52 +1,54 @@
 <template>
-  <ul class="flex flex-col">
-    <li
-      v-for="(item, index) in data"
-      :key="item.id"
-      class="faq-item border-b border-[#E8E1DC] transition-colors duration-300"
-      :class="{ 'bg-milk': opened === index }"
-    >
-      <h3>
-        <button
-          type="button"
-          :id="`${id}-question-${index}`"
-          :aria-expanded="opened === index"
-          :aria-controls="`${id}-answer-${index}`"
-          class="faq-header w-full flex justify-between items-center py-6 px-6 text-left"
-          @click="toggle(index)"
-        >
-          <Header tag="span" mini class="block">
-            {{ decodeWpText(item.title.rendered) }}
-          </Header>
-
-          <span aria-hidden="true"
-            class="w-10 h-10 bg-wine flex items-center justify-center shrink-0 select-none"
-          >
-            <Chevron
-              class="transition-transform duration-300"
-              :class="{ 'rotate-180': opened === index }"
-            />
-          </span>
-        </button>
-      </h3>
-
-      <div
-        role="region"
-        :id="`${id}-answer-${index}`"
-        :aria-labelledby="`${id}-question-${index}`"
-        :aria-hidden="opened !== index"
-        :inert="opened !== index"
-        :ref="(el) => (contents[index] = el)"
-        class="faq-content overflow-hidden h-0"
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 xl:gap-x-12 items-start">
+    <ul v-for="(column, columnIndex) in columns" :key="columnIndex" class="flex flex-col min-w-0">
+      <li
+        v-for="({ item, index }) in column"
+        :key="item.id"
+        class="faq-item border-b border-[#E8E1DC] transition-colors duration-300"
+        :class="{ 'bg-milk': opened === index }"
       >
-        <div class="px-6 pb-6">
-          <Paragraph tag="div">
-            <div v-html="item.content.rendered" />
-          </Paragraph>
+        <h3>
+          <button
+            type="button"
+            :id="`${id}-question-${index}`"
+            :aria-expanded="opened === index"
+            :aria-controls="`${id}-answer-${index}`"
+            class="faq-header w-full flex justify-between items-center gap-4 py-6 px-4 sm:px-6 text-left"
+            @click="toggle(index)"
+          >
+            <Header tag="span" mini class="block min-w-0 [&>span]:leading-6!">
+              {{ decodeWpText(item.title.rendered) }}
+            </Header>
+
+            <span aria-hidden="true"
+              class="w-10 h-10 bg-wine flex items-center justify-center shrink-0 select-none"
+            >
+              <Chevron
+                class="transition-transform duration-300"
+                :class="{ 'rotate-180': opened === index }"
+              />
+            </span>
+          </button>
+        </h3>
+
+        <div
+          role="region"
+          :id="`${id}-answer-${index}`"
+          :aria-labelledby="`${id}-question-${index}`"
+          :aria-hidden="opened !== index"
+          :inert="opened !== index"
+          :ref="(el) => (contents[index] = el)"
+          class="faq-content overflow-hidden h-0"
+        >
+          <div class="px-6 pb-6">
+            <Paragraph tag="div" class="normal-case! text-sm! leading-6! [&_p+p]:mt-4">
+              <div v-html="item.content.rendered" />
+            </Paragraph>
+          </div>
         </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script setup>
@@ -60,11 +62,19 @@ import { decodeWpText } from "~/utils/decodeWpText";
 
 gsap.registerPlugin(ScrollTrigger);
 
-defineProps({
+const props = defineProps({
   data: {
     type: Array,
     default: () => [],
   },
+});
+
+// Read down the first column, then the second; mobile keeps the same order.
+// Separate lists let answers expand without stretching the neighbouring column.
+const columns = computed(() => {
+  const items = props.data.map((item, index) => ({ item, index }));
+  const middle = Math.ceil(items.length / 2);
+  return [items.slice(0, middle), items.slice(middle)].filter(column => column.length);
 });
 
 const opened = ref(null);
