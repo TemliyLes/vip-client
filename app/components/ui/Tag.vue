@@ -1,9 +1,9 @@
 <template>
-  <div
+  <p
     class="grid place-item-center border bodred-1 border-white w-fit px-4 py-2"
   >
-    <Paragraph class="!text-white uppercase"><slot /></Paragraph>
-  </div>
+    <Paragraph tag="span" class="block !text-white uppercase"><slot /></Paragraph>
+  </p>
 </template>
 
 <script setup>

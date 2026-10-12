@@ -2,6 +2,9 @@
   <div ref="heroRoot" class="min-h-dvh bg-beige">
     <ClientOnly>
       <component :is="isMobile ? HeroMobile : HeroDesktop" @vue:mounted="onHeroMounted" />
+      <template #fallback>
+        <h1 class="sr-only">{{ $t('ui.components.blocks.Hero.HeroDesktop.h1Text1') }}</h1>
+      </template>
     </ClientOnly>
   </div>
 </template>

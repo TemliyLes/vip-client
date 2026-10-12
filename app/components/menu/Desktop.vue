@@ -1,5 +1,5 @@
 <template>
-  <div
+  <header
     ref="header"
     class="fixed top-0 left-0 z-[999] w-full h-[80px] grid place-items-center pointer-events-none"
   >
@@ -7,7 +7,7 @@
 
     <Container class="relative z-10 pointer-events-auto">
       <div class="flex items-center justify-between gap-3">
-        <NuxtLinkLocale to="/" class="shrink-0 flex gap-1 items-center">
+        <NuxtLinkLocale to="/" :aria-label="$t('accessibility.home')" class="shrink-0 flex gap-1 items-center">
           <Logo />
           <Logotitle :active="isScrolled" class="mt-2 hidden lg:block" />
         </NuxtLinkLocale>
@@ -24,7 +24,7 @@
         </div>
       </div>
     </Container>
-  </div>
+  </header>
 </template>
 
 <script setup>

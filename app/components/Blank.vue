@@ -1,5 +1,5 @@
 <template>
-  <div :style="[randomStyle(), ranBg()]">{{ $t('ui.components.Blank.divText1') }}</div>
+  <p :style="[randomStyle(), ranBg()]">{{ $t('ui.components.Blank.divText1') }}</p>
 </template>
 
 <script setup>

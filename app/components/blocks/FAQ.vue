@@ -1,14 +1,14 @@
 <template>
-  <div v-if="questions.length" class="mt-12 sm:mt-24">
+  <section v-if="questions.length" class="mt-12 sm:mt-24">
     <Container>
-      <div class="flex flex-col gap-4 items-center">
+      <header class="flex flex-col gap-4 items-center">
         <Title>{{ $t('ui.components.blocks.FAQ.titleText1') }}</Title>
         <Header class="text-center">{{ $t('ui.components.blocks.FAQ.headerText1') }}</Header>
         <Paragraph class="text-center">{{ $t('ui.components.blocks.FAQ.paragraphText1') }}</Paragraph>
-      </div>
+      </header>
       <Faq :key="faqKey" :data="questions"></Faq>
     </Container>
-  </div>
+  </section>
 </template>
 
 <script setup>

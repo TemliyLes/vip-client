@@ -1,8 +1,8 @@
 <template>
-  <div ref="section" class="py-12 sm:py-24">
+  <section ref="section" class="py-12 sm:py-24">
     <Container>
       <div class="flex flex-col sm:flex-row gap-6 sm:gap-4 items-stretch">
-        <div
+        <header
           class="basis-1/2 min-w-0 flex flex-col justify-between gap-4 sm:gap-0"
         >
           <Title>{{ $t('ui.components.blocks.Slushba.titleText1') }}</Title>
@@ -18,16 +18,16 @@
           />
 
           <Button>{{ $t('ui.components.blocks.Slushba.buttonText1') }}</Button>
-        </div>
+        </header>
 
-        <div class="basis-1/2 min-w-0 flex flex-col gap-3 overflow-hidden">
-          <div v-for="item in data" ref="cards" :key="item?.id">
+        <ul class="basis-1/2 min-w-0 flex flex-col gap-3 overflow-hidden">
+          <li v-for="item in data" ref="cards" :key="item?.id">
             <MicroCard :data="item" />
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </Container>
-  </div>
+  </section>
 </template>
 
 <script setup>

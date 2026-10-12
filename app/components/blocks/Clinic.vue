@@ -1,7 +1,7 @@
 <template>
-  <div class="py-10">
+  <section class="py-10">
     <Container class="relative">
-      <div
+      <header
         class="flex flex-col sm:w-1/2 sm:justify-end gap-4 absolute right-0 h-full z-9 sm:p-24 p-12 justify-between"
       >
         <Tag>{{ $t('ui.components.blocks.Clinic.tagText1') }}</Tag>
@@ -13,10 +13,10 @@
             v-html="store?.page?.about?.intro?.subtitle?.rendered"
           />
         </Paragraph>
-      </div>
+      </header>
       <AlterHero dark />
     </Container>
-  </div>
+  </section>
 </template>
 
 <script setup>

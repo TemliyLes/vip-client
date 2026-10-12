@@ -1,25 +1,23 @@
 <template>
-  <div class="py-12 sm:py-24">
+  <section :aria-labelledby="labelledby" class="py-12 sm:py-24">
     <Container>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div v-for="item in data" :key="item.id" class="min-w-0">
-          <!-- <Header center>{{ item.title.rendered }}</Header>
-        <Paragraph>{{ item.service_fields.description }}</Paragraph> -->
-          <Card btn :data="item" />
-        </div>
-      </div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <li v-for="item in data" :key="item.id" class="flex min-w-0 flex-col">
+          <Card btn heading-tag="h2" :data="item" />
+        </li>
+      </ul>
     </Container>
-  </div>
+  </section>
 </template>
 
 <script setup>
 import Container from "../ui/Container.vue";
-import Header from "../ui/Header.vue";
-import Paragraph from "../ui/Paragraph.vue";
 import Card from "../cards/Card.vue";
 const props = defineProps({
+  labelledby: { type: String, default: undefined },
   data: {
-    type: Object,
+    type: Array,
+    default: () => [],
   },
 });
 </script>

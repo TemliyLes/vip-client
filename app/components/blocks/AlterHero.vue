@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div aria-hidden="true">
     <div ref="wrapper" class="relative w-full h-[540px] overflow-hidden">
       <img
         :class="dark ? 'brightness-50' : ''"

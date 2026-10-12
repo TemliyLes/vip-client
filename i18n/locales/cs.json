@@ -1,4 +1,30 @@
 {
+  "newsPage": {
+    "title": "Novinky",
+    "allNews": "Všechny novinky",
+    "related": "Související novinky",
+    "empty": "Zatím nejsou zveřejněny žádné novinky.",
+    "loadMore": "Načíst další",
+    "loading": "Načítání…",
+    "loadError": "Novinky se nepodařilo načíst. Zkuste to prosím znovu."
+  },
+  "breadcrumbs": {
+    "label": "Drobečková navigace",
+    "home": "Úvod"
+  },
+  "accessibility": {
+    "home": "PALIY – úvodní stránka",
+    "primaryNavigation": "Hlavní navigace",
+    "footerNavigation": "Navigace v zápatí",
+    "legalNavigation": "Právní informace",
+    "socialNavigation": "Sociální sítě",
+    "menu": "Menu",
+    "news": "Novinky",
+    "tariffs": "Varianty služby",
+    "duration": "Délka",
+    "price": "Cena",
+    "participants": "Počet osob"
+  },
   "ui": {
     "components": {
       "Blank": {

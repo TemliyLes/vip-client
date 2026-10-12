@@ -20,18 +20,18 @@
 
         <!-- CARDS -->
 
-        <div
+        <ul
           class="grid sm:grid-cols-3 grid-cols-1 gap-5 sm:gap-3 mt-6 sm:mt-0"
         >
-          <div
+          <li
             v-for="item in data"
             ref="cards"
             :key="item?.id"
-            class="flex flex-col border-l border-white"
+            class="flex min-w-0 flex-col border-l border-white"
           >
             <Card category :data="item" />
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </Container>
   </section>

@@ -1,4 +1,30 @@
 {
+  "newsPage": {
+    "title": "Novinky",
+    "allNews": "Všetky novinky",
+    "related": "Súvisiace novinky",
+    "empty": "Zatiaľ nie sú zverejnené žiadne novinky.",
+    "loadMore": "Načítať ďalšie",
+    "loading": "Načítava sa…",
+    "loadError": "Novinky sa nepodarilo načítať. Skúste to prosím znova."
+  },
+  "breadcrumbs": {
+    "label": "Omrvinková navigácia",
+    "home": "Úvod"
+  },
+  "accessibility": {
+    "home": "PALIY – úvodná stránka",
+    "primaryNavigation": "Hlavná navigácia",
+    "footerNavigation": "Navigácia v pätičke",
+    "legalNavigation": "Právne informácie",
+    "socialNavigation": "Sociálne siete",
+    "menu": "Menu",
+    "news": "Novinky",
+    "tariffs": "Varianty služby",
+    "duration": "Trvanie",
+    "price": "Cena",
+    "participants": "Počet osôb"
+  },
   "ui": {
     "components": {
       "Blank": {

@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-12 sm:mt-24">
+  <section class="mt-12 sm:mt-24">
     <Container>
-      <div class="flex flex-col gap-4 items-center">
+      <header class="flex flex-col gap-4 items-center">
         <Title>{{ $t('ui.components.blocks.Sale.titleText1') }}</Title>
         <Header class="text-center"
           >{{ $t('ui.components.blocks.Sale.headerText1') }}<br />{{ $t('ui.components.blocks.Sale.headerText2') }}</Header
@@ -9,15 +9,15 @@
         <Paragraph class="text-center"
           >{{ $t('ui.components.blocks.Sale.paragraphText1') }}<br />{{ $t('ui.components.blocks.Sale.paragraphText2') }}</Paragraph
         >
-      </div>
+      </header>
 
-      <div class="grid sm:grid-cols-4 grid-cols-1 gap-3 mt-6">
-        <div v-for="item in data" :key="item.id">
+      <ul class="grid sm:grid-cols-4 grid-cols-1 gap-3 mt-6">
+        <li v-for="item in data" :key="item.id" class="flex min-w-0 flex-col">
           <Card :data="item" />
-        </div>
-      </div>
+        </li>
+      </ul>
     </Container>
-  </div>
+  </section>
 </template>
 
 <script setup>

@@ -1,6 +1,7 @@
 <template>
   <div class="w-full h-[500px] overflow-hidden">
     <iframe
+      :title="address || $t('ui.components.blocks.Contacts.address1')"
       class="w-full h-full border-0"
       loading="lazy"
       allowfullscreen
@@ -8,8 +9,10 @@
     />
   </div>
 </template>
+
 <script setup>
 const props = defineProps({
+  address: { type: String, default: "" },
   query: {
     type: String,
     default: "",

@@ -1,7 +1,7 @@
 <template>
   <section ref="section" class="py-12 sm:py-24">
     <Container>
-      <div class="sm:flex justify-between mb-12">
+      <header class="sm:flex justify-between mb-12">
         <div class="flex flex-col gap-6 justify-between">
           <Title>{{ $t('ui.components.blocks.Videos.titleText1') }}</Title>
 
@@ -11,41 +11,43 @@
         <div class="flex items-end mt-6 sm:mt-0">
           <Paragraph class="block max-w-[500px]">{{ $t('ui.components.blocks.Videos.paragraphText1') }}</Paragraph>
         </div>
-      </div>
+      </header>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
+      <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <li
           v-for="(video, index) in store.data"
           :key="video.id"
           :ref="(el) => setCardRef(el, index)"
           class="opacity-0 translate-y-10"
         >
-          <div
-            class="relative aspect-[9/16] overflow-hidden rounded-xl bg-black"
-          >
-            <video
-              v-if="video.video?.url"
-              :src="video.video.url"
-              class="w-full h-full object-cover"
-              muted
-              playsinline
-              preload="metadata"
-              controls
-              data-exclusive-playback
-              @play="pauseOtherVideos"
-            />
-
+          <figure>
             <div
-              v-else
-              class="absolute inset-0 flex items-center justify-center text-white"
-            >{{ $t('ui.components.blocks.Videos.divText1') }}</div>
-          </div>
+              class="relative aspect-[9/16] overflow-hidden rounded-xl bg-black"
+            >
+              <video
+                v-if="video.video?.url"
+                :src="video.video.url"
+                class="w-full h-full object-cover"
+                muted
+                playsinline
+                preload="metadata"
+                controls
+                data-exclusive-playback
+                @play="pauseOtherVideos"
+              />
 
-          <Paragraph class="mt-4">
-            {{ decodeWpText(video.title.rendered) }}
-          </Paragraph>
-        </div>
-      </div>
+              <p
+                v-else
+                class="absolute inset-0 flex items-center justify-center text-white"
+              >{{ $t('ui.components.blocks.Videos.divText1') }}</p>
+            </div>
+
+            <Paragraph tag="figcaption" class="mt-4">
+              {{ decodeWpText(video.title.rendered) }}
+            </Paragraph>
+          </figure>
+        </li>
+      </ul>
     </Container>
   </section>
 </template>

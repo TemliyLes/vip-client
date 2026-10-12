@@ -1,25 +1,25 @@
 <template>
   <section ref="section" class="relative min-h-dvh overflow-hidden bg-wine">
     <!-- Background words behind person -->
-    <div
+    <div aria-hidden="true"
       class="absolute z-0 right-[-60px] top-[42%] uppercase text-white font-light text-[42px] leading-[0.9] opacity-40"
     >
-      <div ref="word1" class="translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText1') }}</div>
+      <p ref="word1" class="translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText1') }}</p>
 
-      <div ref="word2" class="mt-5 translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText2') }}</div>
+      <p ref="word2" class="mt-5 translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText2') }}</p>
 
-      <div ref="word3" class="mt-5 translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText3') }}</div>
+      <p ref="word3" class="mt-5 translate-x-[150px] opacity-0">{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText3') }}</p>
     </div>
 
     <Container>
       <div class="relative h-dvh">
         <!-- Content -->
-        <div class="relative z-20 pt-16 text-white">
-          <div
+        <header class="relative z-20 pt-16 text-white">
+          <p
             class="inline-flex border border-white/50 px-4 py-2 text-[10px] uppercase mb-8"
-          >{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText4') }}</div>
+          >{{ $t('ui.components.blocks.Hero.AboutMainMobile.divText4') }}</p>
 
-          <h1 class="uppercase font-light text-[34px] leading-[0.95]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text1') }}<br />{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text2') }}<br />{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text3') }}</h1>
+          <h2 class="uppercase font-light text-[34px] leading-[0.95]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text1') }}<br />{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text2') }}<br />{{ $t('ui.components.blocks.Hero.AboutMainMobile.h1Text3') }}</h2>
 
           <p class="mt-6 w-[75%] text-[11px] uppercase leading-[1.5]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.pText1') }}</p>
 
@@ -27,7 +27,7 @@
             to="/about"
             class="inline-block mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px] ring-1 ring-inset ring-white transition duration-300 hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >{{ $t('ui.components.blocks.Hero.AboutMainMobile.buttonText1') }}</NuxtLinkLocale>
-        </div>
+        </header>
 
         <!-- Person -->
         <div class="absolute z-10 bottom-0 right-[-90px] w-[125%]">

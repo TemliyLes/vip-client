@@ -16,7 +16,7 @@ export const useArticleStore = defineStore("article", () => {
     article.value = null;
 
     try {
-      const response = await api.getItem('services', id, language);
+      const response = await api.getItem('services', id, language, { _embed: 'wp:term' });
       if (currentRequest === requestId && language === locale.value) {
         article.value = response;
       }

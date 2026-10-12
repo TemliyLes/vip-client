@@ -1,7 +1,7 @@
 <template>
   <NuxtLinkLocale :to="to">
     <div class="flex gap-2 cursor-pointer">
-      <Paragraph class="text-wine!"><slot /></Paragraph>
+      <Paragraph tag="span" class="text-wine!"><slot /></Paragraph>
       <Arrow red />
     </div>
   </NuxtLinkLocale>

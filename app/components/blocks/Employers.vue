@@ -1,27 +1,28 @@
 <template>
-  <div ref="grid" class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10">
-    <article
+  <ul ref="grid" class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10">
+    <li
       v-for="(person, index) in team"
       :key="person.name"
       :ref="(el) => setCardRef(el, index)"
       class="flex flex-col gap-2"
     >
       <img
+        :alt="person.name"
         :src="person?.image?.original.url"
         class="w-full aspect-[357/388] object-cover"
         loading="lazy"
         decoding="async"
       />
 
-      <Header mini>
+      <Header tag="h3" mini>
         {{ person.name }}
       </Header>
 
       <Paragraph>
         {{ person.position }}
       </Paragraph>
-    </article>
-  </div>
+    </li>
+  </ul>
 </template>
 
 <script setup>

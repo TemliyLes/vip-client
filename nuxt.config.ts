@@ -4,10 +4,24 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   modules: ["@pinia/nuxt", "@nuxtjs/i18n"],
+  app: {
+    head: {
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+        { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+        { rel: "manifest", href: "/site.webmanifest" },
+      ],
+    },
+  },
   nitro: {
     externals: {
-      // Bundle this local helper; external dev imports get invalid paths on Windows.
-      inline: [/[/\\]i18n[/\\]utils\.js$/],
+      // Bundle local helpers shared with the server: external dev imports get invalid paths on Windows.
+      inline: [
+        /[/\\]i18n[/\\]utils\.js$/,
+        /[/\\]app[/\\]utils[/\\]feedback\.js$/,
+      ],
     },
   },
   i18n: {

@@ -1,19 +1,21 @@
 <template>
-  <div>
+  <article class="flex h-full w-full flex-1 flex-col">
     <NuxtLinkLocale
       :to="link"
-      class="group flex flex-col h-full"
+      class="group flex min-w-0 flex-1 flex-col"
       @mousedown.left.prevent="focusCard"
     >
-      <div class="relative">
+      <div class="relative mb-1 shrink-0">
         <img
           v-if="image"
           :src="image"
           :alt="title"
           :width="data?.images?.card?.width ?? (category ? 473 : undefined)"
           :height="data?.images?.card?.height ?? (category ? 582 : undefined)"
-          class="brightness-80 transition duration-400 group-hover:brightness-100 mb-1 w-full h-auto"
+          class="brightness-80 transition duration-400 group-hover:brightness-100 w-full h-auto object-cover"
+          :class="imageAspect"
         />
+        <div v-else aria-hidden="true" class="w-full bg-milk" :class="imageAspect" />
 
         <div
           v-if="discount"
@@ -21,51 +23,53 @@
         >{{ $t('ui.components.cards.Card.divText1') }}{{ discount }}{{ $t('ui.components.cards.Card.divText2') }}</div>
       </div>
 
-      <Header mini class="line-clamp-1 overflow-hidden">
+      <Header :tag="headingTag" mini class="line-clamp-1 overflow-hidden">
         {{ title }}
       </Header>
       <Paragraph
         v-if="data?.service_fields?.description"
-        class="mt-2 line-clamp-2 overflow-hidden min-h-10"
+        class="mt-2 line-clamp-2! overflow-hidden min-h-10"
       >
         {{ data?.service_fields?.description }}
       </Paragraph>
 
-      <div v-if="data?.service_fields" class="flex flex-col gap-3 mt-4">
-        <div v-if="data.service_fields.time" :class="flexClasses">
-          <Clock />
-          <Paragraph>
-            {{ addClockAffix(data.service_fields.time) }}
-          </Paragraph>
-        </div>
+      <div v-if="data?.service_fields || btn" class="mt-auto pt-4">
+        <dl v-if="data?.service_fields" class="flex flex-col gap-3">
+          <div v-if="data.service_fields.time" :class="flexClasses">
+            <dt class="shrink-0"><Clock aria-hidden="true" /><span class="sr-only">{{ $t('accessibility.duration') }}</span></dt>
+            <Paragraph tag="dd">
+              {{ addClockAffix(data.service_fields.time) }}
+            </Paragraph>
+          </div>
 
-        <div v-if="data.service_fields.price" :class="flexClasses">
-          <Money />
+          <div v-if="data.service_fields.price" :class="flexClasses">
+            <dt class="shrink-0"><Money aria-hidden="true" /><span class="sr-only">{{ $t('accessibility.price') }}</span></dt>
 
-          <Paragraph>
-            <template v-if="discount">
-              <span class="line-through opacity-50 mr-2">
+            <Paragraph tag="dd">
+              <template v-if="discount">
+                <span class="line-through opacity-50 mr-2">
+                  {{ addPriceAffix(data.service_fields.price) }}
+                </span>
+              </template>
+
+              <template v-else>
                 {{ addPriceAffix(data.service_fields.price) }}
-              </span>
-            </template>
+              </template>
+            </Paragraph>
+          </div>
 
-            <template v-else>
-              {{ addPriceAffix(data.service_fields.price) }}
-            </template>
-          </Paragraph>
-        </div>
+          <div v-if="data.service_fields.people_count" :class="flexClasses">
+            <dt class="shrink-0"><People aria-hidden="true" /><span class="sr-only">{{ $t('accessibility.participants') }}</span></dt>
+            <Paragraph tag="dd">
+              {{ data.service_fields.people_count }}
+            </Paragraph>
+          </div>
+        </dl>
 
-        <div v-if="data.service_fields.people_count" :class="flexClasses">
-          <People />
-          <Paragraph>
-            {{ data.service_fields.people_count }}
-          </Paragraph>
-        </div>
+        <Button v-if="btn" tag="span" :class="{ 'mt-4': data?.service_fields }" fit arrow>{{ $t('ui.components.cards.Card.buttonText1') }}</Button>
       </div>
-
-      <Button v-if="btn" tag="span" class="mt-4" fit arrow>{{ $t('ui.components.cards.Card.buttonText1') }}</Button>
     </NuxtLinkLocale>
-  </div>
+  </article>
 </template>
 
 <script setup>
@@ -78,6 +82,7 @@ import { decodeWpText } from "~/utils/decodeWpText";
 import Button from "../ui/Button.vue";
 
 const props = defineProps({
+  headingTag: { type: String, default: "h3" },
   data: {
     type: Object,
     required: true,
@@ -95,6 +100,7 @@ const props = defineProps({
 });
 
 const flexClasses = "flex gap-2";
+const imageAspect = computed(() => props.category ? 'aspect-[473/582]' : 'aspect-[360/390]');
 
 // Native focus scrolling can move a partially visible card before mouseup.
 const focusCard = (event) => {
