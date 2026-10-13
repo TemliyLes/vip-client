@@ -5,7 +5,7 @@
         :class="dark ? 'brightness-50' : ''"
         ref="image"
         class="absolute -top-[10%] left-0 w-full h-[120%] object-cover"
-        src="../../assets/img/clinic.png"
+        src="../../assets/img/clinic.webp"
         alt=""
       />
 

@@ -12,8 +12,8 @@
 <script setup>
 import HeroMobile from "./Hero/HeroMobile.vue";
 import HeroDesktop from "./Hero/HeroDesktop.vue";
-import heroTitle from "~/assets/img/minititle.png";
-import heroPhoto from "~/assets/img/olga.png";
+import heroTitle from "~/assets/img/minititle.webp";
+import heroPhoto from "~/assets/img/olga.webp";
 
 const { isMobile } = useDevice();
 const { visible: loaderVisible, heroPending } = useInitialLoader();

@@ -41,7 +41,7 @@
 
           <!-- женщина -->
           <div ref="person" class="absolute right-0 bottom-0 w-[620px]">
-            <img src="../../assets/img/olga_about.png" class="w-full" alt="" />
+            <img src="../../assets/img/olga_about.webp" class="w-full" alt="" />
           </div>
         </div>
       </Container>

@@ -11,7 +11,7 @@
             <Title class="mb-4">{{ $t('ui.components.blocks.Service.titleText1') }}</Title>
 
             <Header>{{ $t('ui.components.blocks.Service.headerText1') }}<br />{{ $t('ui.components.blocks.Service.headerText2') }}</Header>
-            <img src="../../assets/img/styletext.png" width="590" height="178" alt="" />
+            <img src="../../assets/img/styletext.webp" width="590" height="178" alt="" />
             <Paragraph class="mt-5 mb-4 max-w-[280px]">{{ $t('ui.components.blocks.Service.paragraphText1') }}</Paragraph>
           </div>
 

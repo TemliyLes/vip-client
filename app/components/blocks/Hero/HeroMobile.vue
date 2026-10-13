@@ -4,7 +4,7 @@
       <!-- Logo -->
       <img
         ref="title"
-        src="../../../assets/img/minititle.png"
+        src="../../../assets/img/minititle.webp"
         :alt="$t('ui.components.blocks.Hero.HeroMobile.alt1')"
         class="absolute z-20 left-1/2 -translate-x-1/2 top-24 w-full"
       />
@@ -15,7 +15,7 @@
         class="absolute z-10 bottom-0 right-[-20px] h-[60%] w-[95%]"
       >
         <img
-          src="../../../assets/img/olga.png"
+          src="../../../assets/img/olga.webp"
           alt=""
           class="h-full w-full object-contain object-bottom"
         />

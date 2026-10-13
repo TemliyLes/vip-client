@@ -8,7 +8,7 @@
       </div>
       <img
         class="h-36 mr-6 mt-4 hidden sm:block"
-        src="../../assets/img/styletext2.png"
+        src="../../assets/img/styletext2.webp"
         alt=""
       />
     </header>

@@ -32,7 +32,7 @@
         <!-- Person -->
         <div class="absolute z-10 bottom-0 right-[-90px] w-[125%]">
           <img
-            src="./../../../assets/img/olga_about.png"
+            src="./../../../assets/img/olga_about.webp"
             class="w-full object-contain object-bottom"
             alt=""
           />

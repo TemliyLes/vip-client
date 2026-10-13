@@ -13,7 +13,7 @@
 
           <img
             class="h-24 object-contain object-left"
-            src="./../../assets/img/styletext.png"
+            src="./../../assets/img/styletext.webp"
             alt=""
           />
 

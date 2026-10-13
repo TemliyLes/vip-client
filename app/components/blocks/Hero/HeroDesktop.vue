@@ -4,7 +4,7 @@
       <div class="relative flex min-h-dvh items-center">
         <img
           ref="title"
-          src="../../../assets/img/minititle.png"
+          src="../../../assets/img/minititle.webp"
           :alt="$t('ui.components.blocks.Hero.HeroDesktop.alt1')"
           class="absolute left-0 top-[100px] z-10 w-full"
         />
@@ -12,7 +12,7 @@
         <div class="absolute bottom-0 right-[40px] z-20 h-[90%] w-[520px]">
           <img
             ref="photo"
-            src="../../../assets/img/olga.png"
+            src="../../../assets/img/olga.webp"
             alt=""
             class="h-full w-full object-contain object-bottom"
           />
