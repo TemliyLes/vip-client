@@ -78,10 +78,17 @@ PHP-проверка отдельно проверяет ALT оригинала 
 `ui.components.ui.ReservioButton.buttonText1` только в одинарных кавычках,
 а исходный компонент использует двойные. Компонент и словари не менялись.
 
-Изменения подготовлены локально. Для применения на публичном сайте нужно
-обновить Nuxt и установить PALIY Product Crop 2.28.2. Архив плагина:
-`artifacts/paliy-product-crop-2.28.2.zip`. Сохранение через действующую админку
-и публичный HTML после установки ещё требуют проверки на сервере.
+Изменения опубликованы 13.10.2026: коммит `9b0fff1` в `main`, сборка Nuxt
+выполнена на сервере, `vip-client.service` перезапущен. PALIY Product Crop
+2.28.2 активен; PHP lint установленного файла успешен. Проверены десять
+публичных CS/SK-страниц: серверные метаданные, ALT услуг/новостей и основателя,
+совпадение ALT API с медиатекой. Результаты: `artifacts/seo-public-results.json`.
+Записи и значения SEO/ALT при развёртывании не менялись; сохранение новых
+значений через интерфейс админки отдельно не проверялось.
+
+Предыдущая сборка и плагин сохранены на сервере вне публичного каталога:
+`/root/paliy-deploy-backups/seo-alt-20261013-9b0fff1`.
+Архив плагина: `artifacts/paliy-product-crop-2.28.2.zip`.
 
 Основания: [WordPress Media REST API](https://developer.wordpress.org/rest-api/reference/media/)
 и [Nuxt useSeoMeta](https://nuxt.com/docs/4.x/api/composables/use-seo-meta).
