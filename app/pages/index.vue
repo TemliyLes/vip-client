@@ -38,4 +38,10 @@ import FAQ from "~/components/blocks/FAQ.vue";
 import Contacts from "~/components/blocks/Contacts.vue";
 
 const { isMobile } = useDevice();
+const { t, locale } = useI18n({ useScope: 'global' });
+const api = useWpApi();
+const { data: seoPage } = await useAsyncData(`wp-page-seo:2:${locale.value}`, () =>
+  api.getItem('pages', 2, locale.value, { _fields: 'id,lang,translations,seo' }),
+);
+useWpSeo(seoPage, () => ({ title: t('ui.components.blocks.Hero.HeroDesktop.h1Text1') }));
 </script>

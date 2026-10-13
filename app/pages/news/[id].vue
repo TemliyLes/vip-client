@@ -20,4 +20,5 @@ definePageMeta({ middleware: 'wp-language' });
 await useAsyncData(`wp-news:${locale.value}:${route.params.id}`, () =>
   store.fetchData(route.params.id, locale.value),
 );
+useWpSeo(() => store.data, () => ({ description: store.data?.news_fields?.description }));
 </script>

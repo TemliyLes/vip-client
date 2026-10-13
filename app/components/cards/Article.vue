@@ -20,7 +20,7 @@
       <img
         class="object-cover w-full max-h-[520px]"
         :src="content?.images?.original?.url"
-        :alt="decodeWpText(content?.title?.rendered)"
+        :alt="content?.images?.original?.alt ?? decodeWpText(content?.title?.rendered)"
       />
 
       <div class="mt-12">

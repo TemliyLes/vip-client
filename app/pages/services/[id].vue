@@ -19,6 +19,7 @@ definePageMeta({ middleware: 'wp-language' });
 await useAsyncData(`wp-service:${locale.value}:${route.params.id}`, () =>
   store.fetchArticle(route.params.id, locale.value),
 );
+useWpSeo(() => store.article, () => ({ description: store.article?.meta?.service_description }));
 
 // Embedded terms omit is_primary, so read the complete category records.
 const { data: serviceCategories } = await useAsyncData(

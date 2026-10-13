@@ -8,7 +8,7 @@
         class="w-full shrink-0 object-cover"
         :class="compact ? 'h-[280px] sm:h-[340px]' : 'h-[476px]'"
         :loading="compact ? 'lazy' : undefined"
-        :alt="decodeWpText(data?.title?.rendered)"
+        :alt="data?.images?.card?.alt ?? decodeWpText(data?.title?.rendered)"
       />
       <div
         v-else

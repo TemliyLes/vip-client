@@ -5,7 +5,7 @@
         v-if="image"
         class="w-12 h-12 shrink-0 object-cover"
         :src="image?.url"
-        :alt="data?.review_fields?.name"
+        :alt="image?.alt ?? data?.review_fields?.name ?? ''"
       />
       <div v-else class="shrink-0">
         <div class="w-12 aspect-square object-cover bg-beige"></div>

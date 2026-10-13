@@ -9,7 +9,7 @@
         <img
           v-if="image"
           :src="image"
-          :alt="title"
+          :alt="data?.image?.url ? (data.image.alt ?? title) : (data?.images?.card?.alt ?? title)"
           :width="data?.images?.card?.width ?? (category ? 473 : undefined)"
           :height="data?.images?.card?.height ?? (category ? 582 : undefined)"
           class="brightness-80 transition duration-400 group-hover:brightness-100 w-full h-auto object-cover"

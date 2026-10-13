@@ -55,7 +55,7 @@ if (error.value) {
   throw createError({ statusCode: 502, statusMessage: 'News unavailable', message: t('newsPage.loadError') });
 }
 
-useHead(() => ({ title: `${t('newsPage.title')} | PALIY` }));
+useWpSeo(null, () => ({ title: t('newsPage.title') }));
 
 async function loadMore() {
   if (loadingMore.value || data.value.page >= data.value.totalPages) return;

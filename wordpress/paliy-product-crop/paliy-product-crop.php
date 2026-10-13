@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PALIY Product Crop
  * Description: Товары и услуги с ручным кадрированием изображения и REST API-полями.
- * Version: 2.28.1
+ * Version: 2.28.2
  * Author: PALIY
  * Requires at least: 6.4
  * Requires PHP: 8.1
@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('PALIY_PRODUCT_CROP_VERSION', '2.28.1');
+define('PALIY_PRODUCT_CROP_VERSION', '2.28.2');
 define('PALIY_PRODUCT_CROP_CARD_WIDTH', 360);
 define('PALIY_PRODUCT_CROP_CARD_HEIGHT', 390);
 
@@ -3876,6 +3876,7 @@ function paliy_product_crop_rest_images(array $object): array
     $post_id = (int) ($object['id'] ?? 0);
     $attachment_id = (int) get_post_meta($post_id, '_paliy_product_image_id', true);
     $original_url = $attachment_id ? wp_get_attachment_image_url($attachment_id, 'full') : '';
+    $alt = $attachment_id ? (string) get_post_meta($attachment_id, '_wp_attachment_image_alt', true) : '';
     $card_url = paliy_product_crop_get_card_url($post_id);
     $crop_raw = get_post_meta($post_id, '_paliy_product_crop', true);
 
@@ -3883,9 +3884,11 @@ function paliy_product_crop_rest_images(array $object): array
         'original' => $original_url ? [
             'attachment_id' => $attachment_id,
             'url' => $original_url,
+            'alt' => $alt,
         ] : null,
         'card' => $card_url ? [
             'url' => $card_url,
+            'alt' => $alt,
             'width' => PALIY_PRODUCT_CROP_CARD_WIDTH,
             'height' => PALIY_PRODUCT_CROP_CARD_HEIGHT,
         ] : null,

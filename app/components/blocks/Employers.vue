@@ -7,7 +7,7 @@
       class="flex flex-col gap-2"
     >
       <img
-        :alt="person.name"
+        :alt="person?.image?.alt ?? person.name"
         :src="person?.image?.original.url"
         class="w-full aspect-[357/388] object-cover"
         loading="lazy"

@@ -61,5 +61,6 @@ const currentCategory = computed(() => {
 const title = computed(() => currentCategory.value?.title);
 
 const description = computed(() => currentCategory.value?.description);
+useWpSeo(() => categoryStore.info, () => ({ title: title.value, description: description.value }));
 
 </script>

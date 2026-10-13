@@ -10,7 +10,7 @@
             :width="founder?.image?.original?.width"
             :height="founder?.image?.original?.height"
             class="w-full h-auto object-cover"
-            :alt="founder?.name ?? ''"
+            :alt="founder?.image?.alt ?? founder?.name ?? ''"
           />
         </div>
         <!-- content -->
