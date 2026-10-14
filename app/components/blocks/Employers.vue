@@ -9,7 +9,9 @@
       <img
         :alt="person?.image?.alt ?? person.name"
         :src="person?.image?.original.url"
-        class="w-full aspect-[357/388] object-cover"
+        :width="person?.image?.original?.width"
+        :height="person?.image?.original?.height"
+        class="w-full h-auto object-cover"
         loading="lazy"
         decoding="async"
       />
