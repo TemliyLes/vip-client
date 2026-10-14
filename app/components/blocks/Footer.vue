@@ -22,7 +22,7 @@
             <li v-for="item in menu" :key="item.id">
               <NuxtLinkLocale
                 :to="item.to"
-                class="transition-colors duration-300 hover:text-wine"
+                class="focus-link transition-colors duration-300 hover:text-wine"
               >
                 {{ item.title }}
               </NuxtLinkLocale>
@@ -40,12 +40,12 @@
         >
           <ul class="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:gap-8">
             <li>
-              <NuxtLinkLocale to="/privacy-policy" class="transition-colors duration-300 hover:text-wine">
+              <NuxtLinkLocale to="/privacy-policy" class="focus-link transition-colors duration-300 hover:text-wine">
                 {{ $t('ui.components.blocks.Footer.privacyPolicy') }}
               </NuxtLinkLocale>
             </li>
             <li>
-              <NuxtLinkLocale to="/personal-data-consent" class="transition-colors duration-300 hover:text-wine">
+              <NuxtLinkLocale to="/personal-data-consent" class="focus-link transition-colors duration-300 hover:text-wine">
                 {{ $t('ui.components.blocks.Footer.personalDataConsent') }}
               </NuxtLinkLocale>
             </li>

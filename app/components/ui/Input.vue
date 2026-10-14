@@ -6,7 +6,7 @@
     :value="modelValue"
     :type="type"
     :placeholder="placeholder"
-    class="w-full border border-gray-200 px-4 py-3 outline-none transition duration-300 focus:border-black"
+    class="w-full border border-gray-200 px-4 py-3 transition duration-300"
     @input="updateValue"
   />
 
@@ -15,7 +15,7 @@
     :value="modelValue"
     :type="type"
     :placeholder="placeholder"
-    class="w-full border border-gray-200 px-4 py-3 outline-none transition duration-300 focus:border-black"
+    class="w-full border border-gray-200 px-4 py-3 transition duration-300"
     @input="updateValue"
   />
 </template>

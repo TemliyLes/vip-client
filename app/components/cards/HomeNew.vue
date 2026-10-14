@@ -1,5 +1,5 @@
 <template>
-  <article class="news-card flex h-full w-full flex-1 flex-col">
+  <article data-card class="news-card flex h-full w-full flex-1 flex-col">
     <div class="flex flex-1 flex-col" :class="compact ? '' : direction">
       <img
         v-if="data?.images?.card?.url"

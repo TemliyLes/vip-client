@@ -24,7 +24,7 @@
         <Phone aria-hidden="true" class="shrink-0 mt-1" />
 
         <Paragraph tag="address" class="not-italic">
-          <a :href="`tel:${$t('ui.components.ui.ContactsGrid.paragraphText3').replace(/[^\d+]/g, '')}`">{{ $t('ui.components.ui.ContactsGrid.paragraphText3') }}</a>
+          <a class="focus-link" :href="`tel:${$t('ui.components.ui.ContactsGrid.paragraphText3').replace(/[^\d+]/g, '')}`">{{ $t('ui.components.ui.ContactsGrid.paragraphText3') }}</a>
         </Paragraph>
       </li>
 
@@ -33,7 +33,7 @@
         <Mail aria-hidden="true" class="shrink-0 mt-1" />
 
         <Paragraph tag="address" class="not-italic">
-          <a :href="`mailto:${$t('ui.components.ui.ContactsGrid.paragraphText4').trim()}`">{{ $t('ui.components.ui.ContactsGrid.paragraphText4') }}</a>
+          <a class="focus-link" :href="`mailto:${$t('ui.components.ui.ContactsGrid.paragraphText4').trim()}`">{{ $t('ui.components.ui.ContactsGrid.paragraphText4') }}</a>
         </Paragraph>
       </li>
     </ul>

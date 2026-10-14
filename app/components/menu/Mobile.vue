@@ -36,10 +36,10 @@
               <NuxtLinkLocale
                 v-if="!item.children?.length"
                 :to="item.to"
-                class="block py-2"
+                class="focus-link block py-2"
                 @click="close"
               >
-                <Paragraph tag="span">
+                <Paragraph tag="span" class="focus-label">
                   {{ item.title }}
                 </Paragraph>
               </NuxtLinkLocale>
@@ -50,10 +50,10 @@
                   type="button"
                   :aria-expanded="openedSub === item.id"
                   :aria-controls="`${menuId}-${item.id}`"
-                  class="flex justify-between items-center w-full py-2"
+                  class="focus-link flex justify-between items-center w-full py-2"
                   @click="toggleSub(item.id)"
                 >
-                  <Paragraph tag="span">
+                  <Paragraph tag="span" class="focus-label">
                     {{ item.title }}
                   </Paragraph>
 
@@ -78,10 +78,10 @@
                     >
                       <NuxtLinkLocale
                         :to="child.to"
-                        class="block py-3"
+                        class="focus-link block py-3"
                         @click="close"
                       >
-                        <Paragraph tag="span">
+                        <Paragraph tag="span" class="focus-label">
                           {{ child.title }}
                         </Paragraph>
                       </NuxtLinkLocale>

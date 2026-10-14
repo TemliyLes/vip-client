@@ -8,7 +8,7 @@
     class="cursor-pointer inline-flex items-center justify-center gap-6 bg-wine px-8 py-4 text-sm uppercase tracking-[0.15em] text-white transition duration-300 hover:bg-[#9e0012] disabled:cursor-wait disabled:opacity-60"
     @click="handleClick"
   >
-    <span class="flex gap-3"> <slot /> <Arrow v-if="arrow" /></span>
+    <span class="flex gap-3"><span class="focus-label"><slot /></span><Arrow v-if="arrow" /></span>
   </component>
 </template>
 

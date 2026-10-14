@@ -1,5 +1,5 @@
 <template>
-  <article class="flex h-full w-full flex-1 flex-col">
+  <article data-card class="flex h-full w-full flex-1 flex-col">
     <NuxtLinkLocale
       :to="link"
       class="group flex min-w-0 flex-1 flex-col"
@@ -23,7 +23,7 @@
         >{{ $t('ui.components.cards.Card.divText1') }}{{ discount }}{{ $t('ui.components.cards.Card.divText2') }}</div>
       </div>
 
-      <Header :tag="headingTag" mini class="line-clamp-1 overflow-hidden">
+      <Header :tag="headingTag" mini class="focus-label text-wine line-clamp-1 overflow-hidden">
         {{ title }}
       </Header>
       <Paragraph

@@ -9,7 +9,7 @@
       v-for="language in locales"
       :key="language.code"
       type="button"
-      class="min-h-8 min-w-9 rounded-full px-2 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wine"
+      class="min-h-8 min-w-9 rounded-full px-2 transition-colors"
       :class="locale === language.code ? 'bg-wine text-white' : 'hover:bg-wine/10'"
       :aria-label="language.name"
       :aria-pressed="locale === language.code"

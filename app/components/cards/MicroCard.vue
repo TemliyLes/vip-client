@@ -1,5 +1,5 @@
 <template>
-  <article class="h-full min-w-0">
+  <article data-card class="h-full min-w-0">
     <NuxtLinkLocale :to="`/news/${data?.id}`" class="group flex h-full gap-3 min-w-0">
       <img
         :src="data?.images?.card?.url"
@@ -8,7 +8,7 @@
       />
 
       <div class="min-w-0 flex-1">
-        <Header tag="h3" mini class="!font-normal line-clamp-2">
+        <Header tag="h3" mini class="focus-label text-wine !font-normal line-clamp-2">
           {{ decodeWpText(data?.title?.rendered) }}
         </Header>
 

@@ -10,6 +10,7 @@
         class="group flex min-w-0 flex-col h-full"
       >
         <article
+          data-card
           class="border border-gray-200 p-6 transition duration-400 flex flex-1 flex-col h-full"
         >
           <Header tag="h3" mini class="min-h-[36px]">

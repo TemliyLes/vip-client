@@ -6,7 +6,7 @@
         <NuxtLinkLocale
           v-if="item.to && index < trail.length - 1"
           :to="item.to"
-          class="break-words transition-colors duration-200 hover:text-wine focus-visible:text-wine focus-visible:underline focus-visible:underline-offset-4"
+          class="focus-link break-words transition-colors duration-200 hover:text-wine"
         >
           {{ item.label }}
         </NuxtLinkLocale>

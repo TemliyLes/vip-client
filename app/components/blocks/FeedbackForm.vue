@@ -36,7 +36,7 @@
         </label>
         <textarea :id="`${id}-comment`" v-model="form.comment" name="message" required maxlength="5000"
           :disabled="loading" :aria-invalid="Boolean(fieldErrors.comment)" :aria-describedby="fieldErrors.comment ? `${id}-comment-error` : undefined"
-          class="w-full min-h-[140px] resize-y border border-gray-200 px-4 py-3 outline-none transition duration-300 focus:border-black"
+          class="w-full min-h-[140px] resize-y border border-gray-200 px-4 py-3 transition duration-300"
           :placeholder="$t('ui.components.blocks.FeedbackForm.placeholder3')" />
         <p v-if="fieldErrors.comment" :id="`${id}-comment-error`" class="mt-1 text-sm text-wine">{{ $t(fieldErrors.comment) }}</p>
       </div>

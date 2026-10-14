@@ -7,13 +7,18 @@
         class="relative h-full flex items-center"
         @mouseenter="item.children && openMenu(item.id)"
         @mouseleave="item.children && startClose(item.id)"
+        @focusin="item.children && openMenu(item.id)"
+        @focusout="item.children && startClose(item.id)"
       >
-        <NuxtLinkLocale :to="item?.to" class="h-full flex items-center">
+        <NuxtLinkLocale :to="item?.to" class="focus-link h-full flex items-center"
+          :class="{ 'focus-on-dark': !active }"
+          :aria-expanded="item.children ? Boolean(openMenus[item.id]) : undefined"
+        >
           <Paragraph tag="span"
-            class="hover:!text-wine"
+            class="focus-label hover:text-wine"
             :class="[
               '!transition-colors !duration-300',
-              !active ? '!text-white' : '!text-darkbeige',
+              !active ? 'text-white' : 'text-darkbeige',
             ]"
           >
             {{ item.title }}
@@ -32,10 +37,10 @@
             <li v-for="child in item.children" :key="child.id">
               <NuxtLinkLocale
                 :to="child.to"
-                class="block"
+                class="focus-link block"
               >
                 <Paragraph tag="span"
-                  class="!text-darkbeige hover:!text-wine !transition-colors !duration-300"
+                  class="focus-label text-darkbeige hover:text-wine !transition-colors !duration-300"
                 >
                   {{ child.title }}
                 </Paragraph>
@@ -66,6 +71,7 @@ defineProps({
 
 const dropdowns = {};
 const timers = {};
+const openMenus = reactive({});
 
 const setDropdownRef = (key, el) => {
   if (el) {
@@ -79,6 +85,8 @@ const openMenu = (key) => {
   if (!dropdown) return;
 
   clearTimeout(timers[key]);
+  openMenus[key] = true;
+  gsap.killTweensOf(dropdown);
 
   gsap.set(dropdown, {
     visibility: "visible",
@@ -94,7 +102,11 @@ const openMenu = (key) => {
 };
 
 const startClose = (key) => {
+  clearTimeout(timers[key]);
   timers[key] = setTimeout(() => {
+    // Tabbing into a submenu must keep it visible after the pointer leaves.
+    const item = dropdowns[key]?.parentElement;
+    if (item?.matches(":focus-within, :hover")) return;
     closeMenu(key);
   }, 150);
 };
@@ -108,6 +120,8 @@ const closeMenu = (key) => {
 
   if (!dropdown) return;
 
+  openMenus[key] = false;
+  gsap.killTweensOf(dropdown);
   gsap.to(dropdown, {
     opacity: 0,
     y: 10,
@@ -121,6 +135,11 @@ const closeMenu = (key) => {
     },
   });
 };
+
+onUnmounted(() => {
+  Object.values(timers).forEach(clearTimeout);
+  Object.values(dropdowns).forEach((dropdown) => gsap.killTweensOf(dropdown));
+});
 </script>
 
 <style scoped>
