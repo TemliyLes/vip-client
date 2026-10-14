@@ -22,7 +22,9 @@ export const useGsap = () => {
       smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
         content: "#smooth-content",
-        smooth: 1.5,
+        // Keep a short, continuous stop instead of a long exponential tail.
+        smooth: 0.8,
+        ease: "power2.out",
         effects: true,
 
         // Pointer focus must not move a card between pointerdown and click.
