@@ -18,6 +18,18 @@ Nginx source configurations are in `deploy/nginx/`. On the server,
 `vip-client-redirect.conf` as `/etc/nginx/sites-available/vip-client`.
 Validate with `nginx -t` before reloading Nginx.
 
+## Search visibility
+
+Search indexing is intentionally disabled. Both Nginx configurations send
+`X-Robots-Tag: noindex, nofollow, noimageindex` on all responses, including
+WordPress, media, and redirects. This server-wide rule takes precedence over
+the less restrictive page-level SEO settings in the admin panel.
+
+`robots.txt` allows crawling so search engines can read the `noindex` header;
+do not add `Disallow: /` as a replacement for the indexing restriction.
+The website remains accessible by direct URL. Remove the server-wide headers
+only when the owner explicitly requests publication in search results.
+
 ## Domain settings
 
 - Nuxt's `runtimeConfig.public.apiBase` defaults to `https://paliy.cz`.
