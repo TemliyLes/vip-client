@@ -27,7 +27,6 @@ html {
 }
 
 html[data-initial-loading="true"] {
-  background-color: var(--color-beige);
   overflow: hidden;
   overscroll-behavior: none;
 }
