@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: "https://vip-client.duckdns.org",
+      apiBase: "https://paliy.cz",
     },
   },
   css: ["~/assets/css/main.css", "~/assets/css/fonts.css"],
