@@ -17,6 +17,16 @@ import FAQ from "~/components/blocks/FAQ.vue";
 import Container from "~/components/ui/Container.vue";
 import Breadcrumbs from "~/components/ui/Breadcrumbs.vue";
 
+definePageMeta({
+  i18n: {
+    paths: {
+      cs: '/kontakt',
+      ru: '/kontakty',
+      en: '/contact',
+    },
+  },
+});
+
 const { t, locale } = useI18n({ useScope: 'global' });
 const api = useWpApi();
 const { data: seoPage } = await useAsyncData(`wp-page-seo:142:${locale.value}`, () =>

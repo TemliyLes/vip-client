@@ -27,7 +27,7 @@ const props = defineProps({
 const { t } = useI18n({ useScope: 'global' });
 
 const trail = computed(() => [
-  { label: t('breadcrumbs.home'), to: '/' },
+  { label: t('breadcrumbs.home'), to: 'index' },
   ...props.items
     .map(item => ({ ...item, label: decodeWpText(item.label).trim() }))
     .filter(item => item.label),

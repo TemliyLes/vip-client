@@ -7,7 +7,7 @@
       </li>
     </ul>
     <div class="mt-8 sm:mt-12 flex justify-center">
-      <Link to="/news" class="transition-opacity hover:opacity-70 focus-visible:opacity-70">{{ $t('newsPage.allNews') }}</Link>
+      <Link to="news" class="transition-opacity hover:opacity-70 focus-visible:opacity-70">{{ $t('newsPage.allNews') }}</Link>
     </div>
   </Container>
 </template>

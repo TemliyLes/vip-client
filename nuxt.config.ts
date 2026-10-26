@@ -27,13 +27,14 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: "cs",
     strategy: "prefix_except_default",
+    customRoutes: "meta",
     locales: [
       { code: "cs", language: "cs-CZ", name: "Čeština" },
-      { code: "sk", language: "sk-SK", name: "Slovenčina" },
+      { code: "ru", language: "ru-RU", name: "Русский" },
+      { code: "en", language: "en", name: "English" },
     ],
     vueI18n: "./i18n.config.ts",
-    // Keep the public entry in Czech, including visitors with an old SK cookie.
-    // Manual switching still works when LanguageSwitcher is uncommented.
+    // Keep the public entry in Czech; language selection stays manual.
     detectBrowserLanguage: false,
   },
   runtimeConfig: {

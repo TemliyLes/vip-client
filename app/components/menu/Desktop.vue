@@ -7,7 +7,7 @@
 
     <Container class="relative z-10 pointer-events-auto">
       <div class="flex items-center justify-between gap-3">
-        <NuxtLinkLocale to="/" :aria-label="$t('accessibility.home')" class="shrink-0 flex gap-1 items-center">
+        <NuxtLinkLocale to="index" :aria-label="$t('accessibility.home')" class="shrink-0 flex gap-1 items-center">
           <Logo />
           <Logotitle :active="isScrolled" class="mt-2 hidden lg:block" />
         </NuxtLinkLocale>

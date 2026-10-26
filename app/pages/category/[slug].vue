@@ -30,10 +30,18 @@ const route = useRoute();
 const headingId = useId();
 
 const { t, locale } = useI18n({ useScope: 'global' });
-definePageMeta({ middleware: 'wp-language' });
+definePageMeta({
+  i18n: {
+    paths: {
+      cs: '/sluzby/[slug]',
+      ru: '/uslugi/[slug]',
+      en: '/services/[slug]',
+    },
+  },
+});
 
-await useAsyncData(`wp-category:${locale.value}:${route.params.id}`, () =>
-  categoryStore.fetchCategory(route.params.id, locale.value),
+await useAsyncData(`wp-category:${locale.value}:${route.params.slug}`, () =>
+  categoryStore.fetchCategory(route.params.slug, locale.value),
 );
 const table = computed(() => [
   {
@@ -54,7 +62,7 @@ const table = computed(() => [
 ]);
 
 const currentCategory = computed(() => {
-  const sourceId = categoryStore.info?.translations?.cs ?? route.params.id;
+  const sourceId = categoryStore.info?.translations?.cs ?? categoryStore.info?.id;
   return table.value.find((e) => e.id === Number(sourceId));
 });
 

@@ -80,6 +80,7 @@ import Money from "../icons/mini/money.vue";
 import People from "../icons/mini/people.vue";
 import { decodeWpText } from "~/utils/decodeWpText";
 import Button from "../ui/Button.vue";
+import { wpItemRoute } from "~/utils/wpRoutes";
 
 const props = defineProps({
   headingTag: { type: String, default: "h3" },
@@ -136,7 +137,7 @@ const prefix = computed(() => {
 });
 
 const link = computed(() => {
-  return `/${prefix.value}/${props.data?.id}`;
+  return wpItemRoute(prefix.value, props.data);
 });
 
 const addClockAffix = (value) => {

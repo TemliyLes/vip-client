@@ -9,14 +9,17 @@ export const useArticleStore = defineStore("article", () => {
 
   watch(locale, () => { article.value = null; });
 
-  async function fetchArticle(id, language = locale.value) {
+  async function fetchArticle(slug, language = locale.value) {
     const currentRequest = ++requestId;
     loading.value = true;
     error.value = null;
     article.value = null;
 
     try {
-      const response = await api.getItem('services', id, language, { _embed: 'wp:term' });
+      const response = await api.getItemBySlug('services', slug, language, { _embed: 'wp:term' });
+      if (!response) {
+        throw createError({ statusCode: 404, statusMessage: 'Not Found' });
+      }
       if (currentRequest === requestId && language === locale.value) {
         article.value = response;
       }

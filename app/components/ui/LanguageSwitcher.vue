@@ -34,15 +34,15 @@ async function switchLanguage(code) {
   switching.value = true
   try {
     const name = getRouteBaseName(route)
-    const resource = name === 'category-id' ? 'service-categories'
-      : name === 'services-id' ? 'services'
-      : name === 'news-id' ? 'news' : null
+    const resource = name === 'category-slug' ? 'service-categories'
+      : name === 'services-slug' ? 'services'
+      : name === 'news-slug' ? 'news' : null
 
     if (resource) {
-      const id = await api.translatedId(resource, route.params.id, code)
-      const destination = id ? localePath({
+      const slug = await api.translatedSlug(resource, route.params.slug, locale.value, code)
+      const destination = slug ? localePath({
         name,
-        params: { ...route.params, id: String(id) },
+        params: { ...route.params, slug: String(slug) },
         query: route.query,
         hash: route.hash,
       }, code) : localePath('index', code)

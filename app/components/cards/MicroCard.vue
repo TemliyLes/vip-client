@@ -1,6 +1,6 @@
 <template>
   <article data-card class="h-full min-w-0">
-    <NuxtLinkLocale :to="`/news/${data?.id}`" class="group flex h-full gap-3 min-w-0">
+    <NuxtLinkLocale :to="wpItemRoute('news', data)" class="group flex h-full gap-3 min-w-0">
       <img
         :src="data?.images?.card?.url"
         :alt="data?.images?.card?.alt ?? decodeWpText(data?.title?.rendered)"
@@ -24,6 +24,7 @@
 import Header from "../ui/Header.vue";
 import Paragraph from "../ui/Paragraph.vue";
 import { decodeWpText } from "~/utils/decodeWpText";
+import { wpItemRoute } from "~/utils/wpRoutes";
 
 defineProps({
   data: {

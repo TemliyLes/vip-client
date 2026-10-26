@@ -258,5 +258,18 @@
       "title": "Permanentní make-up",
       "description": "Permanentní make-up je moderní kosmetická procedura, která umožňuje zdůraznit přirozené rysy obličeje a vytvořit dlouhodobě upravený vzhled bez každodenního používání dekorativní kosmetiky. Pomocí speciálních pigmentů se upravuje tvar a barva obočí, rtů nebo očních linek s důrazem na přirozený výsledek a harmonii s rysy obličeje. Každé ošetření je individuálně přizpůsobeno typu pleti, přáním klienta a požadovanému efektu, aby výsledek působil jemně, elegantně a přirozeně."
     }
+  },
+  "errorPage": {
+    "metaTitle": "Chyba stránky | PALIY",
+    "notFoundTitle": "Stránka nenalezena",
+    "notFoundSr": "Chyba 404:",
+    "notFoundLine1": "Stránka, kterou hledáte, neexistuje",
+    "notFoundLine2": "nebo byla přesunuta.",
+    "genericTitle": "Něco se nepovedlo",
+    "genericLine1": "Stránku se nepodařilo načíst.",
+    "genericLine2": "Zkuste to prosím znovu za chvíli.",
+    "backHome": "Zpět na úvod",
+    "browseServices": "Prohlédnout služby",
+    "bookingOnline": "Rezervovat online"
   }
 }

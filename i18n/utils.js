@@ -1,5 +1,5 @@
 // Literal message functions preserve @, braces, pipes and whitespace exactly.
-// An empty Slovak value means "translation pending" and is omitted for Vue I18n fallback.
+// Empty localized values can be omitted to use the Vue I18n fallback.
 export function literalMessages(dictionary, omitEmpty = false) {
   if (typeof dictionary === 'string') {
     return omitEmpty && dictionary === '' ? undefined : () => dictionary

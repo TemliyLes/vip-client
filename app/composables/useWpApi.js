@@ -35,6 +35,18 @@ export function useWpApi() {
     return targetId ? get(`${resource}/${targetId}`, query, language) : null;
   }
 
+  async function getItemBySlug(resource, slug, language = $i18n.locale.value, query = {}) {
+    const normalizedSlug = String(slug ?? '').trim();
+    if (!normalizedSlug) return null;
+
+    const items = await getList(resource, {
+      ...query,
+      slug: normalizedSlug,
+      per_page: 1,
+    }, language);
+    return items[0] ?? null;
+  }
+
   async function translatedId(resource, id, language = $i18n.locale.value) {
     const item = await get(`${resource}/${id}`, {
       _fields: 'id,lang,translations',
@@ -42,6 +54,19 @@ export function useWpApi() {
 
     return item.translations?.[language]
       ?? (item.lang === language ? item.id : null);
+  }
+
+  async function translatedSlug(resource, slug, fromLanguage, toLanguage) {
+    const item = await getItemBySlug(resource, slug, fromLanguage, {
+      _fields: 'id,slug,lang,translations',
+    });
+    const targetId = item?.translations?.[toLanguage];
+    if (!targetId) return null;
+
+    const translated = await get(`${resource}/${targetId}`, {
+      _fields: 'id,slug,lang',
+    }, toLanguage);
+    return translated.lang === toLanguage ? translated.slug : null;
   }
 
   async function servicesByCategory(id, language = $i18n.locale.value) {
@@ -60,5 +85,15 @@ export function useWpApi() {
     return getList(resource, { ...query, [taxonomy]: termId }, language);
   }
 
-  return { get, getList, getPage, getItem, getByTerm, translatedId, servicesByCategory };
+  return {
+    get,
+    getList,
+    getPage,
+    getItem,
+    getItemBySlug,
+    getByTerm,
+    translatedId,
+    translatedSlug,
+    servicesByCategory,
+  };
 }

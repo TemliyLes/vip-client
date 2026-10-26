@@ -30,7 +30,7 @@ const { data: items } = await useAsyncData(
       status: 'publish',
       orderby: 'date',
       order: 'desc',
-      _fields: 'id,title,images,news_fields,lang',
+      _fields: 'id,title,slug,images,news_fields,lang',
     }, language);
   },
   { default: () => [] },

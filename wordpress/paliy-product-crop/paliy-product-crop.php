@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PALIY Product Crop
  * Description: Товары и услуги с ручным кадрированием изображения и REST API-полями.
- * Version: 2.28.2
+ * Version: 2.28.3
  * Author: PALIY
  * Requires at least: 6.4
  * Requires PHP: 8.1
@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('PALIY_PRODUCT_CROP_VERSION', '2.28.2');
+define('PALIY_PRODUCT_CROP_VERSION', '2.28.3');
 define('PALIY_PRODUCT_CROP_CARD_WIDTH', 360);
 define('PALIY_PRODUCT_CROP_CARD_HEIGHT', 390);
 
@@ -919,7 +919,8 @@ function paliy_product_crop_render_feedback_fields(WP_Post $post): void
             <label for="feedback_language"><strong>Язык формы</strong></label>
             <select id="feedback_language" name="feedback_language">
                 <option value="cs" <?php selected($language, 'cs'); ?>>Čeština</option>
-                <option value="sk" <?php selected($language, 'sk'); ?>>Slovenčina</option>
+                <option value="ru" <?php selected($language, 'ru'); ?>>Русский</option>
+                <option value="en" <?php selected($language, 'en'); ?>>English</option>
             </select>
         </p>
         <p>
@@ -2752,7 +2753,7 @@ function paliy_product_crop_save_feedback_fields(int $post_id, WP_Post $post, bo
                 ? esc_url_raw(wp_unslash($_POST[$key]))
                 : sanitize_text_field(wp_unslash($_POST[$key])));
 
-        if ($key === 'feedback_language' && !in_array($value, ['cs', 'sk'], true)) {
+        if ($key === 'feedback_language' && !in_array($value, ['cs', 'ru', 'en'], true)) {
             $value = 'cs';
         }
 
@@ -3684,7 +3685,7 @@ function paliy_product_crop_create_feedback_rest(WP_REST_Request $request)
         return new WP_Error('paliy_feedback_invalid_message', 'Введите сообщение.', ['status' => 400]);
     }
 
-    if (!in_array($language, ['cs', 'sk'], true)) {
+    if (!in_array($language, ['cs', 'ru', 'en'], true)) {
         return new WP_Error('paliy_feedback_invalid_language', 'Недопустимый язык формы.', ['status' => 400]);
     }
 
@@ -3724,22 +3725,65 @@ function paliy_product_crop_create_feedback_rest(WP_REST_Request $request)
         ? (string) PALIY_FEEDBACK_EMAIL
         : (string) (getenv('PALIY_FEEDBACK_EMAIL') ?: get_option('admin_email'));
     $service_title = $service_id ? get_the_title($service_id) : '';
-    $subject = $language === 'sk' ? 'Nový dopyt z webu PALIY' : 'Nová poptávka z webu PALIY';
-    $body = $language === 'sk'
-        ? "Nový dopyt z webu PALIY.\n\nMeno: {$name}\nTelefón: {$phone}\nSlužba: {$service_title}\nStránka: {$page_title}\nOdkaz: {$page_url}\n\nSpráva:\n{$message}\n\nID žiadosti: {$post_id}"
-        : "Nová poptávka z webu PALIY.\n\nJméno: {$name}\nTelefon: {$phone}\nSlužba: {$service_title}\nStránka: {$page_title}\nOdkaz: {$page_url}\n\nZpráva:\n{$message}\n\nID žádosti: {$post_id}";
+    $email_copy = [
+        'cs' => [
+            'subject' => 'Nová poptávka z webu PALIY',
+            'intro' => 'Nová poptávka z webu PALIY.',
+            'name' => 'Jméno',
+            'phone' => 'Telefon',
+            'service' => 'Služba',
+            'page' => 'Stránka',
+            'url' => 'Odkaz',
+            'message' => 'Zpráva',
+            'request_id' => 'ID žádosti',
+            'success' => 'Děkujeme. Vaše poptávka byla odeslána.',
+        ],
+        'ru' => [
+            'subject' => 'Новая заявка с сайта PALIY',
+            'intro' => 'Новая заявка с сайта PALIY.',
+            'name' => 'Имя',
+            'phone' => 'Телефон',
+            'service' => 'Услуга',
+            'page' => 'Страница',
+            'url' => 'Ссылка',
+            'message' => 'Сообщение',
+            'request_id' => 'ID заявки',
+            'success' => 'Спасибо. Ваша заявка отправлена.',
+        ],
+        'en' => [
+            'subject' => 'New inquiry from the PALIY website',
+            'intro' => 'New inquiry from the PALIY website.',
+            'name' => 'Name',
+            'phone' => 'Phone',
+            'service' => 'Service',
+            'page' => 'Page',
+            'url' => 'URL',
+            'message' => 'Message',
+            'request_id' => 'Request ID',
+            'success' => 'Thank you. Your inquiry has been sent.',
+        ],
+    ][$language];
+    $body = sprintf(
+        "%s\n\n%s: %s\n%s: %s\n%s: %s\n%s: %s\n%s: %s\n\n%s:\n%s\n\n%s: %s",
+        $email_copy['intro'],
+        $email_copy['name'], $name,
+        $email_copy['phone'], $phone,
+        $email_copy['service'], $service_title,
+        $email_copy['page'], $page_title,
+        $email_copy['url'], $page_url,
+        $email_copy['message'], $message,
+        $email_copy['request_id'], $post_id
+    );
     $headers = ['Content-Type: text/plain; charset=UTF-8'];
 
-    if (!wp_mail($recipient, $subject, $body, $headers)) {
+    if (!wp_mail($recipient, $email_copy['subject'], $body, $headers)) {
         paliy_product_crop_feedback_log('Feedback saved but email delivery failed', ['post_id' => $post_id]);
     }
 
     return new WP_REST_Response([
         'success' => true,
         'id' => (int) $post_id,
-        'message' => $language === 'sk'
-            ? 'Ďakujeme. Váš dopyt bol odoslaný.'
-            : 'Děkujeme. Vaše poptávka byla odeslána.',
+        'message' => $email_copy['success'],
     ], 201);
 }
 

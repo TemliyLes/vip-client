@@ -1,15 +1,16 @@
 import { useServicesStore } from '~/store/services'
+import { wpItemRoute } from '~/utils/wpRoutes'
 
 export function useMenu() {
   const { t, locale } = useI18n({ useScope: 'global' })
   const services = useServicesStore()
 
   function categoryLink(sourceId) {
-    if (locale.value === 'cs') return `/category/${sourceId}`
     const category = services.categories.find(item =>
-      Number(item.translations?.cs) === sourceId,
+      Number(item.translations?.cs) === sourceId
+      || (locale.value === 'cs' && Number(item.id) === sourceId),
     )
-    return category ? `/category/${category.id}` : null
+    return category ? wpItemRoute('category', category) : null
   }
 
   return computed(() => [
@@ -31,17 +32,17 @@ export function useMenu() {
     {
       id: 'newsPage.title',
       title: t('newsPage.title'),
-      to: '/news',
+      to: 'news',
     },
     {
       id: 'navigation.item9',
       title: t('navigation.item9'),
-      to: '/about',
+      to: 'about',
     },
     {
       id: 'navigation.item10',
       title: t('navigation.item10'),
-      to: '/contacts',
+      to: 'contacts',
     },
   ].filter(item => item.to))
 }

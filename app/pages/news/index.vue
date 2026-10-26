@@ -29,6 +29,16 @@ import Header from "~/components/ui/Header.vue";
 import Paragraph from "~/components/ui/Paragraph.vue";
 import Button from "~/components/ui/Button.vue";
 
+definePageMeta({
+  i18n: {
+    paths: {
+      cs: '/novinky',
+      ru: '/novosti',
+      en: '/news',
+    },
+  },
+});
+
 const { t, locale } = useI18n({ useScope: 'global' });
 const api = useWpApi();
 const { $ScrollTrigger } = useNuxtApp();
@@ -46,7 +56,7 @@ function fetchPage(page) {
     status: 'publish',
     orderby: 'date',
     order: 'desc',
-    _fields: 'id,title,images,news_fields,lang',
+    _fields: 'id,title,slug,images,news_fields,lang',
   }, language);
 }
 

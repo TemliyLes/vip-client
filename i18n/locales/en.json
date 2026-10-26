@@ -1,0 +1,275 @@
+{
+  "newsPage": {
+    "title": "News",
+    "allNews": "All news",
+    "related": "Related news",
+    "empty": "No news has been published yet.",
+    "loadMore": "Load more",
+    "loading": "Loading…",
+    "loadError": "Could not load the news. Please try again."
+  },
+  "breadcrumbs": {
+    "label": "Breadcrumb navigation",
+    "home": "Home"
+  },
+  "accessibility": {
+    "home": "PALIY home page",
+    "primaryNavigation": "Main navigation",
+    "footerNavigation": "Footer navigation",
+    "legalNavigation": "Legal information",
+    "socialNavigation": "Social media",
+    "menu": "Menu",
+    "news": "News",
+    "tariffs": "Treatment options",
+    "duration": "Duration",
+    "price": "Price",
+    "participants": "Number of participants"
+  },
+  "ui": {
+    "components": {
+      "Blank": {
+        "divText1": "\r\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto similique perspiciatis odio fuga molestiae quaerat quasi sapiente nostrum laudantium rem, nulla corporis ad aliquid magnam? Corporis eius non tempora libero.\r\n  "
+      },
+      "blocks": {
+        "AboutMain": {
+          "divText1": "\r\n              Professionalism\r\n            ",
+          "divText2": "\r\n              Precision\r\n            ",
+          "divText3": "\r\n              Naturalness\r\n            ",
+          "divText4": "\r\n              ABOUT US\r\n            ",
+          "h1Text1": "\r\n              Expertise,\r\n              ",
+          "h1Text2": "\r\n              experience\r\n              ",
+          "h1Text3": "\r\n              and an eye for detail\r\n            ",
+          "pText1": "\r\n              Paliy Esthetic Clinic is a modern aesthetic clinic in Prague, bringing together permanent makeup, cosmetology, and professional training.\r\n            ",
+          "buttonText1": "\r\n              Learn more\r\n            "
+        },
+        "ArticleVideos": {
+          "divText1": "\r\n          No video available\r\n        "
+        },
+        "Clinic": {
+          "tagText1": "The space"
+        },
+        "Contacts": {
+          "header1": "Find us in the heart of Prague",
+          "title1": "Contact information",
+          "description1": "Visit PALIY ESTHETIC CLINIC and enjoy professional care in a welcoming, modern setting.",
+          "address1": "Na Švihance 1476/1, Praha 12000"
+        },
+        "FAQ": {
+          "loadMore": "Show more",
+          "loading": "Loading…",
+          "loadError": "Could not load more questions. Please try again.",
+          "titleText1": "FAQ",
+          "headerText1": "Frequently asked questions",
+          "paragraphText1": "\r\n          Find answers to frequently asked questions here.\r\n        "
+        },
+        "Feedback": {
+          "titleText1": "Reviews",
+          "headerText1": "\r\n            The trust we",
+          "headerText2": "\r\n            build every day\r\n          ",
+          "paragraphText1": "\r\n            Our clients who have visited PALIY know our work best. Read their reviews to learn what they think of our approach, care, and results.\r\n          ",
+          "buttonText1": "All reviews"
+        },
+        "Footer": {
+          "paragraphText1": "\r\n            ESTHETIC CLINIC\r\n          ",
+          "privacyPolicy": "Privacy policy",
+          "personalDataConsent": "Consent to the processing of personal data",
+          "instagram": "Instagram",
+          "telegram": "Telegram",
+          "nuxtlinkText1": " Cosmetology ",
+          "nuxtlinkText2": " Permanent makeup ",
+          "nuxtlinkText3": " Training ",
+          "nuxtlinkText4": " Services ",
+          "nuxtlinkText5": " Cosmetology ",
+          "nuxtlinkText6": " Makeup ",
+          "nuxtlinkText7": " Education ",
+          "nuxtlinkText8": " About us ",
+          "nuxtlinkText9": " Reviews ",
+          "nuxtlinkText10": " Contact ",
+          "spanText1": " ◎ ",
+          "spanText2": " f ",
+          "paragraphText2": "\r\n          © 2026 PALIY ESTHETIC CLINIC. ALL RIGHTS RESERVED\r\n        "
+        },
+        "Hero": {
+          "AboutMainMobile": {
+            "divText1": "\r\n        Professionalism\r\n      ",
+            "divText2": "\r\n        Precision\r\n      ",
+            "divText3": "\r\n        Naturalness\r\n      ",
+            "divText4": "\r\n            ABOUT US\r\n          ",
+            "h1Text1": "\r\n            Expertise,\r\n            ",
+            "h1Text2": "\r\n            experience\r\n            ",
+            "h1Text3": "\r\n            and an eye for detail\r\n          ",
+            "pText1": "\r\n            Paliy Esthetic Clinic is a modern aesthetic clinic in Prague, bringing together permanent makeup, cosmetology, and professional training.\r\n          ",
+            "buttonText1": "\r\n            Learn more\r\n          "
+          },
+          "HeroDesktop": {
+            "alt1": "Paliy",
+            "h1Text1": "\r\n            Aesthetic Clinic\r\n          ",
+            "pText1": "\r\n            Effective face and body treatments. Tailored programs for rejuvenation, body contouring, and skin care, with no lengthy recovery.\r\n          ",
+            "buttonText1": " Book online "
+          },
+          "HeroMobile": {
+            "alt1": "Paliy",
+            "h1Text1": "\r\n          Aesthetic Clinic\r\n        ",
+            "pText1": "\r\n          Effective face and body treatments. Tailored programs for rejuvenation, body contouring, and skin care, with no lengthy recovery.\r\n        ",
+            "buttonText1": " Book online "
+          }
+        },
+        "Programm": {
+          "titleText1": "ACADEMY",
+          "headerText1": "\r\n          Experience that matters,",
+          "headerText2": "and that you can pass on\r\n        ",
+          "paragraphText1": "\r\n          PALIY Academy is for those who want to start a career in permanent makeup or take their skills to the next level.",
+          "paragraphText2": "Our courses cover more than technique: we focus on client care, proper practice, hygiene, attention to detail, and natural-looking results.\r\n        "
+        },
+        "Sale": {
+          "titleText1": "Special offers",
+          "headerText1": "Now is the right time to do",
+          "headerText2": "something good for yourself",
+          "paragraphText1": "Explore current offers from PALIY ESTHETIC CLINIC.",
+          "paragraphText2": "Offers are available for a limited time and may apply to selected treatments or dates."
+        },
+        "Service": {
+          "titleText1": " Our services ",
+          "headerText1": "\r\n              Your beauty\r\n              ",
+          "headerText2": "\r\n              our care\r\n            ",
+          "paragraphText1": "\r\n              We tailor every treatment to your needs, features, and expectations. Our goal is not dramatic change, but harmony, naturalness, and a beautiful result that lasts.\r\n            ",
+          "buttonText1": " View all "
+        },
+        "Slushba": {
+          "titleText1": " Why choose us ",
+          "headerText1": "\r\n            When every\r\n            ",
+          "headerText2": "\r\n            detail matters\r\n          ",
+          "paragraphText1": "\r\n            Personal care, modern technology, and natural-looking results. We perform every treatment with care for your safety, precision, and natural beauty.\r\n          ",
+          "buttonText1": " Book online "
+        },
+        "Team": {
+          "titleText1": " Our team "
+        },
+        "Videos": {
+          "titleText1": "Results",
+          "headerText1": "\r\n            Naturalness, precision,",
+          "headerText2": "\r\n            A result tailored to you\r\n          ",
+          "paragraphText1": "\r\n            The best way to see our work is to see real results. Browse before-and-after photos from selected treatments.\r\n          ",
+          "divText1": "\r\n              No video available\r\n            "
+        },
+        "Map": {
+          "queryDefault": "Na Svihance 1476/1, Praha 12000"
+        },
+        "FeedbackForm": {
+          "headerText1": "Send an enquiry ",
+          "placeholder1": "Name",
+          "placeholder2": "Phone",
+          "placeholder3": "Note",
+          "buttonText1": " Send "
+        }
+      },
+      "cards": {
+        "Article": {
+          "headerText1": "Related video",
+          "headerText2": " Treatment details "
+        },
+        "Card": {
+          "divText1": "\r\n          -",
+          "divText2": "%\r\n        ",
+          "buttonText1": " Course outline "
+        },
+        "HomeNew": {
+          "linkText1": "Explore treatments"
+        },
+        "Tariff": {
+          "paragraphText1": " hours ",
+          "buttonText1": " Book a course "
+        }
+      },
+      "menu": {
+        "Desktop": {
+          "buttonText1": " Book online "
+        },
+        "Mobile": {
+          "spanText1": "\r\n                +\r\n              ",
+          "buttonText1": " Book online "
+        }
+      },
+      "ui": {
+        "ContactsGrid": {
+          "headerText1": " PALIY ESTHETIC CLINIC ",
+          "paragraphText1": " NA ŠVIHANCE 1476/1, PRAGUE 12000 ",
+          "paragraphText2": " MON–SAT, 09:00–20:00 ",
+          "paragraphText3": " +420 608 214 640 ",
+          "paragraphText4": " VIPPERMANENT.CZ@GMAIL.COM ",
+          "buttonText1": " BOOK ONLINE "
+        },
+        "Modal": {
+          "ariaLabel1": "Close"
+        },
+        "ReservioButton": {
+          "buttonText1": "Book online"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "item1": "Cosmetology",
+    "item2": "Permanent eyebrow makeup",
+    "item3": "Service 1",
+    "item4": "Service 1",
+    "item5": "Training",
+    "item6": "Service 1",
+    "item7": "Service 1",
+    "item8": "Service 1",
+    "item9": "About us",
+    "item10": "Contact",
+    "item11": "Permanent makeup"
+  },
+  "errors": {
+    "message1": "Could not load the content",
+    "message2": "Could not load the category",
+    "message3": "Could not load the video",
+    "message4": "Could not load the posts",
+    "message5": "Could not submit the form"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "switching": "Changing language"
+  },
+  "initialLoader": {
+    "label": "Loading page"
+  },
+  "feedback": {
+    "sending": "Sending…",
+    "success": "Thank you. Your request has been sent. We will get back to you as soon as possible.",
+    "failed": "We could not send your request. Please try again or call us.",
+    "invalidName": "Please enter your name. If it is too long, shorten it.",
+    "invalidPhone": "Please enter a valid phone number with country code, such as +420 or +421.",
+    "invalidMessage": "Please write a short message. If it is too long, shorten it.",
+    "unavailableLanguage": "The form is not available in this language yet. Please contact us by phone.",
+    "unavailableService": "The selected service is no longer available. Please refresh the page or contact us by phone."
+  },
+  "categoryPages": {
+    "id14": {
+      "title": "Cosmetology",
+      "description": "Discover professional cosmetology focused on the health, beauty, and natural appearance of your skin. Our modern treatments are tailored to each client and help improve the skin, support renewal, and restore freshness and vitality."
+    },
+    "id15": {
+      "title": "Training",
+      "description": "We offer professional training in modern cosmetology methods and practical skin-care skills. Our courses are for beginners and experienced specialists who want to broaden their knowledge, learn new techniques, and build confidence working with clients under expert guidance."
+    },
+    "id16": {
+      "title": "Permanent makeup",
+      "description": "Permanent makeup is a modern cosmetic treatment that enhances natural facial features and creates a polished look without daily makeup. Special pigments are used to shape and colour the brows and lips or define the lash line, with a focus on a natural result that suits your features. Each treatment is tailored to your skin, preferences, and desired look for a soft, elegant finish."
+    }
+  },
+  "errorPage": {
+    "metaTitle": "Page error | PALIY",
+    "notFoundTitle": "Page not found",
+    "notFoundSr": "Error 404:",
+    "notFoundLine1": "The page you are looking for does not exist",
+    "notFoundLine2": "or has been moved.",
+    "genericTitle": "Something went wrong",
+    "genericLine1": "The page could not be loaded.",
+    "genericLine2": "Please try again in a little while.",
+    "backHome": "Back to home",
+    "browseServices": "Browse services",
+    "bookingOnline": "Book online"
+  }
+}

@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
   };
   if (Object.keys(validateFeedback(payload)).length ||
       !Number.isSafeInteger(payload.service_id) || payload.service_id < 0 ||
-      !["cs", "sk"].includes(payload.language) ||
+      !["cs", "ru", "en"].includes(payload.language) ||
       payload.page_url.length > 2048 || !/^https?:\/\//i.test(payload.page_url)) {
     throw createError({ statusCode: 400, statusMessage: "Invalid feedback fields" });
   }

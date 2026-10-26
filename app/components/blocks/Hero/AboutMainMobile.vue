@@ -24,7 +24,7 @@
           <p class="mt-6 w-[75%] text-[11px] uppercase leading-[1.5]">{{ $t('ui.components.blocks.Hero.AboutMainMobile.pText1') }}</p>
 
           <NuxtLinkLocale
-            to="/about"
+            to="about"
             class="focus-on-dark inline-block mt-6 bg-white text-[#cc001b] px-6 py-3 uppercase text-[11px] ring-1 ring-inset ring-white transition duration-300 hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white"
           >{{ $t('ui.components.blocks.Hero.AboutMainMobile.buttonText1') }}</NuxtLinkLocale>
         </header>

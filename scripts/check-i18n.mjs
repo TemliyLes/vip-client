@@ -10,7 +10,9 @@ import { literalMessages, renderMessage } from '../i18n/utils.js'
 const moduleRequire = createRequire(import.meta.resolve('@nuxtjs/i18n'))
 const { createI18n } = moduleRequire('vue-i18n')
 const cs = JSON.parse(await readFile('i18n/locales/cs.json', 'utf8'))
-const sk = JSON.parse(await readFile('i18n/locales/sk.json', 'utf8'))
+const ru = JSON.parse(await readFile('i18n/locales/ru.json', 'utf8'))
+const en = JSON.parse(await readFile('i18n/locales/en.json', 'utf8'))
+const dictionaries = { cs, ru, en }
 const manifest = JSON.parse(await readFile('i18n/source/ui-manifest.json', 'utf8'))
 function flatten(value, path = '', result = {}) {
   if (typeof value === 'string') result[path] = value
@@ -18,10 +20,12 @@ function flatten(value, path = '', result = {}) {
   return result
 }
 const csFlat = flatten(cs)
-const skFlat = flatten(sk)
-assert.deepEqual(Object.keys(skFlat).sort(), Object.keys(csFlat).sort(), 'Locale dictionaries must have identical keys')
-if (process.argv.includes('--require-empty-sk')) {
-  assert(Object.values(skFlat).every((value) => value === ''), 'Slovak translations must remain empty until supplied')
+for (const [locale, dictionary] of Object.entries(dictionaries)) {
+  const flat = flatten(dictionary)
+  assert.deepEqual(Object.keys(flat).sort(), Object.keys(csFlat).sort(), `${locale} dictionary must have the same keys as Czech`)
+  if (locale !== 'cs') {
+    assert(Object.values(flat).every((value) => value.trim() !== ''), `${locale} dictionary contains an empty translation`)
+  }
 }
 
 // Check each recorded source revision and the dictionary, including archived keys
@@ -49,24 +53,15 @@ for (const entry of manifest.ui) {
 const i18n = createI18n({
   legacy: false, locale: 'cs', fallbackLocale: 'cs', missingWarn: false, fallbackWarn: false,
   postTranslation: renderMessage,
-  messages: { cs: literalMessages(cs), sk: literalMessages(sk, true) },
+  messages: Object.fromEntries(Object.entries(dictionaries).map(([locale, dictionary]) => [locale, literalMessages(dictionary)])),
 })
-for (const locale of ['cs', 'sk']) {
+for (const locale of Object.keys(dictionaries)) {
   i18n.global.locale.value = locale
-  for (const [key, value] of Object.entries(csFlat)) {
-    const expected = locale === 'sk' ? skFlat[key] || value : value
-    assert.equal(i18n.global.t(key), renderMessage(expected, key), `Runtime ${locale} text is not verbatim: ${key}`)
+  const flat = flatten(dictionaries[locale])
+  for (const [key, value] of Object.entries(flat)) {
+    assert.equal(i18n.global.t(key), renderMessage(value, key), `Runtime ${locale} text is not verbatim: ${key}`)
   }
 }
-if (skFlat['navigation.item1'] === '') {
-  assert(!i18n.global.te('navigation.item1', 'sk'), 'Empty translations must not hide fallback text')
-}
-
-// Supply representative future translations in memory, never modifying sk.json.
-const future = structuredClone(sk)
-future.navigation.item1 = 'Kozmetológia'
-i18n.global.setLocaleMessage('sk', literalMessages(future, true))
-assert.equal(i18n.global.t('navigation.item1'), 'Kozmetológia')
 
 // Scan templates for remaining unextracted visible strings and unknown $t keys.
 async function scan(directory) {
@@ -95,4 +90,4 @@ async function scan(directory) {
   }
 }
 await scan('app')
-console.log(`Verified ${manifest.ui.length} original static text occurrences, ${Object.keys(csFlat).length} Czech values, ${Object.values(skFlat).filter((value) => value !== '').length} Slovak translations, literal fallback and future translations.`)
+console.log(`Verified ${manifest.ui.length} original static text occurrences and ${Object.keys(csFlat).length} complete values in each of cs, ru, and en.`)

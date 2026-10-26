@@ -8,14 +8,17 @@ export const useNewsStore = defineStore("news", () => {
   let requestId = 0;
   watch(locale, () => { data.value = null; error.value = null; });
 
-  async function fetchData(id, language = locale.value) {
+  async function fetchData(slug, language = locale.value) {
     const currentRequest = ++requestId;
     loading.value = true;
     error.value = null;
     data.value = null;
 
     try {
-      const response = await api.getItem('news', id, language);
+      const response = await api.getItemBySlug('news', slug, language);
+      if (!response) {
+        throw createError({ statusCode: 404, statusMessage: 'Not Found' });
+      }
       if (currentRequest === requestId && language === locale.value) data.value = response;
 
       return response;

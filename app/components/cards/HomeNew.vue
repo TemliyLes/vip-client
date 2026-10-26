@@ -21,7 +21,7 @@
           <Header :tag="headingTag" mini>{{ decodeWpText(data?.title?.rendered) }}</Header>
           <Paragraph :class="{ 'line-clamp-4!': compact }">{{ data?.news_fields?.description }}</Paragraph>
         </header>
-        <Link class="mt-6 sm:mt-0" :class="{ 'transition-opacity hover:opacity-70 focus-visible:opacity-70': compact }" :to="`/news/${data?.id}`"
+        <Link class="mt-6 sm:mt-0" :class="{ 'transition-opacity hover:opacity-70 focus-visible:opacity-70': compact }" :to="wpItemRoute('news', data)"
           >{{ $t('ui.components.cards.HomeNew.linkText1') }}</Link
         >
       </div>
@@ -34,6 +34,7 @@ import Paragraph from "../ui/Paragraph.vue";
 import Header from "../ui/Header.vue";
 import Link from "../ui/Link.vue";
 import { decodeWpText } from "~/utils/decodeWpText";
+import { wpItemRoute } from "~/utils/wpRoutes";
 const props = defineProps({
   compact: { type: Boolean, default: false },
   headingTag: { type: String, default: 'h3' },

@@ -12,7 +12,7 @@ import Paragraph from "./Paragraph.vue";
 import Arrow from "../icons/arrow.vue";
 defineProps({
   to: {
-    type: String,
+    type: [String, Object],
   },
 });
 </script>

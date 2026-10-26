@@ -1,5 +1,6 @@
 import cs from './locales/cs.json'
-import sk from './locales/sk.json'
+import ru from './locales/ru.json'
+import en from './locales/en.json'
 import { literalMessages, renderMessage } from './utils.js'
 
 export default defineI18nConfig(() => ({
@@ -11,6 +12,7 @@ export default defineI18nConfig(() => ({
   // Literal functions keep the editable JSON out of message-format parsing.
   messages: {
     cs: literalMessages(cs),
-    sk: literalMessages(sk, true),
+    ru: literalMessages(ru),
+    en: literalMessages(en),
   },
 }))

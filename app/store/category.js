@@ -13,7 +13,7 @@ export const useCategoryStore = defineStore("category", () => {
     info.value = null;
   });
 
-  async function fetchCategory(id, language = locale.value) {
+  async function fetchCategory(slug, language = locale.value) {
     const currentRequest = ++requestId;
     loading.value = true;
     error.value = null;
@@ -21,10 +21,14 @@ export const useCategoryStore = defineStore("category", () => {
     info.value = null;
 
     try {
-      const [categoryInfo, services] = await Promise.all([
-        api.get(`service-categories/${id}`, {}, language),
-        api.get('services', { 'service-categories': id, per_page: 100 }, language),
-      ]);
+      const categoryInfo = await api.getItemBySlug('service-categories', slug, language);
+      if (!categoryInfo) {
+        throw createError({ statusCode: 404, statusMessage: 'Not Found' });
+      }
+      const services = await api.getList('services', {
+        'service-categories': categoryInfo.id,
+        per_page: 100,
+      }, language);
       if (currentRequest === requestId && language === locale.value) {
         info.value = categoryInfo;
         category.value = services;

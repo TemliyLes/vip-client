@@ -22,6 +22,16 @@ import FAQ from "~/components/blocks/FAQ.vue";
 import Container from "~/components/ui/Container.vue";
 import Breadcrumbs from "~/components/ui/Breadcrumbs.vue";
 
+definePageMeta({
+  i18n: {
+    paths: {
+      cs: '/o-nas',
+      ru: '/o-nas',
+      en: '/about',
+    },
+  },
+});
+
 const { isMobile } = useDevice();
 const { t, locale } = useI18n({ useScope: 'global' });
 const api = useWpApi();
